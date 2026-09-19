@@ -10,9 +10,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="style.css?v=16">
+<link rel="stylesheet" href="style.css?v=17">
 <script defer src="data/properties.js"></script>
-<script defer src="script.js?v=16"></script>
+<script defer src="script.js?v=17"></script>
 </head>
 <body>
 <div class="progress" aria-hidden="true"></div>
@@ -68,6 +68,11 @@
           <legend>უბნები <span>აირჩიე ერთი ან მეტი</span></legend>
           <div id="districtFilters"></div>
           <button id="selectAllDistricts" type="button" class="quiet">ყველა უბნის არჩევა</button>
+        </fieldset>
+        <fieldset class="nb-picker" id="nbPicker">
+          <legend>მიკრორაიონები <span>მოხსენი, რომ დამალო</span> <em id="nbCount"></em></legend>
+          <div id="nbFilters" class="chips nb-chips"></div>
+          <button id="nbAll" type="button" class="quiet" hidden>ყველას ჩვენება</button>
         </fieldset>
         <fieldset class="refine" id="refine">
           <legend>დაზუსტება <span id="refineCount"></span></legend>

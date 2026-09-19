@@ -239,6 +239,20 @@ select:hover{border-color:var(--line-2);transform:translateY(-1px)}
 #districtFilters input:checked,.chips input:checked{border-color:transparent;background:rgba(255,255,255,.25)}
 #districtFilters input:checked::after,.chips input:checked::after{transform:scale(1)}
 #districtFilters input:focus-visible,.chips input:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.nb-picker{border:0;padding:0;margin:0;flex-basis:100%}
+.nb-picker legend{font-size:12px;font-weight:700;color:var(--muted);margin-bottom:9px;letter-spacing:.3px}
+.nb-picker legend span{font-size:11px;font-weight:400;margin-left:8px;opacity:.8}
+.nb-picker legend em{font-style:normal;font-weight:600;color:var(--rose);margin-left:8px;font-size:11.5px}
+.nb-picker legend em:empty{display:none}
+.nb-chips label{padding:6px 11px 6px 9px;font-size:12.5px}
+.nb-chips label b{font-weight:600;opacity:.65;margin-left:2px}
+.nb-chips label:has(input:checked){background:var(--surface-3);border-color:var(--line-2);color:var(--ink)}
+@media(prefers-color-scheme:dark){.nb-chips label:has(input:checked){color:var(--ink)}}
+.nb-chips label:not(:has(input:checked)){opacity:.55;text-decoration:line-through}
+.nb-chips input:checked{background:var(--brand);border-color:var(--brand)}
+.nb-chips input:checked::after{background:#fff}
+#nbAll{padding:8px 0 0;color:var(--brand-2);font-size:12.5px;font-weight:600;background:none;border:0}
+#nbAll:hover{text-decoration:underline}
 .refine{border:0;padding:0;margin:0;flex-basis:100%;display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding-top:6px;border-top:1px dashed var(--line)}
 .refine legend{float:left;width:100%;font-size:11px;font-weight:700;color:var(--muted);letter-spacing:1px;text-transform:uppercase;padding:12px 0 2px}
 .refine legend span{font-weight:600;color:var(--brand-2);text-transform:none;letter-spacing:0;margin-left:8px}
