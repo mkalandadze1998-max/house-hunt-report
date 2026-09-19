@@ -241,6 +241,10 @@ select:hover{border-color:var(--line-2);transform:translateY(-1px)}
 .photo-top{position:absolute;left:14px;top:14px;z-index:2;display:flex;flex-direction:column;gap:6px;align-items:flex-start;pointer-events:none}
 .badge{padding:5px 10px;border-radius:999px;font-size:10.5px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;color:#fff;background:rgba(15,45,36,.6);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 .badge-under{background:rgba(44,122,92,.75)}
+.badge-new{background:linear-gradient(135deg,#5dc394,#2c7a5c);color:#062018;border-color:rgba(255,255,255,.4)}
+.price-chip .delta{font-style:normal;font-size:12px;font-weight:700;padding:3px 8px;border-radius:999px;margin-left:4px;text-shadow:none;align-self:center}
+.price-chip .delta.down{background:#5dc394;color:#062018}
+.price-chip .delta.up{background:#e2574a;color:#fff}
 .badge-suspect{background:linear-gradient(135deg,#e2574a,#b23a3a);border-color:rgba(255,255,255,.35)}
 .badge-value{background:linear-gradient(135deg,var(--accent),#d27b1f);border-color:rgba(255,255,255,.35);color:#1b1206;animation:glow 2.6s ease-in-out infinite}
 @keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(229,154,62,.0)}50%{box-shadow:0 0 18px 2px rgba(229,154,62,.55)}}
