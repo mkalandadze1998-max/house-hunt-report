@@ -166,6 +166,44 @@ h1 em{font-style:italic;font-weight:300;color:var(--accent-2);font-variation-set
 .tabs .active span{background:var(--brand);color:#fff}
 @media(prefers-color-scheme:dark){.tabs .active span{color:#0b100e}}
 
+.controls-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+.layout-toggle button{padding:9px 14px}
+/* ── Map view ──────────────────────────────────────────────── */
+.map-wrap{margin:6px 0 10px}
+.map-wrap[hidden]{display:none}
+.grid[hidden]{display:none}
+#map{height:min(72vh,780px);min-height:420px;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-1);background:var(--surface-2);isolation:isolate}
+.map-note{font-size:12.5px;color:var(--muted);margin:10px 0 0}
+.pin-wrap{background:none;border:0}
+.pin{position:absolute;left:0;top:0;transform:translate(-50%,calc(-100% - 8px));display:inline-block;padding:5px 10px;border-radius:999px;background:var(--forest);color:#fff;font:700 12px/1 var(--body);white-space:nowrap;border:2px solid #fff;box-shadow:0 6px 16px -6px rgba(0,0,0,.55);transition:transform .25s var(--spring),background .2s;cursor:pointer}
+.pin::after{content:"";position:absolute;left:50%;bottom:-7px;width:10px;height:10px;background:inherit;border-right:2px solid #fff;border-bottom:2px solid #fff;transform:translateX(-50%) rotate(45deg);border-radius:0 0 3px 0}
+.pin:hover{transform:translate(-50%,calc(-100% - 8px)) scale(1.08)}
+.pin.fav{background:var(--rose)}
+.pin.value{background:#d27b1f}
+.pin.suspect{background:#7a3b3b}
+.pin.pin-home{background:var(--accent-2);color:#1b1206;font-size:12.5px;padding:6px 12px;z-index:5}
+.leaflet-container{font-family:var(--body)}
+.leaflet-popup-content-wrapper{border-radius:16px;padding:0;overflow:hidden;box-shadow:var(--shadow-3);background:var(--surface);color:var(--ink)}
+.leaflet-popup-content{margin:0;line-height:1.45}
+.leaflet-popup-tip{background:var(--surface)}
+.leaflet-popup-close-button{top:8px!important;right:8px!important;width:26px!important;height:26px!important;border-radius:50%;background:rgba(255,255,255,.85)!important;color:#0f2d24!important;font-size:18px!important;line-height:26px!important;z-index:2}
+.map-card{width:100%;min-width:250px}
+.map-photo{display:block;width:100%;height:140px;padding:0;border:0;background:var(--surface-2);cursor:pointer}
+.map-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.map-body{padding:12px 14px 14px}
+.map-price{font-family:var(--display);font-size:22px;font-weight:600;letter-spacing:-.6px}
+.map-price small{font-family:var(--body);font-size:11.5px;font-weight:500;color:var(--muted)}
+.map-title{font-weight:600;font-size:14px;margin-top:2px}
+.map-title span{font-weight:400;color:var(--muted);font-size:12px}
+.map-addr{font-size:12.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.map-specs{font-size:12.5px;color:var(--ink-2);margin-top:6px}
+.map-actions{display:flex;gap:8px;align-items:center;margin-top:10px;flex-wrap:wrap}
+.map-actions .primary{background:var(--brand);color:#fff;padding:7px 12px;font-size:12.5px;border-radius:8px}
+.map-actions button:not(.primary){background:var(--surface-3);border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:12.5px;color:var(--ink-2)}
+.map-actions button[aria-pressed=true]{background:var(--rose);color:#fff;border-color:transparent}
+.map-actions a{margin-left:auto;font-size:12.5px;font-weight:600;color:var(--brand-2);text-decoration:none}
+@media(prefers-color-scheme:dark){.leaflet-tile{filter:invert(1) hue-rotate(180deg) brightness(.92) contrast(.9) saturate(.7)}.leaflet-control-zoom a{background:var(--surface);color:var(--ink);border-color:var(--line)}.leaflet-control-attribution{background:rgba(19,26,23,.8);color:var(--muted)}.pin,.pin::after{border-color:#0b100e}.map-actions .primary{color:#0b100e}}
+@media(max-width:650px){#map{height:68vh;min-height:360px;border-radius:16px}.layout-toggle{width:auto}.controls-top .tabs:first-child{flex:1}}
 .toolbar{display:flex;flex-wrap:wrap;align-items:flex-end;gap:16px 22px;padding-top:14px}
 .toolbar>label{margin-left:auto}
 .toolbar label{font-size:11px;color:var(--muted);display:flex;flex-direction:column;gap:6px;font-weight:700;letter-spacing:1px;text-transform:uppercase}

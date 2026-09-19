@@ -10,9 +10,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="style.css?v=13">
+<link rel="stylesheet" href="style.css?v=14">
 <script defer src="data/properties.js"></script>
-<script defer src="script.js?v=13"></script>
+<script defer src="script.js?v=14"></script>
 </head>
 <body>
 <div class="progress" aria-hidden="true"></div>
@@ -52,10 +52,16 @@
 
   <section class="workspace" id="listings" aria-label="Rental listings">
     <div class="controls">
-      <div class="tabs" role="group" aria-label="Listing view">
-        <button data-view="all" class="active">All homes <span id="allCount">0</span></button>
-        <button data-view="favorites">Favorites <span id="favCount">0</span></button>
-        <button data-view="hidden">Hidden <span id="hiddenCount">0</span></button>
+      <div class="controls-top">
+        <div class="tabs" role="group" aria-label="Listing view">
+          <button data-view="all" class="active">All homes <span id="allCount">0</span></button>
+          <button data-view="favorites">Favorites <span id="favCount">0</span></button>
+          <button data-view="hidden">Hidden <span id="hiddenCount">0</span></button>
+        </div>
+        <div class="tabs layout-toggle" role="group" aria-label="Layout">
+          <button data-layout="grid" class="active" aria-pressed="true">▦ Grid</button>
+          <button data-layout="map" aria-pressed="false">◎ Map</button>
+        </div>
       </div>
       <div class="toolbar">
         <fieldset class="district-picker">
@@ -108,6 +114,7 @@
     </div>
 
     <div id="grid" class="grid"></div>
+    <div id="mapWrap" class="map-wrap" hidden><div id="map" role="application" aria-label="Map of listings"></div><p id="mapNote" class="map-note"></p></div>
   </section>
 
   <footer>
