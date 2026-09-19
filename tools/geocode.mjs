@@ -27,7 +27,7 @@ try{geo=JSON.parse(fs.readFileSync(geoFile,'utf8'))}catch{}
 if(!geo||typeof geo!=='object')geo={};
 geo.listings??={};
 
-const todo=props.filter(p=>force||!geo.listings[p.id]);
+const todo=props.filter(p=>!(Number.isFinite(p.lat)&&Number.isFinite(p.lng))&&!String(p.id).startsWith('ss-')&&(force||!geo.listings[p.id]));
 console.log(`${props.length} listings, ${todo.length} to geocode → ${path.relative(root,geoFile)}`);
 
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));

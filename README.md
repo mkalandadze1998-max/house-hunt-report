@@ -1,7 +1,8 @@
 # House Hunt · Tbilisi
 
 A static shortlist of apartments for rent in Tbilisi, collected from
-[myhome.ge](https://www.myhome.ge/) and published with GitHub Pages.
+[myhome.ge](https://www.myhome.ge/) (external scraper) and [ss.ge](https://home.ss.ge/)
+(GitHub Action), published with GitHub Pages.
 
 ## Files
 
@@ -10,6 +11,8 @@ A static shortlist of apartments for rent in Tbilisi, collected from
 | `index.html`, `style.css`, `script.js` | The site. Bump `?v=` on the CSS/JS links in `index.html` after editing them so GitHub Pages' cache doesn't serve stale assets. |
 | `data/properties.json` | The current snapshot, written by the scraper. `data/properties.js` is the same data for opening `index.html` from disk (`file://`). |
 | `data/geo.json` | Fallback coordinates. The live copy is on the `geo-data` branch (see below). |
+| `data/ss.json` | ss.ge listings in the same schema (fallback; live copy on `geo-data`). Merged with myhome listings on the page; duplicates by location + size + rooms + floor are collapsed with an "Also on …" link. |
+| `tools/collect-ss.mjs` | Collects long-term rentals from ss.ge for the target districts (search API + detail pages). |
 | `data/history.json` | Fallback price history. The live copy is on the `geo-data` branch. |
 | `tools/history.mjs` | Appends each listing's price to `history.json` when it changes; records first/last seen. |
 | `tools/geocode.mjs` | Fetches `lat`/`lng` for listings that have no coordinates yet. |

@@ -1,0 +1,8 @@
+{
+ "retrieved_at": null,
+ "source": "https://home.ss.ge",
+ "method": "ss_api",
+ "method_label": "ss.ge search API + detail pages",
+ "coverage_note": "Not collected yet — the GitHub Action fills this on the geo-data branch.",
+ "properties": []
+}
