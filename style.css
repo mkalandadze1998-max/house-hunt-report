@@ -404,3 +404,6 @@ table li+li{margin-top:8px}
   .card{opacity:1;transform:none}
   .photo-wrap img{opacity:1;transform:none}
 }
+
+/* Georgian control labels: no uppercase (would render as Mtavruli) */
+.district-picker legend,.refine legend,.toolbar>label{text-transform:none;letter-spacing:.3px;font-size:12px}
