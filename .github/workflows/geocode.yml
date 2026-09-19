@@ -1,10 +1,12 @@
-name: Geocode listings
+name: Geocode listings & track prices
 
 # Runs whenever the scraper publishes a new snapshot (and daily as a safety
-# net). Fetches lat/lng for listings missing from geo.json via the myhome.ge
-# statements API and publishes the result to the `geo-data` branch, which the
-# site reads from raw.githubusercontent.com. Nothing is written to `main`, so
-# the scraper's own pushes never conflict with this workflow.
+# net). Two jobs in one:
+#   1. geocode  — lat/lng for listings missing from geo.json (myhome.ge API)
+#   2. history  — append each listing's price to history.json when it changes
+# Both files are published to the `geo-data` branch, which the site reads from
+# raw.githubusercontent.com. Nothing is written to `main`, so the scraper's own
+# pushes never conflict with this workflow.
 
 on:
   push:
@@ -12,6 +14,7 @@ on:
     paths:
       - data/properties.json
       - tools/geocode.mjs
+      - tools/history.mjs
       - .github/workflows/geocode.yml
   schedule:
     - cron: '30 3 * * *'   # 07:30 Tbilisi, after the nightly scrape
@@ -34,38 +37,43 @@ jobs:
         with:
           node-version: 20
 
-      - name: Seed with the previously published geo.json
+      - name: Seed with the previously published geo.json / history.json
         run: |
           mkdir -p out
           if git fetch --depth=1 origin geo-data 2>/dev/null; then
-            git show origin/geo-data:data/geo.json > out/geo.json 2>/dev/null || true
+            git show origin/geo-data:data/geo.json     > out/geo.json     2>/dev/null || true
+            git show origin/geo-data:data/history.json > out/history.json 2>/dev/null || true
           fi
-          if [ ! -s out/geo.json ] && [ -s data/geo.json ]; then
-            cp data/geo.json out/geo.json
-          fi
-          echo "seed entries: $(node -e 'try{const g=require("./out/geo.json");console.log(Object.keys(g.listings||{}).length)}catch{console.log(0)}')"
+          [ -s out/geo.json ]     || { [ -s data/geo.json ]     && cp data/geo.json     out/geo.json;     } || true
+          [ -s out/history.json ] || { [ -s data/history.json ] && cp data/history.json out/history.json; } || true
+          node -e 'for(const f of ["geo","history"]){try{const g=require("./out/"+f+".json");console.log(f,"seed entries:",Object.keys(g.listings||{}).length)}catch{console.log(f,"seed entries: 0")}}'
 
       - name: Fetch coordinates for new listings
         run: node tools/geocode.mjs --geo out/geo.json
+
+      - name: Record prices from this snapshot
+        run: node tools/history.mjs --history out/history.json
 
       - name: Publish to the geo-data branch
         run: |
           set -e
           git config user.name  "house-hunt-bot"
           git config user.email "house-hunt-bot@users.noreply.github.com"
-          git show origin/geo-data:data/geo.json > prev.json 2>/dev/null || echo '{}' > prev.json
+          git show origin/geo-data:data/geo.json     > prev-geo.json  2>/dev/null || echo '{}' > prev-geo.json
+          git show origin/geo-data:data/history.json > prev-hist.json 2>/dev/null || echo '{}' > prev-hist.json
           if node -e '
-            const a=JSON.parse(require("fs").readFileSync("prev.json","utf8"));
-            const b=JSON.parse(require("fs").readFileSync("out/geo.json","utf8"));
-            process.exit(JSON.stringify(a.listings||{})===JSON.stringify(b.listings||{})?0:1)'; then
+            const r=f=>JSON.parse(require("fs").readFileSync(f,"utf8")).listings||{};
+            const same=(a,b)=>JSON.stringify(r(a))===JSON.stringify(r(b));
+            process.exit(same("prev-geo.json","out/geo.json")&&same("prev-hist.json","out/history.json")?0:1)'; then
             echo "no changes"
           else
             git checkout --orphan geo-data
             git rm -rfq --cached . >/dev/null
             mkdir -p data
             cp out/geo.json data/geo.json
-            git add -f data/geo.json
-            git commit -qm "Update geo.json ($(date -u +%Y-%m-%dT%H:%MZ))"
+            cp out/history.json data/history.json
+            git add -f data/geo.json data/history.json
+            git commit -qm "Update geo/history ($(date -u +%Y-%m-%dT%H:%MZ))"
             git push --force origin geo-data
             echo "published"
           fi
