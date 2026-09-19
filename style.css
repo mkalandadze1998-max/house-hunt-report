@@ -153,7 +153,8 @@ h1 em{font-style:italic;font-weight:300;color:var(--accent-2);font-variation-set
 .tabs .active span{background:var(--brand);color:#fff}
 @media(prefers-color-scheme:dark){.tabs .active span{color:#0b100e}}
 
-.toolbar{display:flex;align-items:flex-end;gap:22px;padding-top:14px}
+.toolbar{display:flex;flex-wrap:wrap;align-items:flex-end;gap:16px 22px;padding-top:14px}
+.toolbar>label{margin-left:auto}
 .toolbar label{font-size:11px;color:var(--muted);display:flex;flex-direction:column;gap:6px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
 select{
   background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);
@@ -164,7 +165,7 @@ select{
   box-shadow:var(--shadow-1);transition:border-color .2s,box-shadow .2s,transform .2s;
 }
 select:hover{border-color:var(--line-2);transform:translateY(-1px)}
-#resultCount{margin:0 0 0 auto;font-size:13px;font-weight:600;color:var(--brand-2);padding:8px 14px;border-radius:999px;background:var(--mint);white-space:nowrap;font-variant-numeric:tabular-nums}
+#resultCount{margin:0;font-size:13px;font-weight:600;color:var(--brand-2);padding:8px 14px;border-radius:999px;background:var(--mint);white-space:nowrap;font-variant-numeric:tabular-nums}
 #resultCount.bump{animation:bump .45s var(--spring)}
 @keyframes bump{0%{transform:scale(1)}40%{transform:scale(1.12)}100%{transform:scale(1)}}
 
@@ -172,21 +173,28 @@ select:hover{border-color:var(--line-2);transform:translateY(-1px)}
 .district-picker legend{font-size:11px;font-weight:700;color:var(--muted);margin-bottom:9px;letter-spacing:1px;text-transform:uppercase}
 .district-picker legend span{font-size:11px;font-weight:400;text-transform:none;letter-spacing:0;margin-left:8px;opacity:.8}
 #districtFilters{display:flex;flex-wrap:wrap;gap:8px}
-#districtFilters label{
-  position:relative;display:inline-flex;flex-direction:row;align-items:center;gap:8px;cursor:pointer;white-space:nowrap;
+#districtFilters label,.chips label{
+  position:relative;display:inline-flex;flex-direction:row;align-items:center;gap:8px;cursor:pointer;white-space:nowrap;text-transform:none;letter-spacing:0;
   padding:8px 14px 8px 12px;border-radius:999px;font-size:13.5px;font-weight:500;color:var(--ink-2);
   background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow-1);user-select:none;
   transition:background .3s var(--ease),color .25s,border-color .25s,transform .3s var(--spring),box-shadow .3s;
 }
-#districtFilters label:hover{transform:translateY(-2px);box-shadow:var(--shadow-2)}
-#districtFilters label:active{transform:scale(.97)}
-#districtFilters label:has(input:checked){background:var(--brand);border-color:var(--brand);color:#fff}
-@media(prefers-color-scheme:dark){#districtFilters label:has(input:checked){color:#0b100e}}
-#districtFilters input{appearance:none;-webkit-appearance:none;margin:0;width:16px;height:16px;border-radius:50%;border:1.5px solid var(--line-2);display:grid;place-items:center;transition:background .25s,border-color .25s}
-#districtFilters input::after{content:"";width:8px;height:8px;border-radius:50%;background:currentColor;transform:scale(0);transition:transform .35s var(--spring)}
-#districtFilters input:checked{border-color:transparent;background:rgba(255,255,255,.25)}
-#districtFilters input:checked::after{transform:scale(1)}
-#districtFilters input:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+#districtFilters label:hover,.chips label:hover{transform:translateY(-2px);box-shadow:var(--shadow-2)}
+#districtFilters label:active,.chips label:active{transform:scale(.97)}
+#districtFilters label:has(input:checked),.chips label:has(input:checked){background:var(--brand);border-color:var(--brand);color:#fff}
+@media(prefers-color-scheme:dark){#districtFilters label:has(input:checked),.chips label:has(input:checked){color:#0b100e}}
+#districtFilters input,.chips input{appearance:none;-webkit-appearance:none;margin:0;width:16px;height:16px;border-radius:50%;border:1.5px solid var(--line-2);display:grid;place-items:center;transition:background .25s,border-color .25s}
+#districtFilters input::after,.chips input::after{content:"";width:8px;height:8px;border-radius:50%;background:currentColor;transform:scale(0);transition:transform .35s var(--spring)}
+#districtFilters input:checked,.chips input:checked{border-color:transparent;background:rgba(255,255,255,.25)}
+#districtFilters input:checked::after,.chips input:checked::after{transform:scale(1)}
+#districtFilters input:focus-visible,.chips input:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.refine{border:0;padding:0;margin:0;flex-basis:100%;display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding-top:6px;border-top:1px dashed var(--line)}
+.refine legend{float:left;width:100%;font-size:11px;font-weight:700;color:var(--muted);letter-spacing:1px;text-transform:uppercase;padding:12px 0 2px}
+.refine legend span{font-weight:600;color:var(--brand-2);text-transform:none;letter-spacing:0;margin-left:8px}
+.refine legend span:empty{display:none}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+#resetFilters{color:var(--rose);font-size:12.5px;font-weight:600;padding:6px 0}
+#resetFilters:hover{text-decoration:underline}
 #selectAllDistricts{padding:8px 0 0;color:var(--brand-2);font-size:12.5px;font-weight:600;background:none;border:0}
 #selectAllDistricts:hover{text-decoration:underline}
 
@@ -378,7 +386,7 @@ table li+li{margin-top:8px}
   select{min-width:0;width:100%;font-size:13px}
   #resultCount{margin:0}
   .district-picker{flex-basis:100%}
-  .toolbar #districtFilters label{flex:none;min-width:0}
+  .toolbar #districtFilters label,.toolbar .chips label{flex:none;min-width:0}
   .grid{grid-template-columns:1fr;gap:18px}
   .compare-bar{width:94%;gap:8px;padding:12px}
   .compare-bar span{font-size:12px;margin-right:auto}

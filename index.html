@@ -10,9 +10,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=4">
 <script defer src="data/properties.js"></script>
-<script defer src="script.js?v=3"></script>
+<script defer src="script.js?v=4"></script>
 </head>
 <body>
 <div class="progress" aria-hidden="true"></div>
@@ -61,6 +61,24 @@
           <legend>Districts <span>Choose one or more</span></legend>
           <div id="districtFilters"></div>
           <button id="selectAllDistricts" type="button" class="quiet">Select all districts</button>
+        </fieldset>
+        <fieldset class="refine" id="refine">
+          <legend>Refine <span id="refineCount"></span></legend>
+          <div class="chips" role="group" aria-label="Rooms">
+            <label><input type="radio" name="rooms" value="any" checked><span>Any rooms</span></label>
+            <label><input type="radio" name="rooms" value="1"><span>1 room</span></label>
+            <label><input type="radio" name="rooms" value="2"><span>2 rooms</span></label>
+            <label><input type="radio" name="rooms" value="3"><span>3+ rooms</span></label>
+          </div>
+          <div class="chips" role="group" aria-label="Must have">
+            <label><input type="checkbox" name="furnished"><span>Furnished</span></label>
+            <label><input type="checkbox" name="ac"><span>A/C listed</span></label>
+            <label><input type="checkbox" name="balcony"><span>Balcony</span></label>
+            <label><input type="checkbox" name="noFirst"><span>Not 1st floor</span></label>
+            <label><input type="checkbox" name="noTop"><span>Not top floor</span></label>
+            <label><input type="checkbox" name="pref"><span>900–1,000 ₾ only</span></label>
+          </div>
+          <button id="resetFilters" type="button" class="quiet" hidden>Reset filters</button>
         </fieldset>
         <label>Sort by<select id="sort">
           <option value="newest">Newest listing date</option>
