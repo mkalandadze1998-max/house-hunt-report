@@ -32,7 +32,8 @@ const distanceKm=p=>{const c=coordsOf(p);return c?haversineKm(HOME,c):null};
 const fmtKm=km=>km===null?null:km<1?`${Math.round(km*1000)} m`:`${km.toFixed(1)} km`;
 const directionsUrl=p=>{const c=coordsOf(p);return c?`https://www.google.com/maps/dir/?api=1&origin=${HOME.lat},${HOME.lng}&destination=${c.lat},${c.lng}&travelmode=driving`:null};
 const mapUrl=p=>{const c=coordsOf(p);return c?`https://www.google.com/maps/search/?api=1&query=${c.lat},${c.lng}`:null};
-async function loadGeo(){if(location.protocol==='file:')return;try{const r=await fetch('data/geo.json?t='+Date.now(),{cache:'no-store'});if(r.ok){const j=await r.json();if(j&&j.listings&&typeof j.listings==='object')geo=j.listings}}catch{}}
+const GEO_REMOTE=(()=>{const m=location.hostname.match(/^([^.]+)\.github\.io$/),repo=location.pathname.split('/')[1];return m&&repo?`https://raw.githubusercontent.com/${m[1]}/${repo}/geo-data/data/geo.json`:null})();
+async function loadGeo(){if(location.protocol==='file:')return;const merged={};for(const url of ['data/geo.json?t='+Date.now(),GEO_REMOTE&&GEO_REMOTE+'?t='+Date.now()].filter(Boolean)){try{const r=await fetch(url,{cache:'no-store'});if(!r.ok)continue;const j=await r.json();if(j&&j.listings&&typeof j.listings==='object')Object.assign(merged,j.listings)}catch{}}if(Object.keys(merged).length)geo=merged}
 let valueCut=Infinity,suspectCut=0;
 const medianOf=a=>{const r=[...a].sort((x,y)=>x-y),m=Math.floor(r.length/2);return r.length?(r.length%2?r[m]:(r[m-1]+r[m])/2):0};
 const isSuspect=p=>suspectCut>0&&p.price/p.size<suspectCut;
