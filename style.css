@@ -225,10 +225,10 @@ select:hover{border-color:var(--line-2);transform:translateY(-1px)}
   background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
   box-shadow:var(--shadow-1);
   opacity:0;transform:translateY(26px);
-  transition:transform .55s var(--ease),box-shadow .55s var(--ease),border-color .3s,opacity .6s var(--ease);
+  transition:transform .45s var(--ease),box-shadow .45s var(--ease),border-color .3s,opacity .4s var(--ease);
   will-change:transform,opacity;
 }
-.card.in{opacity:1;transform:none;transition-delay:calc(var(--i,0) * 60ms),calc(var(--i,0) * 60ms),0s,calc(var(--i,0) * 60ms)}
+.card.in{opacity:1;transform:none;transition-delay:calc(var(--i,0) * 45ms),calc(var(--i,0) * 45ms),0s,calc(var(--i,0) * 45ms)}
 .card.in:hover{transform:translateY(-8px);box-shadow:var(--shadow-2);border-color:var(--line-2);transition-delay:0s}
 .card::before{ /* cursor spotlight */
   content:"";position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0;transition:opacity .4s;
