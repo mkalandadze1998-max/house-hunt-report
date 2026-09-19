@@ -10,9 +10,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="style.css?v=10">
+<link rel="stylesheet" href="style.css?v=11">
 <script defer src="data/properties.js"></script>
-<script defer src="script.js?v=10"></script>
+<script defer src="script.js?v=11"></script>
 </head>
 <body>
 <div class="progress" aria-hidden="true"></div>
@@ -71,6 +71,12 @@
             <label><input type="radio" name="rooms" value="2"><span>2 ოთახი</span></label>
             <label><input type="radio" name="rooms" value="3"><span>3+ ოთახი</span></label>
           </div>
+          <div class="chips" role="group" aria-label="მანძილი ასლანის სახლიდან">
+            <label><input type="radio" name="dist" value="any" checked><span>სახლიდან: ნებისმიერი</span></label>
+            <label><input type="radio" name="dist" value="2"><span>≤ 2 კმ</span></label>
+            <label><input type="radio" name="dist" value="4"><span>≤ 4 კმ</span></label>
+            <label><input type="radio" name="dist" value="7"><span>≤ 7 კმ</span></label>
+          </div>
           <div class="chips" role="group" aria-label="აუცილებელი">
             <label><input type="checkbox" name="furnished"><span>ავეჯით</span></label>
             <label><input type="checkbox" name="ac"><span>კონდიციონერი</span></label>
@@ -85,6 +91,7 @@
           <option value="newest">ახალი განცხადებები ჯერ</option>
           <option value="price-asc">ფასი: ზრდადობით</option>
           <option value="price-desc">ფასი: კლებადობით</option>
+          <option value="distance">ასლანის სახლთან ახლოს</option>
           <option value="ppm-asc">საუკეთესო ფასი (₾ / მ²)</option>
           <option value="reduced">ფასდაკლებული ჯერ</option>
           <option value="size-desc">ფართობი: დიდიდან</option>
