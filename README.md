@@ -14,6 +14,7 @@ A static shortlist of apartments for rent in Tbilisi, collected from
 | `data/ss.json` | ss.ge listings in the same schema (fallback; live copy on `geo-data`). Merged with myhome listings on the page; duplicates by location + size + rooms + floor are collapsed with an "Also on …" link. |
 | `tools/collect-ss.mjs` | Collects long-term rentals from ss.ge for the target districts (search API + detail pages). |
 | `data/history.json` | Fallback price history. The live copy is on the `geo-data` branch. |
+| `tools/alerts.mjs`, `data/alerts.json` | Telegram digest after each run: new listings, price drops/rises, listings gone. Needs `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` repo secrets; `alerts.json` holds exclusions/thresholds. |
 | `tools/history.mjs` | Appends each listing's price to `history.json` when it changes; records first/last seen. |
 | `tools/geocode.mjs` | Fetches `lat`/`lng` for listings that have no coordinates yet. |
 | `.github/workflows/geocode.yml` | Runs the geocoder after every scrape and publishes to the `geo-data` branch. |

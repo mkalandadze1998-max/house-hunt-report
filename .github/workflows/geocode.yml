@@ -1,10 +1,12 @@
-name: Collect ss.ge, geocode & track prices
+name: Collect ss.ge, geocode, track prices & alert
 
 # Runs whenever the scraper publishes a new snapshot (and daily as a safety
 # net). Two jobs in one:
 #   1. collect  — long-term rentals from ss.ge in the target districts (ss.json)
 #   2. geocode  — lat/lng for myhome listings missing from geo.json
 #   3. history  — append each listing's price to history.json when it changes
+#   4. alerts   — Telegram message with new / reduced / gone listings
+#                 (needs TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID repo secrets)
 # All files are published to the `geo-data` branch, which the site reads from
 # raw.githubusercontent.com. Nothing is written to `main`, so the scraper's own
 # pushes never conflict with this workflow.
@@ -17,6 +19,8 @@ on:
       - tools/geocode.mjs
       - tools/history.mjs
       - tools/collect-ss.mjs
+      - tools/alerts.mjs
+      - data/alerts.json
       - .github/workflows/geocode.yml
   schedule:
     - cron: '30 3,15 * * *'   # 07:30 and 19:30 Tbilisi
@@ -49,6 +53,7 @@ jobs:
           fi
           [ -s out/geo.json ]     || { [ -s data/geo.json ]     && cp data/geo.json     out/geo.json;     } || true
           [ -s out/history.json ] || { [ -s data/history.json ] && cp data/history.json out/history.json; } || true
+          cp out/history.json prev-hist.json 2>/dev/null || echo '{}' > prev-hist.json
           node -e 'for(const f of ["geo","history"]){try{const g=require("./out/"+f+".json");console.log(f,"seed entries:",Object.keys(g.listings||{}).length)}catch{console.log(f,"seed entries: 0")}}'
 
       - name: Collect ss.ge listings
@@ -62,6 +67,13 @@ jobs:
         run: |
           if [ -s out/ss.json ]; then node tools/history.mjs --history out/history.json --extra out/ss.json
           else node tools/history.mjs --history out/history.json; fi
+
+      - name: Telegram alerts
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: node tools/alerts.mjs --history out/history.json --prev prev-hist.json --ss out/ss.json --geo out/geo.json
 
       - name: Publish to the geo-data branch
         run: |
