@@ -1,7 +1,0 @@
-{
- "_comment": "Telegram alert settings. excludeSubdistricts: names as they appear on the site (e.g. \"დიდი დიღომი\"). goneMaxDays: only report disappeared listings that were up at most this many days.",
- "excludeSubdistricts": [],
- "maxPriceGel": 1000,
- "minSizeM2": 38,
- "goneMaxDays": 21
-}
