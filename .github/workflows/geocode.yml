@@ -1,0 +1,111 @@
+name: Collect ss.ge, geocode, track prices & alert
+
+# Runs whenever the scraper publishes a new snapshot (and daily as a safety
+# net). Two jobs in one:
+#   1. collect  — long-term rentals from ss.ge in the target districts (ss.json)
+#   2. geocode  — lat/lng for myhome listings missing from geo.json
+#   3. history  — append each listing's price to history.json when it changes
+#   4. alerts   — Telegram message with new / reduced / gone listings
+#                 (needs TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID repo secrets)
+# All files are published to the `geo-data` branch, which the site reads from
+# raw.githubusercontent.com.
+#
+# The myhome.ge scraper (mkalandadze1998-max/house-hunt) publishes only
+# data/properties.json and data/properties.js to `main`; everything else on
+# `main` is ours. Its push triggers this job, which also runs on a schedule
+# and on repository_dispatch (event_type: snapshot-published).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - data/properties.json
+      - tools/geocode.mjs
+      - tools/history.mjs
+      - tools/collect-ss.mjs
+      - tools/alerts.mjs
+      - data/alerts.json
+      - .github/workflows/geocode.yml
+  schedule:
+    - cron: '30 3,15 * * *'   # 07:30 and 19:30 Tbilisi (ss.ge refresh)
+  workflow_dispatch:
+  repository_dispatch:
+    types: [snapshot-published]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: geocode
+  cancel-in-progress: false
+
+jobs:
+  geocode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Seed with the previously published geo.json / history.json
+        run: |
+          mkdir -p out
+          if git fetch --depth=1 origin geo-data 2>/dev/null; then
+            git show origin/geo-data:data/geo.json     > out/geo.json     2>/dev/null || true
+            git show origin/geo-data:data/history.json > out/history.json 2>/dev/null || true
+            git show origin/geo-data:data/ss.json      > out/ss.json      2>/dev/null || true
+          fi
+          [ -s out/geo.json ]     || { [ -s data/geo.json ]     && cp data/geo.json     out/geo.json;     } || true
+          [ -s out/history.json ] || { [ -s data/history.json ] && cp data/history.json out/history.json; } || true
+          cp out/history.json prev-hist.json 2>/dev/null || echo '{}' > prev-hist.json
+          node -e 'for(const f of ["geo","history"]){try{const g=require("./out/"+f+".json");console.log(f,"seed entries:",Object.keys(g.listings||{}).length)}catch{console.log(f,"seed entries: 0")}}'
+
+      - name: Collect ss.ge listings
+        continue-on-error: true
+        run: node tools/collect-ss.mjs --out out/ss.json
+
+      - name: Fetch coordinates for new listings
+        run: node tools/geocode.mjs --geo out/geo.json
+
+      - name: Record prices from this snapshot
+        run: |
+          if [ -s out/ss.json ]; then node tools/history.mjs --history out/history.json --extra out/ss.json
+          else node tools/history.mjs --history out/history.json; fi
+
+      - name: Telegram alerts
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: node tools/alerts.mjs --history out/history.json --prev prev-hist.json --ss out/ss.json --geo out/geo.json
+
+      - name: Publish to the geo-data branch
+        run: |
+          set -e
+          git config user.name  "house-hunt-bot"
+          git config user.email "house-hunt-bot@users.noreply.github.com"
+          git show origin/geo-data:data/geo.json     > prev-geo.json  2>/dev/null || echo '{}' > prev-geo.json
+          git show origin/geo-data:data/history.json > prev-hist.json 2>/dev/null || echo '{}' > prev-hist.json
+          git show origin/geo-data:data/ss.json      > prev-ss.json   2>/dev/null || echo '{}' > prev-ss.json
+          [ -s out/ss.json ] || cp prev-ss.json out/ss.json
+          if node -e '
+            const fs=require("fs");const r=(f,k)=>JSON.parse(fs.readFileSync(f,"utf8"))[k]||{};
+            const same=(a,b,k)=>JSON.stringify(r(a,k))===JSON.stringify(r(b,k));
+            process.exit(same("prev-geo.json","out/geo.json","listings")&&same("prev-hist.json","out/history.json","listings")&&same("prev-ss.json","out/ss.json","properties")?0:1)'; then
+            echo "no changes"
+          else
+            git checkout --orphan geo-data
+            git rm -rfq --cached . >/dev/null
+            mkdir -p data
+            cp out/geo.json data/geo.json
+            cp out/history.json data/history.json
+            cp out/ss.json data/ss.json
+            git add -f data/geo.json data/history.json data/ss.json
+            git commit -qm "Update ss/geo/history ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push --force origin geo-data
+            echo "published"
+          fi

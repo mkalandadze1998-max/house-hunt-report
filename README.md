@@ -1,0 +1,65 @@
+# House Hunt · Tbilisi
+
+A static shortlist of apartments for rent in Tbilisi, collected from
+[myhome.ge](https://www.myhome.ge/) (external scraper) and [ss.ge](https://home.ss.ge/)
+(GitHub Action), published with GitHub Pages.
+
+## Branches
+
+| Branch | Who writes it | What's there |
+|---|---|---|
+| `main` (default, GitHub Pages) | you / Claude, plus the scraper for two files | The site, tools, workflow. The myhome.ge scraper ([house-hunt](https://github.com/mkalandadze1998-max/house-hunt)) publishes **only** `data/properties.json` and `data/properties.js` here. |
+| `geo-data` | the GitHub Action | `ss.json`, `geo.json`, `history.json`. |
+
+The page reads `properties.json` locally (and from `main` over raw.githubusercontent.com when
+previewing elsewhere) and the rest from `geo-data`.
+
+## Files
+
+| Path | What it is |
+|---|---|
+| `index.html`, `style.css`, `script.js` | The site. Bump `?v=` on the CSS/JS links in `index.html` after editing them so GitHub Pages' cache doesn't serve stale assets. |
+| `data/properties.json` | The current snapshot, written by the scraper. `data/properties.js` is the same data for opening `index.html` from disk (`file://`). |
+| `data/geo.json` | Fallback coordinates. The live copy is on the `geo-data` branch (see below). |
+| `data/ss.json` | ss.ge listings in the same schema (fallback; live copy on `geo-data`). Merged with myhome listings on the page; duplicates by location + size + rooms + floor are collapsed with an "Also on …" link. |
+| `tools/collect-ss.mjs` | Collects long-term rentals from ss.ge for the target districts (search API + detail pages). |
+| `data/history.json` | Fallback price history. The live copy is on the `geo-data` branch. |
+| `tools/alerts.mjs`, `data/alerts.json` | Telegram digest after each run: new listings, price drops/rises, listings gone. Needs `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` repo secrets; `alerts.json` holds exclusions/thresholds. |
+| `tools/history.mjs` | Appends each listing's price to `history.json` when it changes; records first/last seen. |
+| `tools/geocode.mjs` | Fetches `lat`/`lng` for listings that have no coordinates yet. |
+| `.github/workflows/geocode.yml` | Runs the geocoder after every scrape and publishes to the `geo-data` branch. |
+
+## Coordinates and distance
+
+Cards show the straight-line distance from home. Coordinates come from the
+myhome.ge statements API (`lat`/`lng` on each statement). The site loads them
+in this order:
+
+1. `lat`/`lng` on the listing itself, if the scraper ever adds them
+2. `https://raw.githubusercontent.com/<owner>/<repo>/geo-data/data/geo.json`
+3. `data/geo.json` in this branch
+
+The GitHub Action keeps (2) current automatically.
+
+## Price history
+
+`history.json` holds `{first_seen, last_seen, prices:[{at, price}]}` per listing.
+The Action appends a price point whenever a snapshot shows a different price,
+so cards can show ↓/↑ markers, days on market and price cuts on every device.
+A browser also remembers prices it has seen itself, as a fallback. To refresh locally:
+
+```
+node tools/geocode.mjs            # only new listings
+node tools/geocode.mjs --force    # everything
+```
+
+## Browser-side state
+
+Favorites, hidden listings, the compare set, filters and locally observed
+price history live in `localStorage`. Use **⇄ Sync** in the header to move
+them to another device (link or JSON backup).
+
+## Recovery
+
+If the page says "Saved data unavailable", make sure the `data` folder sits
+next to `index.html` and that `data/properties.json` is valid JSON.
