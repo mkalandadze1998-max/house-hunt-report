@@ -62,9 +62,9 @@ const floorTxt=p=>p.floor!=null?`${p.floor}${p.total_floors?'/'+p.total_floors:'
 const specs=p=>[`${p.size} m²`,p.rooms?`${p.rooms} ${p.rooms===1?'room':'rooms'}`:null,floorTxt(p)].filter(Boolean).join(' · ');
 const tags=p=>[p.furniture===true?'furnished':null,p.air_conditioning===true?'A/C':null,p.balcony?'balcony':null].filter(Boolean).join(', ');
 // One listing = a small card: price line, place line, tags line
-const card=(p,extra='')=>{const d=fmtKm(dist(p));const t=tags(p);return [
+const card=(p,extra='')=>{const t=tags(p);return [
   `<b>${money(p.price)} ₾</b>${extra} · ${esc(specs(p))}`,
-  `📍 <a href="${esc(p.url)}">${esc(p.neighborhood||p.district||'—')}</a>${d?` · ${d} from home`:''}${who(p)?` · ${who(p)}`:''}`,
+  `📍 <a href="${esc(p.url)}">${esc(p.neighborhood||p.district||'—')}</a>${who(p)?` · ${who(p)}`:''}`,
   `<i>${esc(src(p))}${p.also?` · also on ${p.also.map(a=>esc(src(a))).join(', ')}`:''}${t?` · ${esc(t)}`:''}</i>`
 ].join('\n')};
 const section=(title,items)=>`${title}\n<blockquote expandable>${items.join('\n\n')}</blockquote>`;
