@@ -3,5 +3,6 @@
  "excludeSubdistricts": [],
  "maxPriceGel": 1000,
  "minSizeM2": 38,
- "goneMaxDays": 21
+ "goneMaxDays": 21,
+ "photoLimit": 6
 }

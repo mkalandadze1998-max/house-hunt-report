@@ -20,7 +20,7 @@ const readJson=(f,fallback)=>{try{return JSON.parse(fs.readFileSync(path.resolve
 
 const HOME={lat:41.770639,lng:44.793083};
 const SITE_URL='https://mkalandadze1998-max.github.io/house-hunt-report/';
-const cfg={excludeSubdistricts:[],maxPriceGel:1000,minSizeM2:38,goneMaxDays:21,...readJson(path.join(root,'data','alerts.json'),{})};
+const cfg={excludeSubdistricts:[],maxPriceGel:1000,minSizeM2:38,goneMaxDays:21,photoLimit:6,...readJson(path.join(root,'data','alerts.json'),{})};
 const norm=s=>String(s||'').replace(/[\s.\-–\/]/g,'').toLowerCase();
 const excluded=new Set(cfg.excludeSubdistricts.map(norm));
 
@@ -44,7 +44,7 @@ const src=p=>p.source&&p.source!=='myhome.ge'?p.source:'myhome.ge';
 const key=p=>{const c=coords(p);return c&&p.size?`${c.lat.toFixed(3)},${c.lng.toFixed(3)}|${p.size}|${p.rooms??''}|${p.floor??''}`:null};
 const all=[...(main.properties||[]),...(ss.properties||[])].filter(eligible);
 const seen=new Map();const current=[];
-for(const p of all){const k=key(p);if(k&&seen.has(k)){(seen.get(k).also||(seen.get(k).also=[])).push(p);continue}if(k)seen.set(k,p);current.push(p)}
+for(const p of all){const k=key(p);if(k&&seen.has(k)&&src(seen.get(k))!==src(p)){(seen.get(k).also||(seen.get(k).also=[])).push(p);continue}if(k&&!seen.has(k))seen.set(k,p);current.push(p)}
 const byId=new Map(current.map(p=>[p.id,p]));
 
 const prevL=prev.listings||{},curL=hist.listings||{};
@@ -57,31 +57,54 @@ const snapAt=Date.parse(hist.snapshot_at||new Date().toISOString());
 const gone=Object.entries(prevL).filter(([id,r])=>!byId.has(id)&&!all.some(p=>p.id===id)&&r.last_seen&&Date.parse(r.last_seen)>=snapAt-3*86400000).map(([id,r])=>({id,r,days:Math.round((Date.parse(r.last_seen)-Date.parse(r.first_seen))/86400000)})).filter(g=>Number.isFinite(g.days)&&g.days<=cfg.goneMaxDays);
 
 const byDist=(a,b)=>(dist(a)??99)-(dist(b)??99);
-const line=(p,extra='')=>{const d=fmtKm(dist(p));const who=p.advertiser?(p.advertiser==='Individual'?'Owner':'Agency'):'';return `• <a href="${esc(p.url)}">${money(p.price)} ₾</a> · ${p.size} m² · ${p.rooms??'?'} rm · ${p.floor??'?'}/${p.total_floors??'?'} · ${esc(p.neighborhood)}${d?` · ${d}`:''}${who?` · ${who}`:''}${extra} <i>${esc(src(p))}</i>${p.also?` <i>+${p.also.length} dup</i>`:''}`};
+const who=p=>p.advertiser?(p.advertiser==='Individual'?'🧑 Owner':'🏢 Agency'):'';
+const floorTxt=p=>p.floor!=null?`${p.floor}${p.total_floors?'/'+p.total_floors:''} fl`:null;
+const specs=p=>[`${p.size} m²`,p.rooms?`${p.rooms} ${p.rooms===1?'room':'rooms'}`:null,floorTxt(p)].filter(Boolean).join(' · ');
+const tags=p=>[p.furniture===true?'furnished':null,p.air_conditioning===true?'A/C':null,p.balcony?'balcony':null].filter(Boolean).join(', ');
+// One listing = a small card: price line, place line, tags line
+const card=(p,extra='')=>{const d=fmtKm(dist(p));const t=tags(p);return [
+  `<b>${money(p.price)} ₾</b>${extra} · ${esc(specs(p))}`,
+  `📍 <a href="${esc(p.url)}">${esc(p.neighborhood||p.district||'—')}</a>${d?` · ${d} from home`:''}${who(p)?` · ${who(p)}`:''}`,
+  `<i>${esc(src(p))}${p.also?` · also on ${p.also.map(a=>esc(src(a))).join(', ')}`:''}${t?` · ${esc(t)}`:''}</i>`
+].join('\n')};
+const section=(title,items)=>`${title}\n<blockquote expandable>${items.join('\n\n')}</blockquote>`;
 
 const parts=[];
 const stamp=new Date().toLocaleString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'Asia/Tbilisi'});
-if(fresh.length)parts.push(`✦ <b>${fresh.length} new</b>\n`+fresh.sort(byDist).map(p=>line(p)).join('\n'));
-if(drops.length)parts.push(`↓ <b>${drops.length} price ${drops.length===1?'drop':'drops'}</b>\n`+drops.sort((a,b)=>byDist(a.p,b.p)).map(c=>line(c.p,` · <b>was ${money(c.from)}</b>`)).join('\n'));
-if(rises.length)parts.push(`↑ <b>${rises.length} price ${rises.length===1?'rise':'rises'}</b>\n`+rises.sort((a,b)=>byDist(a.p,b.p)).map(c=>line(c.p,` · was ${money(c.from)}`)).join('\n'));
-if(gone.length)parts.push(`🚫 <b>${gone.length} gone</b>\n`+gone.map(g=>`• ${money(lastPrice(g.r))} ₾ · ${g.r.size??'?'} m² · ${esc(g.r.neighborhood)} · listed ${g.days} d${g.r.source?` <i>${esc(g.r.source)}</i>`:''}`).join('\n'));
+if(fresh.length)parts.push(section(`✦ <b>New</b> · ${fresh.length}`,fresh.sort(byDist).map(p=>card(p))));
+if(drops.length)parts.push(section(`📉 <b>Price drops</b> · ${drops.length}`,drops.sort((a,b)=>byDist(a.p,b.p)).map(c=>card(c.p,` <s>${money(c.from)}</s>`))));
+if(rises.length)parts.push(section(`📈 <b>Price rises</b> · ${rises.length}`,rises.sort((a,b)=>byDist(a.p,b.p)).map(c=>card(c.p,` (was ${money(c.from)})`))));
+if(gone.length)parts.push(section(`🚫 <b>Gone</b> · ${gone.length}`,gone.map(g=>`<b>${money(lastPrice(g.r))} ₾</b> · ${g.r.size??'?'} m² · ${esc(g.r.neighborhood||'')}\n<i>${g.days===0?'listed today':`listed ${g.days} d`}${g.r.source?` · ${esc(g.r.source)}`:''}</i>`)));
 
 if(!parts.length){console.log('alerts: nothing changed, no message');process.exit(0)}
-const header=`🏠 <b>House Hunt</b> · ${stamp} · ${current.length} homes\n\n`;
+const summary=[fresh.length?`✦ ${fresh.length} new`:'',drops.length?`📉 ${drops.length} ${drops.length===1?'drop':'drops'}`:'',rises.length?`📈 ${rises.length} ${rises.length===1?'rise':'rises'}`:'',gone.length?`🚫 ${gone.length} gone`:''].filter(Boolean).join('  ·  ');
+const header=`🏠 <b>House Hunt</b> · ${stamp}\n${current.length} homes on the list  ·  ${summary}\n\n`;
 const footer=`\n\n<a href="${SITE_URL}">Open the shortlist →</a>`;
 let text=header+parts.join('\n\n')+footer;
 
-// split at Telegram's 4096-char limit on paragraph boundaries
-const chunks=[];const LIMIT=4000;
-while(text.length>LIMIT){let cut=text.lastIndexOf('\n',LIMIT);if(cut<LIMIT/2)cut=LIMIT;chunks.push(text.slice(0,cut));text=text.slice(cut).replace(/^\n+/,'')}
+// split at Telegram's 4096-char limit; never inside a blockquote
+const chunks=[];const LIMIT=3900;
+while(text.length>LIMIT){let cut=text.lastIndexOf('</blockquote>',LIMIT);cut=cut>0?cut+'</blockquote>'.length:text.lastIndexOf('\n\n',LIMIT);if(cut<LIMIT/3)cut=LIMIT;chunks.push(text.slice(0,cut));text=text.slice(cut).replace(/^\n+/,'')}
 chunks.push(text);
 
-console.log(`alerts: ${fresh.length} new, ${drops.length} drops, ${rises.length} rises, ${gone.length} gone → ${chunks.length} message(s)`);
-if(dry){console.log(dry&&!process.env.TELEGRAM_BOT_TOKEN?'(TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set — dry run)':'(dry run)');console.log(chunks.join('\n---\n'));process.exit(0)}
+// photo cards for the closest new listings (and every price drop)
+const photoPicks=[...drops.map(c=>({p:c.p,extra:` <s>${money(c.from)}</s>`})),...fresh.sort(byDist).map(p=>({p}))].filter((x,i,a)=>a.findIndex(y=>y.p.id===x.p.id)===i).filter(x=>x.p.main_image&&/^https:\/\//.test(x.p.main_image)).slice(0,cfg.photoLimit);
 
+console.log(`alerts: ${fresh.length} new, ${drops.length} drops, ${rises.length} rises, ${gone.length} gone → ${chunks.length} message(s), ${photoPicks.length} photo card(s)`);
+if(dry){console.log(!process.env.TELEGRAM_BOT_TOKEN?'(TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set — dry run)':'(dry run)');console.log(chunks.join('\n---\n'));for(const x of photoPicks)console.log('PHOTO',x.p.main_image,'\n'+card(x.p,x.extra||''));process.exit(0)}
+
+const tg=async(method,body)=>{const r=await fetch(`https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/${method}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id:process.env.TELEGRAM_CHAT_ID,...body})});const j=await r.json().catch(()=>({}));if(!r.ok||!j.ok)throw new Error(`${method} ${r.status} ${JSON.stringify(j).slice(0,200)}`);return j};
 for(const chunk of chunks){
-  const r=await fetch(`https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id:process.env.TELEGRAM_CHAT_ID,text:chunk,parse_mode:'HTML',disable_web_page_preview:true})});
-  const j=await r.json().catch(()=>({}));
-  if(!r.ok||!j.ok){console.error('telegram error:',r.status,JSON.stringify(j).slice(0,300));process.exitCode=1;break}
+  try{await tg('sendMessage',{text:chunk,parse_mode:'HTML',disable_web_page_preview:true})}
+  catch(e){console.error('telegram error:',e.message);process.exitCode=1;break}
   await new Promise(res=>setTimeout(res,400));
+}
+for(const x of photoPicks){
+  const caption=card(x.p,x.extra||'');
+  try{await tg('sendPhoto',{photo:x.p.main_image,caption,parse_mode:'HTML'})}
+  catch(e){
+    try{await tg('sendMessage',{text:`<a href="${esc(x.p.main_image)}">&#8203;</a>${caption}`,parse_mode:'HTML',link_preview_options:{is_disabled:false,url:x.p.main_image,prefer_large_media:true,show_above_text:true}})}
+    catch(e2){console.warn('photo skipped:',x.p.id,e.message,'|',e2.message)}
+  }
+  await new Promise(res=>setTimeout(res,600));
 }
