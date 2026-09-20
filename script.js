@@ -35,10 +35,15 @@ const distanceKm=p=>{const c=coordsOf(p);return c?haversineKm(HOME,c):null};
 const fmtKm=km=>km===null?null:km<1?`${Math.round(km*1000)} m`:`${km.toFixed(1)} km`;
 const directionsUrl=p=>{const c=coordsOf(p);return c?`https://www.google.com/maps/dir/?api=1&origin=${HOME.lat},${HOME.lng}&destination=${c.lat},${c.lng}&travelmode=driving`:null};
 const mapUrl=p=>{const c=coordsOf(p);return c?`https://www.google.com/maps/search/?api=1&query=${c.lat},${c.lng}`:null};
+/* Live data branch: derived from the github.io host when served there,
+   otherwise the default repo (so localhost / Live Server sees it too). */
+const DEFAULT_REPO='mkalandadze1998-max/house-hunt-report';
+const DATA_REPO=(()=>{const m=location.hostname.match(/^([^.]+)\.github\.io$/),repo=location.pathname.split('/')[1];return m&&repo?`${m[1]}/${repo}`:DEFAULT_REPO})();
+const liveUrl=file=>`https://raw.githubusercontent.com/${DATA_REPO}/geo-data/data/${file}`;
 let serverHistory={};
-const HISTORY_REMOTE=(()=>{const m=location.hostname.match(/^([^.]+)\.github\.io$/),repo=location.pathname.split('/')[1];return m&&repo?`https://raw.githubusercontent.com/${m[1]}/${repo}/geo-data/data/history.json`:null})();
+const HISTORY_REMOTE=liveUrl('history.json');
 async function loadHistory(){if(location.protocol==='file:')return;const merged={};for(const url of ['data/history.json?t='+Date.now(),HISTORY_REMOTE&&HISTORY_REMOTE+'?t='+Date.now()].filter(Boolean)){try{const r=await fetch(url,{cache:'no-store'});if(!r.ok)continue;const j=await r.json();if(j&&j.listings&&typeof j.listings==='object')Object.assign(merged,j.listings)}catch{}}if(Object.keys(merged).length)serverHistory=merged}
-const GEO_REMOTE=(()=>{const m=location.hostname.match(/^([^.]+)\.github\.io$/),repo=location.pathname.split('/')[1];return m&&repo?`https://raw.githubusercontent.com/${m[1]}/${repo}/geo-data/data/geo.json`:null})();
+const GEO_REMOTE=liveUrl('geo.json');
 async function loadGeo(){if(location.protocol==='file:')return;const merged={};for(const url of ['data/geo.json?t='+Date.now(),GEO_REMOTE&&GEO_REMOTE+'?t='+Date.now()].filter(Boolean)){try{const r=await fetch(url,{cache:'no-store'});if(!r.ok)continue;const j=await r.json();if(j&&j.listings&&typeof j.listings==='object')Object.assign(merged,j.listings)}catch{}}if(Object.keys(merged).length)geo=merged}
 let valueCut=Infinity,suspectCut=0;
 const medianOf=a=>{const r=[...a].sort((x,y)=>x-y),m=Math.floor(r.length/2);return r.length?(r.length%2?r[m]:(r[m-1]+r[m])/2):0};
@@ -71,7 +76,7 @@ function configureDistricts(){const options=data.requirements.districts;const ke
 const eligible=list=>list.filter(p=>Number.isFinite(p.price)&&p.price>0&&p.price<=1000&&p.currency==='GEL'&&p.size>=38&&p.transaction==='rent_monthly'&&p.property_type==='apartment'&&p.screening==='include');
 const signature=list=>list.map(p=>`${p.id}:${p.price}:${p.size}`).sort().join('|');
 let ssData=null,pendingData=null;
-const SS_REMOTE=(()=>{const m=location.hostname.match(/^([^.]+)\.github\.io$/),repo=location.pathname.split('/')[1];return m&&repo?`https://raw.githubusercontent.com/${m[1]}/${repo}/geo-data/data/ss.json`:null})();
+const SS_REMOTE=liveUrl('ss.json');
 async function fetchSs(){if(location.protocol==='file:')return null;let best=null;for(const url of ['data/ss.json?t='+Date.now(),SS_REMOTE&&SS_REMOTE+'?t='+Date.now()].filter(Boolean)){try{const r=await fetch(url,{cache:'no-store'});if(!r.ok)continue;const j=await r.json();if(j&&Array.isArray(j.properties)&&(!best||(Date.parse(j.retrieved_at)||0)>(Date.parse(best.retrieved_at)||0)))best=j}catch{}}return best}
 const sourceOf=p=>p.source&&p.source!=='myhome.ge'?p.source:'myhome.ge';
 function dupKey(p){const c=coordsOf(p);if(!c||!p.size)return null;return `${c.lat.toFixed(3)},${c.lng.toFixed(3)}|${p.size}|${p.rooms??''}|${p.floor??''}`}
