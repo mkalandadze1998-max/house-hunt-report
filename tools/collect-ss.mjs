@@ -37,10 +37,12 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const nowIso=new Date().toISOString();
 
 const reqFile=path.join(root,'data','properties.json');
-let wanted=['ვაკე-საბურთალო','დიდუბე','სანზონა','მესამე მასივი'];
-try{const r=JSON.parse(fs.readFileSync(reqFile,'utf8')).requirements?.districts;if(Array.isArray(r)&&r.length)wanted=r}catch{}
+let wanted=['ვაკე-საბურთალო','დიდუბე','სანზონა'];
+let excluded=["მესამე მასივი","ვეძისი","სოფ. დიღომი"];
+try{const req=JSON.parse(fs.readFileSync(reqFile,'utf8')).requirements;const r=req?.districts;if(Array.isArray(r)&&r.length)wanted=r;if(Array.isArray(req?.excluded_locations))excluded=[...new Set([...excluded,...req.excluded_locations])]}catch{}
 const norm=s=>String(s||'').replace(/[\s.\-–]/g,'').toLowerCase();
 const wantedNorm=new Set(wanted.map(norm));
+const excludedNorm=new Set(excluded.map(norm));
 
 let previous={};
 try{const j=JSON.parse(fs.readFileSync(outFile,'utf8'));for(const p of j.properties||[])previous[p.id]=p}catch{}
@@ -67,7 +69,7 @@ for(const d of city?.districts||[]){
   const dWanted=wantedNorm.has(norm(d.districtTitle));
   for(const s of d.subDistricts||[]){
     subNames[s.subDistrictId]=s.subDistrictTitle;
-    if(dWanted||wantedNorm.has(norm(s.subDistrictTitle)))subIds.push(s.subDistrictId);
+    if(!excludedNorm.has(norm(s.subDistrictTitle))&&!excludedNorm.has(norm(d.districtTitle))&&(dWanted||wantedNorm.has(norm(s.subDistrictTitle))))subIds.push(s.subDistrictId);
   }
 }
 console.log(`districts wanted: ${wanted.join(', ')} → ${subIds.length} sub-districts`);
@@ -163,6 +165,7 @@ for(const [id,li] of candidates){
     const p=mapListing(ad,li);
     if(!(p.price>0&&p.price<=MAX_PRICE_GEL&&p.size>=MIN_AREA)){gone++;continue}
     if(!p.district_groups.some(g=>wantedNorm.has(norm(g)))){gone++;continue}
+    if([p.district,p.neighborhood,...p.district_groups].some(g=>excludedNorm.has(norm(g)))){gone++;continue}
     out.push(p);ok++;
   }catch(e){fail++;console.warn(`  ${id}: ${e.message}`)}
   await sleep(300);
@@ -170,7 +173,7 @@ for(const [id,li] of candidates){
 out.sort((a,b)=>Date.parse(b.listing_date)-Date.parse(a.listing_date));
 const result={retrieved_at:nowIso,source:SITE,method:'ss_api',method_label:'ss.ge search API + detail pages',
   coverage_note:`Newest ${MAX_PAGES} search pages (${PAGE_SIZE} each) in the target sub-districts, up to ${MAX_AGE_DAYS} days back; retained listings rechecked. Not exhaustive.`,
-  requirements:{max_price_gel:MAX_PRICE_GEL,min_size_m2:MIN_AREA,districts:wanted},properties:out};
+  requirements:{max_price_gel:MAX_PRICE_GEL,min_size_m2:MIN_AREA,districts:wanted,excluded_locations:excluded},properties:out};
 fs.mkdirSync(path.dirname(outFile),{recursive:true});
 fs.writeFileSync(outFile,JSON.stringify(result,null,1));
 console.log(`done: ${ok} listings kept, ${gone} dropped/inactive, ${fail} failed → ${path.relative(root,outFile)}`);
