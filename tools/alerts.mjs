@@ -22,7 +22,7 @@ const HOME={lat:41.770639,lng:44.793083};
 const SITE_URL='https://mkalandadze1998-max.github.io/house-hunt-report/';
 const cfg={excludeSubdistricts:[],maxPriceGel:1000,minSizeM2:38,goneMaxDays:21,photoLimit:6,...readJson(path.join(root,'data','alerts.json'),{})};
 const norm=s=>String(s||'').replace(/[\s.\-–\/]/g,'').toLowerCase();
-const excluded=new Set(cfg.excludeSubdistricts.map(norm));
+const excluded=new Set([...cfg.excludeSubdistricts,...(readJson(path.join(root,'data','properties.json'),{}).requirements?.excluded_locations||[])].map(norm));
 
 const main=readJson(path.join(root,'data','properties.json'),{properties:[]});
 const ss=argValue('--ss')?readJson(argValue('--ss'),{properties:[]}):{properties:[]};
@@ -31,7 +31,7 @@ const prev=readJson(argValue('--prev','/dev/null'),{listings:{}});
 const geo=readJson(argValue('--geo','data/geo.json'),{listings:{}}).listings||{};
 const dry=args.includes('--dry')||!process.env.TELEGRAM_BOT_TOKEN||!process.env.TELEGRAM_CHAT_ID;
 
-const eligible=p=>Number.isFinite(p.price)&&p.price>0&&p.price<=cfg.maxPriceGel&&p.currency==='GEL'&&p.size>=cfg.minSizeM2&&p.transaction==='rent_monthly'&&p.property_type==='apartment'&&p.screening==='include'&&!excluded.has(norm(p.neighborhood));
+const eligible=p=>Number.isFinite(p.price)&&p.price>0&&p.price<=cfg.maxPriceGel&&p.currency==='GEL'&&p.size>=cfg.minSizeM2&&p.transaction==='rent_monthly'&&p.property_type==='apartment'&&p.screening==='include'&&![p.district,p.neighborhood,...(p.district_groups||[])].some(v=>excluded.has(norm(v)));
 const coords=p=>Number.isFinite(p.lat)&&Number.isFinite(p.lng)?{lat:p.lat,lng:p.lng}:geo[p.id]&&Number.isFinite(geo[p.id].lat)?geo[p.id]:null;
 const km=(a,b)=>{const R=6371,r=x=>x*Math.PI/180,dl=r(b.lat-a.lat),dn=r(b.lng-a.lng),h=Math.sin(dl/2)**2+Math.cos(r(a.lat))*Math.cos(r(b.lat))*Math.sin(dn/2)**2;return 2*R*Math.asin(Math.sqrt(h))};
 const dist=p=>{const c=coords(p);return c?km(HOME,c):null};
