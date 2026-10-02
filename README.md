@@ -55,16 +55,17 @@ node tools/geocode.mjs --force    # everything
 
 ## Login and shared state (Supabase)
 
-The site is gated by a login screen: pick a name (Aslani / Mariami) and enter
-the shared password. Under the hood each name is a Supabase Auth user
-(`<name>@house-hunt.local`); sign-ups are disabled in the Supabase dashboard.
+The site is gated by a password screen. The password signs in to the default
+Supabase Auth user (`mariami@house-hunt.local`; sign-ups are disabled in the
+dashboard). After signing in, the header switch sets who is using the site
+(Mariami by default, or Aslani); the choice is remembered per device and
+stamped on every change.
 
 Favorites, hidden listings, the compare set and per-listing notes live in the
 `public.shortlist` table and sync live between devices (Supabase Realtime).
 Row-level security allows access only to signed-in users. `cloud.js` holds the
 project URL and the *publishable* key (safe to embed). Filters and the
-browser-side price cache stay in `localStorage`; **⇄ Sync** still exports/imports
-them.
+browser-side price cache stay in `localStorage`.
 
 Note: the listing data itself is in this public repository; the login protects
 the interface and the shared shortlist, not the raw JSON.

@@ -79,16 +79,7 @@ body.scrolled header{height:62px;border-bottom-color:var(--line);box-shadow:var(
 .sync-btn{margin-left:auto;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600;color:var(--brand-2);box-shadow:var(--shadow-1);transition:transform .3s var(--spring),background .25s,border-color .25s}
 .sync-btn:hover{transform:translateY(-1px);background:var(--mint);border-color:color-mix(in oklab,var(--brand-3) 40%,transparent)}
 .sync-btn+.local{margin-left:16px}
-.sync-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0}
-.sync-grid section{padding:18px;border-radius:16px;background:var(--surface-2);border:1px solid var(--line)}
-.sync-grid h3{margin:0 0 4px!important;font-size:19px!important}
-.sync-grid p{margin:0 0 12px;font-size:13.5px;color:var(--muted)}
-.sync-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.sync-row input{flex:1;min-width:0;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--muted);font-size:12.5px;font-family:ui-monospace,Menlo,Consolas,monospace}
-.sync-row .primary{background:var(--brand);color:#fff;border:0;cursor:pointer}
-@media(prefers-color-scheme:dark){.sync-row .primary{color:#0b100e}}
-.file-btn{display:inline-block}
-@media(max-width:650px){.sync-grid{grid-template-columns:1fr}.sync-btn{margin-left:auto;padding:6px 11px;font-size:12px}}
+@media(max-width:650px){.sync-btn{padding:6px 11px;font-size:12px}}
 .local{margin-left:auto;font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px}
 .local::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--brand-3);animation:pulse 2.4s ease-out infinite}
 @keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in oklab,var(--brand-3) 60%,transparent)}70%{box-shadow:0 0 0 10px transparent}100%{box-shadow:0 0 0 0 transparent}}
@@ -540,12 +531,6 @@ body.locked{overflow:hidden}
 .gate-mark{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;font-size:30px;color:#fff;background:linear-gradient(135deg,var(--brand-3),#1c493c);box-shadow:0 10px 24px -10px rgba(0,0,0,.6);margin-bottom:18px}
 .gate-eyebrow{margin:0 0 6px;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--brand-3);font-weight:700}
 .gate-card h1{font-family:var(--display);font-weight:400;font-size:34px;letter-spacing:-1.2px;margin:0 0 20px;line-height:1.05;color:#fff}
-.gate-people{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
-.gate-people button{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:#eef6f1;font-weight:600;font-size:15px;transition:background .25s,border-color .25s,transform .3s var(--spring)}
-.gate-people button:hover{background:rgba(255,255,255,.12);transform:translateY(-1px)}
-.gate-people button.on{background:var(--accent-2);border-color:transparent;color:#1b1206}
-.gate-people .avatar{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-size:16px;background:rgba(255,255,255,.18)}
-.gate-people button.on .avatar{background:rgba(0,0,0,.15)}
 .gate-field{display:block;margin-bottom:12px}
 .gate-field span{display:block;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:rgba(238,246,241,.65);font-weight:700;margin-bottom:6px}
 .gate-field input{width:100%;padding:13px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.25);color:#fff;font-size:16px;letter-spacing:2px}
@@ -556,10 +541,15 @@ body.locked{overflow:hidden}
 .gate-submit:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 10px 24px -10px rgba(0,0,0,.6)}
 .gate-submit:disabled{opacity:.6;cursor:default}
 .gate-hint{margin:16px 0 0;font-size:12.5px;color:rgba(238,246,241,.6);text-align:center}
-.whoami{margin-left:auto;display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--ink-2)}
-.whoami::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--brand-3)}
-.whoami+.sync-btn{margin-left:10px}
-.whoami[hidden]{display:none}
+.who-switch{margin-left:auto;display:inline-flex;gap:3px;padding:3px;border-radius:999px;background:var(--surface-3);border:1px solid var(--line)}
+.who-switch[hidden]{display:none}
+.who-switch button{display:inline-flex;align-items:center;gap:7px;padding:5px 12px 5px 6px;border:0;border-radius:999px;background:none;color:var(--muted);font-size:13px;font-weight:600;transition:background .3s var(--ease),color .25s,transform .3s var(--spring)}
+.who-switch button:hover{color:var(--ink)}
+.who-switch button.on{background:var(--brand);color:#fff;box-shadow:var(--shadow-1)}
+@media(prefers-color-scheme:dark){.who-switch button.on{color:#0b100e}}
+.who-switch .avatar{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-size:12px;background:var(--line)}
+.who-switch button.on .avatar{background:rgba(255,255,255,.25)}
+.who-switch+.sync-btn{margin-left:10px}
 .sync-btn[hidden]{display:none}
 /* ── Shared notes ───────────────────────────────────────────── */
 .note-snip{margin:10px 0 0;padding:8px 10px;border-radius:10px;background:color-mix(in oklab,var(--accent-2) 22%,transparent);border:1px solid color-mix(in oklab,var(--accent) 30%,transparent);font-size:12.5px;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -568,4 +558,4 @@ body.locked{overflow:hidden}
 .note-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:8px;font-size:12.5px;color:var(--muted)}
 .note-foot .primary{background:var(--brand);color:#fff;border:0;padding:8px 14px;border-radius:9px;font-size:13px}
 @media(prefers-color-scheme:dark){.note-foot .primary{color:#0b100e}}
-@media(max-width:650px){.gate-card{padding:26px 20px 20px}.gate-card h1{font-size:28px}.whoami{display:none}}
+@media(max-width:650px){.gate-card{padding:26px 20px 20px}.gate-card h1{font-size:28px}.who-switch .avatar{display:none}.who-switch button{padding:5px 10px}}

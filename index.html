@@ -10,11 +10,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="style.css?v=20">
+<link rel="stylesheet" href="style.css?v=21">
 <script defer src="data/properties.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
-<script defer src="cloud.js?v=20"></script>
-<script defer src="script.js?v=20"></script>
+<script defer src="cloud.js?v=21"></script>
+<script defer src="script.js?v=21"></script>
 </head>
 <body class="locked">
 <div class="progress" aria-hidden="true"></div>
@@ -24,15 +24,11 @@
   <form id="gateForm" class="gate-card" autocomplete="off">
     <div class="gate-mark">⌂</div>
     <p class="gate-eyebrow">House Hunt · Tbilisi</p>
-    <h1 id="gateTitle">Who's looking today?</h1>
-    <div class="gate-people" role="group" aria-label="Pick your name">
-      <button type="button" data-who="aslani" aria-pressed="false"><span class="avatar">A</span>Aslani</button>
-      <button type="button" data-who="mariami" aria-pressed="false"><span class="avatar">M</span>Mariami</button>
-    </div>
-    <label class="gate-field"><span>Shared password</span><input id="gatePassword" type="password" autocomplete="current-password" required></label>
+    <h1 id="gateTitle">Welcome back.</h1>
+    <label class="gate-field"><span>Password</span><input id="gatePassword" type="password" autocomplete="current-password" required autofocus></label>
     <p id="gateError" class="gate-error" hidden></p>
     <button id="gateSubmit" type="submit" class="gate-submit">Enter</button>
-    <p class="gate-hint">Favorites, hidden homes and notes are shared between you two and sync live.</p>
+    <p class="gate-hint">Pick who you are after signing in — favorites, hidden homes and notes are shared and sync live.</p>
   </form>
 </div>
 
@@ -42,10 +38,11 @@
     <a href="#listings">Listings</a>
     <a href="https://www.myhome.ge/" target="_blank" rel="noopener noreferrer">myhome.ge ↗</a>
   </nav>
-  <span id="whoami" class="whoami" hidden></span>
+  <div id="whoSwitch" class="who-switch" role="group" aria-label="I am" title="Who is using the site right now" hidden>
+    <button type="button" data-who="mariami" aria-pressed="false"><span class="avatar">M</span>Mariami</button>
+    <button type="button" data-who="aslani" aria-pressed="false"><span class="avatar">A</span>Aslani</button>
+  </div>
   <button id="signOut" class="sync-btn" type="button" title="Sign out on this device" hidden>Sign out</button>
-  <button id="openSync" class="sync-btn" type="button" title="Backup / move browser settings" hidden>⇄ Sync</button>
-  <span class="local">Shared shortlist</span>
 </header>
 
 <main>
