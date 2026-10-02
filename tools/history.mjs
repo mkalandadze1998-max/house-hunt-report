@@ -40,6 +40,8 @@ for(const p of props){
   else{const last=rec.prices[rec.prices.length-1];if(last.price!==p.price&&last.at!==at){rec.prices.push({at,price:p.price});changed++}}
   if(!rec.last_seen||rec.last_seen<at)rec.last_seen=at;
   rec.size=p.size;rec.neighborhood=p.neighborhood;if(p.source)rec.source=p.source;
+  // enough to recognise the same flat when it is re-posted under a new id
+  if(Number.isFinite(p.lat)&&Number.isFinite(p.lng)){rec.lat=p.lat;rec.lng=p.lng}if(p.rooms!=null)rec.rooms=p.rooms;if(p.floor!=null)rec.floor=p.floor;if(p.address)rec.address=p.address;
   seen++;
 }
 const gone=Object.entries(hist.listings).filter(([,r])=>r.last_seen<snapAt).length;

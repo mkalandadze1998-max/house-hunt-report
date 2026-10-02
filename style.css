@@ -559,3 +559,4 @@ body.locked{overflow:hidden}
 .note-foot .primary{background:var(--brand);color:#fff;border:0;padding:8px 14px;border-radius:9px;font-size:13px}
 @media(prefers-color-scheme:dark){.note-foot .primary{color:#0b100e}}
 @media(max-width:650px){.gate-card{padding:26px 20px 20px}.gate-card h1{font-size:28px}.who-switch .avatar{display:none}.who-switch button{padding:5px 10px}}
+.also-on.reposts{color:var(--ink-2);font-weight:600}
