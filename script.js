@@ -76,7 +76,7 @@ function restoreFilters(){if(!storedFilters)return;if(Array.isArray(storedFilter
 restoreFilters();
 function configureDistricts(){const options=data.requirements.districts;const key=JSON.stringify(options);if(key===districtOptionsKey)return;const previous=new Set([...document.querySelectorAll('#districtFilters input:checked')].map(input=>input.value));$('#districtFilters').innerHTML=options.map(d=>`<label><input type="checkbox" value="${esc(d)}" ${(districtOptionsKey===null?(Array.isArray(storedFilters?.districts)&&storedFilters.districts.length?storedFilters.districts.includes(d):true):previous.has(d))?'checked':''}><span>${esc(d)}</span></label>`).join('');districtOptionsKey=key;$('#briefDistricts').innerHTML=options.map(d=>`<li>${esc(d)}</li>`).join('');}
 const excludedLocationKey=s=>String(s||'').replace(/[\s.\-–]/g,'').toLowerCase();
-const excludedLocations=new Set(["მესამე მასივი","ვეძისი","სოფ. დიღომი"].map(excludedLocationKey));
+const excludedLocations=new Set(["მესამე მასივი","ვეძისი","სოფ. დიღომი","ნუცუბიძის ფერდობი","ვაშლიჯვარი","ვაკე","დიღომი 1-9"].map(excludedLocationKey));
 const eligible=list=>list.filter(p=>![p.district,p.neighborhood,...(p.district_groups||[])].some(v=>excludedLocations.has(excludedLocationKey(v)))&&Number.isFinite(p.price)&&p.price>0&&p.price<=1000&&p.currency==='GEL'&&p.size>=38&&p.transaction==='rent_monthly'&&p.property_type==='apartment'&&p.screening==='include');
 const signature=list=>list.map(p=>`${p.id}:${p.price}:${p.size}`).sort().join('|');
 let ssData=null,pendingData=null;

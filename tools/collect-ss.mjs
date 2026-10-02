@@ -37,10 +37,19 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const nowIso=new Date().toISOString();
 
 const reqFile=path.join(root,'data','properties.json');
-let wanted=['ვაკე-საბურთალო','დიდუბე','სანზონა'];
-let excluded=["მესამე მასივი","ვეძისი","სოფ. დიღომი"];
+let wanted=["ვაკე-საბურთალო","დიდუბე","სანზონა","დიღმის მე-3 მასივი"];
+let excluded=["მესამე მასივი","ვეძისი","სოფ. დიღომი","ნუცუბიძის ფერდობი","ვაშლიჯვარი","ვაკე","დიღომი 1-9"];
 try{const req=JSON.parse(fs.readFileSync(reqFile,'utf8')).requirements;const r=req?.districts;if(Array.isArray(r)&&r.length)wanted=r;if(Array.isArray(req?.excluded_locations))excluded=[...new Set([...excluded,...req.excluded_locations])]}catch{}
 const norm=s=>String(s||'').replace(/[\s.\-–]/g,'').toLowerCase();
+
+function isDighomiThird(neighborhood, address = '', description = '') {
+  const area = String(neighborhood ?? '');
+  if (area === 'დიღმის მე-3 მასივი') return true;
+  if (area !== 'დიღმის მასივი') return false;
+  const text = String(address ?? '') + ' ' + String(description ?? '');
+  return /(?:მე[-\s]*3|მესამე|(?<![\dA-Z])III(?![A-Z])|(?<!\d)3)[-\s]*(?:ე[-\s]*)?(?:კვარტალ|მასივ)/iu.test(text);
+}
+
 const wantedNorm=new Set(wanted.map(norm));
 const excludedNorm=new Set(excluded.map(norm));
 
@@ -69,7 +78,7 @@ for(const d of city?.districts||[]){
   const dWanted=wantedNorm.has(norm(d.districtTitle));
   for(const s of d.subDistricts||[]){
     subNames[s.subDistrictId]=s.subDistrictTitle;
-    if(!excludedNorm.has(norm(s.subDistrictTitle))&&!excludedNorm.has(norm(d.districtTitle))&&(dWanted||wantedNorm.has(norm(s.subDistrictTitle))))subIds.push(s.subDistrictId);
+    if(!excludedNorm.has(norm(s.subDistrictTitle))&&!excludedNorm.has(norm(d.districtTitle))&&(dWanted||wantedNorm.has(norm(s.subDistrictTitle))||(s.subDistrictTitle==='დიღმის მასივი'&&wanted.includes('დიღმის მე-3 მასივი'))))subIds.push(s.subDistrictId);
   }
 }
 console.log(`districts wanted: ${wanted.join(', ')} → ${subIds.length} sub-districts`);
@@ -163,6 +172,7 @@ for(const [id,li] of candidates){
     const ad=nextData(await getHtml(url)).props.pageProps.applicationData;
     if(!ad||ad.isInactiveApplication||(ad.status&&ad.status!=='Active')){gone++;continue}
     const p=mapListing(ad,li);
+    if(isDighomiThird(p.neighborhood,p.address,p.description))p.district_groups.push('დიღმის მე-3 მასივი');
     if(!(p.price>0&&p.price<=MAX_PRICE_GEL&&p.size>=MIN_AREA)){gone++;continue}
     if(!p.district_groups.some(g=>wantedNorm.has(norm(g)))){gone++;continue}
     if([p.district,p.neighborhood,...p.district_groups].some(g=>excludedNorm.has(norm(g)))){gone++;continue}
