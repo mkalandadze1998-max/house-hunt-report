@@ -44,9 +44,11 @@ for(const p of props){
   if(Number.isFinite(p.lat)&&Number.isFinite(p.lng)){rec.lat=p.lat;rec.lng=p.lng}if(p.rooms!=null)rec.rooms=p.rooms;if(p.floor!=null)rec.floor=p.floor;if(p.address)rec.address=p.address;
   seen++;
 }
+// forget listings not seen for 90 days so the file (fetched by every visitor) stays small
+const KEEP_MS=90*86400000;let pruned=0;for(const [id,r] of Object.entries(hist.listings)){const ls=Date.parse(r.last_seen||r.first_seen||0);if(Number.isFinite(ls)&&Date.parse(at)-ls>KEEP_MS){delete hist.listings[id];pruned++}}
 const gone=Object.entries(hist.listings).filter(([,r])=>r.last_seen<snapAt).length;
 hist.generated_at=new Date().toISOString();
 hist.snapshot_at=at;
 fs.mkdirSync(path.dirname(histFile),{recursive:true});
 fs.writeFileSync(histFile,JSON.stringify(hist,null,1));
-console.log(`snapshot ${at}: ${seen} listings, ${added} new, ${changed} price changes, ${gone} no longer listed → ${path.relative(root,histFile)}`);
+console.log(`snapshot ${at}: ${seen} listings, ${added} new, ${changed} price changes, ${gone} no longer listed, ${pruned} pruned → ${path.relative(root,histFile)}`);
