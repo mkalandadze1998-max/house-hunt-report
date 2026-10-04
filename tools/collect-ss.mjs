@@ -112,6 +112,9 @@ for(const id of Object.keys(previous))if(!candidates.has(id.replace(/^ss-/,'')))
 
 // 3. details
 const yes=v=>v===true?true:v===false?false:null;
+// ss.ge's orderDate is Tbilisi wall-clock time but carries a 'Z' (createDate on the same ad is
+// '+04:00' and ~20 s earlier) — re-label it so sorting/dates agree with myhome.ge listings.
+const tbilisi=d=>{if(!d)return null;const m=String(d).match(/^(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})(?:\.\d+)?Z$/);return m?`${m[1]}+04:00`:d};
 function mapListing(ad,li){
   const a=ad.address||li?.address||{};
   const price=ad.price||li?.price||{};
@@ -153,7 +156,7 @@ function mapListing(ad,li){
     contact_phones:phones,
     description:desc,
     main_image:imgs[0]||null,images:imgs,source_images:imgs,
-    listing_date:ad.orderDate||li?.orderDate||null,published_at:li?.createDate||null,
+    listing_date:tbilisi(ad.orderDate||li?.orderDate),published_at:li?.createDate||null,
     listing_date_note:'ss.ge orderDate (renewals move it forward); createDate saved as published_at',
     advance_months:null,screening:'include',
     photos_reviewed:'Not visually reviewed by the automated collector.',
