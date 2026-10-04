@@ -19,9 +19,9 @@ previewing elsewhere) and the rest from `geo-data`.
 | Path | What it is |
 |---|---|
 | `index.html`, `style.css`, `script.js` | The site. Bump `?v=` on the CSS/JS links in `index.html` after editing them so GitHub Pages' cache doesn't serve stale assets. |
-| `data/properties.json` | The current snapshot, written by the scraper. `data/properties.js` is the same data for opening `index.html` from disk (`file://`). |
+| `data/properties.json` | The current snapshot, written by the scraper. `data/properties.js` is the same data for opening `index.html` from disk (`file://`); it is only loaded in that case. `requirements.excluded_locations` in the snapshot is the source of truth for excluded sub-districts (site, ss.ge collector and alerts all read it). |
 | `data/geo.json` | Fallback coordinates. The live copy is on the `geo-data` branch (see below). |
-| `data/ss.json` | ss.ge listings in the same schema (fallback; live copy on `geo-data`). Merged with myhome listings on the page; duplicates by location + size + rooms + floor are collapsed with an "Also on …" link. |
+| `data/ss.json` | ss.ge listings in the same schema (fallback; live copy on `geo-data`). Merged with myhome listings on the page; duplicates by location + size + rooms + floor are collapsed with an "Also on …" link, and same-source re-posts (same place + address under a new id) fold into the newest copy with a "Re-posted ×N" pill. |
 | `tools/collect-ss.mjs` | Collects long-term rentals from ss.ge for the target districts (search API + detail pages). |
 | `data/history.json` | Fallback price history. The live copy is on the `geo-data` branch. |
 | `tools/alerts.mjs`, `data/alerts.json` | Telegram digest after each run: new listings, price drops/rises, listings gone. Needs `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` repo secrets; `alerts.json` holds exclusions/thresholds. |
@@ -46,7 +46,7 @@ The GitHub Action keeps (2) current automatically.
 `history.json` holds `{first_seen, last_seen, prices:[{at, price}]}` per listing.
 The Action appends a price point whenever a snapshot shows a different price,
 so cards can show ↓/↑ markers, days on market and price cuts on every device.
-A browser also remembers prices it has seen itself, as a fallback. To refresh locally:
+Records also keep lat/lng, rooms, floor and address so `alerts.mjs` recognises a re-posted flat. To refresh coordinates locally:
 
 ```
 node tools/geocode.mjs            # only new listings
@@ -57,15 +57,17 @@ node tools/geocode.mjs --force    # everything
 
 The site is gated by a password screen. The password signs in to the default
 Supabase Auth user (`mariami@house-hunt.local`; sign-ups are disabled in the
-dashboard). After signing in, the header switch sets who is using the site
+dashboard; a second user `aslani@house-hunt.local` exists but is unused and can be deleted). After signing in, the header switch sets who is using the site
 (Mariami by default, or Aslani); the choice is remembered per device and
 stamped on every change.
 
 Favorites, hidden listings, the compare set and per-listing notes live in the
 `public.shortlist` table and sync live between devices (Supabase Realtime).
 Row-level security allows access only to signed-in users. `cloud.js` holds the
-project URL and the *publishable* key (safe to embed). Filters and the
-browser-side price cache stay in `localStorage`.
+project URL and the *publishable* key (safe to embed). Filters and the chosen
+identity stay in `localStorage`. Each tab re-reads the table when it becomes
+visible, so changes missed while a device slept are picked up without a reload.
+The library loads from jsDelivr with unpkg as a fallback.
 
 Note: the listing data itself is in this public repository; the login protects
 the interface and the shared shortlist, not the raw JSON.

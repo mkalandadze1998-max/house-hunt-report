@@ -16,7 +16,8 @@ window.HH_CLOUD=(()=>{
   const TABLE='shortlist';
 
   const $=s=>document.querySelector(s);
-  const sb=window.supabase?window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY,{auth:{persistSession:true,autoRefreshToken:true}}):null;
+  let sb=null;
+  const waitForLibrary=(ms=10000)=>new Promise(res=>{const t0=Date.now();(function poll(){if(window.supabase)return res(window.supabase);if(Date.now()-t0>ms)return res(null);setTimeout(poll,150)})()});
   let user=null;             // {id,email,name}
   const listeners=new Set(); // change callbacks (row)=>void
   const whoListeners=new Set();
@@ -33,7 +34,7 @@ window.HH_CLOUD=(()=>{
 
   $('#gateForm').addEventListener('submit',async e=>{
     e.preventDefault();
-    if(!sb)return showGate('Sign-in service failed to load. Check your connection and reload.');
+    if(!sb)return showGate('Sign-in service is still loading — try again in a moment.');
     const password=$('#gatePassword').value;
     if(!password)return showGate('Enter the password.');
     const btn=$('#gateSubmit');btn.disabled=true;btn.textContent='Signing in…';
@@ -48,7 +49,9 @@ window.HH_CLOUD=(()=>{
   let resolveReady;
   const ready=new Promise(res=>{resolveReady=res});
   (async()=>{
-    if(!sb){showGate('Sign-in service failed to load. Check your connection and reload.');return}
+    const lib=await waitForLibrary();
+    if(!lib){showGate('Sign-in service failed to load. Check your connection and reload.');return}
+    sb=lib.createClient(SUPABASE_URL,SUPABASE_KEY,{auth:{persistSession:true,autoRefreshToken:true}});
     const {data}=await sb.auth.getSession();
     if(data?.session)resolveReady(unlockAndReturn(data.session));else showGate('');
     sb.auth.onAuthStateChange((event,session)=>{if(event==='SIGNED_OUT'||(!session&&event!=='INITIAL_SESSION'))showGate('Signed out.')});
@@ -76,7 +79,7 @@ window.HH_CLOUD=(()=>{
   function subscribe(){
     sb.channel('shortlist-live')
       .on('postgres_changes',{event:'*',schema:'public',table:TABLE},payload=>{const row=payload.new&&Object.keys(payload.new).length?payload.new:payload.old;for(const fn of listeners)try{fn(row,payload.eventType)}catch(e){console.warn(e)}})
-      .subscribe();
+      .subscribe(status=>{if(status!=='SUBSCRIBED')console.warn('realtime:',status);window.dispatchEvent(new CustomEvent('hh-realtime',{detail:status}))});
   }
   const onChange=fn=>{listeners.add(fn);return()=>listeners.delete(fn)};
 
