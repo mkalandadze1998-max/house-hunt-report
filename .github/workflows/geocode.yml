@@ -30,6 +30,7 @@ on:
       - tools/commute.mjs
       - tools/alerts.mjs
       - tools/flights.mjs
+      - tools/flights-google.py
       - data/flights.json
       - data/alerts.json
       - .github/workflows/geocode.yml
@@ -128,12 +129,19 @@ jobs:
         if: steps.gate.outputs.skip != 'true'
         run: node tools/history.mjs --history out/history.json $EXTRA
 
-      - name: Flight prices (Travelpayouts)
+      - name: Flight prices — Google Flights (live)
+        if: steps.gate.outputs.skip != 'true'
+        continue-on-error: true
+        run: |
+          pip install -q fast-flights
+          python3 tools/flights-google.py --out out/flights-google.json
+
+      - name: Flight prices — merge (Travelpayouts cache + Google)
         if: steps.gate.outputs.skip != 'true'
         continue-on-error: true
         env:
           TRAVELPAYOUTS_TOKEN: ${{ secrets.TRAVELPAYOUTS_TOKEN }}
-        run: node tools/flights.mjs --out out/flights.json
+        run: node tools/flights.mjs --out out/flights.json --google out/flights-google.json
 
       - name: Telegram test message
         if: github.event.inputs.hello == 'true' && steps.gate.outputs.skip != 'true'

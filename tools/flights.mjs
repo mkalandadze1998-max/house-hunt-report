@@ -26,6 +26,8 @@ const outFile=path.resolve(argValue('--out',path.join(root,'data','flights.json'
 const cfg=readJson(path.join(root,'data','flights.json'),{routes:[]});
 const TOKEN=process.env.TRAVELPAYOUTS_TOKEN;
 const dry=args.includes('--dry')||!TOKEN;
+// --google out/flights-google.json: live fares from Google Flights (tools/flights-google.py); preferred over the cache
+const google=argValue('--google')?readJson(argValue('--google'),{routes:{}}).routes||{}:{};
 const API=process.env.TRAVELPAYOUTS_API||'https://api.travelpayouts.com/aviasales/v3/prices_for_dates';
 const KEEP_DAYS=120, MIN_HOURS_BETWEEN_POINTS=12;
 const now=new Date().toISOString();
@@ -50,11 +52,15 @@ for(const route of cfg.routes||[]){
   r.airline_names=AIRLINES;
   r.checks=Array.isArray(r.checks)?r.checks:[];r.nearby=Array.isArray(r.nearby)?r.nearby:[];
   r.checked_at=now;
-  if(dry){out.routes[route.id]=r;console.log(`flights: ${route.id} — dry run (TRAVELPAYOUTS_TOKEN not set), keeping ${r.checks.length} history points`);continue}
+  const g=google[route.id];
+  const live=g&&Number.isFinite(g.price)&&g.price>0?{price:Number(g.price),airline:(g.airlines||[]).some(a=>/wizz/i.test(a))?'W6':(g.airlines||[])[0]||null,airline_name:(g.airlines||[]).join(' + ')||null,transfers:Math.max(0,(g.legs||[]).filter(l=>l.from===route.from||l.to===route.to).length-2),return_transfers:0,departure_at:g.legs?.[0]?.dep||null,return_at:g.legs?.[g.legs.length-1]?.dep||null,duration:null,link:g.url||null,source:'google'}:null;
+  if(live)r.google={price:live.price,airlines:g.airlines,fetched_at:g.fetched_at,url:g.url,offers:(g.offers||[]).slice(0,5)};else if(g?.error)r.google_error=g.error;
+  if(dry&&!live){out.routes[route.id]=r;console.log(`flights: ${route.id} — dry run (TRAVELPAYOUTS_TOKEN not set, no Google fare), keeping ${r.checks.length} history points`);continue}
   try{
-    // 1) the exact trip
-    const exact=(await api({origin:route.from,destination:route.to,departure_at:route.depart,return_at:route.return,one_way:false,direct:route.direct?true:false,currency:route.currency||'gel',sorting:'price',unique:false,limit:10})).map(norm).filter(x=>Number.isFinite(x.price)&&x.price>0).sort((a,b)=>a.price-b.price);
-    const best=exact[0]||null;
+    // 1) the exact trip — Google Flights (live) first, Aviasales cache as fallback
+    const exact=dry?[]:(await api({origin:route.from,destination:route.to,departure_at:route.depart,return_at:route.return,one_way:false,direct:route.direct?true:false,currency:route.currency||'gel',sorting:'price',unique:false,limit:10})).map(norm).filter(x=>Number.isFinite(x.price)&&x.price>0).sort((a,b)=>a.price-b.price);
+    if(exact[0])r.aviasales={price:exact[0].price,airline:exact[0].airline,link:exact[0].link,at:now};
+    const best=live||exact[0]||null;
     const last=r.checks[r.checks.length-1]||null;
     if(best){
       const changed=!last||last.price!==best.price;
@@ -70,7 +76,7 @@ for(const route of cfg.routes||[]){
     }
     // 2) nearby combinations in the same months (cheapest per departure day, 3–14 nights)
     const depMonth=route.depart.slice(0,7),retMonth=route.return.slice(0,7);
-    const months=[...new Set([depMonth,retMonth])];
+    const months=dry?[]:[...new Set([depMonth,retMonth])];
     let combos=[];
     for(const dm of months)for(const rm of months){
       if(rm<dm)continue;
@@ -79,9 +85,9 @@ for(const route of cfg.routes||[]){
     const minN=route.min_nights??3,maxN=route.max_nights??14;
     combos=combos.filter(x=>Number.isFinite(x.price)&&x.price>0&&x.departure_at&&x.return_at).filter(x=>{const n=nights(x.departure_at.slice(0,10),x.return_at.slice(0,10));return n>=minN&&n<=maxN});
     const byDay=new Map();for(const c of combos){const k=c.departure_at.slice(0,10)+'|'+c.return_at.slice(0,10);if(!byDay.has(k)||byDay.get(k).price>c.price)byDay.set(k,c)}
-    r.nearby=[...byDay.values()].sort((a,b)=>a.price-b.price).slice(0,40).map(c=>({...c,nights:nights(c.departure_at.slice(0,10),c.return_at.slice(0,10))}));
-    r.nearby_at=now;
-    console.log(`flights: ${route.id} — ${best?best.price+' '+r.currency+(best.airline?' ('+best.airline+')':''):'no fare'}; ${r.nearby.length} nearby combos`);
+    if(months.length)r.nearby=[...byDay.values()].sort((a,b)=>a.price-b.price).slice(0,40).map(c=>({...c,nights:nights(c.departure_at.slice(0,10),c.return_at.slice(0,10))}));
+    if(months.length)r.nearby_at=now;
+    console.log(`flights: ${route.id} — ${best?best.price+' '+r.currency+(best.airline?' ('+best.airline+')':'')+(best.source==='google'?' live/Google':' Aviasales cache'):'no fare'}; ${r.nearby.length} nearby combos`);
   }catch(e){console.warn(`flights: ${route.id} failed — ${e.message}`)}
   // trim history
   const cutoff=Date.parse(now)-KEEP_DAYS*86400000;

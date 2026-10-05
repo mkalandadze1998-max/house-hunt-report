@@ -602,3 +602,4 @@ body.locked{overflow:hidden}
 @media(max-width:640px){.flight-hero{text-align:left}.flight-hero strong{font-size:32px}}
 .flight-table td:first-child,.flight-table th:first-child{font-size:inherit;text-transform:none;letter-spacing:0;font-weight:inherit;color:inherit;background:none}
 .flight-table th:first-child{font-size:11.5px;letter-spacing:.3px;text-transform:uppercase;color:var(--muted)}
+.flight-src{opacity:.8}
