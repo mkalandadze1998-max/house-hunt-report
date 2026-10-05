@@ -7,7 +7,8 @@
 // Compares the listing set of this run against the previous history.json and
 // sends one message with: new listings, price drops/rises, and listings that
 // disappeared. Needs TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID in the
-// environment; without them it prints what it would send and exits 0.
+// environment (TELEGRAM_CHAT_ID can list several chats, comma-separated);
+// without them it prints what it would send and exits 0.
 // data/alerts.json (optional) can exclude sub-districts and set thresholds.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -132,7 +133,9 @@ const photoPicks=[...drops.map(c=>({p:c.p,extra:` <s>${money(c.from)}</s>`})),..
 console.log(`alerts: ${fresh.length} new, ${drops.length} drops, ${rises.length} rises, ${gone.length} gone → ${chunks.length} message(s), ${photoPicks.length} photo card(s)`);
 if(dry){console.log(!process.env.TELEGRAM_BOT_TOKEN?'(TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set — dry run)':'(dry run)');console.log(chunks.join('\n---\n'));for(const x of photoPicks)console.log('PHOTO',x.p.main_image,'\n'+card(x.p,x.extra||''));process.exit(0)}
 
-const tg=async(method,body)=>{const r=await fetch(`https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/${method}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id:process.env.TELEGRAM_CHAT_ID,...body})});const j=await r.json().catch(()=>({}));if(!r.ok||!j.ok)throw new Error(`${method} ${r.status} ${JSON.stringify(j).slice(0,200)}`);return j};
+// TELEGRAM_CHAT_ID may hold several ids separated by commas (e.g. your private chat and the group)
+const CHATS=String(process.env.TELEGRAM_CHAT_ID||'').split(/[,\s]+/).filter(Boolean);
+const tg=async(method,body)=>{let last=null;for(const chat_id of CHATS){const r=await fetch(`https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/${method}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id,...body})});const j=await r.json().catch(()=>({}));if(!r.ok||!j.ok)throw new Error(`${method} → ${chat_id}: ${r.status} ${JSON.stringify(j).slice(0,200)}`);last=j}return last};
 for(const chunk of chunks){
   try{await tg('sendMessage',{text:chunk,parse_mode:'HTML',disable_web_page_preview:true})}
   catch(e){console.error('telegram error:',e.message);process.exitCode=1;break}
