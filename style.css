@@ -570,3 +570,35 @@ body.locked{overflow:hidden}
 .ex-reason{margin:10px 0 0;font-size:13px;color:#9a3412;font-weight:600}
 .ex-reason small{font-weight:500;color:var(--muted)}
 @media(prefers-color-scheme:dark){.ex-reason{color:#fdba74}}
+.flights{grid-column:1/-1;display:grid;gap:20px}
+.flight-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px 24px;box-shadow:var(--shadow-1,0 1px 2px rgba(0,0,0,.04))}
+.flight-head{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:flex-start}
+.flight-head h2{margin:2px 0 4px;font-size:22px}
+.flight-dates{margin:0;color:var(--muted);font-size:13.5px}
+.flight-hero{text-align:right}
+.flight-hero strong{display:block;font-family:Fraunces,serif;font-size:40px;line-height:1;color:var(--brand-2)}
+.flight-hero small{display:block;color:var(--muted);font-size:12.5px;margin-top:6px}
+.flight-hero .delta{display:inline-block;margin-top:6px;font-style:normal;font-weight:700;font-size:13px;padding:2px 8px;border-radius:999px;background:var(--surface-2)}
+.flight-stats{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0 6px;font-size:12.5px;color:var(--muted)}
+.flight-stats b{color:var(--ink);font-weight:600}
+.spark-wrap{position:relative;margin:8px 0 12px;max-width:760px}
+.spark{width:100%;height:auto;display:block}
+.spark .grid{stroke:var(--line);stroke-width:1}
+.spark .tick{font-size:11px;fill:var(--muted)}
+.spark .line{fill:none;stroke:var(--brand-2);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.spark .dot{fill:var(--surface);stroke:var(--brand-2);stroke-width:2}
+.spark .dot.on{fill:var(--brand-2)}
+.spark .xhair{stroke:var(--ink-2);stroke-width:1;stroke-dasharray:3 3}
+.spark .xhair.off{display:none}
+.spark-tip{position:absolute;top:0;transform:translateX(-50%);background:var(--ink);color:var(--bg);font-size:12px;padding:4px 8px;border-radius:8px;pointer-events:none;white-space:nowrap}
+.flight-card h3{margin:16px 0 8px;font-size:15px}
+.flight-card h3 small{font-weight:500;color:var(--muted);font-size:12px;margin-left:6px}
+.flight-table{width:100%;border-collapse:collapse;font-size:13.5px}
+.flight-table th,.flight-table td{padding:8px 12px;text-align:left;border-bottom:1px solid var(--line)}
+.flight-table th{font-size:11.5px;letter-spacing:.3px;text-transform:uppercase;color:var(--muted)}
+.flight-table tr.is-you td{background:var(--surface-2)}
+.flight-table .delta{font-style:normal;font-weight:600}
+.flight-note{color:var(--muted);font-size:13px;margin:8px 0 12px}
+@media(max-width:640px){.flight-hero{text-align:left}.flight-hero strong{font-size:32px}}
+.flight-table td:first-child,.flight-table th:first-child{font-size:inherit;text-transform:none;letter-spacing:0;font-weight:inherit;color:inherit;background:none}
+.flight-table th:first-child{font-size:11.5px;letter-spacing:.3px;text-transform:uppercase;color:var(--muted)}

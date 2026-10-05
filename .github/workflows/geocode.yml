@@ -7,7 +7,8 @@ name: Collect ss.ge, geocode, track prices & alert
 #   2. geocode  — lat/lng for myhome listings missing from geo.json
 #   2b. commute — driving minutes from home per listing (commute.json, OSRM)
 #   3. history  — append each listing's price to history.json when it changes
-#   4. alerts   — Telegram message with new / reduced / gone listings
+#   3b. flights — cheapest fare for the trips in data/flights.json (Travelpayouts API)
+#   4. alerts   — Telegram message with new / reduced / gone listings (+ fare changes)
 #                 (needs TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID repo secrets)
 # All files are published to the `geo-data` branch, which the site reads from
 # raw.githubusercontent.com.
@@ -28,6 +29,8 @@ on:
       - tools/collect-korter.mjs
       - tools/commute.mjs
       - tools/alerts.mjs
+      - tools/flights.mjs
+      - data/flights.json
       - data/alerts.json
       - .github/workflows/geocode.yml
   schedule:
@@ -87,6 +90,7 @@ jobs:
             git show origin/geo-data:data/ss.json      > out/ss.json      2>/dev/null || true
             git show origin/geo-data:data/korter.json  > out/korter.json  2>/dev/null || true
             git show origin/geo-data:data/commute.json > out/commute.json 2>/dev/null || true
+            git show origin/geo-data:data/flights.json > out/flights.json 2>/dev/null || true
           fi
           [ -s out/geo.json ]     || { [ -s data/geo.json ]     && cp data/geo.json     out/geo.json;     } || true
           [ -s out/history.json ] || { [ -s data/history.json ] && cp data/history.json out/history.json; } || true
@@ -124,6 +128,13 @@ jobs:
         if: steps.gate.outputs.skip != 'true'
         run: node tools/history.mjs --history out/history.json $EXTRA
 
+      - name: Flight prices (Travelpayouts)
+        if: steps.gate.outputs.skip != 'true'
+        continue-on-error: true
+        env:
+          TRAVELPAYOUTS_TOKEN: ${{ secrets.TRAVELPAYOUTS_TOKEN }}
+        run: node tools/flights.mjs --out out/flights.json
+
       - name: Telegram test message
         if: github.event.inputs.hello == 'true' && steps.gate.outputs.skip != 'true'
         env:
@@ -138,7 +149,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           HH_PASSWORD: ${{ secrets.HH_PASSWORD }}
-        run: node tools/alerts.mjs --history out/history.json --prev prev-hist.json --geo out/geo.json $EXTRA
+        run: node tools/alerts.mjs --history out/history.json --prev prev-hist.json --geo out/geo.json --flights out/flights.json $EXTRA
 
       - name: Publish to the geo-data branch
         if: steps.gate.outputs.skip != 'true'
@@ -151,13 +162,15 @@ jobs:
           git show origin/geo-data:data/ss.json      > prev-ss.json   2>/dev/null || echo '{}' > prev-ss.json
           git show origin/geo-data:data/korter.json  > prev-korter.json 2>/dev/null || echo '{}' > prev-korter.json
           git show origin/geo-data:data/commute.json > prev-commute.json 2>/dev/null || echo '{}' > prev-commute.json
+          git show origin/geo-data:data/flights.json > prev-flights.json 2>/dev/null || echo '{}' > prev-flights.json
           [ -s out/ss.json ] || cp prev-ss.json out/ss.json
           [ -s out/korter.json ] || cp prev-korter.json out/korter.json
           [ -s out/commute.json ] || cp prev-commute.json out/commute.json
+          [ -s out/flights.json ] || cp prev-flights.json out/flights.json
           if node -e '
             const fs=require("fs");const r=(f,k)=>JSON.parse(fs.readFileSync(f,"utf8"))[k]||{};
             const same=(a,b,k)=>JSON.stringify(r(a,k))===JSON.stringify(r(b,k));
-            process.exit(same("prev-geo.json","out/geo.json","listings")&&same("prev-hist.json","out/history.json","listings")&&same("prev-ss.json","out/ss.json","properties")&&same("prev-korter.json","out/korter.json","properties")&&same("prev-commute.json","out/commute.json","listings")?0:1)'; then
+            process.exit(same("prev-geo.json","out/geo.json","listings")&&same("prev-hist.json","out/history.json","listings")&&same("prev-ss.json","out/ss.json","properties")&&same("prev-korter.json","out/korter.json","properties")&&same("prev-commute.json","out/commute.json","listings")&&same("prev-flights.json","out/flights.json","routes")?0:1)'; then
             echo "no changes"
           else
             git checkout --orphan geo-data
@@ -168,8 +181,9 @@ jobs:
             cp out/ss.json data/ss.json
             cp out/korter.json data/korter.json
             cp out/commute.json data/commute.json
-            git add -f data/geo.json data/history.json data/ss.json data/korter.json data/commute.json
-            git commit -qm "Update ss/korter/geo/commute/history ($(date -u +%Y-%m-%dT%H:%MZ))"
+            cp out/flights.json data/flights.json
+            git add -f data/geo.json data/history.json data/ss.json data/korter.json data/commute.json data/flights.json
+            git commit -qm "Update ss/korter/geo/commute/flights/history ($(date -u +%Y-%m-%dT%H:%MZ))"
             git push --force origin geo-data
             echo "published"
           fi

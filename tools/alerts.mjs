@@ -130,8 +130,14 @@ if(drops.length)parts.push(section(`📉 <b>Price drops</b> · ${drops.length}`,
 if(rises.length)parts.push(section(`📈 <b>Price rises</b> · ${rises.length}`,rises.sort((a,b)=>byDist(a.p,b.p)).map(c=>card(c.p,` (was ${money(c.from)})`))));
 if(gone.length)parts.push(section(`🚫 <b>Gone</b> · ${gone.length}`,gone.map(g=>`<b>${money(lastPrice(g.r))} ₾</b> · ${g.r.size??'?'} m² · ${esc(g.r.neighborhood||'')}\n<i>${g.days===0?'listed today':`listed ${g.days} d`}${g.r.source?` · ${esc(g.r.source)}`:''}</i>`)));
 
+// ✈ flight price changes (tools/flights.mjs output, --flights out/flights.json)
+const flights=argValue('--flights')?readJson(argValue('--flights'),{routes:{}}).routes||{}:{};
+const dmy=d=>d?new Date(d).toLocaleDateString('en-GB',{day:'numeric',month:'short'}):'';
+const flightLines=Object.values(flights).filter(r=>r.latest&&r.changed_at&&r.changed_at===r.checked_at).map(r=>{const cur=r.latest.price,was=r.previous_price;const delta=was!=null?(cur<was?` <s>${money(was)}</s> ↓ ${money(was-cur)}`:cur>was?` (was ${money(was)}) ↑ ${money(cur-was)}`:''):' · first check';return `<b>${money(cur)} ${esc(r.currency||'GEL')}</b>${delta}\n✈ <a href="${esc(r.latest.link||r.booking_url||'')}">${esc(r.label)}</a> · ${dmy(r.depart)} → ${dmy(r.return)}${r.latest.airline?` · ${esc(r.airline_names?.[r.latest.airline]||r.latest.airline)}`:''}${r.latest.transfers?` · ${r.latest.transfers} stop${r.latest.transfers>1?'s':''}`:' · direct'}${r.min!=null&&cur<=r.min?' · <i>lowest seen</i>':''}`});
+if(flightLines.length)parts.push(section(`✈ <b>Flights</b> · ${flightLines.length} ${flightLines.length===1?'change':'changes'}`,flightLines));
+
 if(!parts.length){console.log('alerts: nothing changed, no message');process.exit(0)}
-const summary=[favNews.length?`♥ ${favNews.length} on favorites`:'',fresh.length?`✦ ${fresh.length} new`:'',drops.length?`📉 ${drops.length} ${drops.length===1?'drop':'drops'}`:'',rises.length?`📈 ${rises.length} ${rises.length===1?'rise':'rises'}`:'',gone.length?`🚫 ${gone.length} gone`:''].filter(Boolean).join('  ·  ');
+const summary=[favNews.length?`♥ ${favNews.length} on favorites`:'',fresh.length?`✦ ${fresh.length} new`:'',drops.length?`📉 ${drops.length} ${drops.length===1?'drop':'drops'}`:'',rises.length?`📈 ${rises.length} ${rises.length===1?'rise':'rises'}`:'',gone.length?`🚫 ${gone.length} gone`:'',flightLines.length?`✈ ${flightLines.length}`:''].filter(Boolean).join('  ·  ');
 const header=`🏠 <b>House Hunt</b> · ${stamp}\n${current.length} homes on the list  ·  ${summary}\n\n`;
 const footer=`\n\n<a href="${SITE_URL}">Open the shortlist →</a>`;
 let text=header+parts.join('\n\n')+footer;

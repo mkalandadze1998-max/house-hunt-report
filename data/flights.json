@@ -1,0 +1,17 @@
+{
+  "routes": [
+    {
+      "id": "kut-crl-dec",
+      "label": "Kutaisi → Brussels Charleroi",
+      "from": "KUT",
+      "to": "CRL",
+      "depart": "2026-12-03",
+      "return": "2026-12-10",
+      "adults": 1,
+      "currency": "gel",
+      "direct": false,
+      "min_nights": 3,
+      "max_nights": 14
+    }
+  ]
+}
