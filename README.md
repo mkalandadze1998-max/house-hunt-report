@@ -1,15 +1,15 @@
 # House Hunt · Tbilisi
 
 A static shortlist of apartments for rent in Tbilisi, collected from
-[myhome.ge](https://www.myhome.ge/) (external scraper) and [ss.ge](https://home.ss.ge/)
-(GitHub Action), published with GitHub Pages.
+[myhome.ge](https://www.myhome.ge/) (external scraper), [ss.ge](https://home.ss.ge/) and
+[korter.ge](https://korter.ge/) (GitHub Action), published with GitHub Pages.
 
 ## Branches
 
 | Branch | Who writes it | What's there |
 |---|---|---|
 | `main` (default, GitHub Pages) | you / Claude, plus the scraper for two files | The site, tools, workflow. The myhome.ge scraper ([house-hunt](https://github.com/mkalandadze1998-max/house-hunt)) publishes **only** `data/properties.json` and `data/properties.js` here. |
-| `geo-data` | the GitHub Action | `ss.json`, `geo.json`, `history.json`. |
+| `geo-data` | the GitHub Action | `ss.json`, `korter.json`, `geo.json`, `commute.json`, `history.json`. |
 
 The page reads `properties.json` locally (and from `main` over raw.githubusercontent.com when
 previewing elsewhere) and the rest from `geo-data`.
@@ -23,8 +23,11 @@ previewing elsewhere) and the rest from `geo-data`.
 | `data/geo.json` | Fallback coordinates. The live copy is on the `geo-data` branch (see below). |
 | `data/ss.json` | ss.ge listings in the same schema (fallback; live copy on `geo-data`). Merged with myhome listings on the page; duplicates by location + size + rooms + floor are collapsed with an "Also on …" link, and same-source re-posts (same place + address under a new id) fold into the newest copy with a "Re-posted ×N" pill. |
 | `tools/collect-ss.mjs` | Collects long-term rentals from ss.ge for the target districts (search API + detail pages). |
+| `tools/collect-korter.mjs` | Collects long-term rentals from korter.ge (server-rendered `INITIAL_STATE` on listing + detail pages; USD prices converted at korter's rate). |
+| `tools/commute.mjs`, `data/commute.json` | Driving minutes from home per listing via the public OSRM router (OpenStreetMap); cached, only new listings are routed. Shown on cards (🚗) and as a sort. |
+| `data/excluded.json` | Published by the scraper: myhome.ge listings its screening dropped in the last 14 days, with reasons — the site's "Why excluded?" tab. |
 | `data/history.json` | Fallback price history. The live copy is on the `geo-data` branch. |
-| `tools/alerts.mjs`, `data/alerts.json` | Telegram digest after each run: new listings, price drops/rises, listings gone. Needs `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` repo secrets; `alerts.json` holds exclusions/thresholds. |
+| `tools/alerts.mjs`, `data/alerts.json` | Telegram digest after each run: new listings, price drops/rises, listings gone. Needs `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` repo secrets; `alerts.json` holds exclusions/thresholds. With the `HH_PASSWORD` secret (the site password) it also reads the shared favorites and puts their price drops / rises / disappearances in a ♥ section at the top. |
 | `tools/history.mjs` | Appends each listing's price to `history.json` when it changes; records first/last seen. |
 | `tools/geocode.mjs` | Fetches `lat`/`lng` for listings that have no coordinates yet. |
 | `.github/workflows/geocode.yml` | Runs the geocoder after every scrape and publishes to the `geo-data` branch. |

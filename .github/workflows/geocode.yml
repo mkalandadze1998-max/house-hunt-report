@@ -2,8 +2,10 @@ name: Collect ss.ge, geocode, track prices & alert
 
 # Runs whenever the scraper publishes a new snapshot (and daily as a safety
 # net). Two jobs in one:
-#   1. collect  — long-term rentals from ss.ge in the target districts (ss.json)
+#   1. collect  — long-term rentals from ss.ge and korter.ge in the target
+#                 districts (ss.json, korter.json)
 #   2. geocode  — lat/lng for myhome listings missing from geo.json
+#   2b. commute — driving minutes from home per listing (commute.json, OSRM)
 #   3. history  — append each listing's price to history.json when it changes
 #   4. alerts   — Telegram message with new / reduced / gone listings
 #                 (needs TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID repo secrets)
@@ -23,6 +25,8 @@ on:
       - tools/geocode.mjs
       - tools/history.mjs
       - tools/collect-ss.mjs
+      - tools/collect-korter.mjs
+      - tools/commute.mjs
       - tools/alerts.mjs
       - data/alerts.json
       - .github/workflows/geocode.yml
@@ -58,6 +62,8 @@ jobs:
             git show origin/geo-data:data/geo.json     > out/geo.json     2>/dev/null || true
             git show origin/geo-data:data/history.json > out/history.json 2>/dev/null || true
             git show origin/geo-data:data/ss.json      > out/ss.json      2>/dev/null || true
+            git show origin/geo-data:data/korter.json  > out/korter.json  2>/dev/null || true
+            git show origin/geo-data:data/commute.json > out/commute.json 2>/dev/null || true
           fi
           [ -s out/geo.json ]     || { [ -s data/geo.json ]     && cp data/geo.json     out/geo.json;     } || true
           [ -s out/history.json ] || { [ -s data/history.json ] && cp data/history.json out/history.json; } || true
@@ -68,20 +74,34 @@ jobs:
         continue-on-error: true
         run: node tools/collect-ss.mjs --out out/ss.json
 
+      - name: Collect korter.ge listings
+        continue-on-error: true
+        run: node tools/collect-korter.mjs --out out/korter.json
+
       - name: Fetch coordinates for new listings
         run: node tools/geocode.mjs --geo out/geo.json
 
-      - name: Record prices from this snapshot
+      - name: List extra sources
         run: |
-          if [ -s out/ss.json ]; then node tools/history.mjs --history out/history.json --extra out/ss.json
-          else node tools/history.mjs --history out/history.json; fi
+          EXTRA=""
+          for f in out/ss.json out/korter.json; do [ -s "$f" ] && EXTRA="$EXTRA --extra $f"; done
+          echo "EXTRA=$EXTRA" >> $GITHUB_ENV
+          echo "extra sources:$EXTRA"
+
+      - name: Driving time from home (OSRM)
+        continue-on-error: true
+        run: node tools/commute.mjs --commute out/commute.json --geo out/geo.json $EXTRA
+
+      - name: Record prices from this snapshot
+        run: node tools/history.mjs --history out/history.json $EXTRA
 
       - name: Telegram alerts
         continue-on-error: true
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: node tools/alerts.mjs --history out/history.json --prev prev-hist.json --ss out/ss.json --geo out/geo.json
+          HH_PASSWORD: ${{ secrets.HH_PASSWORD }}
+        run: node tools/alerts.mjs --history out/history.json --prev prev-hist.json --geo out/geo.json $EXTRA
 
       - name: Publish to the geo-data branch
         run: |
@@ -91,11 +111,15 @@ jobs:
           git show origin/geo-data:data/geo.json     > prev-geo.json  2>/dev/null || echo '{}' > prev-geo.json
           git show origin/geo-data:data/history.json > prev-hist.json 2>/dev/null || echo '{}' > prev-hist.json
           git show origin/geo-data:data/ss.json      > prev-ss.json   2>/dev/null || echo '{}' > prev-ss.json
+          git show origin/geo-data:data/korter.json  > prev-korter.json 2>/dev/null || echo '{}' > prev-korter.json
+          git show origin/geo-data:data/commute.json > prev-commute.json 2>/dev/null || echo '{}' > prev-commute.json
           [ -s out/ss.json ] || cp prev-ss.json out/ss.json
+          [ -s out/korter.json ] || cp prev-korter.json out/korter.json
+          [ -s out/commute.json ] || cp prev-commute.json out/commute.json
           if node -e '
             const fs=require("fs");const r=(f,k)=>JSON.parse(fs.readFileSync(f,"utf8"))[k]||{};
             const same=(a,b,k)=>JSON.stringify(r(a,k))===JSON.stringify(r(b,k));
-            process.exit(same("prev-geo.json","out/geo.json","listings")&&same("prev-hist.json","out/history.json","listings")&&same("prev-ss.json","out/ss.json","properties")?0:1)'; then
+            process.exit(same("prev-geo.json","out/geo.json","listings")&&same("prev-hist.json","out/history.json","listings")&&same("prev-ss.json","out/ss.json","properties")&&same("prev-korter.json","out/korter.json","properties")&&same("prev-commute.json","out/commute.json","listings")?0:1)'; then
             echo "no changes"
           else
             git checkout --orphan geo-data
@@ -104,8 +128,10 @@ jobs:
             cp out/geo.json data/geo.json
             cp out/history.json data/history.json
             cp out/ss.json data/ss.json
-            git add -f data/geo.json data/history.json data/ss.json
-            git commit -qm "Update ss/geo/history ($(date -u +%Y-%m-%dT%H:%MZ))"
+            cp out/korter.json data/korter.json
+            cp out/commute.json data/commute.json
+            git add -f data/geo.json data/history.json data/ss.json data/korter.json data/commute.json
+            git commit -qm "Update ss/korter/geo/commute/history ($(date -u +%Y-%m-%dT%H:%MZ))"
             git push --force origin geo-data
             echo "published"
           fi

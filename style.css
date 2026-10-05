@@ -560,3 +560,13 @@ body.locked{overflow:hidden}
 @media(prefers-color-scheme:dark){.note-foot .primary{color:#0b100e}}
 @media(max-width:650px){.gate-card{padding:26px 20px 20px}.gate-card h1{font-size:28px}.who-switch .avatar{display:none}.who-switch button{padding:5px 10px}}
 .also-on.reposts{color:var(--ink-2);font-weight:600}
+.src-korterge{background:#e8f0ff;color:#1d4ed8;border-color:#bcd0fb}
+@media(prefers-color-scheme:dark){.src-korterge{background:#172554;color:#93c5fd;border-color:#1e3a8a}}
+.distance b{font-weight:600;color:inherit}
+.ex-intro{grid-column:1/-1;margin:0 0 4px;font-size:13.5px;color:var(--muted);max-width:70ch}
+.excluded-card{opacity:.92}
+.excluded-card .ex-photo{display:block;aspect-ratio:4/3;background:var(--surface-2);overflow:hidden;color:var(--muted);font-size:12.5px;display:flex;align-items:center;justify-content:center;text-decoration:none}
+.excluded-card .ex-photo img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.7)}
+.ex-reason{margin:10px 0 0;font-size:13px;color:#9a3412;font-weight:600}
+.ex-reason small{font-weight:500;color:var(--muted)}
+@media(prefers-color-scheme:dark){.ex-reason{color:#fdba74}}

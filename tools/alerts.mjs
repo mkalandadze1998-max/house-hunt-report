@@ -25,7 +25,8 @@ const norm=s=>String(s||'').replace(/[\s.\-–\/]/g,'').toLowerCase();
 const excluded=new Set([...cfg.excludeSubdistricts,...(readJson(path.join(root,'data','properties.json'),{}).requirements?.excluded_locations||[])].map(norm));
 
 const main=readJson(path.join(root,'data','properties.json'),{properties:[]});
-const ss=argValue('--ss')?readJson(argValue('--ss'),{properties:[]}):{properties:[]};
+const extraFiles=[argValue('--ss'),...args.map((a,i)=>a==='--extra'?args[i+1]:null)].filter(Boolean);
+const extras=extraFiles.flatMap(f=>readJson(f,{properties:[]}).properties||[]);
 const hist=readJson(argValue('--history','data/history.json'),{listings:{}});
 const prev=readJson(argValue('--prev','/dev/null'),{listings:{}});
 const geo=readJson(argValue('--geo','data/geo.json'),{listings:{}}).listings||{};
@@ -42,7 +43,7 @@ const src=p=>p.source&&p.source!=='myhome.ge'?p.source:'myhome.ge';
 
 // same dedup rule as the site: ~100 m + size + rooms + floor
 const key=p=>{const c=coords(p);return c&&p.size?`${c.lat.toFixed(3)},${c.lng.toFixed(3)}|${p.size}|${p.rooms??''}|${p.floor??''}`:null};
-const all=[...(main.properties||[]),...(ss.properties||[])].filter(eligible);
+const all=[...(main.properties||[]),...extras].filter(eligible);
 // 1) same source + same place/size/rooms/floor/address = one flat re-posted under new ids → keep the newest
 const normAddr=s=>String(s||'').replace(/[\s.,\-–\/]/g,'').toLowerCase();
 const listedAt=p=>Date.parse(p.listing_date)||Date.parse(p.first_seen_at)||0;
@@ -56,6 +57,20 @@ for(const p of hosts){const k=key(p);if(k&&seen.has(k)&&src(seen.get(k))!==src(p
 const byId=new Map(current.flatMap(p=>idsOf(p).map(id=>[id,p])));
 const allIds=new Set(all.map(p=>p.id));
 
+/* ♥ Favorites: read the shared shortlist table. Signs in with the site password (HH_PASSWORD
+   secret) and the embedded publishable key — same access the website has. */
+const SUPABASE_URL=process.env.SUPABASE_URL||'https://wqdoifhpeslhhlcfhzdq.supabase.co',SUPABASE_KEY='sb_publishable_GdGmHZ0bqB835LzHw6Wuag_cPBRr_b2';
+async function loadFavorites(){
+  if(!process.env.HH_PASSWORD){console.log('alerts: HH_PASSWORD not set — favorites section skipped');return null}
+  try{
+    const auth=await fetch(`${SUPABASE_URL}/auth/v1/token?grant_type=password`,{method:'POST',headers:{apikey:SUPABASE_KEY,'Content-Type':'application/json'},body:JSON.stringify({email:'mariami@house-hunt.local',password:process.env.HH_PASSWORD})});
+    const tok=(await auth.json()).access_token;if(!tok)throw new Error('sign-in failed');
+    const r=await fetch(`${SUPABASE_URL}/rest/v1/shortlist?select=listing_id,favorite,hidden,note,updated_by&favorite=eq.true`,{headers:{apikey:SUPABASE_KEY,Authorization:'Bearer '+tok}});
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    return new Map((await r.json()).map(r=>[String(r.listing_id),r]));
+  }catch(e){console.warn('alerts: favorites unavailable —',e.message);return null}
+}
+const favRows=await loadFavorites();
 const prevL=prev.listings||{},curL=hist.listings||{};
 // a flat is "new" only if no copy of it (by id, or by place+size+rooms+floor+address) was in the previous run
 const gkeyOf=p=>{const k=key(p);return k?`${src(p)}|${k}|${normAddr(p.address)}`:null};
@@ -85,6 +100,15 @@ const card=(p,extra='')=>{const t=tags(p);return [
 const section=(title,items)=>`${title}\n<blockquote expandable>${items.join('\n\n')}</blockquote>`;
 
 const parts=[];
+let favNews=[];
+if(favRows&&favRows.size){
+  const favOf=p=>idsOf(p).map(id=>favRows.get(id)).find(Boolean);
+  const favCurrent=current.filter(favOf);
+  const favDrops=drops.filter(c=>favOf(c.p)),favRises=rises.filter(c=>favOf(c.p));
+  const favGone=[...favRows.keys()].filter(id=>prevL[id]&&!byId.has(id)&&!allIds.has(id)).map(id=>({id,r:prevL[id]}));
+  favNews=[...favDrops.map(c=>card(c.p,` <s>${money(c.from)}</s> ↓`)),...favRises.map(c=>card(c.p,` (was ${money(c.from)}) ↑`)),...favGone.map(g=>`<b>${money(lastPrice(g.r))} ₾</b> · ${g.r.size??'?'} m² · ${esc(g.r.neighborhood||'')}\n<i>🚫 no longer listed${g.r.source?` · ${esc(g.r.source)}`:''}</i>`)];
+  if(favNews.length)parts.push(section(`♥ <b>Your favorites</b> · ${favNews.length} ${favNews.length===1?'change':'changes'} (${favCurrent.length} saved)`,favNews));
+}
 const stamp=new Date().toLocaleString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'Asia/Tbilisi'});
 if(fresh.length)parts.push(section(`✦ <b>New</b> · ${fresh.length}`,fresh.sort(byDist).map(p=>card(p))));
 if(drops.length)parts.push(section(`📉 <b>Price drops</b> · ${drops.length}`,drops.sort((a,b)=>byDist(a.p,b.p)).map(c=>card(c.p,` <s>${money(c.from)}</s>`))));
@@ -92,7 +116,7 @@ if(rises.length)parts.push(section(`📈 <b>Price rises</b> · ${rises.length}`,
 if(gone.length)parts.push(section(`🚫 <b>Gone</b> · ${gone.length}`,gone.map(g=>`<b>${money(lastPrice(g.r))} ₾</b> · ${g.r.size??'?'} m² · ${esc(g.r.neighborhood||'')}\n<i>${g.days===0?'listed today':`listed ${g.days} d`}${g.r.source?` · ${esc(g.r.source)}`:''}</i>`)));
 
 if(!parts.length){console.log('alerts: nothing changed, no message');process.exit(0)}
-const summary=[fresh.length?`✦ ${fresh.length} new`:'',drops.length?`📉 ${drops.length} ${drops.length===1?'drop':'drops'}`:'',rises.length?`📈 ${rises.length} ${rises.length===1?'rise':'rises'}`:'',gone.length?`🚫 ${gone.length} gone`:''].filter(Boolean).join('  ·  ');
+const summary=[favNews.length?`♥ ${favNews.length} on favorites`:'',fresh.length?`✦ ${fresh.length} new`:'',drops.length?`📉 ${drops.length} ${drops.length===1?'drop':'drops'}`:'',rises.length?`📈 ${rises.length} ${rises.length===1?'rise':'rises'}`:'',gone.length?`🚫 ${gone.length} gone`:''].filter(Boolean).join('  ·  ');
 const header=`🏠 <b>House Hunt</b> · ${stamp}\n${current.length} homes on the list  ·  ${summary}\n\n`;
 const footer=`\n\n<a href="${SITE_URL}">Open the shortlist →</a>`;
 let text=header+parts.join('\n\n')+footer;
