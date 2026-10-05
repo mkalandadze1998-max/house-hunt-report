@@ -138,19 +138,53 @@ let ssData=null,korterData=null,pendingData=null;
 /* Extra sources published to geo-data by the Action (ss.ge, korter.ge): local fallback copy vs live, newest wins. */
 async function fetchSs(file='ss.json'){if(location.protocol==='file:')return null;let best=null;for(const url of [`data/${file}?t=`+Date.now(),liveUrl(file)+'?t='+Date.now()]){try{const r=await fetch(url,{cache:'no-store'});if(!r.ok)continue;const j=await r.json();if(j&&Array.isArray(j.properties)&&(!best||(Date.parse(j.retrieved_at)||0)>(Date.parse(best.retrieved_at)||0)))best=j}catch{}}return best}
 const sourceOf=p=>p.source&&p.source!=='myhome.ge'?p.source:'myhome.ge';
-function dupKey(p){const c=coordsOf(p);if(!c||!p.size)return null;return `${c.lat.toFixed(3)},${c.lng.toFixed(3)}|${p.size}|${p.rooms??''}|${p.floor??''}`}
+/* "Same flat" matching. Listings are the same flat when size, rooms and floor agree (total floors too,
+   when both copies have it) AND they are either on the same street or within 800 m of each other.
+   Coordinates alone are not enough: ss.ge/korter.ge pin the street or block, myhome pins the building,
+   and a flat without a house number geocodes to the street centre — the same flat lands 100–700 m apart.
+   Agencies also re-post the same flat under new ids with the house number varying ("გორის 7", "გორის 0", "გორის"). */
+const STREET_STOP=new Set(['ქ','ქუჩა','ქუჩის','გამზ','გამზირი','ჩიხი','შეს','შესახვევი','ул','улица','пр','проспект','пер','str','st','street','ave','avenue']);
+const streetOf=s=>String(s||'').toLowerCase().replace(/[.,\/\-–#№()"']/g,' ').split(/\s+/).filter(t=>t&&!/\d/.test(t)&&!STREET_STOP.has(t)).join('');
 const normAddr=s=>String(s||'').replace(/[\s.,\-–\/]/g,'').toLowerCase();
+const specKey=p=>p.size?`${p.size}|${p.rooms??''}|${p.floor??''}`:null;
+const houseNo=s=>{const m=String(s||'').match(/(?:^|[\s,#№])(\d{1,4}[ა-ჰa-zа-я]?)(?=$|[\s,\/])/);return m&&!/^0+$/.test(m[1])?m[1]:null};
+function sameFlat(a,b){
+  if(specKey(a)!==specKey(b))return false;
+  if(a.total_floors!=null&&b.total_floors!=null&&a.total_floors!==b.total_floors)return false;
+  if(Math.abs(a.price-b.price)>0.15*Math.max(a.price,b.price))return false;
+  const ca=coordsOf(a),cb=coordsOf(b),d=ca&&cb?haversineKm(ca,cb):null;
+  const sa=streetOf(a.address),sb=streetOf(b.address),ha=houseNo(a.address),hb=houseNo(b.address);
+  if(sa&&sb&&sa.length>=3&&sa===sb){if(ha&&hb&&ha!==hb)return false;return d===null||d<=2}
+  if(sa&&sb)return d!==null&&d<=0.3;   // different street names: only the same building (geocoder jitter)
+  return d!==null&&d<=0.8;             // a street name missing on one side
+}
+function sameFlatClusters(list){
+  const buckets=new Map();list.forEach((p,i)=>{const k=specKey(p)||`solo|${i}`;(buckets.get(k)||buckets.set(k,[]).get(k)).push(i)});
+  const parent=list.map((_,i)=>i);const find=i=>parent[i]===i?i:(parent[i]=find(parent[i]));
+  for(const idx of buckets.values())for(let x=0;x<idx.length;x++)for(let y=x+1;y<idx.length;y++)if(sameFlat(list[idx[x]],list[idx[y]])){const a=find(idx[x]),b=find(idx[y]);if(a!==b)parent[Math.max(a,b)]=Math.min(a,b)}
+  const groups=new Map();list.forEach((p,i)=>{const r=find(i);(groups.get(r)||groups.set(r,[]).get(r)).push(p)});
+  return [...groups.values()];
+}
 const listedAt=p=>Date.parse(p.listing_date)||Date.parse(p.first_seen_at)||0;
-const idsOf=p=>[p.id,...(p.reposts||[]).map(r=>r.id)];
+const idsOf=p=>[p.id,...(p.reposts||[]).map(r=>r.id),...(p.also_on||[]).map(a=>a.id)];
 const isHidden=p=>idsOf(p).some(id=>saved.hidden.includes(id));
 const isFav=p=>idsOf(p).some(id=>saved.favorites.includes(id));
-/* 1) Same source + same place/size/rooms/floor/address = the same flat re-posted under a new id
-      (agencies do this daily). Keep the newest copy, remember the older ids in p.reposts.
-   2) Across sources: keep one card and link the other listing (p.also_on); if the kept copy has
-      no photos, borrow them from the duplicate. */
-function dedupe(list){const groups=new Map();let n=0;for(const p of list){delete p.also_on;delete p.reposts;delete p.borrowed_photos;const k=dupKey(p);const gk=k?`${sourceOf(p)}|${k}|${normAddr(p.address)}`:`solo|${n++}`;(groups.get(gk)||groups.set(gk,[]).get(gk)).push(p)}
-const hosts=[];for(const g of groups.values()){g.sort((a,b)=>listedAt(b)-listedAt(a));const host=g[0];if(g.length>1)host.reposts=g.slice(1).map(r=>({id:r.id,url:r.url,price:r.price,listing_date:r.listing_date,first_seen_at:r.first_seen_at,published_at:r.published_at}));hosts.push(host)}
-const seen=new Map(),out=[];for(const p of hosts){const k=dupKey(p);if(k&&seen.has(k)){const host=seen.get(k);if(sourceOf(host)!==sourceOf(p)){(host.also_on||(host.also_on=[])).push({source:sourceOf(p),url:p.url,price:p.price,id:p.id});if(!(host.images||[]).length&&Array.isArray(p.images)&&p.images.length){host.images=p.images;host.main_image=p.main_image||p.images[0];host.borrowed_photos=sourceOf(p)}continue}}if(k&&!seen.has(k))seen.set(k,p);out.push(p)}return out}
+/* 1) Same source: copies of one flat are re-posts under new ids (agencies do this daily).
+      Keep the newest copy, remember the older ids in p.reposts.
+   2) Across sources: keep one card (myhome first, then ss, then korter) and link the other
+      listings (p.also_on); if the kept copy has no photos, borrow them from a duplicate. */
+function dedupe(list){
+  for(const p of list){delete p.also_on;delete p.reposts;delete p.borrowed_photos}
+  const out=[];
+  for(const cl of sameFlatClusters(list)){
+    const bySrc=new Map();for(const p of cl)(bySrc.get(sourceOf(p))||bySrc.set(sourceOf(p),[]).get(sourceOf(p))).push(p);
+    const hosts=[];for(const g of bySrc.values()){g.sort((a,b)=>listedAt(b)-listedAt(a));const h=g[0];if(g.length>1)h.reposts=g.slice(1).map(r=>({id:r.id,url:r.url,price:r.price,listing_date:r.listing_date,first_seen_at:r.first_seen_at,published_at:r.published_at}));hosts.push(h)}
+    const host=hosts[0];
+    for(const p of hosts.slice(1)){(host.also_on||(host.also_on=[])).push({source:sourceOf(p),url:p.url,price:p.price,id:p.id});if(!(host.images||[]).length&&Array.isArray(p.images)&&p.images.length){host.images=p.images;host.main_image=p.main_image||p.images[0];host.borrowed_photos=sourceOf(p)}}
+    out.push(host);
+  }
+  return out;
+}
 const mergedProps=(main,ss,korter)=>dedupe(eligible([...(main?.properties||[]),...(ss?.properties||[]),...(korter?.properties||[])],excludedFrom(main,ss,korter)));
 const srcStamp=(label,d)=>d?.retrieved_at?` · ${label} ${new Date(d.retrieved_at).toLocaleString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'Asia/Tbilisi'})} (${d.properties.length})`:` · ${label} not collected yet`;
 function applyData(next,{rerender=true,ss=ssData,korter=korterData}={}){data=next;ssData=ss;korterData=korter;properties=mergedProps(data,ssData,korterData);for(const id of selected)if(!properties.some(p=>p.id===id)||saved.hidden.includes(id))selected.delete(id);configureDistricts();configureNeighborhoods();$('#sourceNote').textContent=`myhome.ge snapshot ${new Date(data.retrieved_at).toLocaleString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'Asia/Tbilisi'})}${srcStamp('ss.ge',ssData)}${srcStamp('korter.ge',korterData)} · Availability not confirmed`;$('#coverage').textContent=data.coverage_note;const status=data.refresh_status;$('#refreshStatus').textContent=status?`Last attempt: ${new Date(status.attempted_at).toLocaleString('en-GB',{timeZone:'Asia/Tbilisi'})} (Tbilisi) | ${status.status==='success'?'Collection completed':('REFRESH FAILED - showing retained listings. '+(status.error||''))}`:'No automated refresh completed yet.';if(rerender){renderStats();render()}}

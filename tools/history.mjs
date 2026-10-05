@@ -41,7 +41,7 @@ for(const p of props){
   if(!rec.last_seen||rec.last_seen<at)rec.last_seen=at;
   rec.size=p.size;rec.neighborhood=p.neighborhood;if(p.source)rec.source=p.source;
   // enough to recognise the same flat when it is re-posted under a new id
-  if(Number.isFinite(p.lat)&&Number.isFinite(p.lng)){rec.lat=p.lat;rec.lng=p.lng}if(p.rooms!=null)rec.rooms=p.rooms;if(p.floor!=null)rec.floor=p.floor;if(p.address)rec.address=p.address;
+  if(Number.isFinite(p.lat)&&Number.isFinite(p.lng)){rec.lat=p.lat;rec.lng=p.lng}if(p.rooms!=null)rec.rooms=p.rooms;if(p.total_floors!=null)rec.total_floors=p.total_floors;if(p.floor!=null)rec.floor=p.floor;if(p.address)rec.address=p.address;
   seen++;
 }
 // forget listings not seen for 90 days so the file (fetched by every visitor) stays small

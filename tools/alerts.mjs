@@ -57,18 +57,45 @@ const esc=s=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>
 const src=p=>p.source&&p.source!=='myhome.ge'?p.source:'myhome.ge';
 
 // same dedup rule as the site: ~100 m + size + rooms + floor
-const key=p=>{const c=coords(p);return c&&p.size?`${c.lat.toFixed(3)},${c.lng.toFixed(3)}|${p.size}|${p.rooms??''}|${p.floor??''}`:null};
 const all=[...(main.properties||[]),...extras].filter(eligible);
-// 1) same source + same place/size/rooms/floor/address = one flat re-posted under new ids → keep the newest
-const normAddr=s=>String(s||'').replace(/[\s.,\-–\/]/g,'').toLowerCase();
+/* "Same flat" matching — keep in sync with script.js (sameFlat / sameFlatClusters).
+   Same size/rooms/floor (and total floors when both known), price within 15 %, and either the same
+   street (house numbers not contradicting, ≤2 km) or the same spot (≤0.3 km when the street names differ,
+   ≤0.8 km when one address has no street). */
+const STREET_STOP=new Set(['ქ','ქუჩა','ქუჩის','გამზ','გამზირი','ჩიხი','შეს','შესახვევი','ул','улица','пр','проспект','пер','str','st','street','ave','avenue']);
+const streetOf=s=>String(s||'').toLowerCase().replace(/[.,\/\-–#№()"']/g,' ').split(/\s+/).filter(t=>t&&!/\d/.test(t)&&!STREET_STOP.has(t)).join('');
+const houseNo=s=>{const m=String(s||'').match(/(?:^|[\s,#№])(\d{1,4}[ა-ჰa-zа-я]?)(?=$|[\s,\/])/);return m&&!/^0+$/.test(m[1])?m[1]:null};
+const specKey=p=>p.size?`${p.size}|${p.rooms??''}|${p.floor??''}`:null;
+const coordsAny=p=>coords(p)||(Number.isFinite(p.lat)&&Number.isFinite(p.lng)?{lat:p.lat,lng:p.lng}:null);
+function sameFlat(a,b){
+  if(specKey(a)!==specKey(b))return false;
+  if(a.total_floors!=null&&b.total_floors!=null&&a.total_floors!==b.total_floors)return false;
+  const pa=a.price??lastPrice(a),pb=b.price??lastPrice(b);
+  if(pa&&pb&&Math.abs(pa-pb)>0.15*Math.max(pa,pb))return false;
+  const ca=coordsAny(a),cb=coordsAny(b),d=ca&&cb?km(ca,cb):null;
+  const sa=streetOf(a.address),sb=streetOf(b.address),ha=houseNo(a.address),hb=houseNo(b.address);
+  if(sa&&sb&&sa.length>=3&&sa===sb){if(ha&&hb&&ha!==hb)return false;return d===null||d<=2}
+  if(sa&&sb)return d!==null&&d<=0.3;
+  return d!==null&&d<=0.8;
+}
+function sameFlatClusters(list){
+  const buckets=new Map();list.forEach((p,i)=>{const k=specKey(p)||`solo|${i}`;(buckets.get(k)||buckets.set(k,[]).get(k)).push(i)});
+  const parent=list.map((_,i)=>i);const find=i=>parent[i]===i?i:(parent[i]=find(parent[i]));
+  for(const idx of buckets.values())for(let x=0;x<idx.length;x++)for(let y=x+1;y<idx.length;y++)if(sameFlat(list[idx[x]],list[idx[y]])){const a=find(idx[x]),b=find(idx[y]);if(a!==b)parent[Math.max(a,b)]=Math.min(a,b)}
+  const groups=new Map();list.forEach((p,i)=>{const r=find(i);(groups.get(r)||groups.set(r,[]).get(r)).push(p)});
+  return [...groups.values()];
+}
+const lastPrice=r=>r?.prices?.length?r.prices[r.prices.length-1].price:null;
 const listedAt=p=>Date.parse(p.listing_date)||Date.parse(p.first_seen_at)||0;
-const groups=new Map();let solo=0;
-for(const p of all){const k=key(p);const gk=k?`${src(p)}|${k}|${normAddr(p.address)}`:`solo|${solo++}`;(groups.get(gk)||groups.set(gk,[]).get(gk)).push(p)}
-const hosts=[];for(const g of groups.values()){g.sort((a,b)=>listedAt(b)-listedAt(a));if(g.length>1)g[0].reposts=g.slice(1);hosts.push(g[0])}
-const idsOf=p=>[p.id,...(p.reposts||[]).map(r=>r.id)];
-// 2) across sources: one entry, the other source noted
-const seen=new Map();const current=[];
-for(const p of hosts){const k=key(p);if(k&&seen.has(k)&&src(seen.get(k))!==src(p)){(seen.get(k).also||(seen.get(k).also=[])).push(p);continue}if(k&&!seen.has(k))seen.set(k,p);current.push(p)}
+// 1) same source: one flat re-posted under new ids → keep the newest; 2) across sources: one entry, the other copies noted
+const current=[];
+for(const cl of sameFlatClusters(all)){
+  const bySrc=new Map();for(const p of cl)(bySrc.get(src(p))||bySrc.set(src(p),[]).get(src(p))).push(p);
+  const hosts=[];for(const g of bySrc.values()){g.sort((a,b)=>listedAt(b)-listedAt(a));if(g.length>1)g[0].reposts=g.slice(1);hosts.push(g[0])}
+  if(hosts.length>1)hosts[0].also=hosts.slice(1);
+  current.push(hosts[0]);
+}
+const idsOf=p=>[p.id,...(p.reposts||[]).map(r=>r.id),...(p.also||[]).map(a=>a.id)];
 const byId=new Map(current.flatMap(p=>idsOf(p).map(id=>[id,p])));
 const allIds=new Set(all.map(p=>p.id));
 
@@ -88,18 +115,16 @@ async function loadFavorites(){
 const favRows=await loadFavorites();
 const prevL=prev.listings||{},curL=hist.listings||{};
 // a flat is "new" only if no copy of it (by id, or by place+size+rooms+floor+address) was in the previous run
-const gkeyOf=p=>{const k=key(p);return k?`${src(p)}|${k}|${normAddr(p.address)}`:null};
-const prevKeys=new Map();for(const [id,r] of Object.entries(prevL)){if(Number.isFinite(r.lat)&&Number.isFinite(r.lng)&&r.size){const gk=`${r.source||'myhome.ge'}|${r.lat.toFixed(3)},${r.lng.toFixed(3)}|${r.size}|${r.rooms??''}|${r.floor??''}|${normAddr(r.address)}`;(prevKeys.get(gk)||prevKeys.set(gk,[]).get(gk)).push(id)}}
-const prevIdsOf=p=>[...new Set([...idsOf(p).filter(id=>prevL[id]),...(prevKeys.get(gkeyOf(p))||[])])];
+const prevRecs=Object.entries(prevL).map(([id,r])=>({id,...r,price:lastPrice(r),source:r.source||'myhome.ge'}));
+const prevIdsOf=p=>[...new Set([...idsOf(p).filter(id=>prevL[id]),...prevRecs.filter(r=>sameFlat(p,r)).map(r=>r.id)])];
 const isNew=p=>!prevIdsOf(p).length;
-const currentKeys=new Set(current.map(gkeyOf).filter(Boolean));
-const lastPrice=r=>r?.prices?.length?r.prices[r.prices.length-1].price:null;
 const fresh=current.filter(isNew);
-const prevPrice=p=>{const r=prevIdsOf(p).map(id=>prevL[id]).filter(r=>r&&r.prices?.length).sort((a,b)=>Date.parse(b.last_seen||0)-Date.parse(a.last_seen||0))[0];return lastPrice(r)};
+// previous price: the same id first, then the same source (ss/korter copies are often 1 ₾ off), then the most recently seen copy
+const prevPrice=p=>{const rank=([id,r])=>(id===p.id?0:(r.source||'myhome.ge')===src(p)?1:2);const r=prevIdsOf(p).map(id=>[id,prevL[id]]).filter(([,r])=>r&&r.prices?.length).sort((a,b)=>rank(a)-rank(b)||Date.parse(b[1].last_seen||0)-Date.parse(a[1].last_seen||0))[0];return lastPrice(r?.[1])};
 const changes=current.filter(p=>!isNew(p)&&prevPrice(p)!==null&&prevPrice(p)!==p.price).map(p=>({p,from:prevPrice(p),to:p.price}));
 const drops=changes.filter(c=>c.to<c.from),rises=changes.filter(c=>c.to>c.from);
 const snapAt=Date.parse(hist.snapshot_at||new Date().toISOString());
-const gone=Object.entries(prevL).filter(([id,r])=>!byId.has(id)&&!allIds.has(id)&&!(Number.isFinite(r.lat)&&currentKeys.has(`${r.source||'myhome.ge'}|${r.lat.toFixed(3)},${r.lng.toFixed(3)}|${r.size}|${r.rooms??''}|${r.floor??''}|${normAddr(r.address)}`))&&r.last_seen&&Date.parse(r.last_seen)>=snapAt-3*86400000).map(([id,r])=>({id,r,days:Math.round((Date.parse(r.last_seen)-Date.parse(r.first_seen))/86400000)})).filter(g=>Number.isFinite(g.days)&&g.days<=cfg.goneMaxDays);
+const gone=Object.entries(prevL).filter(([id,r])=>!byId.has(id)&&!allIds.has(id)&&!current.some(p=>sameFlat(p,{id,...r,price:lastPrice(r),source:r.source||'myhome.ge'}))&&r.last_seen&&Date.parse(r.last_seen)>=snapAt-3*86400000).map(([id,r])=>({id,r,days:Math.round((Date.parse(r.last_seen)-Date.parse(r.first_seen))/86400000)})).filter(g=>Number.isFinite(g.days)&&g.days<=cfg.goneMaxDays);
 
 const byDist=(a,b)=>(dist(a)??99)-(dist(b)??99);
 const who=p=>p.advertiser?(p.advertiser==='Individual'?'🧑 Owner':'🏢 Agency'):'';
