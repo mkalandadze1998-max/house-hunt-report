@@ -41,7 +41,9 @@ const AREAS={
   'sanzona':     {district:'გლდანი-ნაძალადევი',sub:'სანზონა',   wanted:['სანზონა']},
 };
 const SUB_KA={'Saburtalo':'საბურთალო','Didi Dighomi':'დიდი დიღომი','Vashlijvari':'ვაშლიჯვარი','Didube':'დიდუბე','Dighomi Massive':'დიღმის მასივი','Sanzona':'სანზონა','Temka':'თემქა','Vazha-Pshavela Blocks':'ვაჟა ფშაველას კვარტლები','Vake':'ვაკე','Bagebi':'ბაგები','Vera':'ვერა','Chugureti':'ჩუღურეთი','Nadzaladevi':'ნაძალადევი'};
-const DISTRICT_KA={'Saburtalo District':'ვაკე-საბურთალო','Vake District':'ვაკე-საბურთალო','Didube District':'დიდუბე-ჩუღურეთი','Chugureti District':'დიდუბე-ჩუღურეთი','Nadzaladevi District':'გლდანი-ნაძალადევი','Gldani District':'გლდანი-ნაძალადევი'};
+const DISTRICT_KA={'Saburtalo District':'ვაკე-საბურთალო','Vake District':'ვაკე-საბურთალო','Didube District':'დიდუბე-ჩუღურეთი','Chugureti District':'დიდუბე-ჩუღურეთი','Nadzaladevi District':'გლდანი-ნაძალადევი','Gldani District':'გლდანი-ნაძალადევი','საბურთალოს რაიონი':'ვაკე-საბურთალო','ვაკის რაიონი':'ვაკე-საბურთალო','დიდუბის რაიონი':'დიდუბე-ჩუღურეთი','ჩუღურეთის რაიონი':'დიდუბე-ჩუღურეთი','ნაძალადევის რაიონი':'გლდანი-ნაძალადევი','გლდანის რაიონი':'გლდანი-ნაძალადევი'};
+// Listing pages are read in English (stable field names); detail pages in Georgian so descriptions and addresses keep their original wording.
+const DETAIL_URL=id=>`${SITE}/qiravdeba-binebi-tbilisshi/${id}`;
 
 const reqFile=path.join(root,'data','properties.json');
 let wanted=['ვაკე-საბურთალო','დიდუბე','სანზონა','დიღმის მე-3 მასივი'];
@@ -98,7 +100,7 @@ export function mapListing(objectId,st,card,areaHint){
   const considerations=[];
   if(currency==='USD')considerations.push(`Asking rent is in USD ($${lay.price}); GEL shown at korter.ge rate ${rate}.`);
   if(advertiser==='Agency')considerations.push(`Posted by an agency${seller.agency?.name?' ('+seller.agency.name+')':''} — expect a commission.`);
-  if(/furnish/i.test(desc)===false)considerations.push('Furniture not stated in the listing.');
+  if(!/furnish|მოწყობილი|ავეჯ/i.test(desc))considerations.push('Furniture not stated in the listing.');
   considerations.push('Photos have not been visually screened by the automated collector.');
   return {
     id,url:`${SITE}/en/apartments-for-rent-tbilisi/${objectId}`,source:'korter.ge',
@@ -112,12 +114,12 @@ export function mapListing(objectId,st,card,areaHint){
     rooms:Number(lay.roomCount)||Number(card?.roomCount)||null,bedrooms:Number(lay.bedroomCount)||null,
     floor:Number.isFinite(floor)?floor:null,total_floors:Number(totalFloors)||null,
     condition:null,condition_original:null,
-    furniture:/fully furnished|furnished/i.test(desc)?true:/unfurnished|without furniture/i.test(desc)?false:null,furniture_items:[],
-    heating:/central heating|heating/i.test(desc)?'Heating mentioned':null,
-    parking:lay.parking?String(lay.parking):/parking|garage/i.test(desc)?'Parking mentioned':null,
-    air_conditioning:/air[- ]?condition|a\/c\b/i.test(desc)?true:null,
+    furniture:/fully furnished|furnished|მოწყობილი|ავეჯით|ავეჯი/i.test(desc)?true:/unfurnished|without furniture|ავეჯის გარეშე|ცარიელი/i.test(desc)?false:null,furniture_items:[],
+    heating:/central heating|heating|გათბობ/i.test(desc)?'Heating mentioned':null,
+    parking:lay.parking?String(lay.parking):/parking|garage|პარკინგ|ავტოფარეხ|გარაჟ/i.test(desc)?'Parking mentioned':null,
+    air_conditioning:/air[- ]?condition|a\/c\b|კონდიციონერ/i.test(desc)?true:null,
     balcony:lay.hasBalcony===true?'Balcony':lay.hasTerrace===true?'Terrace':null,
-    elevator:/elevator|lift/i.test(desc)?true:null,pet_friendly:/pet/i.test(desc)?true:null,
+    elevator:/elevator|lift|ლიფტ/i.test(desc)?true:null,pet_friendly:/\bpets?\b|ცხოველ/i.test(desc)?true:null,
     building_status:null,
     advertiser,agency:seller.agency?.name||null,contact_person:seller.name||null,contact_phones:phones,
     description:desc,
@@ -166,7 +168,7 @@ for(const id of Object.keys(previous))if(!candidates.has(id.replace(/^korter-/,'
 
 const out=[];let ok=0,gone=0,fail=0;
 for(const [objectId,c] of candidates){
-  const url=`${SITE}/en/apartments-for-rent-tbilisi/${objectId}`;
+  const url=DETAIL_URL(objectId);
   try{
     const st=initialState(await getHtml(url));
     const lay=st.layoutLandingStore?.layout;

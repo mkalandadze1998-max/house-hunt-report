@@ -76,6 +76,17 @@ The library loads from jsDelivr with unpkg as a fallback.
 Note: the listing data itself is in this public repository; the login protects
 the interface and the shared shortlist, not the raw JSON.
 
+## Phone, links, pings
+
+- **Add to home screen**: the site ships a web-app manifest and icons, so "Add to Home Screen" on
+  iOS/Android installs it as a full-screen app.
+- **Share a flat**: "Copy link" in the detail view gives `…/#listing-<id>`; opening it jumps straight
+  to that listing. Clicking a photo in the detail view opens a full-screen lightbox (←/→, swipe, Esc).
+- **Live Telegram pings** when the other person saves / hides / notes a flat: a Supabase Edge
+  Function + database webhook, see `supabase/README.md`.
+- Cards show "N% under <sub-district> median" (rent per m² vs. the median of that sub-district's
+  listings, ≥ 5 listings, else the district) instead of the city-wide "Best value" when it applies.
+
 ## Recovery
 
 If the page says "Saved data unavailable", make sure the `data` folder sits
