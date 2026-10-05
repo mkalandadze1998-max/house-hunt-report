@@ -33,6 +33,11 @@ on:
   schedule:
     - cron: '30 3,15 * * *'   # 07:30 and 19:30 Tbilisi (ss.ge refresh)
   workflow_dispatch:
+    inputs:
+      hello:
+        description: 'Send a test message to every configured Telegram chat'
+        type: boolean
+        default: false
   repository_dispatch:
     types: [snapshot-published]
 
@@ -94,6 +99,13 @@ jobs:
 
       - name: Record prices from this snapshot
         run: node tools/history.mjs --history out/history.json $EXTRA
+
+      - name: Telegram test message
+        if: github.event.inputs.hello == 'true'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: node tools/alerts.mjs --hello
 
       - name: Telegram alerts
         continue-on-error: true

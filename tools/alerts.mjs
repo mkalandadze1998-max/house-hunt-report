@@ -2,7 +2,8 @@
 // Telegram alerts for House Hunt.
 //
 //   node tools/alerts.mjs --history out/history.json --prev prev-hist.json \
-//        [--ss out/ss.json] [--geo out/geo.json] [--dry]
+//        [--extra out/ss.json] [--extra out/korter.json] [--geo out/geo.json] [--dry]
+//   node tools/alerts.mjs --hello      # test message to every configured chat
 //
 // Compares the listing set of this run against the previous history.json and
 // sends one message with: new listings, price drops/rises, and listings that
@@ -32,6 +33,19 @@ const hist=readJson(argValue('--history','data/history.json'),{listings:{}});
 const prev=readJson(argValue('--prev','/dev/null'),{listings:{}});
 const geo=readJson(argValue('--geo','data/geo.json'),{listings:{}}).listings||{};
 const dry=args.includes('--dry')||!process.env.TELEGRAM_BOT_TOKEN||!process.env.TELEGRAM_CHAT_ID;
+// --hello: send a short test message to every configured chat and exit (used by the workflow's manual run)
+if(args.includes('--hello')){
+  if(dry){console.log('hello: TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set');process.exit(1)}
+  const chats=String(process.env.TELEGRAM_CHAT_ID).split(/[,\s]+/).filter(Boolean);
+  const stamp=new Date().toLocaleString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'Asia/Tbilisi'});
+  let ok=0;
+  for(const chat_id of chats){
+    const r=await fetch(`https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id,parse_mode:'HTML',disable_web_page_preview:true,text:`✅ <b>House Hunt</b> alerts are connected to this chat · ${stamp}\nDigests arrive after every collection run (07:30 / 19:30 Tbilisi and after each myhome.ge snapshot).\n<a href="${SITE_URL}">Open the shortlist →</a>`})});
+    const j=await r.json().catch(()=>({}));
+    if(r.ok&&j.ok){ok++;console.log(`hello → ${chat_id}: sent`)}else console.error(`hello → ${chat_id}: ${r.status} ${JSON.stringify(j).slice(0,200)}`);
+  }
+  process.exit(ok===chats.length?0:1);
+}
 
 const eligible=p=>Number.isFinite(p.price)&&p.price>0&&p.price<=cfg.maxPriceGel&&p.currency==='GEL'&&p.size>=cfg.minSizeM2&&p.transaction==='rent_monthly'&&p.property_type==='apartment'&&p.screening==='include'&&![p.district,p.neighborhood,...(p.district_groups||[])].some(v=>excluded.has(norm(v)));
 const coords=p=>Number.isFinite(p.lat)&&Number.isFinite(p.lng)?{lat:p.lat,lng:p.lng}:geo[p.id]&&Number.isFinite(geo[p.id].lat)?geo[p.id]:null;
