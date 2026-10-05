@@ -31,7 +31,11 @@ on:
       - data/alerts.json
       - .github/workflows/geocode.yml
   schedule:
-    - cron: '30 3,15 * * *'   # 07:30 and 19:30 Tbilisi (ss.ge refresh)
+    # 09:00, 14:00 and 19:30 Tbilisi (UTC+4): 30 min after each myhome.ge run. A scheduled run is
+    # skipped when a push-triggered run already published within the last 40 minutes.
+    - cron: '0 5 * * *'
+    - cron: '0 10 * * *'
+    - cron: '30 15 * * *'
   workflow_dispatch:
     inputs:
       hello:
@@ -60,7 +64,21 @@ jobs:
         with:
           node-version: 20
 
+      - name: Skip a scheduled run that follows a fresh push-triggered run
+        id: gate
+        run: |
+          skip=false
+          if [ "${{ github.event_name }}" = "schedule" ] && git fetch --depth=1 origin geo-data 2>/dev/null; then
+            last=$(git log -1 --format=%ct origin/geo-data 2>/dev/null || echo 0)
+            age=$(( $(date +%s) - last ))
+            echo "last geo-data publish was ${age}s ago"
+            [ "$age" -lt 2400 ] && skip=true
+          fi
+          echo "skip=$skip" >> "$GITHUB_OUTPUT"
+          [ "$skip" = true ] && echo "::notice::Skipping: data was published less than 40 minutes ago" || true
+
       - name: Seed with the previously published geo.json / history.json
+        if: steps.gate.outputs.skip != 'true'
         run: |
           mkdir -p out
           if git fetch --depth=1 origin geo-data 2>/dev/null; then
@@ -76,17 +94,21 @@ jobs:
           node -e 'for(const f of ["geo","history"]){try{const g=require("./out/"+f+".json");console.log(f,"seed entries:",Object.keys(g.listings||{}).length)}catch{console.log(f,"seed entries: 0")}}'
 
       - name: Collect ss.ge listings
+        if: steps.gate.outputs.skip != 'true'
         continue-on-error: true
         run: node tools/collect-ss.mjs --out out/ss.json
 
       - name: Collect korter.ge listings
+        if: steps.gate.outputs.skip != 'true'
         continue-on-error: true
         run: node tools/collect-korter.mjs --out out/korter.json
 
       - name: Fetch coordinates for new listings
+        if: steps.gate.outputs.skip != 'true'
         run: node tools/geocode.mjs --geo out/geo.json
 
       - name: List extra sources
+        if: steps.gate.outputs.skip != 'true'
         run: |
           EXTRA=""
           for f in out/ss.json out/korter.json; do [ -s "$f" ] && EXTRA="$EXTRA --extra $f"; done
@@ -94,20 +116,23 @@ jobs:
           echo "extra sources:$EXTRA"
 
       - name: Driving time from home (OSRM)
+        if: steps.gate.outputs.skip != 'true'
         continue-on-error: true
         run: node tools/commute.mjs --commute out/commute.json --geo out/geo.json $EXTRA
 
       - name: Record prices from this snapshot
+        if: steps.gate.outputs.skip != 'true'
         run: node tools/history.mjs --history out/history.json $EXTRA
 
       - name: Telegram test message
-        if: github.event.inputs.hello == 'true'
+        if: github.event.inputs.hello == 'true' && steps.gate.outputs.skip != 'true'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: node tools/alerts.mjs --hello
 
       - name: Telegram alerts
+        if: steps.gate.outputs.skip != 'true'
         continue-on-error: true
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -116,6 +141,7 @@ jobs:
         run: node tools/alerts.mjs --history out/history.json --prev prev-hist.json --geo out/geo.json $EXTRA
 
       - name: Publish to the geo-data branch
+        if: steps.gate.outputs.skip != 'true'
         run: |
           set -e
           git config user.name  "house-hunt-bot"
