@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T15:06:23.255Z",
+  "generated_at": "2026-10-06T04:42:22.283Z",
   "keep_days": 14,
   "items": [
     {
@@ -18,7 +18,7 @@
       "image": "https://static.my.ge/myhome/photos/0/7/4/2/2/large/18222470_4.jpg",
       "listing_date": "2026-10-05T00:00:12+04:00",
       "excluded_at": "2026-10-04T09:56:34.738Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26246340",
@@ -36,7 +36,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/e0InO656ac37999c01e4.webp",
       "listing_date": "2026-10-05T14:19:36+04:00",
       "excluded_at": "2026-10-05T10:29:19.511Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26246338",
@@ -54,7 +54,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/x9xc1cH6ac3799022e8e.webp",
       "listing_date": "2026-10-05T14:19:10+04:00",
       "excluded_at": "2026-10-05T10:29:19.511Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26245814",
@@ -72,7 +72,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/W46UAnn6ac3734f57a27.webp",
       "listing_date": "2026-10-05T13:53:04+04:00",
       "excluded_at": "2026-10-05T10:29:19.511Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26243974",
@@ -90,7 +90,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/ttjvVHg6ac35fc746436.webp",
       "listing_date": "2026-10-05T12:30:00+04:00",
       "excluded_at": "2026-10-05T10:29:19.511Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26242692",
@@ -108,7 +108,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/h29sJIk6ac34cbaa45bf.webp",
       "listing_date": "2026-10-05T11:21:11+04:00",
       "excluded_at": "2026-10-05T10:29:19.511Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26242627",
@@ -126,7 +126,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/povg8NT6ac34e529a21a.webp",
       "listing_date": "2026-10-05T11:15:13+04:00",
       "excluded_at": "2026-10-05T10:29:19.511Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26242268",
@@ -144,25 +144,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/yzXaAUl6ac339a8a0134.webp",
       "listing_date": "2026-10-05T09:46:50+04:00",
       "excluded_at": "2026-10-05T10:29:19.511Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
-    },
-    {
-      "id": "26234675",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-saburtaloze-26234675/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 1000,
-      "size": 40,
-      "rooms": 2,
-      "floor": 1,
-      "total_floors": 1,
-      "district": "ვაკე-საბურთალო",
-      "neighborhood": "საბურთალო",
-      "address": "პეკინის გამზ. ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/jJ5bn5k6ac0db84f0200.webp",
-      "listing_date": "2026-10-05T00:00:12+04:00",
-      "excluded_at": "2026-10-05T10:29:19.511Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26118390",
@@ -178,9 +160,9 @@
       "address": "დიღმის მასივი - VI კვარტალი ",
       "condition": "ძველი გარემონტებული",
       "image": "https://static-api-statements.tnet.ge/uploads/202609/20260922/statements/KJFiO626ab22623180b8.webp",
-      "listing_date": "2026-10-05T00:00:12+04:00",
+      "listing_date": "2026-10-06T00:00:08+04:00",
       "excluded_at": "2026-10-05T10:29:19.511Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26252954",
@@ -198,7 +180,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/pr4Un6m6ac3ba1674e56.webp",
       "listing_date": "2026-10-05T18:54:33+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26252730",
@@ -216,7 +198,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/Q3uzxXd6ac3b774aa303.webp",
       "listing_date": "2026-10-05T18:44:06+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26191718",
@@ -232,9 +214,9 @@
       "address": "ვარდისუბნის ქუჩა ",
       "condition": "ძველი გარემონტებული",
       "image": "https://static-api-statements.tnet.ge/uploads/202609/20260929/statements/psmPhgu6abb8841a33b6.webp",
-      "listing_date": "2026-10-05T18:33:25+04:00",
+      "listing_date": "2026-10-06T00:00:08+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26251985",
@@ -252,7 +234,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/wLcNsyb6ac3b0cd97a98.webp",
       "listing_date": "2026-10-05T18:17:47+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26251876",
@@ -270,7 +252,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/sWOa5wz6ac3b003d2ecc.webp",
       "listing_date": "2026-10-05T18:11:45+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26251728",
@@ -288,7 +270,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/nWog3hy6ac3aea28d98e.webp",
       "listing_date": "2026-10-05T18:08:41+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26250846",
@@ -306,7 +288,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/3MOySH56ac3a5da89ba2.webp",
       "listing_date": "2026-10-05T17:29:59+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26250102",
@@ -324,7 +306,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/AKdTbAj6ac39f024289e.webp",
       "listing_date": "2026-10-05T16:59:52+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26249747",
@@ -342,7 +324,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/zRtzd1f6ac39acd439e1.webp",
       "listing_date": "2026-10-05T16:46:36+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26249559",
@@ -360,7 +342,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/SETsYjM6ac39a2da278e.webp",
       "listing_date": "2026-10-05T16:39:07+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26249035",
@@ -378,7 +360,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/A5FQNzn6ac3955091f8f.webp",
       "listing_date": "2026-10-05T16:18:08+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26248944",
@@ -396,7 +378,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/sKWcdks6ac3947d5d015.webp",
       "listing_date": "2026-10-05T16:14:30+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26248935",
@@ -414,7 +396,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/30CIl396ac3945e733f4.webp",
       "listing_date": "2026-10-05T16:14:17+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26248918",
@@ -432,7 +414,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/HZMRky66ac393dd9cd62.webp",
       "listing_date": "2026-10-05T16:13:42+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26248902",
@@ -450,7 +432,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/NA2b6Qc6ac39429f3278.webp",
       "listing_date": "2026-10-05T16:12:55+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26248779",
@@ -468,7 +450,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/5osaArc6ac392f6277a4.webp",
       "listing_date": "2026-10-05T16:08:27+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26248700",
@@ -486,7 +468,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/v4YuPft6ac392304697f.webp",
       "listing_date": "2026-10-05T16:05:13+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26248551",
@@ -504,7 +486,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/j2dobjJ6ac390acf1ad0.webp",
       "listing_date": "2026-10-05T15:58:53+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26248351",
@@ -522,7 +504,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/6iMMwLa6ac38ea17d050.webp",
       "listing_date": "2026-10-05T15:49:24+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26248163",
@@ -540,7 +522,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/o044A5o6ac38ac2bbff8.webp",
       "listing_date": "2026-10-05T15:41:28+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26248085",
@@ -558,7 +540,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/1jRvCne6ac38c1887a39.webp",
       "listing_date": "2026-10-05T15:38:29+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26247659",
@@ -576,7 +558,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/sdSLt4r6ac387f0eda74.webp",
       "listing_date": "2026-10-05T15:20:38+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26247601",
@@ -594,7 +576,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/r4CuQpd6ac38769402f1.webp",
       "listing_date": "2026-10-05T15:18:36+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26247473",
@@ -612,7 +594,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/dvuFiR96ac38641c0f60.webp",
       "listing_date": "2026-10-05T15:13:46+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-05T15:06:23.255Z"
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
     },
     {
       "id": "26246952",
@@ -630,6 +612,114 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/jkGQWjw6ac3807fe311a.webp",
       "listing_date": "2026-10-05T14:49:11+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
+    },
+    {
+      "id": "26236824",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-saburtaloze-26236824/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 39,
+      "rooms": 1,
+      "floor": 2,
+      "total_floors": 5,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "საბურთალო",
+      "address": "ვაჟა-ფშაველა - III კვარტალი 10",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/DsgoaKn6ac10058ae170.webp",
+      "listing_date": "2026-10-05T19:11:52+04:00",
+      "excluded_at": "2026-10-04T09:56:34.738Z",
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
+    },
+    {
+      "id": "26254278",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-dighmis-masivshi-26254278/",
+      "reason": "Outside requested districts",
+      "price": 1000,
+      "size": 54,
+      "rooms": 2,
+      "floor": 14,
+      "total_floors": 14,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "დიღმის მასივი - IV კვარტალი ",
+      "condition": "ახალი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/fIIXHY76ac3f9dfc1e2b.webp",
+      "listing_date": "2026-10-05T23:26:43+04:00",
+      "excluded_at": "2026-10-06T04:42:22.283Z",
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
+    },
+    {
+      "id": "26253672",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-3-otaxiani-bina-dighmis-masivshi-26253672/",
+      "reason": "Outside requested districts",
+      "price": 950,
+      "size": 82,
+      "rooms": 3,
+      "floor": 5,
+      "total_floors": 6,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "დიღმის მასივი - II კვარტალი 0",
+      "condition": "ახალი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/7ThymOB6ac3d249a6c32.webp",
+      "listing_date": "2026-10-05T20:40:12+04:00",
+      "excluded_at": "2026-10-06T04:42:22.283Z",
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
+    },
+    {
+      "id": "26253255",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-3-otaxiani-bina-dighmis-masivshi-26253255/",
+      "reason": "Outside requested districts",
+      "price": 1000,
+      "size": 82,
+      "rooms": 3,
+      "floor": 5,
+      "total_floors": 6,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "დიღმის მასივი - II კვარტალი 0",
+      "condition": "ახალი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/mGvm8aU6ac3c02d9556c.webp",
+      "listing_date": "2026-10-05T19:22:19+04:00",
+      "excluded_at": "2026-10-06T04:42:22.283Z",
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
+    },
+    {
+      "id": "26253232",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-saburtaloze-26253232/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 45,
+      "rooms": 2,
+      "floor": 7,
+      "total_floors": 7,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "საბურთალო",
+      "address": "ოთარ ლორთქიფანიძის ქუჩა ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/cfNeqyn6ac3bfdeb7f0b.webp",
+      "listing_date": "2026-10-05T19:19:19+04:00",
+      "excluded_at": "2026-10-06T04:42:22.283Z",
+      "last_seen_at": "2026-10-06T04:42:22.283Z"
+    },
+    {
+      "id": "26234675",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-saburtaloze-26234675/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 40,
+      "rooms": 2,
+      "floor": 1,
+      "total_floors": 1,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "საბურთალო",
+      "address": "პეკინის გამზ. ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/jJ5bn5k6ac0db84f0200.webp",
+      "listing_date": "2026-10-05T00:00:12+04:00",
+      "excluded_at": "2026-10-05T10:29:19.511Z",
       "last_seen_at": "2026-10-05T15:06:23.255Z"
     },
     {
@@ -737,24 +827,6 @@
       "condition": "ძველი გარემონტებული",
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/wPCzU8C6ac106839856d.webp",
       "listing_date": "2026-10-03T17:45:14+04:00",
-      "excluded_at": "2026-10-04T09:56:34.738Z",
-      "last_seen_at": "2026-10-05T10:29:19.511Z"
-    },
-    {
-      "id": "26236824",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-saburtaloze-26236824/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 1000,
-      "size": 39,
-      "rooms": 1,
-      "floor": 2,
-      "total_floors": 5,
-      "district": "ვაკე-საბურთალო",
-      "neighborhood": "საბურთალო",
-      "address": "ვაჟა-ფშაველა - III კვარტალი 10",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/DsgoaKn6ac10058ae170.webp",
-      "listing_date": "2026-10-03T17:19:57+04:00",
       "excluded_at": "2026-10-04T09:56:34.738Z",
       "last_seen_at": "2026-10-05T10:29:19.511Z"
     },
