@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T15:06:26.461Z",
+  "generated_at": "2026-10-07T04:45:20.613Z",
   "keep_days": 14,
   "items": [
     {
@@ -18,7 +18,7 @@
       "image": "https://static.my.ge/myhome/photos/0/7/4/2/2/large/18222470_4.jpg",
       "listing_date": "2026-10-06T12:59:11+04:00",
       "excluded_at": "2026-10-04T09:56:34.738Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26118390",
@@ -34,9 +34,9 @@
       "address": "დიღმის მასივი - VI კვარტალი ",
       "condition": "ძველი გარემონტებული",
       "image": "https://static-api-statements.tnet.ge/uploads/202609/20260922/statements/KJFiO626ab22623180b8.webp",
-      "listing_date": "2026-10-06T00:00:08+04:00",
+      "listing_date": "2026-10-07T00:00:13+04:00",
       "excluded_at": "2026-10-05T10:29:19.511Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26252954",
@@ -54,7 +54,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/pr4Un6m6ac3ba1674e56.webp",
       "listing_date": "2026-10-05T18:54:33+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26252730",
@@ -72,7 +72,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/Q3uzxXd6ac3b774aa303.webp",
       "listing_date": "2026-10-05T18:44:06+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26191718",
@@ -90,7 +90,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202609/20260929/statements/psmPhgu6abb8841a33b6.webp",
       "listing_date": "2026-10-06T00:00:08+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26251985",
@@ -108,7 +108,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/wLcNsyb6ac3b0cd97a98.webp",
       "listing_date": "2026-10-05T18:17:47+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26251876",
@@ -126,7 +126,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/sWOa5wz6ac3b003d2ecc.webp",
       "listing_date": "2026-10-05T18:11:45+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26251728",
@@ -144,25 +144,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/nWog3hy6ac3aea28d98e.webp",
       "listing_date": "2026-10-05T18:08:41+04:00",
       "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
-    },
-    {
-      "id": "26250846",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-dighmis-masivshi-26250846/",
-      "reason": "Outside requested districts",
-      "price": 900,
-      "size": 50,
-      "rooms": 2,
-      "floor": 5,
-      "total_floors": 6,
-      "district": "დიდუბე-ჩუღურეთი",
-      "neighborhood": "დიღმის მასივი",
-      "address": "ნ. ბოხუას ქ. 0",
-      "condition": "ახალი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/3MOySH56ac3a5da89ba2.webp",
-      "listing_date": "2026-10-05T17:29:59+04:00",
-      "excluded_at": "2026-10-05T15:06:23.255Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26236824",
@@ -180,7 +162,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/DsgoaKn6ac10058ae170.webp",
       "listing_date": "2026-10-05T19:11:52+04:00",
       "excluded_at": "2026-10-04T09:56:34.738Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26254278",
@@ -198,7 +180,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/fIIXHY76ac3f9dfc1e2b.webp",
       "listing_date": "2026-10-05T23:26:43+04:00",
       "excluded_at": "2026-10-06T04:42:22.283Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26253672",
@@ -216,7 +198,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/7ThymOB6ac3d249a6c32.webp",
       "listing_date": "2026-10-05T20:40:12+04:00",
       "excluded_at": "2026-10-06T04:42:22.283Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26253255",
@@ -234,7 +216,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/mGvm8aU6ac3c02d9556c.webp",
       "listing_date": "2026-10-05T19:22:19+04:00",
       "excluded_at": "2026-10-06T04:42:22.283Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26253232",
@@ -252,7 +234,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/cfNeqyn6ac3bfdeb7f0b.webp",
       "listing_date": "2026-10-05T19:19:19+04:00",
       "excluded_at": "2026-10-06T04:42:22.283Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26257924",
@@ -270,7 +252,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/FyRAYp36ac4c13216f22.webp",
       "listing_date": "2026-10-06T13:39:42+04:00",
       "excluded_at": "2026-10-06T09:48:15.301Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26257958",
@@ -288,7 +270,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/126lTVq6ac4c10cd1a50.webp",
       "listing_date": "2026-10-06T13:37:58+04:00",
       "excluded_at": "2026-10-06T09:48:15.301Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26257934",
@@ -306,7 +288,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/JHHdInc6ac4c10b8d8ed.webp",
       "listing_date": "2026-10-06T13:37:43+04:00",
       "excluded_at": "2026-10-06T09:48:15.301Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "21640018",
@@ -324,7 +306,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/t0ame9K6ac4d032cb4e8.webp",
       "listing_date": "2026-10-06T13:30:39+04:00",
       "excluded_at": "2026-10-06T09:48:15.301Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26256993",
@@ -342,7 +324,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/IGi7NIH6ac4b87e481a4.webp",
       "listing_date": "2026-10-06T13:02:48+04:00",
       "excluded_at": "2026-10-06T09:48:15.301Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26256935",
@@ -360,7 +342,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/izuIrrw6ac4b7ebb1e58.webp",
       "listing_date": "2026-10-06T13:00:21+04:00",
       "excluded_at": "2026-10-06T09:48:15.301Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26256624",
@@ -378,7 +360,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/XrOHVUa6ac4b57957d3a.webp",
       "listing_date": "2026-10-06T12:47:11+04:00",
       "excluded_at": "2026-10-06T09:48:15.301Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26256477",
@@ -396,7 +378,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/dZeqedg6ac4b321ede64.webp",
       "listing_date": "2026-10-06T12:40:13+04:00",
       "excluded_at": "2026-10-06T09:48:15.301Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26256383",
@@ -414,7 +396,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/Trr7wXv6ac4b1d143aa9.webp",
       "listing_date": "2026-10-06T12:33:50+04:00",
       "excluded_at": "2026-10-06T09:48:15.301Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26256031",
@@ -432,7 +414,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/JkMQ3nz6ac4ad9b2a796.webp",
       "listing_date": "2026-10-06T12:15:30+04:00",
       "excluded_at": "2026-10-06T09:48:15.301Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26255909",
@@ -450,7 +432,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/EXNH6HQ6ac4acc619703.webp",
       "listing_date": "2026-10-06T12:10:44+04:00",
       "excluded_at": "2026-10-06T09:48:15.301Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26255879",
@@ -468,7 +450,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/1JiEPrH6ac4ac96dafd5.webp",
       "listing_date": "2026-10-06T12:09:37+04:00",
       "excluded_at": "2026-10-06T09:48:15.301Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26255866",
@@ -486,7 +468,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/wIeM4Zu6ac4abf754db5.webp",
       "listing_date": "2026-10-06T12:09:20+04:00",
       "excluded_at": "2026-10-06T09:48:15.301Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26255874",
@@ -504,7 +486,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/4VCYn5P6ac4ac41ec1b6.webp",
       "listing_date": "2026-10-06T12:09:11+04:00",
       "excluded_at": "2026-10-06T09:48:15.301Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26255846",
@@ -522,7 +504,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/UDg4O4t6ac4ac2aa7b59.webp",
       "listing_date": "2026-10-06T12:08:27+04:00",
       "excluded_at": "2026-10-06T09:48:15.301Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26255639",
@@ -540,7 +522,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/U1qyipL6ac4aa4357aa9.webp",
       "listing_date": "2026-10-06T11:59:30+04:00",
       "excluded_at": "2026-10-06T09:48:15.301Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26255047",
@@ -558,7 +540,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/qoII8T66ac4a2f370d1b.webp",
       "listing_date": "2026-10-06T11:29:25+04:00",
       "excluded_at": "2026-10-06T09:48:15.301Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26238557",
@@ -576,7 +558,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261004/statements/EnvG0N06ac1644713370.webp",
       "listing_date": "2026-10-06T17:54:52+04:00",
       "excluded_at": "2026-10-04T09:56:34.738Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26264912",
@@ -594,7 +576,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/2zzEfgT6ac508cc3e0cc.webp",
       "listing_date": "2026-10-06T18:42:36+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26264593",
@@ -612,7 +594,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/1gE8Ced6ac50589c3d01.webp",
       "listing_date": "2026-10-06T18:29:03+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26264389",
@@ -630,7 +612,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/CJLMMp16ac503791bdab.webp",
       "listing_date": "2026-10-06T18:20:46+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26264384",
@@ -648,7 +630,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/zjv1V7F6ac5030ed8bce.webp",
       "listing_date": "2026-10-06T18:20:42+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26264027",
@@ -666,7 +648,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/H34Q8NI6ac4ff7d71afc.webp",
       "listing_date": "2026-10-06T18:04:56+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26263950",
@@ -684,7 +666,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/itYh66g6ac4ff0652344.webp",
       "listing_date": "2026-10-06T18:00:54+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26263870",
@@ -702,7 +684,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/Hu6cXN36ac4fd9924b95.webp",
       "listing_date": "2026-10-06T17:56:07+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26263742",
@@ -720,7 +702,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/IWbprnM6ac4fc390ac7e.webp",
       "listing_date": "2026-10-06T17:50:16+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26263490",
@@ -738,7 +720,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/JjF5SvJ6ac4f9e447e05.webp",
       "listing_date": "2026-10-06T17:39:16+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26263236",
@@ -756,7 +738,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/w84XOPI6ac4f798427eb.webp",
       "listing_date": "2026-10-06T17:29:14+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26263075",
@@ -774,7 +756,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/xnfTR756ac4f5ccaa5f3.webp",
       "listing_date": "2026-10-06T17:21:55+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26263035",
@@ -792,7 +774,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/wFR7ST16ac4f545466a5.webp",
       "listing_date": "2026-10-06T17:19:40+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26262938",
@@ -810,7 +792,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/udYtt4i6ac4f426127b2.webp",
       "listing_date": "2026-10-06T17:16:10+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26262696",
@@ -828,7 +810,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/l0S1y7S6ac4eea49f3f8.webp",
       "listing_date": "2026-10-06T17:03:31+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26262532",
@@ -846,7 +828,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/OWkH4bL6ac4ef0fd3875.webp",
       "listing_date": "2026-10-06T16:55:22+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26262293",
@@ -864,7 +846,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/QkpmTBE6ac4ecb47bb61.webp",
       "listing_date": "2026-10-06T16:43:01+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26262148",
@@ -882,7 +864,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/A7ldL856ac4ea6851cd0.webp",
       "listing_date": "2026-10-06T16:38:09+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26262181",
@@ -900,7 +882,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/Hmpd7IL6ac4eafc3f9ba.webp",
       "listing_date": "2026-10-06T16:37:55+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26261907",
@@ -918,7 +900,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/lFwbVhy6ac4e898250c7.webp",
       "listing_date": "2026-10-06T16:25:14+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26261870",
@@ -936,7 +918,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/khQQrpV6ac4e6ac8a39e.webp",
       "listing_date": "2026-10-06T16:23:25+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26261744",
@@ -954,7 +936,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/owUHAE46ac4e6542634e.webp",
       "listing_date": "2026-10-06T16:15:38+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26261343",
@@ -972,7 +954,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/Bt1k0tl6ac4e1dbcbe42.webp",
       "listing_date": "2026-10-06T15:57:01+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26261153",
@@ -990,7 +972,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/KOhy2L36ac4dfd5b1972.webp",
       "listing_date": "2026-10-06T15:48:57+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26260691",
@@ -1008,7 +990,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/kc5M4AT6ac4db5b3746c.webp",
       "listing_date": "2026-10-06T15:29:44+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26260362",
@@ -1026,7 +1008,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/A6vMGAU6ac4d556f0111.webp",
       "listing_date": "2026-10-06T15:12:39+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26260064",
@@ -1044,7 +1026,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/iFoKYeq6ac4d44f7d25a.webp",
       "listing_date": "2026-10-06T15:01:12+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26259396",
@@ -1062,7 +1044,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/Bafqb6w6ac4ce7a94db4.webp",
       "listing_date": "2026-10-06T14:34:08+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26259197",
@@ -1080,7 +1062,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/cU7AJa76ac4cca5ec935.webp",
       "listing_date": "2026-10-06T14:26:38+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26205744",
@@ -1098,7 +1080,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202609/20260930/statements/fW1aeTj6abcfd353a036.webp",
       "listing_date": "2026-10-06T14:11:51+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26258673",
@@ -1116,7 +1098,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/ODfKmUW6ac4c7eb4a821.webp",
       "listing_date": "2026-10-06T14:07:57+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
-      "last_seen_at": "2026-10-06T15:06:26.461Z"
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
     },
     {
       "id": "26258445",
@@ -1134,6 +1116,150 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/bymWJ4E6ac4c58fec737.webp",
       "listing_date": "2026-10-06T13:56:34+04:00",
       "excluded_at": "2026-10-06T15:06:26.461Z",
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
+    },
+    {
+      "id": "26266710",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-dighmis-masivshi-26266710/",
+      "reason": "Outside requested districts",
+      "price": 1000,
+      "size": 55,
+      "rooms": 2,
+      "floor": 14,
+      "total_floors": 14,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "დიღმის მასივი - IV კვარტალი ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261007/statements/IdXkX1J6ac56429a9ed6.webp",
+      "listing_date": "2026-10-07T01:13:26+04:00",
+      "excluded_at": "2026-10-07T04:45:20.613Z",
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
+    },
+    {
+      "id": "26266347",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-dighmis-masivshi-26266347/",
+      "reason": "Outside requested districts",
+      "price": 1000,
+      "size": 55,
+      "rooms": 2,
+      "floor": 14,
+      "total_floors": 14,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "დიღმის მასივი - IV კვარტალი ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/1gvR2fh6ac543535fb91.webp",
+      "listing_date": "2026-10-06T22:53:29+04:00",
+      "excluded_at": "2026-10-07T04:45:20.613Z",
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
+    },
+    {
+      "id": "26266286",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-dighmis-masivshi-26266286/",
+      "reason": "Outside requested districts",
+      "price": 900,
+      "size": 60,
+      "rooms": 2,
+      "floor": 13,
+      "total_floors": 14,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "დიღმის მასივი - VI კვარტალი ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/uGJblyx6ac53c8795822.webp",
+      "listing_date": "2026-10-06T22:23:11+04:00",
+      "excluded_at": "2026-10-07T04:45:20.613Z",
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
+    },
+    {
+      "id": "26265769",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-dighmis-masivshi-26265769/",
+      "reason": "Outside requested districts",
+      "price": 900,
+      "size": 50,
+      "rooms": 2,
+      "floor": 5,
+      "total_floors": 6,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "ნ. ბოხუას ქ. 0",
+      "condition": "ახალი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/kQntAAm6ac517276bd9c.webp",
+      "listing_date": "2026-10-06T20:01:14+04:00",
+      "excluded_at": "2026-10-07T04:45:20.613Z",
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
+    },
+    {
+      "id": "26265613",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-dighmis-masivshi-26265613/",
+      "reason": "Outside requested districts",
+      "price": 1000,
+      "size": 55,
+      "rooms": 2,
+      "floor": 14,
+      "total_floors": 14,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "დიღმის მასივი - IV კვარტალი ",
+      "condition": "ახალი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/LRvjyD76ac514e5733ee.webp",
+      "listing_date": "2026-10-06T19:34:32+04:00",
+      "excluded_at": "2026-10-07T04:45:20.613Z",
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
+    },
+    {
+      "id": "26265549",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26265549/",
+      "reason": "Outside requested districts",
+      "price": 900,
+      "size": 40,
+      "rooms": 1,
+      "floor": 4,
+      "total_floors": 5,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "დიღმის მასივი - VI კვარტალი 0",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/xqEX5Ve6ac512b7ef5c5.webp",
+      "listing_date": "2026-10-06T19:27:26+04:00",
+      "excluded_at": "2026-10-07T04:45:20.613Z",
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
+    },
+    {
+      "id": "26265558",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-4-otaxiani-bina-dighmis-masivshi-26265558/",
+      "reason": "Outside requested districts",
+      "price": 700,
+      "size": 90,
+      "rooms": 4,
+      "floor": 8,
+      "total_floors": 14,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "გრ. რობაქიძის გამზ. ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/WzOjhZW6ac512368a653.webp",
+      "listing_date": "2026-10-06T19:27:25+04:00",
+      "excluded_at": "2026-10-07T04:45:20.613Z",
+      "last_seen_at": "2026-10-07T04:45:20.613Z"
+    },
+    {
+      "id": "26250846",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-dighmis-masivshi-26250846/",
+      "reason": "Outside requested districts",
+      "price": 900,
+      "size": 50,
+      "rooms": 2,
+      "floor": 5,
+      "total_floors": 6,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "ნ. ბოხუას ქ. 0",
+      "condition": "ახალი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261005/statements/3MOySH56ac3a5da89ba2.webp",
+      "listing_date": "2026-10-05T17:29:59+04:00",
+      "excluded_at": "2026-10-05T15:06:23.255Z",
       "last_seen_at": "2026-10-06T15:06:26.461Z"
     },
     {
