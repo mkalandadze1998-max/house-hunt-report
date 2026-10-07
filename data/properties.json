@@ -35282,43 +35282,13 @@
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",
   "refresh_status": {
-    "attempted_at": "2026-10-07T09:49:15.213Z",
+    "attempted_at": "2026-10-07T15:06:24.494Z",
     "last_success_at": "2026-10-07T09:49:15.213Z",
     "dataset_collected_at": "2026-10-07T09:49:15.213Z",
-    "status": "success",
+    "status": "failed",
     "coverage": "Up to 15 search pages and 120 new eligible detail records; every retained listing rechecked. Not exhaustive.",
     "api": "https://api-statements.tnet.ge/v1/statements",
     "method": "myhome_api",
-    "searched": 360,
-    "checked": 530,
-    "included": 445,
-    "excluded": 83,
-    "changes": {
-      "new": [
-        "26270199",
-        "26270161",
-        "26269880",
-        "26269541",
-        "26269208",
-        "26268935",
-        "26268927",
-        "26268585",
-        "26268447",
-        "26268288",
-        "26268181",
-        "26268039",
-        "26267582",
-        "26267190",
-        "26266896"
-      ],
-      "changed": [
-        "26261916"
-      ],
-      "removed": [
-        "26205773",
-        "26262894"
-      ],
-      "retained_unverified": []
-    }
+    "error": "Source API HTTP 401; previous dataset retained."
   }
 }
