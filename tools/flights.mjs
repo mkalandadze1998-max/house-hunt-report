@@ -53,7 +53,7 @@ for(const route of cfg.routes||[]){
   r.checks=Array.isArray(r.checks)?r.checks:[];r.nearby=Array.isArray(r.nearby)?r.nearby:[];
   r.checked_at=now;
   const g=google[route.id];
-  const live=g&&Number.isFinite(g.price)&&g.price>0?{price:Number(g.price),airline:(g.airlines||[]).some(a=>/wizz/i.test(a))?'W6':(g.airlines||[])[0]||null,airline_name:(g.airlines||[]).join(' + ')||null,transfers:Math.max(0,(g.legs||[]).filter(l=>l.from===route.from||l.to===route.to).length-2),return_transfers:0,departure_at:g.legs?.[0]?.dep||null,return_at:g.legs?.[g.legs.length-1]?.dep||null,duration:null,link:g.url||null,source:'google'}:null;
+  const live=g&&Number.isFinite(g.price)&&g.price>0?{price:Number(g.price),airline:(g.airlines||[]).some(a=>/wizz/i.test(a))?'W6':(g.airlines||[])[0]||null,airline_name:(g.airlines||[]).join(' + ')||null,transfers:Math.max(0,(g.legs||[]).filter(l=>!(g.legs||[]).some(r=>r.from===route.to)||l.from!==route.to).length-1),return_transfers:Math.max(0,(g.legs||[]).filter(l=>l.from===route.to).length-1),departure_at:g.legs?.[0]?.dep||null,return_at:(g.legs||[]).find(l=>l.from===route.to)?.dep||route.return+'T00:00',duration:null,link:g.url||null,source:'google'}:null;
   if(live)r.google={price:live.price,airlines:g.airlines,fetched_at:g.fetched_at,url:g.url,offers:(g.offers||[]).slice(0,5)};else if(g?.error)r.google_error=g.error;
   if(dry&&!live){out.routes[route.id]=r;console.log(`flights: ${route.id} — dry run (TRAVELPAYOUTS_TOKEN not set, no Google fare), keeping ${r.checks.length} history points`);continue}
   try{
