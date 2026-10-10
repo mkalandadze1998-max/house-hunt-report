@@ -35282,7 +35282,7 @@
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",
   "refresh_status": {
-    "attempted_at": "2026-10-10T09:46:22.722Z",
+    "attempted_at": "2026-10-10T15:02:19.623Z",
     "last_success_at": "2026-10-07T09:49:15.213Z",
     "dataset_collected_at": "2026-10-07T09:49:15.213Z",
     "status": "failed",
