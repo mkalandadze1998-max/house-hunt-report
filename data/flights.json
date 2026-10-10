@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-10-10T15:13:01.669Z",
+ "source": "Travelpayouts / Aviasales cached fares",
+ "routes": {
+  "kut-crl-dec": {
+   "id": "kut-crl-dec",
+   "label": "Kutaisi → Brussels Charleroi",
+   "from": "KUT",
+   "to": "CRL",
+   "depart": "2026-12-03",
+   "return": "2026-12-10",
+   "adults": 1,
+   "currency": "GEL",
+   "direct": false,
+   "min_nights": 3,
+   "max_nights": 14,
+   "airline_names": {
+    "W6": "Wizz Air",
+    "W4": "Wizz Air Malta",
+    "TK": "Turkish Airlines",
+    "PC": "Pegasus",
+    "LO": "LOT",
+    "A3": "Aegean",
+    "OS": "Austrian",
+    "LH": "Lufthansa",
+    "A9": "Georgian Airways",
+    "FR": "Ryanair",
+    "SN": "Brussels Airlines",
+    "AZ": "ITA",
+    "LX": "Swiss",
+    "KL": "KLM",
+    "AF": "Air France",
+    "EK": "Emirates",
+    "QR": "Qatar Airways",
+    "FZ": "flydubai"
+   },
+   "checks": [
+    {
+     "at": "2026-10-05T12:58:45.798Z",
+     "price": 508,
+     "airline": "W6",
+     "airline_name": "Wizz Air",
+     "transfers": 0,
+     "return_transfers": 0,
+     "departure_at": "2026-12-03T15:00",
+     "return_at": "2026-12-03T15:00",
+     "duration": null,
+     "link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDNqBRIDS1VUcgUSA0NSTBoaEgoyMDI2LTEyLTEwagUSA0NSTHIFEgNLVVRCAQFIAZgBAQ==&hl=en&curr=GEL",
+     "source": "google"
+    }
+   ],
+   "nearby": [],
+   "checked_at": "2026-10-10T15:13:01.669Z",
+   "google": {
+    "price": 420,
+    "airlines": [
+     "Wizz Air"
+    ],
+    "fetched_at": "2026-10-10T15:12:54+00:00",
+    "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDNqBRIDS1VUcgUSA0NSTBoaEgoyMDI2LTEyLTEwagUSA0NSTHIFEgNLVVRCAQFIAZgBAQ==&hl=en&curr=GEL",
+    "offers": [
+     {
+      "price": 420,
+      "airlines": [
+       "Wizz Air"
+      ],
+      "type": "W6",
+      "legs": [
+       {
+        "from": "KUT",
+        "to": "CRL",
+        "dep": "2026-12-03T15:00",
+        "arr": "2026-12-03T16:55",
+        "duration": 295
+       }
+      ]
+     }
+    ]
+   },
+   "changed_at": "2026-10-05T12:58:45.798Z",
+   "previous_price": null,
+   "latest": {
+    "price": 508,
+    "airline": "W6",
+    "airline_name": "Wizz Air",
+    "transfers": 0,
+    "return_transfers": 0,
+    "departure_at": "2026-12-03T15:00",
+    "return_at": "2026-12-03T15:00",
+    "duration": null,
+    "link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDNqBRIDS1VUcgUSA0NSTBoaEgoyMDI2LTEyLTEwagUSA0NSTHIFEgNLVVRCAQFIAZgBAQ==&hl=en&curr=GEL",
+    "source": "google"
+   },
+   "unavailable_since": null,
+   "min": 508,
+   "max": 508,
+   "booking_url": "https://www.wizzair.com/en-gb/booking/select-flight/KUT/CRL/2026-12-03/2026-12-10/1/0/0/null"
+  }
+ }
+}
