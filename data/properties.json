@@ -35282,13 +35282,18 @@
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",
   "refresh_status": {
-    "attempted_at": "2026-10-15T15:21:13.726Z",
+    "attempted_at": "2026-10-15T21:41:23.486Z",
     "last_success_at": "2026-10-07T09:49:15.213Z",
     "dataset_collected_at": "2026-10-07T09:49:15.213Z",
     "status": "failed",
     "coverage": "Up to 15 search pages and 120 new eligible detail records; every retained listing rechecked. Not exhaustive.",
     "api": "https://api-statements.tnet.ge/v1/statements",
     "method": "myhome_api",
-    "error": "Website search HTTP 403; previous dataset retained."
+    "similars": {
+      "seeds": 42,
+      "calls": 60,
+      "rows": 352
+    },
+    "error": "Source API HTTP 401; previous dataset retained."
   }
 }
