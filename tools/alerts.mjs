@@ -124,7 +124,12 @@ const prevPrice=p=>{const rank=([id,r])=>(id===p.id?0:(r.source||'myhome.ge')===
 const changes=current.filter(p=>!isNew(p)&&prevPrice(p)!==null&&prevPrice(p)!==p.price).map(p=>({p,from:prevPrice(p),to:p.price}));
 const drops=changes.filter(c=>c.to<c.from),rises=changes.filter(c=>c.to>c.from);
 const snapAt=Date.parse(hist.snapshot_at||new Date().toISOString());
-const gone=Object.entries(prevL).filter(([id,r])=>!byId.has(id)&&!allIds.has(id)&&!current.some(p=>sameFlat(p,{id,...r,price:lastPrice(r),source:r.source||'myhome.ge'}))&&r.last_seen&&Date.parse(r.last_seen)>=snapAt-3*86400000).map(([id,r])=>({id,r,days:Math.round((Date.parse(r.last_seen)-Date.parse(r.first_seen))/86400000)})).filter(g=>Number.isFinite(g.days)&&g.days<=cfg.goneMaxDays);
+// "gone" fires once: a listing counts as gone only if it was still seen in the previous run (its last_seen
+// falls in that run's window — ss/korter are read up to ~1 h after the main snapshot). A fixed "3 days"
+// window used to repeat every gone flat in every digest for three days.
+const prevSnapAt=Date.parse(prev.snapshot_at||0);
+const seenInPrevRun=r=>r?.last_seen&&Number.isFinite(prevSnapAt)&&prevSnapAt>0?Date.parse(r.last_seen)>=prevSnapAt-3600000:(r?.last_seen&&Date.parse(r.last_seen)>=snapAt-3*86400000);
+const gone=Object.entries(prevL).filter(([id,r])=>!byId.has(id)&&!allIds.has(id)&&!current.some(p=>sameFlat(p,{id,...r,price:lastPrice(r),source:r.source||'myhome.ge'}))&&seenInPrevRun(r)).map(([id,r])=>({id,r,days:Math.round((Date.parse(r.last_seen)-Date.parse(r.first_seen))/86400000)})).filter(g=>Number.isFinite(g.days)&&g.days<=cfg.goneMaxDays);
 
 const byDist=(a,b)=>(dist(a)??99)-(dist(b)??99);
 const who=p=>p.advertiser?(p.advertiser==='Individual'?'🧑 Owner':'🏢 Agency'):'';
@@ -137,7 +142,10 @@ const card=(p,extra='')=>{const t=tags(p);return [
   `📍 <a href="${esc(p.url)}">${esc(p.neighborhood||p.district||'—')}</a>${who(p)?` · ${who(p)}`:''}`,
   `<i>${esc(src(p))}${p.also?` · also on ${p.also.map(a=>esc(src(a))).join(', ')}`:''}${p.reposts?.length?` · re-posted ×${p.reposts.length+1}`:''}${t?` · ${esc(t)}`:''}</i>`
 ].join('\n')};
-const section=(title,items)=>`${title}\n<blockquote expandable>${items.join('\n\n')}</blockquote>`;
+// A section longer than one Telegram message is split into several blockquotes (each ≤ LIMIT); a cut
+// inside a blockquote would make Telegram reject the whole message ("can't parse entities").
+const LIMIT=3900;
+const section=(title,items)=>{const groups=[];let cur=[],len=0;for(const it of items){if(cur.length&&len+it.length+2>LIMIT-200){groups.push(cur);cur=[];len=0}cur.push(it);len+=it.length+2}if(cur.length)groups.push(cur);return groups.map((g,i)=>`${i?title+' (cont.)':title}\n<blockquote expandable>${g.join('\n\n')}</blockquote>`).join('\n\n')};
 
 const parts=[];
 let favNews=[];
@@ -145,7 +153,7 @@ if(favRows&&favRows.size){
   const favOf=p=>idsOf(p).map(id=>favRows.get(id)).find(Boolean);
   const favCurrent=current.filter(favOf);
   const favDrops=drops.filter(c=>favOf(c.p)),favRises=rises.filter(c=>favOf(c.p));
-  const favGone=[...favRows.keys()].filter(id=>prevL[id]&&!byId.has(id)&&!allIds.has(id)).map(id=>({id,r:prevL[id]}));
+  const favGone=[...favRows.keys()].filter(id=>prevL[id]&&!byId.has(id)&&!allIds.has(id)&&seenInPrevRun(prevL[id])).map(id=>({id,r:prevL[id]})); // once, not in every digest for 90 days
   favNews=[...favDrops.map(c=>card(c.p,` <s>${money(c.from)}</s> ↓`)),...favRises.map(c=>card(c.p,` (was ${money(c.from)}) ↑`)),...favGone.map(g=>`<b>${money(lastPrice(g.r))} ₾</b> · ${g.r.size??'?'} m² · ${esc(g.r.neighborhood||'')}\n<i>🚫 no longer listed${g.r.source?` · ${esc(g.r.source)}`:''}</i>`)];
   if(favNews.length)parts.push(section(`♥ <b>Your favorites</b> · ${favNews.length} ${favNews.length===1?'change':'changes'} (${favCurrent.length} saved)`,favNews));
 }
@@ -168,7 +176,7 @@ const footer=`\n\n<a href="${SITE_URL}">Open the shortlist →</a>`;
 let text=header+parts.join('\n\n')+footer;
 
 // split at Telegram's 4096-char limit; never inside a blockquote
-const chunks=[];const LIMIT=3900;
+const chunks=[];
 while(text.length>LIMIT){let cut=text.lastIndexOf('</blockquote>',LIMIT);cut=cut>0?cut+'</blockquote>'.length:text.lastIndexOf('\n\n',LIMIT);if(cut<LIMIT/3)cut=LIMIT;chunks.push(text.slice(0,cut));text=text.slice(cut).replace(/^\n+/,'')}
 chunks.push(text);
 

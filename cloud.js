@@ -51,7 +51,8 @@ window.HH_CLOUD=(()=>{
   (async()=>{
     const lib=await waitForLibrary();
     if(!lib){showGate('Sign-in service failed to load. Check your connection and reload.');return}
-    sb=lib.createClient(SUPABASE_URL,SUPABASE_KEY,{auth:{persistSession:true,autoRefreshToken:true}});
+    // A request that hangs (mobile radio) would otherwise keep the page's write/refresh counters stuck.
+    sb=lib.createClient(SUPABASE_URL,SUPABASE_KEY,{auth:{persistSession:true,autoRefreshToken:true},global:{fetch:(u,o={})=>fetch(u,{...o,signal:o.signal||AbortSignal.timeout(20000)})}});
     const {data}=await sb.auth.getSession();
     if(data?.session)resolveReady(unlockAndReturn(data.session));else showGate('');
     sb.auth.onAuthStateChange((event,session)=>{if(event==='SIGNED_OUT'||(!session&&event!=='INITIAL_SESSION'))showGate('Signed out.')});
@@ -61,15 +62,20 @@ window.HH_CLOUD=(()=>{
   /* Supabase returns at most 1,000 rows per request; with every copy of a flat getting its own row the
      table outgrows that, and a silently truncated read would "un-hide" everything past row 1,000. Page. */
   async function load(){
-    const PAGE=1000,rows=[];
-    for(let from=0;;from+=PAGE){
-      const {data,error}=await sb.from(TABLE).select('*').order('listing_id').range(from,from+PAGE-1);
-      if(error)throw error;
-      rows.push(...(data||[]));
-      if(!data||data.length<PAGE)break;
-    }
-    return rows;
+    return withFreshSession(async()=>{
+      const PAGE=1000,rows=[];
+      for(let from=0;;from+=PAGE){
+        const {data,error}=await sb.from(TABLE).select('*').order('listing_id').range(from,from+PAGE-1);
+        if(error)throw error;
+        rows.push(...(data||[]));
+        if(!data||data.length<PAGE)break;
+      }
+      return rows;
+    });
   }
+  /* Transient = worth keeping the change on the device and retrying later (no network, timeout, expired
+     session, server hiccup). Anything else (a rejected row, a value too long) is reported and undone. */
+  const isTransient=e=>!e||isAuthError(e)||['TypeError','AbortError','TimeoutError'].includes(e.name)||/fetch|network|timeout|abort|socket|load failed|failed to/i.test(String(e.message||''))||e.status===408||e.status===429||Number(e.status)>=500||String(e.code||'').startsWith('08')||/^PGRST0/.test(String(e.code||''));
   /* A phone that slept for hours wakes up with an expired access token; the first write then fails with a
      401 / "JWT expired" before supabase-js has refreshed the session. Refresh once and retry such writes. */
   const isAuthError=e=>e&&(e.status===401||e.code==='PGRST301'||/jwt|expired|not authenticated|unauthorized/i.test(String(e.message||'')));
@@ -83,13 +89,15 @@ window.HH_CLOUD=(()=>{
   }
   // Upsert a partial row for one listing. patch: {favorite?,hidden?,compare?,note?}
   async function set(listing_id,patch){
-    const row={listing_id:String(listing_id),...patch,updated_by:user?.name||null,updated_at:new Date().toISOString()};
+    // A patch may carry its own updated_at (a queued change replayed later keeps the time it was made).
+    const row={listing_id:String(listing_id),...patch,updated_by:user?.name||null,updated_at:patch.updated_at||new Date().toISOString()};
     await withFreshSession(async()=>{const {error}=await sb.from(TABLE).upsert(row,{onConflict:'listing_id'});if(error)throw error});
     return row;
   }
   async function setMany(rows){
     if(!rows.length)return;
-    const stamped=rows.map(r=>({...r,listing_id:String(r.listing_id),updated_by:user?.name||null,updated_at:new Date().toISOString()}));
+    const now=new Date().toISOString();
+    const stamped=rows.map(r=>({...r,listing_id:String(r.listing_id),updated_by:user?.name||null,updated_at:r.updated_at||now}));
     await withFreshSession(async()=>{const {error}=await sb.from(TABLE).upsert(stamped,{onConflict:'listing_id'});if(error)throw error});
   }
   function subscribe(){
@@ -99,5 +107,5 @@ window.HH_CLOUD=(()=>{
   }
   const onChange=fn=>{listeners.add(fn);return()=>listeners.delete(fn)};
 
-  return {ready,get user(){return user},get who(){return PEOPLE[who]},setWho,onWho:fn=>{whoListeners.add(fn)},load,set,setMany,subscribe,onChange,PEOPLE};
+  return {ready,get user(){return user},get who(){return PEOPLE[who]},setWho,onWho:fn=>{whoListeners.add(fn)},load,set,setMany,subscribe,onChange,isTransient,PEOPLE};
 })();

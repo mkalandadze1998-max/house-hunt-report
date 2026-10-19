@@ -180,9 +180,14 @@ for(const [objectId,c] of candidates){
     if([p.district,p.neighborhood,...p.district_groups].some(g=>excludedNorm.has(norm(g)))){gone++;continue}
     if(!p.district_groups.some(g=>wantedNorm.has(norm(g)))){gone++;continue}
     out.push(p);ok++;
-  }catch(e){fail++;console.warn(`  ${objectId}: ${e.message}`)}
+  }catch(e){
+    // a fetch hiccup is not a vanished flat: keep last run's record so the site and the alerts do not
+    // report it as gone and then as new again
+    fail++;console.warn(`  ${objectId}: ${e.message}`);const kept=previous['korter-'+objectId];if(kept)out.push(kept);
+  }
   await sleep(350);
 }
+if(!ok&&candidates.size){console.error('no listing could be read; keeping the previous file');process.exitCode=1;return}
 out.sort((a,b)=>Date.parse(b.listing_date)-Date.parse(a.listing_date));
 const result={retrieved_at:nowIso,source:SITE,method:'korter_html',method_label:'korter.ge listing + detail pages (embedded state)',
   coverage_note:`Newest ${MAX_PAGES} pages (20 each) per target area, up to ${MAX_AGE_DAYS} days back; retained listings rechecked. Not exhaustive.`,

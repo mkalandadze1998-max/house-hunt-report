@@ -85,7 +85,12 @@ jobs:
         if: steps.gate.outputs.skip != 'true'
         run: |
           mkdir -p out
-          if git fetch --depth=1 origin geo-data 2>/dev/null; then
+          # If the geo-data branch exists, its fetch MUST succeed: seeding from the stale copies on main would
+          # make every listing "new", reset first-seen dates and then force-push that over the good data.
+          if git ls-remote --exit-code --heads origin geo-data >/dev/null 2>&1; then
+            git fetch --depth=1 origin geo-data || { echo "::error::geo-data exists but could not be fetched; not seeding from stale files"; exit 1; }
+          fi
+          if git rev-parse --verify -q origin/geo-data >/dev/null; then
             git show origin/geo-data:data/geo.json     > out/geo.json     2>/dev/null || true
             git show origin/geo-data:data/history.json > out/history.json 2>/dev/null || true
             git show origin/geo-data:data/ss.json      > out/ss.json      2>/dev/null || true

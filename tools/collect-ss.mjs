@@ -180,9 +180,14 @@ for(const [id,li] of candidates){
     if(!p.district_groups.some(g=>wantedNorm.has(norm(g)))){gone++;continue}
     if([p.district,p.neighborhood,...p.district_groups].some(g=>excludedNorm.has(norm(g)))){gone++;continue}
     out.push(p);ok++;
-  }catch(e){fail++;console.warn(`  ${id}: ${e.message}`)}
+  }catch(e){
+    // a fetch hiccup is not a vanished flat: keep last run's record (its last_checked_at stays old) so the
+    // site and the alerts do not report it as gone and then as new again
+    fail++;console.warn(`  ${id}: ${e.message}`);const kept=previous['ss-'+id];if(kept)out.push(kept);
+  }
   await sleep(300);
 }
+if(!ok&&candidates.size){console.error('no listing could be read; keeping the previous file');process.exitCode=1;process.exit()}
 out.sort((a,b)=>Date.parse(b.listing_date)-Date.parse(a.listing_date));
 const result={retrieved_at:nowIso,source:SITE,method:'ss_api',method_label:'ss.ge search API + detail pages',
   coverage_note:`Newest ${MAX_PAGES} search pages (${PAGE_SIZE} each) in the target sub-districts, up to ${MAX_AGE_DAYS} days back; retained listings rechecked. Not exhaustive.`,

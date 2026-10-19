@@ -19,19 +19,20 @@
 <link rel="stylesheet" href="style.css?v=31">
 <script>if(location.protocol==='file:')document.write('<script src="data/properties.js"><\/script>')</script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js" onerror="var s=document.createElement('script');s.src='https://unpkg.com/@supabase/supabase-js@2/dist/umd/supabase.min.js';document.head.appendChild(s)"></script>
-<script defer src="cloud.js?v=27"></script>
-<script defer src="script.js?v=35"></script>
+<script defer src="cloud.js?v=28"></script>
+<script defer src="script.js?v=36"></script>
 </head>
 <body class="locked">
 <div class="progress" aria-hidden="true"></div>
 
 <div id="gate" class="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
   <div class="gate-bg" aria-hidden="true"></div>
-  <form id="gateForm" class="gate-card" autocomplete="off">
+  <form id="gateForm" class="gate-card">
     <div class="gate-mark">⌂</div>
     <p class="gate-eyebrow">House Hunt · Tbilisi</p>
     <h1 id="gateTitle">Welcome back.</h1>
-    <label class="gate-field"><span>Password</span><input id="gatePassword" type="password" autocomplete="current-password" required autofocus></label>
+    <input type="text" name="username" value="house-hunt" autocomplete="username" hidden aria-hidden="true" tabindex="-1">
+    <label class="gate-field"><span>Password</span><input id="gatePassword" name="password" type="password" autocomplete="current-password" required autofocus></label>
     <p id="gateError" class="gate-error" hidden></p>
     <button id="gateSubmit" type="submit" class="gate-submit">Enter</button>
     <p class="gate-hint">Pick who you are after signing in — favorites, hidden homes and notes are shared and sync live.</p>
