@@ -58,10 +58,17 @@ window.HH_CLOUD=(()=>{
   })();
 
   /* ── Data ───────────────────────────────────────────────────── */
+  /* Supabase returns at most 1,000 rows per request; with every copy of a flat getting its own row the
+     table outgrows that, and a silently truncated read would "un-hide" everything past row 1,000. Page. */
   async function load(){
-    const {data,error}=await sb.from(TABLE).select('*');
-    if(error)throw error;
-    return data||[];
+    const PAGE=1000,rows=[];
+    for(let from=0;;from+=PAGE){
+      const {data,error}=await sb.from(TABLE).select('*').order('listing_id').range(from,from+PAGE-1);
+      if(error)throw error;
+      rows.push(...(data||[]));
+      if(!data||data.length<PAGE)break;
+    }
+    return rows;
   }
   /* A phone that slept for hours wakes up with an expired access token; the first write then fails with a
      401 / "JWT expired" before supabase-js has refreshed the session. Refresh once and retry such writes. */
