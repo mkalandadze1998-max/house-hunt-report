@@ -188,7 +188,10 @@ if(dry){console.log(!process.env.TELEGRAM_BOT_TOKEN?'(TELEGRAM_BOT_TOKEN / TELEG
 
 // TELEGRAM_CHAT_ID may hold several ids separated by commas (e.g. your private chat and the group)
 const CHATS=String(process.env.TELEGRAM_CHAT_ID||'').split(/[,\s]+/).filter(Boolean);
-const tg=async(method,body)=>{let last=null;for(const chat_id of CHATS){const r=await fetch(`https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/${method}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id,...body})});const j=await r.json().catch(()=>({}));if(!r.ok||!j.ok)throw new Error(`${method} → ${chat_id}: ${r.status} ${JSON.stringify(j).slice(0,200)}`);last=j}return last};
+// Every chat gets its copy even when one of them fails (a wrong id, the bot removed from a group); it only
+// counts as a failure when no chat could be reached. Failures are reported once per run.
+const chatFailures=new Set();
+const tg=async(method,body)=>{let last=null,sent=0;const errors=[];for(const chat_id of CHATS){const r=await fetch(`https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/${method}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id,...body})});const j=await r.json().catch(()=>({}));if(!r.ok||!j.ok){errors.push(`${method} → ${chat_id}: ${r.status} ${JSON.stringify(j).slice(0,200)}`);if(!chatFailures.has(chat_id)){chatFailures.add(chat_id);console.error(`telegram: chat ${chat_id} unreachable — ${r.status} ${j.description||''}`);process.exitCode=1}continue}last=j;sent++}if(!sent)throw new Error(errors.join(' | '));return last};
 for(const chunk of chunks){
   try{await tg('sendMessage',{text:chunk,parse_mode:'HTML',disable_web_page_preview:true})}
   catch(e){console.error('telegram error:',e.message);process.exitCode=1;break}
