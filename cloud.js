@@ -63,18 +63,27 @@ window.HH_CLOUD=(()=>{
     if(error)throw error;
     return data||[];
   }
+  /* A phone that slept for hours wakes up with an expired access token; the first write then fails with a
+     401 / "JWT expired" before supabase-js has refreshed the session. Refresh once and retry such writes. */
+  const isAuthError=e=>e&&(e.status===401||e.code==='PGRST301'||/jwt|expired|not authenticated|unauthorized/i.test(String(e.message||'')));
+  async function withFreshSession(fn){
+    try{return await fn()}
+    catch(e){
+      if(!isAuthError(e))throw e;
+      try{await sb.auth.refreshSession()}catch(err){console.warn('session refresh failed',err)}
+      return fn();
+    }
+  }
   // Upsert a partial row for one listing. patch: {favorite?,hidden?,compare?,note?}
   async function set(listing_id,patch){
     const row={listing_id:String(listing_id),...patch,updated_by:user?.name||null,updated_at:new Date().toISOString()};
-    const {error}=await sb.from(TABLE).upsert(row,{onConflict:'listing_id'});
-    if(error)throw error;
+    await withFreshSession(async()=>{const {error}=await sb.from(TABLE).upsert(row,{onConflict:'listing_id'});if(error)throw error});
     return row;
   }
   async function setMany(rows){
     if(!rows.length)return;
     const stamped=rows.map(r=>({...r,listing_id:String(r.listing_id),updated_by:user?.name||null,updated_at:new Date().toISOString()}));
-    const {error}=await sb.from(TABLE).upsert(stamped,{onConflict:'listing_id'});
-    if(error)throw error;
+    await withFreshSession(async()=>{const {error}=await sb.from(TABLE).upsert(stamped,{onConflict:'listing_id'});if(error)throw error});
   }
   function subscribe(){
     sb.channel('shortlist-live')
