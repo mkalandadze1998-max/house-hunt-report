@@ -37,6 +37,9 @@ const dry=args.includes('--dry')||!process.env.TELEGRAM_BOT_TOKEN||!process.env.
 if(args.includes('--hello')){
   if(dry){console.log('hello: TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set');process.exit(1)}
   const chats=String(process.env.TELEGRAM_CHAT_ID).split(/[,\s]+/).filter(Boolean);
+  // say which bot this token belongs to and what the chat ids look like (shape only), so a wrong secret is obvious in the log
+  try{const me=await (await fetch(`https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/getMe`)).json();console.log(`hello: token belongs to ${me.ok?'@'+me.result.username:'NO VALID BOT ('+(me.description||'')+')'}`)}catch(e){console.log('hello: getMe failed',e.message)}
+  console.log(`hello: ${chats.length} chat id(s): ${chats.map(c=>`${c.startsWith('-')?'group':'private'} · ${c.length} digits${/^-?\d+$/.test(c)?'':' · NOT A NUMBER'}`).join(', ')}`);
   const stamp=new Date().toLocaleString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'Asia/Tbilisi'});
   let ok=0;
   for(const chat_id of chats){
