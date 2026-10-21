@@ -167,7 +167,17 @@ if(rises.length)parts.push(section(`📈 <b>Price rises</b> · ${rises.length}`,
 if(gone.length)parts.push(section(`🚫 <b>Gone</b> · ${gone.length}`,gone.map(g=>`<b>${money(lastPrice(g.r))} ₾</b> · ${g.r.size??'?'} m² · ${esc(g.r.neighborhood||'')}\n<i>${g.days===0?'listed today':`listed ${g.days} d`}${g.r.source?` · ${esc(g.r.source)}`:''}</i>`)));
 
 
-if(!parts.length){console.log('alerts: nothing changed, no message');process.exit(0)}
+// Nothing changed: still say so, in one line, so a silent run is never mistaken for a broken one.
+if(!parts.length){
+  const st=main.refresh_status,when=new Date().toLocaleString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'Asia/Tbilisi'});
+  const warn=st&&st.status!=='success'?`\n⚠ myhome.ge refresh failed (${String(st.error||'').slice(0,120)}) — showing the retained listings`:'';
+  const text=`✅ <b>House Hunt</b> · ${when} · checked, nothing new\n${current.length} homes on the list${favRows?` · ${current.filter(p=>idsOf(p).some(id=>favRows.get(id))).length} saved`:''}${warn}`;
+  console.log('alerts: nothing changed → short "nothing new" message');
+  if(dry){console.log(text);process.exit(0)}
+  const CHATS0=String(process.env.TELEGRAM_CHAT_ID||'').split(/[,\s]+/).filter(Boolean);
+  let sent=0;for(const chat_id of CHATS0){const r=await fetch(`https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id,text,parse_mode:'HTML',disable_web_page_preview:true})});if(r.ok)sent++;else console.error(`telegram: chat ${chat_id} → ${r.status}`)}
+  process.exit(sent?0:1);
+}
 const summary=[favNews.length?`♥ ${favNews.length} on favorites`:'',fresh.length?`✦ ${fresh.length} new`:'',drops.length?`📉 ${drops.length} ${drops.length===1?'drop':'drops'}`:'',rises.length?`📈 ${rises.length} ${rises.length===1?'rise':'rises'}`:'',gone.length?`🚫 ${gone.length} gone`:''].filter(Boolean).join('  ·  ');
 const header=`🏠 <b>House Hunt</b> · ${stamp}\n${current.length} homes on the list  ·  ${summary}\n\n`;
 const footer=`\n\n<a href="${SITE_URL}">Open the shortlist →</a>`;
