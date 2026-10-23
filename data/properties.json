@@ -55600,7 +55600,7 @@
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",
   "refresh_status": {
-    "attempted_at": "2026-10-23T17:39:02.891Z",
+    "attempted_at": "2026-10-23T19:52:38.176Z",
     "last_success_at": "2026-10-23T09:09:02.660Z",
     "dataset_collected_at": "2026-10-23T09:09:02.660Z",
     "status": "failed",
