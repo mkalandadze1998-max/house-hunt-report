@@ -95,7 +95,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-19T18:05:24.736Z"
+      "first_seen_at": "2026-09-19T18:05:24.736Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26154729",
@@ -167,7 +168,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26153651",
@@ -244,7 +246,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26153622",
@@ -327,7 +330,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26153509",
@@ -408,7 +412,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26153428",
@@ -480,7 +485,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26153358",
@@ -546,7 +552,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26153342",
@@ -612,7 +619,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26153193",
@@ -694,7 +702,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26153130",
@@ -779,7 +788,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26153060",
@@ -855,7 +865,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26153052",
@@ -936,7 +947,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26153056",
@@ -1007,7 +1019,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Individual"
     },
     {
       "id": "26153008",
@@ -1082,7 +1095,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26152762",
@@ -1165,7 +1179,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26152488",
@@ -1249,7 +1264,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26152428",
@@ -1333,7 +1349,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26152344",
@@ -1405,7 +1422,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26152193",
@@ -1471,7 +1489,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26151871",
@@ -1552,7 +1571,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26151958",
@@ -1628,7 +1648,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26151808",
@@ -1724,7 +1745,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26151397",
@@ -1792,7 +1814,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-25T05:12:27.439Z"
+      "first_seen_at": "2026-09-25T05:12:27.439Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26166551",
@@ -1871,7 +1894,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26166070",
@@ -1946,7 +1970,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26165952",
@@ -2029,7 +2054,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26165729",
@@ -2112,7 +2138,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26165716",
@@ -2196,7 +2223,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26165369",
@@ -2285,7 +2313,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26165255",
@@ -2375,7 +2404,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26165227",
@@ -2462,7 +2492,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26165187",
@@ -2544,7 +2575,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26165050",
@@ -2633,7 +2665,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26164986",
@@ -2722,7 +2755,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26164925",
@@ -2807,7 +2841,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26164913",
@@ -2883,7 +2918,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26144784",
@@ -2968,7 +3004,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26164572",
@@ -3057,7 +3094,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26164578",
@@ -3155,7 +3193,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26164577",
@@ -3244,7 +3283,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26164450",
@@ -3328,7 +3368,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26164442",
@@ -3417,7 +3458,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26164346",
@@ -3494,7 +3536,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26164171",
@@ -3583,7 +3626,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26164174",
@@ -3670,7 +3714,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26163889",
@@ -3759,7 +3804,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26163789",
@@ -3825,7 +3871,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26163774",
@@ -3911,7 +3958,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-26T05:12:26.652Z"
+      "first_seen_at": "2026-09-26T05:12:26.652Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26173761",
@@ -3988,7 +4036,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-27T05:12:04.524Z"
+      "first_seen_at": "2026-09-27T05:12:04.524Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26173709",
@@ -4058,7 +4107,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-27T05:12:04.524Z"
+      "first_seen_at": "2026-09-27T05:12:04.524Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26173006",
@@ -4153,7 +4203,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-27T05:12:04.524Z"
+      "first_seen_at": "2026-09-27T05:12:04.524Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26172953",
@@ -4231,7 +4282,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-27T05:12:04.524Z"
+      "first_seen_at": "2026-09-27T05:12:04.524Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26172807",
@@ -4309,7 +4361,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-27T05:12:04.524Z"
+      "first_seen_at": "2026-09-27T05:12:04.524Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26172488",
@@ -4405,7 +4458,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-27T05:12:04.524Z"
+      "first_seen_at": "2026-09-27T05:12:04.524Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26172469",
@@ -4483,7 +4537,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-27T05:12:04.524Z"
+      "first_seen_at": "2026-09-27T05:12:04.524Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26171766",
@@ -4571,7 +4626,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-27T05:12:04.524Z"
+      "first_seen_at": "2026-09-27T05:12:04.524Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26171700",
@@ -4659,7 +4715,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-27T05:12:04.524Z"
+      "first_seen_at": "2026-09-27T05:12:04.524Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26171686",
@@ -4727,7 +4784,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-27T05:12:04.524Z"
+      "first_seen_at": "2026-09-27T05:12:04.524Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26171613",
@@ -4817,7 +4875,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-27T05:12:04.524Z"
+      "first_seen_at": "2026-09-27T05:12:04.524Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26171560",
@@ -4904,7 +4963,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-27T05:12:04.524Z"
+      "first_seen_at": "2026-09-27T05:12:04.524Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26171281",
@@ -4982,7 +5042,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-27T05:12:04.524Z"
+      "first_seen_at": "2026-09-27T05:12:04.524Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26171194",
@@ -5070,7 +5131,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-27T05:12:04.524Z"
+      "first_seen_at": "2026-09-27T05:12:04.524Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26171163",
@@ -5148,7 +5210,8 @@
         "rooms": 3,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-27T05:12:04.524Z"
+      "first_seen_at": "2026-09-27T05:12:04.524Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26171130",
@@ -5235,7 +5298,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-27T05:12:04.524Z"
+      "first_seen_at": "2026-09-27T05:12:04.524Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26175188",
@@ -5318,7 +5382,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26176566",
@@ -5394,7 +5459,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26176550",
@@ -5470,7 +5536,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26176460",
@@ -5554,7 +5621,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26176366",
@@ -5627,7 +5695,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26176210",
@@ -5697,7 +5766,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26176231",
@@ -5763,7 +5833,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26176165",
@@ -5844,7 +5915,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26176127",
@@ -5918,7 +5990,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26176035",
@@ -5988,7 +6061,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26175991",
@@ -6075,7 +6149,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26175902",
@@ -6154,7 +6229,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26175830",
@@ -6240,7 +6316,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26175767",
@@ -6310,7 +6387,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26175534",
@@ -6391,7 +6469,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26175638",
@@ -6461,7 +6540,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26175588",
@@ -6531,7 +6611,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26175581",
@@ -6621,7 +6702,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26175566",
@@ -6717,7 +6799,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26175488",
@@ -6799,7 +6882,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26175463",
@@ -6883,7 +6967,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26175392",
@@ -6967,7 +7052,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26175336",
@@ -7033,7 +7119,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26175246",
@@ -7111,7 +7198,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26175111",
@@ -7190,7 +7278,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-28T05:14:02.046Z"
+      "first_seen_at": "2026-09-28T05:14:02.046Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26188124",
@@ -7261,7 +7350,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-29T05:13:44.179Z"
+      "first_seen_at": "2026-09-29T05:13:44.179Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26187792",
@@ -7337,7 +7427,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-29T05:13:44.179Z"
+      "first_seen_at": "2026-09-29T05:13:44.179Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26187732",
@@ -7403,7 +7494,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-29T05:13:44.179Z"
+      "first_seen_at": "2026-09-29T05:13:44.179Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26187582",
@@ -7487,7 +7579,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-29T05:13:44.179Z"
+      "first_seen_at": "2026-09-29T05:13:44.179Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26186778",
@@ -7574,7 +7667,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-29T05:13:44.179Z"
+      "first_seen_at": "2026-09-29T05:13:44.179Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26186510",
@@ -7660,7 +7754,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-29T05:13:44.179Z"
+      "first_seen_at": "2026-09-29T05:13:44.179Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26186431",
@@ -7758,7 +7853,8 @@
         "rooms": 5,
         "bedrooms": 3
       },
-      "first_seen_at": "2026-09-29T05:13:44.179Z"
+      "first_seen_at": "2026-09-29T05:13:44.179Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26186390",
@@ -7848,7 +7944,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-29T05:13:44.179Z"
+      "first_seen_at": "2026-09-29T05:13:44.179Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26185992",
@@ -7937,7 +8034,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-29T05:13:44.179Z"
+      "first_seen_at": "2026-09-29T05:13:44.179Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26185934",
@@ -8022,7 +8120,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-29T05:13:44.179Z"
+      "first_seen_at": "2026-09-29T05:13:44.179Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26185862",
@@ -8118,7 +8217,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-29T05:13:44.179Z"
+      "first_seen_at": "2026-09-29T05:13:44.179Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26190714",
@@ -8206,7 +8306,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-30T05:14:33.771Z"
+      "first_seen_at": "2026-09-30T05:14:33.771Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26192609",
@@ -8290,7 +8391,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-30T05:14:33.771Z"
+      "first_seen_at": "2026-09-30T05:14:33.771Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26190729",
@@ -8377,7 +8479,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-30T05:14:33.771Z"
+      "first_seen_at": "2026-09-30T05:14:33.771Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26199247",
@@ -8455,7 +8558,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-30T05:14:33.771Z"
+      "first_seen_at": "2026-09-30T05:14:33.771Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26199214",
@@ -8521,7 +8625,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-30T05:14:33.771Z"
+      "first_seen_at": "2026-09-30T05:14:33.771Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26198875",
@@ -8592,7 +8697,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-30T05:14:33.771Z"
+      "first_seen_at": "2026-09-30T05:14:33.771Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26198822",
@@ -8684,7 +8790,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-30T05:14:33.771Z"
+      "first_seen_at": "2026-09-30T05:14:33.771Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26198386",
@@ -8771,7 +8878,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-30T05:14:33.771Z"
+      "first_seen_at": "2026-09-30T05:14:33.771Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26198270",
@@ -8850,7 +8958,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-30T05:14:33.771Z"
+      "first_seen_at": "2026-09-30T05:14:33.771Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26198064",
@@ -8925,7 +9034,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-30T05:14:33.771Z"
+      "first_seen_at": "2026-09-30T05:14:33.771Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26197699",
@@ -9027,7 +9137,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-09-30T05:14:33.771Z"
+      "first_seen_at": "2026-09-30T05:14:33.771Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26197440",
@@ -9118,7 +9229,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-30T05:14:33.771Z"
+      "first_seen_at": "2026-09-30T05:14:33.771Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26196972",
@@ -9196,7 +9308,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-30T05:14:33.771Z"
+      "first_seen_at": "2026-09-30T05:14:33.771Z",
+      "advertiser": "Agency"
     },
     {
       "id": "23802937",
@@ -9278,7 +9391,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-30T05:14:33.771Z"
+      "first_seen_at": "2026-09-30T05:14:33.771Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26196313",
@@ -9347,7 +9461,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-09-30T05:14:33.771Z"
+      "first_seen_at": "2026-09-30T05:14:33.771Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26209536",
@@ -9437,7 +9552,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-01T05:14:22.933Z"
+      "first_seen_at": "2026-10-01T05:14:22.933Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26209350",
@@ -9521,7 +9637,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-01T05:14:22.933Z"
+      "first_seen_at": "2026-10-01T05:14:22.933Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26209162",
@@ -9611,7 +9728,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-01T05:14:22.933Z"
+      "first_seen_at": "2026-10-01T05:14:22.933Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26208710",
@@ -9697,7 +9815,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-01T05:14:22.933Z"
+      "first_seen_at": "2026-10-01T05:14:22.933Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26208136",
@@ -9775,7 +9894,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-01T05:14:22.933Z"
+      "first_seen_at": "2026-10-01T05:14:22.933Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26207524",
@@ -9853,7 +9973,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-01T05:14:22.933Z"
+      "first_seen_at": "2026-10-01T05:14:22.933Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26220021",
@@ -9920,7 +10041,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-02T05:13:57.903Z"
+      "first_seen_at": "2026-10-02T05:13:57.903Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26219277",
@@ -10010,7 +10132,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-02T05:13:57.903Z"
+      "first_seen_at": "2026-10-02T05:13:57.903Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26218639",
@@ -10092,7 +10215,8 @@
         "rooms": 4,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-02T05:13:57.903Z"
+      "first_seen_at": "2026-10-02T05:13:57.903Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26218373",
@@ -10166,7 +10290,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-02T05:13:57.903Z"
+      "first_seen_at": "2026-10-02T05:13:57.903Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26218129",
@@ -10244,7 +10369,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-02T05:13:57.903Z"
+      "first_seen_at": "2026-10-02T05:13:57.903Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26218115",
@@ -10314,7 +10440,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-02T05:13:57.903Z"
+      "first_seen_at": "2026-10-02T05:13:57.903Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26217797",
@@ -10387,7 +10514,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-02T05:13:57.903Z"
+      "first_seen_at": "2026-10-02T05:13:57.903Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26217133",
@@ -10457,7 +10585,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-02T05:13:57.903Z"
+      "first_seen_at": "2026-10-02T05:13:57.903Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26216893",
@@ -10527,7 +10656,8 @@
         "rooms": 3,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-02T05:13:57.903Z"
+      "first_seen_at": "2026-10-02T05:13:57.903Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26216697",
@@ -10605,7 +10735,8 @@
         "rooms": 3,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-02T05:13:57.903Z"
+      "first_seen_at": "2026-10-02T05:13:57.903Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26216649",
@@ -10695,7 +10826,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-02T05:13:57.903Z"
+      "first_seen_at": "2026-10-02T05:13:57.903Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26231074",
@@ -10772,7 +10904,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-03T05:12:51.648Z"
+      "first_seen_at": "2026-10-03T05:12:51.648Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26231065",
@@ -10844,7 +10977,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-03T05:12:51.648Z"
+      "first_seen_at": "2026-10-03T05:12:51.648Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26231058",
@@ -10910,7 +11044,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-03T05:12:51.648Z"
+      "first_seen_at": "2026-10-03T05:12:51.648Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26231020",
@@ -10979,7 +11114,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-03T05:12:51.648Z"
+      "first_seen_at": "2026-10-03T05:12:51.648Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26231000",
@@ -11057,7 +11193,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-03T05:12:51.648Z"
+      "first_seen_at": "2026-10-03T05:12:51.648Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26230324",
@@ -11123,7 +11260,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-03T05:12:51.648Z"
+      "first_seen_at": "2026-10-03T05:12:51.648Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26229794",
@@ -11225,7 +11363,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-03T05:12:51.648Z"
+      "first_seen_at": "2026-10-03T05:12:51.648Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26229542",
@@ -11310,7 +11449,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-03T05:12:51.648Z"
+      "first_seen_at": "2026-10-03T05:12:51.648Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26229379",
@@ -11388,7 +11528,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-03T05:12:51.648Z"
+      "first_seen_at": "2026-10-03T05:12:51.648Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26228949",
@@ -11477,7 +11618,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-03T05:12:51.648Z"
+      "first_seen_at": "2026-10-03T05:12:51.648Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26227895",
@@ -11553,7 +11695,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-03T05:12:51.648Z"
+      "first_seen_at": "2026-10-03T05:12:51.648Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26228863",
@@ -11637,7 +11780,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-03T05:12:51.648Z"
+      "first_seen_at": "2026-10-03T05:12:51.648Z",
+      "advertiser": "Agency"
     },
     {
       "id": "14321805",
@@ -11695,7 +11839,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-03T05:12:51.648Z"
+      "first_seen_at": "2026-10-03T05:12:51.648Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26228309",
@@ -11761,7 +11906,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-03T05:12:51.648Z"
+      "first_seen_at": "2026-10-03T05:12:51.648Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26228187",
@@ -11834,7 +11980,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-03T05:12:51.648Z"
+      "first_seen_at": "2026-10-03T05:12:51.648Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26236296",
@@ -11908,7 +12055,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26239602",
@@ -11974,7 +12122,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26239546",
@@ -12068,7 +12217,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26239471",
@@ -12161,7 +12311,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26239277",
@@ -12233,7 +12384,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26239136",
@@ -12316,7 +12468,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "25088377",
@@ -12402,7 +12555,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26238292",
@@ -12491,7 +12645,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26237932",
@@ -12582,7 +12737,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26237897",
@@ -12672,7 +12828,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26237839",
@@ -12745,7 +12902,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26237523",
@@ -12831,7 +12989,8 @@
         "rooms": 3,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26237486",
@@ -12901,7 +13060,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26237130",
@@ -12979,7 +13139,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26237066",
@@ -13066,7 +13227,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26236610",
@@ -13158,7 +13320,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26236529",
@@ -13236,7 +13399,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26236386",
@@ -13329,7 +13493,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "23034666",
@@ -13401,7 +13566,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "25029734",
@@ -13475,7 +13641,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T09:56:34.738Z"
+      "first_seen_at": "2026-10-04T09:56:34.738Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26239831",
@@ -13556,7 +13723,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T10:57:22.823Z"
+      "first_seen_at": "2026-10-04T10:57:22.823Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26235568",
@@ -13632,7 +13800,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T10:57:22.823Z"
+      "first_seen_at": "2026-10-04T10:57:22.823Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26235489",
@@ -13698,7 +13867,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-04T10:57:22.823Z"
+      "first_seen_at": "2026-10-04T10:57:22.823Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26235202",
@@ -13776,7 +13946,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T10:57:22.823Z"
+      "first_seen_at": "2026-10-04T10:57:22.823Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26234770",
@@ -13852,7 +14023,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T10:57:22.823Z"
+      "first_seen_at": "2026-10-04T10:57:22.823Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26234742",
@@ -13933,7 +14105,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T10:57:22.823Z"
+      "first_seen_at": "2026-10-04T10:57:22.823Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26234665",
@@ -14023,7 +14196,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T10:57:22.823Z"
+      "first_seen_at": "2026-10-04T10:57:22.823Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26234503",
@@ -14101,7 +14275,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T10:57:22.823Z"
+      "first_seen_at": "2026-10-04T10:57:22.823Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26187568",
@@ -14185,7 +14360,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T10:57:22.823Z"
+      "first_seen_at": "2026-10-04T10:57:22.823Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26234165",
@@ -14261,7 +14437,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T10:57:22.823Z"
+      "first_seen_at": "2026-10-04T10:57:22.823Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26233500",
@@ -14337,7 +14514,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T10:57:22.823Z"
+      "first_seen_at": "2026-10-04T10:57:22.823Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26233379",
@@ -14415,7 +14593,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T10:57:22.823Z"
+      "first_seen_at": "2026-10-04T10:57:22.823Z",
+      "advertiser": "Agency"
     },
     {
       "id": "24991116",
@@ -14493,7 +14672,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T10:57:22.823Z"
+      "first_seen_at": "2026-10-04T10:57:22.823Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26232061",
@@ -14565,7 +14745,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T10:57:22.823Z"
+      "first_seen_at": "2026-10-04T10:57:22.823Z",
+      "advertiser": "Agency"
     },
     {
       "id": "19714196",
@@ -14631,7 +14812,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T11:07:21.100Z"
+      "first_seen_at": "2026-10-04T11:07:21.100Z",
+      "advertiser": "Agency"
     },
     {
       "id": "19711274",
@@ -14696,7 +14878,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-04T11:07:21.100Z"
+      "first_seen_at": "2026-10-04T11:07:21.100Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26241810",
@@ -14788,7 +14971,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T05:22:30.431Z"
+      "first_seen_at": "2026-10-05T05:22:30.431Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26240787",
@@ -14864,7 +15048,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T05:22:30.431Z"
+      "first_seen_at": "2026-10-05T05:22:30.431Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26241284",
@@ -14931,7 +15116,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-05T05:22:30.431Z"
+      "first_seen_at": "2026-10-05T05:22:30.431Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26241259",
@@ -15012,7 +15198,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-05T05:22:30.431Z"
+      "first_seen_at": "2026-10-05T05:22:30.431Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26241197",
@@ -15092,7 +15279,8 @@
         "rooms": 3,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-05T05:22:30.431Z"
+      "first_seen_at": "2026-10-05T05:22:30.431Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26241080",
@@ -15170,7 +15358,8 @@
         "rooms": 3,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-05T05:22:30.431Z"
+      "first_seen_at": "2026-10-05T05:22:30.431Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26240802",
@@ -15246,7 +15435,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T05:22:30.431Z"
+      "first_seen_at": "2026-10-05T05:22:30.431Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26240702",
@@ -15325,7 +15515,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T05:22:30.431Z"
+      "first_seen_at": "2026-10-05T05:22:30.431Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26240698",
@@ -15413,7 +15604,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T05:22:30.431Z"
+      "first_seen_at": "2026-10-05T05:22:30.431Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26240449",
@@ -15487,7 +15679,8 @@
         "rooms": 3,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-05T05:22:30.431Z"
+      "first_seen_at": "2026-10-05T05:22:30.431Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26240390",
@@ -15563,7 +15756,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T05:22:30.431Z"
+      "first_seen_at": "2026-10-05T05:22:30.431Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26240377",
@@ -15641,7 +15835,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T05:22:30.431Z"
+      "first_seen_at": "2026-10-05T05:22:30.431Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26240327",
@@ -15711,7 +15906,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T05:22:30.431Z"
+      "first_seen_at": "2026-10-05T05:22:30.431Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26240288",
@@ -15785,7 +15981,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T05:22:30.431Z"
+      "first_seen_at": "2026-10-05T05:22:30.431Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26245997",
@@ -15874,7 +16071,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T10:29:19.511Z"
+      "first_seen_at": "2026-10-05T10:29:19.511Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26245963",
@@ -15940,7 +16138,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T10:29:19.511Z"
+      "first_seen_at": "2026-10-05T10:29:19.511Z",
+      "advertiser": "Agency"
     },
     {
       "id": "25352319",
@@ -16022,7 +16221,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T10:29:19.511Z"
+      "first_seen_at": "2026-10-05T10:29:19.511Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26245922",
@@ -16098,7 +16298,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-05T10:29:19.511Z"
+      "first_seen_at": "2026-10-05T10:29:19.511Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26245825",
@@ -16188,7 +16389,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T10:29:19.511Z"
+      "first_seen_at": "2026-10-05T10:29:19.511Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26245541",
@@ -16263,7 +16465,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T10:29:19.511Z"
+      "first_seen_at": "2026-10-05T10:29:19.511Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26245166",
@@ -16352,7 +16555,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T10:29:19.511Z"
+      "first_seen_at": "2026-10-05T10:29:19.511Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26245094",
@@ -16420,7 +16624,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T10:29:19.511Z"
+      "first_seen_at": "2026-10-05T10:29:19.511Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26245081",
@@ -16522,7 +16727,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T10:29:19.511Z"
+      "first_seen_at": "2026-10-05T10:29:19.511Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26244603",
@@ -16615,7 +16821,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T10:29:19.511Z"
+      "first_seen_at": "2026-10-05T10:29:19.511Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26244456",
@@ -16689,7 +16896,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T10:29:19.511Z"
+      "first_seen_at": "2026-10-05T10:29:19.511Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26244171",
@@ -16780,7 +16988,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T10:29:19.511Z"
+      "first_seen_at": "2026-10-05T10:29:19.511Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26243933",
@@ -16861,7 +17070,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T10:29:19.511Z"
+      "first_seen_at": "2026-10-05T10:29:19.511Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26243763",
@@ -16933,7 +17143,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T10:29:19.511Z"
+      "first_seen_at": "2026-10-05T10:29:19.511Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26243690",
@@ -17018,7 +17229,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T10:29:19.511Z"
+      "first_seen_at": "2026-10-05T10:29:19.511Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26243635",
@@ -17109,7 +17321,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T10:29:19.511Z"
+      "first_seen_at": "2026-10-05T10:29:19.511Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26243344",
@@ -17199,7 +17412,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T10:29:19.511Z"
+      "first_seen_at": "2026-10-05T10:29:19.511Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26253099",
@@ -17290,7 +17504,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26253075",
@@ -17381,7 +17596,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26252653",
@@ -17472,7 +17688,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26252453",
@@ -17551,7 +17768,8 @@
         "rooms": 3,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26251661",
@@ -17611,7 +17829,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26250610",
@@ -17693,7 +17912,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26250378",
@@ -17782,7 +18002,8 @@
         "rooms": 3,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26250187",
@@ -17858,7 +18079,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26249994",
@@ -17939,7 +18161,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26249886",
@@ -18029,7 +18252,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26249807",
@@ -18108,7 +18332,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26249736",
@@ -18193,7 +18418,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26249670",
@@ -18273,7 +18499,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26249664",
@@ -18358,7 +18585,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26249631",
@@ -18432,7 +18660,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26249599",
@@ -18514,7 +18743,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26249256",
@@ -18605,7 +18835,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26248557",
@@ -18694,7 +18925,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26248409",
@@ -18785,7 +19017,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26248248",
@@ -18853,7 +19086,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26248198",
@@ -18931,7 +19165,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26248179",
@@ -19013,7 +19248,8 @@
         "rooms": 3,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26247950",
@@ -19095,7 +19331,8 @@
         "rooms": 3,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26247859",
@@ -19185,7 +19422,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26247654",
@@ -19268,7 +19506,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26247614",
@@ -19350,7 +19589,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26247029",
@@ -19430,7 +19670,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-05T15:06:23.255Z"
+      "first_seen_at": "2026-10-05T15:06:23.255Z",
+      "advertiser": "Agency"
     },
     {
       "id": "22450946",
@@ -19512,7 +19753,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T04:42:22.283Z"
+      "first_seen_at": "2026-10-06T04:42:22.283Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26253279",
@@ -19591,7 +19833,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T04:42:22.283Z"
+      "first_seen_at": "2026-10-06T04:42:22.283Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26257577",
@@ -19661,7 +19904,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T09:48:15.301Z"
+      "first_seen_at": "2026-10-06T09:48:15.301Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26257425",
@@ -19739,7 +19983,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T09:48:15.301Z"
+      "first_seen_at": "2026-10-06T09:48:15.301Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26257341",
@@ -19805,7 +20050,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T09:48:15.301Z"
+      "first_seen_at": "2026-10-06T09:48:15.301Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26257305",
@@ -19889,7 +20135,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T09:48:15.301Z"
+      "first_seen_at": "2026-10-06T09:48:15.301Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26257276",
@@ -19955,7 +20202,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T09:48:15.301Z"
+      "first_seen_at": "2026-10-06T09:48:15.301Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26257100",
@@ -20038,7 +20286,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T09:48:15.301Z"
+      "first_seen_at": "2026-10-06T09:48:15.301Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26257122",
@@ -20124,7 +20373,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-06T09:48:15.301Z"
+      "first_seen_at": "2026-10-06T09:48:15.301Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26256500",
@@ -20202,7 +20452,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T09:48:15.301Z"
+      "first_seen_at": "2026-10-06T09:48:15.301Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26256272",
@@ -20268,7 +20519,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-06T09:48:15.301Z"
+      "first_seen_at": "2026-10-06T09:48:15.301Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26255957",
@@ -20334,7 +20586,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T09:48:15.301Z"
+      "first_seen_at": "2026-10-06T09:48:15.301Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26255946",
@@ -20400,7 +20653,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T09:48:15.301Z"
+      "first_seen_at": "2026-10-06T09:48:15.301Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26255376",
@@ -20482,7 +20736,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T09:48:15.301Z"
+      "first_seen_at": "2026-10-06T09:48:15.301Z",
+      "advertiser": "Agency"
     },
     {
       "id": "25162995",
@@ -20562,7 +20817,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-06T09:48:15.301Z"
+      "first_seen_at": "2026-10-06T09:48:15.301Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26265307",
@@ -20643,7 +20899,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26265130",
@@ -20721,7 +20978,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26264817",
@@ -20787,7 +21045,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26264647",
@@ -20853,7 +21112,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26264447",
@@ -20941,7 +21201,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26264242",
@@ -21023,7 +21284,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26264101",
@@ -21089,7 +21351,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26263945",
@@ -21181,7 +21444,8 @@
         "rooms": 3,
         "bedrooms": 3
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26263312",
@@ -21262,7 +21526,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26263300",
@@ -21343,7 +21608,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26263217",
@@ -21409,7 +21675,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26263192",
@@ -21491,7 +21758,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26263046",
@@ -21575,7 +21843,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26262972",
@@ -21651,7 +21920,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26262831",
@@ -21732,7 +22002,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26262813",
@@ -21810,7 +22081,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26262778",
@@ -21894,7 +22166,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26262446",
@@ -21960,7 +22233,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26262372",
@@ -22036,7 +22310,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26262280",
@@ -22110,7 +22385,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26262038",
@@ -22176,7 +22452,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26262040",
@@ -22264,7 +22541,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26261959",
@@ -22340,7 +22618,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26261916",
@@ -22416,7 +22695,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26261911",
@@ -22492,7 +22772,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26261565",
@@ -22568,7 +22849,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26261467",
@@ -22656,7 +22938,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26260793",
@@ -22735,7 +23018,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26260734",
@@ -22801,7 +23085,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26260573",
@@ -22881,7 +23166,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26260201",
@@ -22953,7 +23239,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26260128",
@@ -23029,7 +23316,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26259391",
@@ -23105,7 +23393,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26258294",
@@ -23183,7 +23472,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26258268",
@@ -23265,7 +23555,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-06T15:06:26.461Z"
+      "first_seen_at": "2026-10-06T15:06:26.461Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26265849",
@@ -23332,7 +23623,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-07T04:45:20.613Z"
+      "first_seen_at": "2026-10-07T04:45:20.613Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26265836",
@@ -23408,7 +23700,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-07T04:45:20.613Z"
+      "first_seen_at": "2026-10-07T04:45:20.613Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26270199",
@@ -23470,7 +23763,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-07T09:49:15.213Z"
+      "first_seen_at": "2026-10-07T09:49:15.213Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26270161",
@@ -23540,7 +23834,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-07T09:49:15.213Z"
+      "first_seen_at": "2026-10-07T09:49:15.213Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26269880",
@@ -23621,7 +23916,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-07T09:49:15.213Z"
+      "first_seen_at": "2026-10-07T09:49:15.213Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26269541",
@@ -23711,7 +24007,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-07T09:49:15.213Z"
+      "first_seen_at": "2026-10-07T09:49:15.213Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26269208",
@@ -23800,7 +24097,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-07T09:49:15.213Z"
+      "first_seen_at": "2026-10-07T09:49:15.213Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26268935",
@@ -23872,7 +24170,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-07T09:49:15.213Z"
+      "first_seen_at": "2026-10-07T09:49:15.213Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26268927",
@@ -23936,7 +24235,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-07T09:49:15.213Z"
+      "first_seen_at": "2026-10-07T09:49:15.213Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26268585",
@@ -24026,7 +24326,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-07T09:49:15.213Z"
+      "first_seen_at": "2026-10-07T09:49:15.213Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26268447",
@@ -24127,7 +24428,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-07T09:49:15.213Z"
+      "first_seen_at": "2026-10-07T09:49:15.213Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26268288",
@@ -24203,7 +24505,8 @@
         "rooms": 3,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-07T09:49:15.213Z"
+      "first_seen_at": "2026-10-07T09:49:15.213Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26268181",
@@ -24288,7 +24591,8 @@
         "rooms": 3,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-07T09:49:15.213Z"
+      "first_seen_at": "2026-10-07T09:49:15.213Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26268039",
@@ -24371,7 +24675,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-07T09:49:15.213Z"
+      "first_seen_at": "2026-10-07T09:49:15.213Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26267582",
@@ -24437,7 +24742,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-07T09:49:15.213Z"
+      "first_seen_at": "2026-10-07T09:49:15.213Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26267190",
@@ -24521,7 +24827,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-07T09:49:15.213Z"
+      "first_seen_at": "2026-10-07T09:49:15.213Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26357770",
@@ -24587,7 +24894,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26357224",
@@ -24660,7 +24968,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Individual"
     },
     {
       "id": "26357067",
@@ -24747,7 +25056,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26357101",
@@ -24839,7 +25149,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26357022",
@@ -24924,7 +25235,8 @@
         "rooms": 3,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26356058",
@@ -25014,7 +25326,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26355681",
@@ -25088,7 +25401,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26355527",
@@ -25171,7 +25485,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26355053",
@@ -25243,7 +25558,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26354967",
@@ -25320,7 +25636,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26354823",
@@ -25396,7 +25713,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26354760",
@@ -25479,7 +25797,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26354621",
@@ -25547,7 +25866,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26354475",
@@ -25613,7 +25933,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26353977",
@@ -25684,7 +26005,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26353946",
@@ -25756,7 +26078,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26353803",
@@ -25831,7 +26154,8 @@
         "rooms": 2,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26353563",
@@ -25910,7 +26234,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26353485",
@@ -25988,7 +26313,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26353428",
@@ -26054,7 +26380,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26353300",
@@ -26132,7 +26459,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26352965",
@@ -26209,7 +26537,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26352868",
@@ -26287,7 +26616,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26352761",
@@ -26365,7 +26695,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26352560",
@@ -26431,7 +26762,8 @@
         "rooms": 2,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26352120",
@@ -26497,7 +26829,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26352010",
@@ -26575,7 +26908,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26351983",
@@ -26661,7 +26995,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26351882",
@@ -26727,7 +27062,8 @@
         "rooms": 2,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26337983",
@@ -26805,7 +27141,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26351706",
@@ -26896,7 +27233,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "25799171",
@@ -26989,7 +27327,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26350288",
@@ -27081,7 +27420,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26349365",
@@ -27152,7 +27492,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26349230",
@@ -27241,7 +27582,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26348960",
@@ -27307,7 +27649,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26348770",
@@ -27383,7 +27726,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26348636",
@@ -27449,7 +27793,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26348604",
@@ -27515,7 +27860,8 @@
         "rooms": 2,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26348244",
@@ -27592,7 +27938,8 @@
         "rooms": 2,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26337624",
@@ -27670,7 +28017,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-15T22:11:46.485Z"
+      "first_seen_at": "2026-10-15T22:11:46.485Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26362026",
@@ -27760,7 +28108,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T09:58:01.660Z"
+      "first_seen_at": "2026-10-16T09:58:01.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26361639",
@@ -27837,7 +28186,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-16T09:58:01.660Z"
+      "first_seen_at": "2026-10-16T09:58:01.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26361540",
@@ -27903,7 +28253,8 @@
         "rooms": 2,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-16T09:58:01.660Z"
+      "first_seen_at": "2026-10-16T09:58:01.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26361458",
@@ -27983,7 +28334,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T09:58:01.660Z"
+      "first_seen_at": "2026-10-16T09:58:01.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26361272",
@@ -28059,7 +28411,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T09:58:01.660Z"
+      "first_seen_at": "2026-10-16T09:58:01.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26361217",
@@ -28125,7 +28478,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T09:58:01.660Z"
+      "first_seen_at": "2026-10-16T09:58:01.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26361098",
@@ -28191,7 +28545,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T09:58:01.660Z"
+      "first_seen_at": "2026-10-16T09:58:01.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26360866",
@@ -28282,7 +28637,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-16T09:58:01.660Z"
+      "first_seen_at": "2026-10-16T09:58:01.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26360328",
@@ -28354,7 +28710,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T09:58:01.660Z"
+      "first_seen_at": "2026-10-16T09:58:01.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26360286",
@@ -28429,7 +28786,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-16T09:58:01.660Z"
+      "first_seen_at": "2026-10-16T09:58:01.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26359951",
@@ -28495,7 +28853,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T09:58:01.660Z"
+      "first_seen_at": "2026-10-16T09:58:01.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26359873",
@@ -28573,7 +28932,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T09:58:01.660Z"
+      "first_seen_at": "2026-10-16T09:58:01.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26359800",
@@ -28651,7 +29011,8 @@
         "rooms": 2,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-16T09:58:01.660Z"
+      "first_seen_at": "2026-10-16T09:58:01.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26359718",
@@ -28717,7 +29078,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T09:58:01.660Z"
+      "first_seen_at": "2026-10-16T09:58:01.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26359621",
@@ -28807,7 +29169,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T09:58:01.660Z"
+      "first_seen_at": "2026-10-16T09:58:01.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26359473",
@@ -28884,7 +29247,8 @@
         "rooms": 2,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-16T09:58:01.660Z"
+      "first_seen_at": "2026-10-16T09:58:01.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26354774",
@@ -28950,7 +29314,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T09:58:01.660Z"
+      "first_seen_at": "2026-10-16T09:58:01.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26368864",
@@ -29024,7 +29389,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26368820",
@@ -29100,7 +29466,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26368037",
@@ -29193,7 +29560,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26367901",
@@ -29271,7 +29639,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26367833",
@@ -29344,7 +29713,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26367703",
@@ -29434,7 +29804,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26367096",
@@ -29524,7 +29895,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26367038",
@@ -29590,7 +29962,8 @@
         "rooms": 2,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26366918",
@@ -29661,7 +30034,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26366818",
@@ -29754,7 +30128,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26366668",
@@ -29838,7 +30213,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26365466",
@@ -29918,7 +30294,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26365045",
@@ -30007,7 +30384,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26364234",
@@ -30096,7 +30474,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26363596",
@@ -30173,7 +30552,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26363582",
@@ -30251,7 +30631,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26363290",
@@ -30317,7 +30698,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26363162",
@@ -30394,7 +30776,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26362851",
@@ -30474,7 +30857,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26362778",
@@ -30550,7 +30934,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26362347",
@@ -30628,7 +31013,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-16T15:17:36.745Z"
+      "first_seen_at": "2026-10-16T15:17:36.745Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26370345",
@@ -30705,7 +31091,8 @@
         "rooms": 2,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-17T04:56:59.747Z"
+      "first_seen_at": "2026-10-17T04:56:59.747Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26369938",
@@ -30799,7 +31186,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-17T04:56:59.747Z"
+      "first_seen_at": "2026-10-17T04:56:59.747Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26369853",
@@ -30872,7 +31260,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-17T04:56:59.747Z"
+      "first_seen_at": "2026-10-17T04:56:59.747Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26369519",
@@ -30962,7 +31351,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-17T04:56:59.747Z"
+      "first_seen_at": "2026-10-17T04:56:59.747Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26369492",
@@ -31048,7 +31438,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-17T04:56:59.747Z"
+      "first_seen_at": "2026-10-17T04:56:59.747Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26371889",
@@ -31121,7 +31512,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-17T09:51:54.668Z"
+      "first_seen_at": "2026-10-17T09:51:54.668Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26371863",
@@ -31201,7 +31593,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-17T09:51:54.668Z"
+      "first_seen_at": "2026-10-17T09:51:54.668Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26371496",
@@ -31280,7 +31673,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-17T09:51:54.668Z"
+      "first_seen_at": "2026-10-17T09:51:54.668Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26371120",
@@ -31360,7 +31754,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-17T09:51:54.668Z"
+      "first_seen_at": "2026-10-17T09:51:54.668Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26370929",
@@ -31436,7 +31831,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-17T09:51:54.668Z"
+      "first_seen_at": "2026-10-17T09:51:54.668Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26375689",
@@ -31516,7 +31912,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-17T15:11:28.491Z"
+      "first_seen_at": "2026-10-17T15:11:28.491Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26374459",
@@ -31606,7 +32003,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-17T15:11:28.491Z"
+      "first_seen_at": "2026-10-17T15:11:28.491Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26374097",
@@ -31686,7 +32084,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-17T15:11:28.491Z"
+      "first_seen_at": "2026-10-17T15:11:28.491Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26374014",
@@ -31776,7 +32175,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-17T15:11:28.491Z"
+      "first_seen_at": "2026-10-17T15:11:28.491Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26378873",
@@ -31844,7 +32244,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T09:00:06.062Z"
+      "first_seen_at": "2026-10-18T09:00:06.062Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26378700",
@@ -31920,7 +32321,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T09:00:06.062Z"
+      "first_seen_at": "2026-10-18T09:00:06.062Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26376972",
@@ -32022,7 +32424,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T09:00:06.062Z"
+      "first_seen_at": "2026-10-18T09:00:06.062Z",
+      "advertiser": "Agency"
     },
     {
       "id": "25946924",
@@ -32107,7 +32510,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T13:24:30.526Z"
+      "first_seen_at": "2026-10-18T13:24:30.526Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26381065",
@@ -32193,7 +32597,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T13:24:30.526Z"
+      "first_seen_at": "2026-10-18T13:24:30.526Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26380740",
@@ -32277,7 +32682,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T13:24:30.526Z"
+      "first_seen_at": "2026-10-18T13:24:30.526Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26380702",
@@ -32348,7 +32754,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-18T13:24:30.526Z"
+      "first_seen_at": "2026-10-18T13:24:30.526Z",
+      "advertiser": "Individual"
     },
     {
       "id": "26380325",
@@ -32422,7 +32829,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T13:24:30.526Z"
+      "first_seen_at": "2026-10-18T13:24:30.526Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26380007",
@@ -32514,7 +32922,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T13:24:30.526Z"
+      "first_seen_at": "2026-10-18T13:24:30.526Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26379248",
@@ -32594,7 +33003,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T13:24:30.526Z"
+      "first_seen_at": "2026-10-18T13:24:30.526Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26381764",
@@ -32667,7 +33077,8 @@
         "rooms": 3,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26381704",
@@ -32737,7 +33148,8 @@
         "rooms": 3,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26381245",
@@ -32820,7 +33232,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26312540",
@@ -32913,7 +33326,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26302909",
@@ -32987,7 +33401,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26215807",
@@ -33065,7 +33480,8 @@
         "rooms": 3,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26195452",
@@ -33138,7 +33554,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26344217",
@@ -33231,7 +33648,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26222029",
@@ -33309,7 +33727,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26157640",
@@ -33389,7 +33808,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Individual"
     },
     {
       "id": "26336134",
@@ -33453,7 +33873,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26203179",
@@ -33523,7 +33944,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26145966",
@@ -33603,7 +34025,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26182034",
@@ -33671,7 +34094,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26290348",
@@ -33745,7 +34169,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26273328",
@@ -33821,7 +34246,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26276948",
@@ -33900,7 +34326,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26201827",
@@ -33982,7 +34409,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26211960",
@@ -34050,7 +34478,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26227272",
@@ -34131,7 +34560,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26201683",
@@ -34199,7 +34629,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26211019",
@@ -34267,7 +34698,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26226080",
@@ -34337,7 +34769,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26204670",
@@ -34407,7 +34840,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26310475",
@@ -34498,7 +34932,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26211035",
@@ -34580,7 +35015,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26147735",
@@ -34650,7 +35086,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Individual"
     },
     {
       "id": "26331291",
@@ -34737,7 +35174,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26337612",
@@ -34816,7 +35254,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26338534",
@@ -34890,7 +35329,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26345539",
@@ -34968,7 +35408,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26149891",
@@ -35041,7 +35482,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26336388",
@@ -35120,7 +35562,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26179992",
@@ -35203,7 +35646,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26194356",
@@ -35282,7 +35726,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26293400",
@@ -35361,7 +35806,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26195985",
@@ -35446,7 +35892,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26287324",
@@ -35525,7 +35972,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26344220",
@@ -35591,7 +36039,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26338921",
@@ -35667,7 +36116,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26308299",
@@ -35745,7 +36195,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26298553",
@@ -35822,7 +36273,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26331832",
@@ -35893,7 +36345,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26297303",
@@ -35969,7 +36422,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26193847",
@@ -36040,7 +36494,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26342155",
@@ -36117,7 +36572,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26296167",
@@ -36193,7 +36649,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26296727",
@@ -36259,7 +36716,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26273881",
@@ -36325,7 +36783,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26296889",
@@ -36402,7 +36861,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26289449",
@@ -36468,7 +36928,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26278549",
@@ -36541,7 +37002,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26174100",
@@ -36640,7 +37102,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26211875",
@@ -36741,7 +37204,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26148119",
@@ -36828,7 +37292,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26312104",
@@ -36910,7 +37375,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26328467",
@@ -36987,7 +37453,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26283042",
@@ -37064,7 +37531,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26297073",
@@ -37154,7 +37622,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-18T17:39:36.567Z"
+      "first_seen_at": "2026-10-18T17:39:36.567Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26386695",
@@ -37238,7 +37707,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-19T10:10:02.224Z"
+      "first_seen_at": "2026-10-19T10:10:02.224Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26386681",
@@ -37326,7 +37796,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T10:10:02.224Z"
+      "first_seen_at": "2026-10-19T10:10:02.224Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26385902",
@@ -37403,7 +37874,8 @@
         "rooms": 2,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-19T10:10:02.224Z"
+      "first_seen_at": "2026-10-19T10:10:02.224Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26385885",
@@ -37483,7 +37955,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T10:10:02.224Z"
+      "first_seen_at": "2026-10-19T10:10:02.224Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26385635",
@@ -37555,7 +38028,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T10:10:02.224Z"
+      "first_seen_at": "2026-10-19T10:10:02.224Z",
+      "advertiser": "Agency"
     },
     {
       "id": "20024850",
@@ -37639,7 +38113,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T10:10:02.224Z"
+      "first_seen_at": "2026-10-19T10:10:02.224Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26384992",
@@ -37719,7 +38194,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-19T10:10:02.224Z"
+      "first_seen_at": "2026-10-19T10:10:02.224Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26384854",
@@ -37802,7 +38278,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T10:10:02.224Z"
+      "first_seen_at": "2026-10-19T10:10:02.224Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26384145",
@@ -37885,7 +38362,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T10:10:02.224Z"
+      "first_seen_at": "2026-10-19T10:10:02.224Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26382547",
@@ -37951,7 +38429,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-19T10:10:02.224Z"
+      "first_seen_at": "2026-10-19T10:10:02.224Z",
+      "advertiser": "Individual"
     },
     {
       "id": "26150575",
@@ -38023,7 +38502,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26328445",
@@ -38100,7 +38580,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26167986",
@@ -38176,7 +38657,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26319314",
@@ -38248,7 +38730,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26147239",
@@ -38350,7 +38833,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26327972",
@@ -38436,7 +38920,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26323063",
@@ -38527,7 +39012,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26213148",
@@ -38610,7 +39096,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26336104",
@@ -38694,7 +39181,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26289565",
@@ -38778,7 +39266,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26329535",
@@ -38848,7 +39337,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Individual"
     },
     {
       "id": "26339364",
@@ -38918,7 +39408,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26146407",
@@ -39000,7 +39491,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26221518",
@@ -39070,7 +39562,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26306458",
@@ -39152,7 +39645,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26335680",
@@ -39222,7 +39716,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26345758",
@@ -39292,7 +39787,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26303164",
@@ -39382,7 +39878,8 @@
         "rooms": 3,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26393589",
@@ -39467,7 +39964,8 @@
         "rooms": 3,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26314124",
@@ -39544,7 +40042,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26200895",
@@ -39621,7 +40120,8 @@
         "rooms": 2,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26170429",
@@ -39703,7 +40203,8 @@
         "rooms": 4,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26213951",
@@ -39772,7 +40273,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T16:34:30.375Z"
+      "first_seen_at": "2026-10-19T16:34:30.375Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26394814",
@@ -39848,7 +40350,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T20:17:37.021Z"
+      "first_seen_at": "2026-10-19T20:17:37.021Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26394681",
@@ -39914,7 +40417,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T20:17:37.021Z"
+      "first_seen_at": "2026-10-19T20:17:37.021Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26394361",
@@ -39987,7 +40491,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T20:17:37.021Z"
+      "first_seen_at": "2026-10-19T20:17:37.021Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26394173",
@@ -40063,7 +40568,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-19T20:17:37.021Z"
+      "first_seen_at": "2026-10-19T20:17:37.021Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26092206",
@@ -40148,7 +40654,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T20:17:37.021Z"
+      "first_seen_at": "2026-10-19T20:17:37.021Z",
+      "advertiser": "Agency"
     },
     {
       "id": "25622729",
@@ -40233,7 +40740,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T20:17:37.021Z"
+      "first_seen_at": "2026-10-19T20:17:37.021Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26393361",
@@ -40320,7 +40828,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T20:17:37.021Z"
+      "first_seen_at": "2026-10-19T20:17:37.021Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26392043",
@@ -40381,7 +40890,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T20:17:37.021Z"
+      "first_seen_at": "2026-10-19T20:17:37.021Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26391250",
@@ -40475,7 +40985,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T20:17:37.021Z"
+      "first_seen_at": "2026-10-19T20:17:37.021Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26389597",
@@ -40555,7 +41066,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T20:17:37.021Z"
+      "first_seen_at": "2026-10-19T20:17:37.021Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26389375",
@@ -40644,7 +41156,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T20:17:37.021Z"
+      "first_seen_at": "2026-10-19T20:17:37.021Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26388885",
@@ -40705,7 +41218,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T20:17:37.021Z"
+      "first_seen_at": "2026-10-19T20:17:37.021Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26388477",
@@ -40779,7 +41293,8 @@
         "rooms": 3,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-19T20:17:37.021Z"
+      "first_seen_at": "2026-10-19T20:17:37.021Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26388416",
@@ -40874,7 +41389,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T20:17:37.021Z"
+      "first_seen_at": "2026-10-19T20:17:37.021Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26388081",
@@ -40956,7 +41472,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-19T20:17:37.021Z"
+      "first_seen_at": "2026-10-19T20:17:37.021Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26387569",
@@ -41026,7 +41543,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-19T20:17:37.021Z"
+      "first_seen_at": "2026-10-19T20:17:37.021Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26398615",
@@ -41098,7 +41616,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T09:34:44.578Z"
+      "first_seen_at": "2026-10-20T09:34:44.578Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26398552",
@@ -41180,7 +41699,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T09:34:44.578Z"
+      "first_seen_at": "2026-10-20T09:34:44.578Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26398324",
@@ -41272,7 +41792,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T09:34:44.578Z"
+      "first_seen_at": "2026-10-20T09:34:44.578Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26397771",
@@ -41374,7 +41895,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T09:34:44.578Z"
+      "first_seen_at": "2026-10-20T09:34:44.578Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26396995",
@@ -41466,7 +41988,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T09:34:44.578Z"
+      "first_seen_at": "2026-10-20T09:34:44.578Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26395917",
@@ -41547,7 +42070,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T09:34:44.578Z"
+      "first_seen_at": "2026-10-20T09:34:44.578Z",
+      "advertiser": "Agency"
     },
     {
       "id": "25307382",
@@ -41628,7 +42152,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T09:34:44.578Z"
+      "first_seen_at": "2026-10-20T09:34:44.578Z",
+      "advertiser": "Individual"
     },
     {
       "id": "26395336",
@@ -41723,7 +42248,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T09:34:44.578Z"
+      "first_seen_at": "2026-10-20T09:34:44.578Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26345272",
@@ -41806,7 +42332,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26345957",
@@ -41889,7 +42416,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26161442",
@@ -41970,7 +42498,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26345954",
@@ -42053,7 +42582,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26167409",
@@ -42139,7 +42669,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26155557",
@@ -42205,7 +42736,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26403917",
@@ -42296,7 +42828,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26273270",
@@ -42372,7 +42905,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26167069",
@@ -42448,7 +42982,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26223064",
@@ -42534,7 +43069,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26311805",
@@ -42630,7 +43166,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26148726",
@@ -42714,7 +43251,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26147702",
@@ -42793,7 +43331,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26317754",
@@ -42880,7 +43419,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26293545",
@@ -42964,7 +43504,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26211095",
@@ -43053,7 +43594,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26404012",
@@ -43123,7 +43665,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26338433",
@@ -43201,7 +43744,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26284601",
@@ -43282,7 +43826,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26341668",
@@ -43369,7 +43914,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26334080",
@@ -43455,7 +44001,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26343221",
@@ -43541,7 +44088,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26339466",
@@ -43617,7 +44165,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T14:24:41.025Z"
+      "first_seen_at": "2026-10-20T14:24:41.025Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26407021",
@@ -43693,7 +44242,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26406646",
@@ -43765,7 +44315,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26406491",
@@ -43848,7 +44399,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26406419",
@@ -43929,7 +44481,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Agency"
     },
     {
       "id": "23802081",
@@ -44011,7 +44564,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Agency"
     },
     {
       "id": "23297170",
@@ -44067,7 +44621,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Agency"
     },
     {
       "id": "23297201",
@@ -44123,7 +44678,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26406162",
@@ -44193,7 +44749,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26406153",
@@ -44263,7 +44820,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26406135",
@@ -44345,7 +44903,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26405795",
@@ -44427,7 +44986,8 @@
         "rooms": 3,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26405567",
@@ -44499,7 +45059,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Agency"
     },
     {
       "id": "24326693",
@@ -44569,7 +45130,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Individual"
     },
     {
       "id": "26404985",
@@ -44661,7 +45223,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26402242",
@@ -44737,7 +45300,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26400999",
@@ -44829,7 +45393,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26400654",
@@ -44902,7 +45467,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26400095",
@@ -44978,7 +45544,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26400072",
@@ -45058,7 +45625,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26399307",
@@ -45144,7 +45712,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-20T19:56:00.450Z"
+      "first_seen_at": "2026-10-20T19:56:00.450Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26408987",
@@ -45212,7 +45781,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T09:09:52.023Z"
+      "first_seen_at": "2026-10-21T09:09:52.023Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26408344",
@@ -45291,7 +45861,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T09:09:52.023Z"
+      "first_seen_at": "2026-10-21T09:09:52.023Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26408304",
@@ -45371,7 +45942,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T09:09:52.023Z"
+      "first_seen_at": "2026-10-21T09:09:52.023Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26408201",
@@ -45439,7 +46011,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T09:09:52.023Z"
+      "first_seen_at": "2026-10-21T09:09:52.023Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26408035",
@@ -45507,7 +46080,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T09:09:52.023Z"
+      "first_seen_at": "2026-10-21T09:09:52.023Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26407924",
@@ -45584,7 +46158,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T09:09:52.023Z"
+      "first_seen_at": "2026-10-21T09:09:52.023Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26407451",
@@ -45665,7 +46240,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T09:09:52.023Z"
+      "first_seen_at": "2026-10-21T09:09:52.023Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26415097",
@@ -45731,7 +46307,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26414944",
@@ -45813,7 +46390,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26414680",
@@ -45883,7 +46461,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26414610",
@@ -45963,7 +46542,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26414538",
@@ -46040,7 +46620,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26284706",
@@ -46119,7 +46700,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26413734",
@@ -46208,7 +46790,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26413511",
@@ -46297,7 +46880,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26413542",
@@ -46368,7 +46952,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26413285",
@@ -46450,7 +47035,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26412709",
@@ -46518,7 +47104,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26412470",
@@ -46602,7 +47189,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26412419",
@@ -46705,7 +47293,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26412437",
@@ -46777,7 +47366,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26411747",
@@ -46868,7 +47458,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26292271",
@@ -46959,7 +47550,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26297229",
@@ -47044,7 +47636,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26296757",
@@ -47129,7 +47722,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26177614",
@@ -47214,7 +47808,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26296415",
@@ -47299,7 +47894,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26333492",
@@ -47378,7 +47974,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-21T12:37:36.929Z"
+      "first_seen_at": "2026-10-21T12:37:36.929Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26298438",
@@ -47448,7 +48045,8 @@
         "rooms": 4,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-21T14:44:20.267Z"
+      "first_seen_at": "2026-10-21T14:44:20.267Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26158154",
@@ -47518,7 +48116,8 @@
         "rooms": 4,
         "bedrooms": 3
       },
-      "first_seen_at": "2026-10-21T14:44:20.267Z"
+      "first_seen_at": "2026-10-21T14:44:20.267Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26331147",
@@ -47588,7 +48187,8 @@
         "rooms": 4,
         "bedrooms": 3
       },
-      "first_seen_at": "2026-10-21T14:44:20.267Z"
+      "first_seen_at": "2026-10-21T14:44:20.267Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26149207",
@@ -47674,7 +48274,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T14:44:20.267Z"
+      "first_seen_at": "2026-10-21T14:44:20.267Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26417201",
@@ -47744,7 +48345,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T14:44:20.267Z"
+      "first_seen_at": "2026-10-21T14:44:20.267Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26223434",
@@ -47824,7 +48426,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T14:44:20.267Z"
+      "first_seen_at": "2026-10-21T14:44:20.267Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26212678",
@@ -47904,7 +48507,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T14:44:20.267Z"
+      "first_seen_at": "2026-10-21T14:44:20.267Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26416924",
@@ -47969,7 +48573,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T14:44:20.267Z"
+      "first_seen_at": "2026-10-21T14:44:20.267Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26201567",
@@ -48048,7 +48653,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-21T14:44:20.267Z"
+      "first_seen_at": "2026-10-21T14:44:20.267Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26276057",
@@ -48127,7 +48733,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-21T14:44:20.267Z"
+      "first_seen_at": "2026-10-21T14:44:20.267Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26415358",
@@ -48197,7 +48804,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T17:49:17.144Z"
+      "first_seen_at": "2026-10-21T17:49:17.144Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26306401",
@@ -48267,7 +48875,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T17:49:17.144Z"
+      "first_seen_at": "2026-10-21T17:49:17.144Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26418850",
@@ -48356,7 +48965,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T17:49:17.144Z"
+      "first_seen_at": "2026-10-21T17:49:17.144Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26418807",
@@ -48436,7 +49046,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-21T17:49:17.144Z"
+      "first_seen_at": "2026-10-21T17:49:17.144Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26418737",
@@ -48516,7 +49127,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-21T17:49:17.144Z"
+      "first_seen_at": "2026-10-21T17:49:17.144Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26418486",
@@ -48598,7 +49210,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-21T17:49:17.144Z"
+      "first_seen_at": "2026-10-21T17:49:17.144Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26418459",
@@ -48690,7 +49303,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T17:49:17.144Z"
+      "first_seen_at": "2026-10-21T17:49:17.144Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26418104",
@@ -48770,7 +49384,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-21T17:49:17.144Z"
+      "first_seen_at": "2026-10-21T17:49:17.144Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26417951",
@@ -48859,7 +49474,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T17:49:17.144Z"
+      "first_seen_at": "2026-10-21T17:49:17.144Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26417766",
@@ -48951,7 +49567,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-21T17:49:17.144Z"
+      "first_seen_at": "2026-10-21T17:49:17.144Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26417684",
@@ -49028,7 +49645,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T17:49:17.144Z"
+      "first_seen_at": "2026-10-21T17:49:17.144Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26417651",
@@ -49120,7 +49738,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-21T17:49:17.144Z"
+      "first_seen_at": "2026-10-21T17:49:17.144Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26417148",
@@ -49190,7 +49809,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-21T17:49:17.144Z"
+      "first_seen_at": "2026-10-21T17:49:17.144Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26416887",
@@ -49263,7 +49883,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T17:49:17.144Z"
+      "first_seen_at": "2026-10-21T17:49:17.144Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26416766",
@@ -49340,7 +49961,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T17:49:17.144Z"
+      "first_seen_at": "2026-10-21T17:49:17.144Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26189627",
@@ -49428,7 +50050,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-21T17:49:17.144Z"
+      "first_seen_at": "2026-10-21T17:49:17.144Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26421882",
@@ -49517,7 +50140,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T09:12:38.401Z"
+      "first_seen_at": "2026-10-22T09:12:38.401Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26421341",
@@ -49594,7 +50218,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T09:12:38.401Z"
+      "first_seen_at": "2026-10-22T09:12:38.401Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26421236",
@@ -49660,7 +50285,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T09:12:38.401Z"
+      "first_seen_at": "2026-10-22T09:12:38.401Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26421041",
@@ -49730,7 +50356,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-22T09:12:38.401Z"
+      "first_seen_at": "2026-10-22T09:12:38.401Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26420882",
@@ -49809,7 +50436,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T09:12:38.401Z"
+      "first_seen_at": "2026-10-22T09:12:38.401Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26420350",
@@ -49886,7 +50514,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T09:12:38.401Z"
+      "first_seen_at": "2026-10-22T09:12:38.401Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26420274",
@@ -49952,7 +50581,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T09:12:38.401Z"
+      "first_seen_at": "2026-10-22T09:12:38.401Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26419655",
@@ -50018,7 +50648,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T09:12:38.401Z"
+      "first_seen_at": "2026-10-22T09:12:38.401Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26313894",
@@ -50096,7 +50727,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T09:12:38.401Z"
+      "first_seen_at": "2026-10-22T09:12:38.401Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26180365",
@@ -50177,7 +50809,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-22T09:12:38.401Z"
+      "first_seen_at": "2026-10-22T09:12:38.401Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26146055",
@@ -50260,7 +50893,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T09:12:38.401Z"
+      "first_seen_at": "2026-10-22T09:12:38.401Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26196229",
@@ -50347,7 +50981,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T09:12:38.401Z"
+      "first_seen_at": "2026-10-22T09:12:38.401Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26148806",
@@ -50428,7 +51063,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-22T09:12:38.401Z"
+      "first_seen_at": "2026-10-22T09:12:38.401Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26161405",
@@ -50515,7 +51151,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T09:12:38.401Z"
+      "first_seen_at": "2026-10-22T09:12:38.401Z",
+      "advertiser": "Individual"
     },
     {
       "id": "26426377",
@@ -50589,7 +51226,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-22T12:42:36.993Z"
+      "first_seen_at": "2026-10-22T12:42:36.993Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26426163",
@@ -50660,7 +51298,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T12:42:36.993Z"
+      "first_seen_at": "2026-10-22T12:42:36.993Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26425980",
@@ -50726,7 +51365,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T12:42:36.993Z"
+      "first_seen_at": "2026-10-22T12:42:36.993Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26425786",
@@ -50792,7 +51432,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T12:42:36.993Z"
+      "first_seen_at": "2026-10-22T12:42:36.993Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26425736",
@@ -50867,7 +51508,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T12:42:36.993Z"
+      "first_seen_at": "2026-10-22T12:42:36.993Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26425473",
@@ -50938,7 +51580,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T12:42:36.993Z"
+      "first_seen_at": "2026-10-22T12:42:36.993Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26424736",
@@ -51009,7 +51652,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T12:42:36.993Z"
+      "first_seen_at": "2026-10-22T12:42:36.993Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26424553",
@@ -51079,7 +51723,8 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-22T12:42:36.993Z"
+      "first_seen_at": "2026-10-22T12:42:36.993Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26424502",
@@ -51156,7 +51801,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T12:42:36.993Z"
+      "first_seen_at": "2026-10-22T12:42:36.993Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26424157",
@@ -51222,7 +51868,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T12:42:36.993Z"
+      "first_seen_at": "2026-10-22T12:42:36.993Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26423987",
@@ -51290,7 +51937,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T12:42:36.993Z"
+      "first_seen_at": "2026-10-22T12:42:36.993Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26423919",
@@ -51365,7 +52013,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T12:42:36.993Z"
+      "first_seen_at": "2026-10-22T12:42:36.993Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26423747",
@@ -51442,7 +52091,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T12:42:36.993Z"
+      "first_seen_at": "2026-10-22T12:42:36.993Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26423542",
@@ -51520,7 +52170,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T12:42:36.993Z"
+      "first_seen_at": "2026-10-22T12:42:36.993Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26423346",
@@ -51609,7 +52260,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-22T12:42:36.993Z"
+      "first_seen_at": "2026-10-22T12:42:36.993Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26423234",
@@ -51687,7 +52339,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-22T12:42:36.993Z"
+      "first_seen_at": "2026-10-22T12:42:36.993Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26423206",
@@ -51765,7 +52418,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-22T12:42:36.993Z"
+      "first_seen_at": "2026-10-22T12:42:36.993Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26423035",
@@ -51851,7 +52505,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-22T12:42:36.993Z"
+      "first_seen_at": "2026-10-22T12:42:36.993Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26423001",
@@ -51928,7 +52583,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-22T12:42:36.993Z"
+      "first_seen_at": "2026-10-22T12:42:36.993Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26427685",
@@ -52004,7 +52660,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-23T09:09:02.660Z"
+      "first_seen_at": "2026-10-23T09:09:02.660Z",
+      "advertiser": "Individual"
     },
     {
       "id": "26436013",
@@ -52090,7 +52747,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-23T09:09:02.660Z"
+      "first_seen_at": "2026-10-23T09:09:02.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26434944",
@@ -52167,7 +52825,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-23T09:09:02.660Z"
+      "first_seen_at": "2026-10-23T09:09:02.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26434133",
@@ -52239,7 +52898,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-23T09:09:02.660Z"
+      "first_seen_at": "2026-10-23T09:09:02.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26433890",
@@ -52316,7 +52976,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-23T09:09:02.660Z"
+      "first_seen_at": "2026-10-23T09:09:02.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26429526",
@@ -52394,7 +53055,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-23T09:09:02.660Z"
+      "first_seen_at": "2026-10-23T09:09:02.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26148034",
@@ -52491,7 +53153,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-23T09:09:02.660Z"
+      "first_seen_at": "2026-10-23T09:09:02.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26428689",
@@ -52569,7 +53232,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-23T09:09:02.660Z"
+      "first_seen_at": "2026-10-23T09:09:02.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26429374",
@@ -52635,7 +53299,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-23T09:09:02.660Z"
+      "first_seen_at": "2026-10-23T09:09:02.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26212934",
@@ -52726,7 +53391,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-23T09:09:02.660Z"
+      "first_seen_at": "2026-10-23T09:09:02.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26428299",
@@ -52800,7 +53466,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-23T09:09:02.660Z"
+      "first_seen_at": "2026-10-23T09:09:02.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26211674",
@@ -52886,7 +53553,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-23T09:09:02.660Z"
+      "first_seen_at": "2026-10-23T09:09:02.660Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26448004",
@@ -52958,7 +53626,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-24T08:41:56.701Z"
+      "first_seen_at": "2026-10-24T08:41:56.701Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26447787",
@@ -53040,7 +53709,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-24T08:41:56.701Z"
+      "first_seen_at": "2026-10-24T08:41:56.701Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26447436",
@@ -53118,7 +53788,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-24T08:41:56.701Z"
+      "first_seen_at": "2026-10-24T08:41:56.701Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26446843",
@@ -53187,7 +53858,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-24T08:41:56.701Z"
+      "first_seen_at": "2026-10-24T08:41:56.701Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26445563",
@@ -53268,7 +53940,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-24T08:41:56.701Z"
+      "first_seen_at": "2026-10-24T08:41:56.701Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26445523",
@@ -53336,7 +54009,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-24T08:41:56.701Z"
+      "first_seen_at": "2026-10-24T08:41:56.701Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26445457",
@@ -53404,7 +54078,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-24T08:41:56.701Z"
+      "first_seen_at": "2026-10-24T08:41:56.701Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26445410",
@@ -53486,7 +54161,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-24T08:41:56.701Z"
+      "first_seen_at": "2026-10-24T08:41:56.701Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26445313",
@@ -53568,7 +54244,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-24T08:41:56.701Z"
+      "first_seen_at": "2026-10-24T08:41:56.701Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26444594",
@@ -53656,7 +54333,8 @@
         "rooms": 5,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-24T08:41:56.701Z"
+      "first_seen_at": "2026-10-24T08:41:56.701Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26443572",
@@ -53726,7 +54404,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-24T08:41:56.701Z"
+      "first_seen_at": "2026-10-24T08:41:56.701Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26443035",
@@ -53791,7 +54470,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-24T08:41:56.701Z"
+      "first_seen_at": "2026-10-24T08:41:56.701Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26147534",
@@ -53872,7 +54552,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-24T08:41:56.701Z"
+      "first_seen_at": "2026-10-24T08:41:56.701Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26436638",
@@ -53953,7 +54634,8 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-24T08:41:56.701Z"
+      "first_seen_at": "2026-10-24T08:41:56.701Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26430212",
@@ -54036,7 +54718,8 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-24T08:41:56.701Z"
+      "first_seen_at": "2026-10-24T08:41:56.701Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26428819",
@@ -54114,7 +54797,8 @@
         "rooms": 2,
         "bedrooms": null
       },
-      "first_seen_at": "2026-10-24T08:41:56.701Z"
+      "first_seen_at": "2026-10-24T08:41:56.701Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26429696",
@@ -54192,7 +54876,8 @@
         "rooms": 2,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-10-24T08:41:56.701Z"
+      "first_seen_at": "2026-10-24T08:41:56.701Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26161049",
@@ -54270,7 +54955,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-24T08:41:56.701Z"
+      "first_seen_at": "2026-10-24T08:41:56.701Z",
+      "advertiser": "Agency"
     },
     {
       "id": "26148128",
@@ -54336,7 +55022,8 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-10-24T08:41:56.701Z"
+      "first_seen_at": "2026-10-24T08:41:56.701Z",
+      "advertiser": "Agency"
     }
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",

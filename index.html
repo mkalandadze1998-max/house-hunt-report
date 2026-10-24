@@ -102,6 +102,12 @@
         </fieldset>
         <fieldset class="refine" id="refine">
           <legend>დაზუსტება <span id="refineCount"></span></legend>
+          <div class="chips" role="group" aria-label="გამცხადებელი">
+            <label><input type="radio" name="advertiser" value="any" checked><span>ყველა გამცხადებელი</span></label>
+            <label><input type="radio" name="advertiser" value="owner"><span>მესაკუთრე</span></label>
+            <label><input type="radio" name="advertiser" value="agent"><span>აგენტი</span></label>
+            <label><input type="radio" name="advertiser" value="unknown"><span>არ არის მითითებული</span></label>
+          </div>
           <div class="chips" role="group" aria-label="ოთახები">
             <label><input type="radio" name="rooms" value="any" checked><span>ნებისმიერი ოთახი</span></label>
             <label><input type="radio" name="rooms" value="1"><span>1 ოთახი</span></label>
