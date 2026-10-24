@@ -587,3 +587,10 @@ body.lb-open{overflow:hidden}
 @media(max-width:640px){.lightbox{grid-template-columns:1fr}.lb-prev,.lb-next{position:fixed;bottom:48px}.lb-prev{left:24px}.lb-next{right:24px}}
 .card-actions{flex-wrap:wrap;gap:4px}
 .card-actions [data-action="comment"]{flex-basis:100%;text-align:left;color:var(--brand-2);background:var(--surface-2);margin-bottom:4px}
+
+/* Contact action shared by cards, map popups and details. */
+.whatsapp-link{display:inline-flex;align-items:center;gap:6px;color:#176c38!important;font-weight:600;text-decoration:none;min-height:36px;padding:6px 8px;border-radius:8px}
+.whatsapp-link svg{width:20px;height:20px;flex-shrink:0;fill:currentColor}
+.whatsapp-link:hover{background:#e2f5e8}
+.whatsapp-link:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+.whatsapp-fallback{color:var(--muted)!important}
