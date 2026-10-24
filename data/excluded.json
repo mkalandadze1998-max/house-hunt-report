@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T09:09:02.660Z",
+  "generated_at": "2026-10-24T08:41:56.701Z",
   "keep_days": 14,
   "items": [
     {
@@ -18,7 +18,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/yLBwSvM6ad8c5cc0bd29.webp",
       "listing_date": "2026-10-21T18:08:04+04:00",
       "excluded_at": "2026-10-21T14:44:20.267Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26416058",
@@ -36,25 +36,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/qboFQWg6ad8bb5ad733a.webp",
       "listing_date": "2026-10-21T17:19:52+04:00",
       "excluded_at": "2026-10-21T14:44:20.267Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26277491",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-dighmis-masivshi-26277491/",
-      "reason": "Outside requested districts",
-      "price": 1000,
-      "size": 40,
-      "rooms": 2,
-      "floor": 2,
-      "total_floors": 8,
-      "district": "დიდუბე-ჩუღურეთი",
-      "neighborhood": "დიღმის მასივი",
-      "address": "ე. მიქელაძის ქ. ",
-      "condition": "ახალი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261007/statements/piKRBFy6ac67eaf981f6.webp",
-      "listing_date": "2026-10-22T18:01:26+04:00",
-      "excluded_at": "2026-10-22T12:42:36.993Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26361935",
@@ -72,7 +54,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261016/statements/EjO2gFh6ad1efdef2847.webp",
       "listing_date": "2026-10-16T13:39:00+04:00",
       "excluded_at": "2026-10-16T09:58:01.660Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26366701",
@@ -90,7 +72,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261016/statements/p38YMF16ad220cc3a08e.webp",
       "listing_date": "2026-10-16T17:04:48+04:00",
       "excluded_at": "2026-10-16T15:17:36.745Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "25808217",
@@ -108,7 +90,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202608/20260820/statements/uPTStEy6a86c05e0d90e.webp",
       "listing_date": "2026-10-22T12:09:33+04:00",
       "excluded_at": "2026-10-18T17:39:36.567Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26074716",
@@ -126,7 +108,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202609/20260917/statements/DO5IEej6aabaade6a4c1.webp",
       "listing_date": "2026-10-20T00:00:15+04:00",
       "excluded_at": "2026-10-18T17:39:36.567Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26336158",
@@ -144,7 +126,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261013/statements/1uEafct6ace5290c6fc7.webp",
       "listing_date": "2026-10-13T19:48:48+04:00",
       "excluded_at": "2026-10-18T17:39:36.567Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26210397",
@@ -162,7 +144,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261001/statements/Sfxvlhp6abdfe72b332e.webp",
       "listing_date": "2026-10-01T10:32:53+04:00",
       "excluded_at": "2026-10-18T17:39:36.567Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26336908",
@@ -180,7 +162,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261013/statements/ezDcA9i6ace808b16ce4.webp",
       "listing_date": "2026-10-13T23:04:30+04:00",
       "excluded_at": "2026-10-18T17:39:36.567Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26336705",
@@ -198,7 +180,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261013/statements/5HqPeIs6ace7276ae5dd.webp",
       "listing_date": "2026-10-13T22:04:36+04:00",
       "excluded_at": "2026-10-18T17:39:36.567Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26206543",
@@ -216,7 +198,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202609/20260930/statements/W1mCY8y6abd070399901.webp",
       "listing_date": "2026-09-30T17:01:15+04:00",
       "excluded_at": "2026-10-18T17:39:36.567Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26204730",
@@ -234,7 +216,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202609/20260930/statements/36CHHJg6abcef4017615.webp",
       "listing_date": "2026-09-30T15:17:23+04:00",
       "excluded_at": "2026-10-18T17:39:36.567Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26227093",
@@ -252,7 +234,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261002/statements/2jMY7JC6abfa16e15527.webp",
       "listing_date": "2026-10-02T16:20:41+04:00",
       "excluded_at": "2026-10-18T17:39:36.567Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26353232",
@@ -270,7 +252,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261015/statements/uMyYlr06ad0c18c0b550.webp",
       "listing_date": "2026-10-15T16:06:29+04:00",
       "excluded_at": "2026-10-15T22:11:46.485Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26358800",
@@ -288,7 +270,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261016/statements/IrKFZdj6ad1568d62e3f.webp",
       "listing_date": "2026-10-16T02:41:26+04:00",
       "excluded_at": "2026-10-15T22:43:33.237Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26189850",
@@ -306,7 +288,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202609/20260929/statements/wPAO4386abb74d2efbd9.webp",
       "listing_date": "2026-09-29T12:32:17+04:00",
       "excluded_at": "2026-10-19T16:34:30.375Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26340794",
@@ -324,7 +306,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261014/statements/doTO2pi6acf573ea6b8e.webp",
       "listing_date": "2026-10-14T14:21:45+04:00",
       "excluded_at": "2026-10-19T16:34:30.375Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26336522",
@@ -342,7 +324,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261013/statements/ZlJkCyo6ace6795d184f.webp",
       "listing_date": "2026-10-13T21:18:07+04:00",
       "excluded_at": "2026-10-19T16:34:30.375Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26379533",
@@ -360,7 +342,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261018/statements/5isR8xI6ad499686e294.webp",
       "listing_date": "2026-10-18T14:04:43+04:00",
       "excluded_at": "2026-10-18T13:24:30.526Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26382867",
@@ -378,7 +360,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261019/statements/yLtDfaA6ad58ee464d04.webp",
       "listing_date": "2026-10-19T07:27:51+04:00",
       "excluded_at": "2026-10-19T10:10:02.224Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26370638",
@@ -396,7 +378,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261017/statements/JrSLBPc6ad2ac01e937e.webp",
       "listing_date": "2026-10-17T02:58:19+04:00",
       "excluded_at": "2026-10-17T04:56:59.747Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26399913",
@@ -414,7 +396,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261020/statements/No0PbFq6ad741d5a191a.webp",
       "listing_date": "2026-10-20T14:26:58+04:00",
       "excluded_at": "2026-10-20T14:24:41.025Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26402201",
@@ -432,7 +414,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261020/statements/Lr4Ck8f6ad75aa559d8e.webp",
       "listing_date": "2026-10-20T16:13:19+04:00",
       "excluded_at": "2026-10-20T14:24:41.025Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26284204",
@@ -450,7 +432,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261008/statements/e5dpt8M6ac77de5266e8.webp",
       "listing_date": "2026-10-08T15:26:53+04:00",
       "excluded_at": "2026-10-20T14:24:41.025Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26280821",
@@ -468,7 +450,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261008/statements/KQ5h53i6ac75a709ce07.webp",
       "listing_date": "2026-10-08T12:55:24+04:00",
       "excluded_at": "2026-10-20T14:24:41.025Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26286498",
@@ -486,7 +468,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261008/statements/mXDh7mM6ac79590de4ab.webp",
       "listing_date": "2026-10-08T17:08:02+04:00",
       "excluded_at": "2026-10-20T14:24:41.025Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26273549",
@@ -504,7 +486,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261007/statements/tB79NzJ6ac63b5419191.webp",
       "listing_date": "2026-10-07T16:31:08+04:00",
       "excluded_at": "2026-10-20T14:24:41.025Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26346138",
@@ -522,7 +504,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261014/statements/92P4o9R6acf9a1719283.webp",
       "listing_date": "2026-10-14T19:06:08+04:00",
       "excluded_at": "2026-10-20T14:24:41.025Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26188251",
@@ -540,7 +522,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202609/20260929/statements/BUJbp886abb4fa7085ce.webp",
       "listing_date": "2026-09-29T09:42:22+04:00",
       "excluded_at": "2026-10-20T14:24:41.025Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26168191",
@@ -558,7 +540,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202609/20260926/statements/q7O8j1F6ab78913e8aa2.webp",
       "listing_date": "2026-09-26T13:07:03+04:00",
       "excluded_at": "2026-10-20T14:24:41.025Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26273255",
@@ -576,7 +558,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261007/statements/jJAzKjp6ac6383f96571.webp",
       "listing_date": "2026-10-07T16:17:54+04:00",
       "excluded_at": "2026-10-20T14:24:41.025Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26272094",
@@ -594,7 +576,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261007/statements/7qOpHIh6ac62b7205f00.webp",
       "listing_date": "2026-10-07T15:24:02+04:00",
       "excluded_at": "2026-10-20T14:24:41.025Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26272653",
@@ -612,7 +594,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261007/statements/CcjTTFS6ac631e5ab39d.webp",
       "listing_date": "2026-10-07T15:50:19+04:00",
       "excluded_at": "2026-10-20T14:24:41.025Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26375292",
@@ -630,7 +612,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261017/statements/C6biu9A6ad36e772cee9.webp",
       "listing_date": "2026-10-19T15:54:20+04:00",
       "excluded_at": "2026-10-17T15:11:28.491Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26386675",
@@ -648,7 +630,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261019/statements/S9Dev686ad5e7ca5b7bf.webp",
       "listing_date": "2026-10-19T13:51:23+04:00",
       "excluded_at": "2026-10-19T10:10:02.224Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26385734",
@@ -666,7 +648,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261019/statements/2OgFiyj6ad5ddf08ab04.webp",
       "listing_date": "2026-10-19T13:09:45+04:00",
       "excluded_at": "2026-10-19T10:10:02.224Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26385304",
@@ -684,7 +666,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261019/statements/4NDovJB6ad5da0aa168c.webp",
       "listing_date": "2026-10-19T12:52:45+04:00",
       "excluded_at": "2026-10-19T10:10:02.224Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26384873",
@@ -702,7 +684,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261019/statements/LvNueQD6ad5d6157e06e.webp",
       "listing_date": "2026-10-19T12:34:58+04:00",
       "excluded_at": "2026-10-19T10:10:02.224Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26396691",
@@ -720,7 +702,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261020/statements/hZy3TUt6ad71faf8f8c8.webp",
       "listing_date": "2026-10-20T12:01:05+04:00",
       "excluded_at": "2026-10-20T09:34:44.578Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26396179",
@@ -738,7 +720,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261020/statements/XNrtnAg6ad7189318965.webp",
       "listing_date": "2026-10-20T11:30:44+04:00",
       "excluded_at": "2026-10-20T09:34:44.578Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "17726229",
@@ -756,7 +738,7 @@
       "image": "https://static.my.ge/myhome/photos/9/2/2/6/2/large/17726229_1.jpg",
       "listing_date": "2026-10-20T03:02:08+04:00",
       "excluded_at": "2026-10-20T09:34:44.578Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26389651",
@@ -774,7 +756,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261019/statements/7n7FE6j6ad605a8c644d.webp",
       "listing_date": "2026-10-19T15:59:30+04:00",
       "excluded_at": "2026-10-19T20:17:37.021Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26388814",
@@ -792,7 +774,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261019/statements/3buyc5B6ad5fe4e2f916.webp",
       "listing_date": "2026-10-19T15:31:32+04:00",
       "excluded_at": "2026-10-19T20:17:37.021Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26388751",
@@ -810,7 +792,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261019/statements/TYufEVj6ad5fcabe76a5.webp",
       "listing_date": "2026-10-19T15:24:23+04:00",
       "excluded_at": "2026-10-19T20:17:37.021Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26388452",
@@ -828,7 +810,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261019/statements/OhvC77v6ad5fb08e404d.webp",
       "listing_date": "2026-10-19T15:12:58+04:00",
       "excluded_at": "2026-10-19T20:17:37.021Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26388393",
@@ -846,7 +828,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261019/statements/8S1OvkK6ad5fa57e97e5.webp",
       "listing_date": "2026-10-19T15:10:33+04:00",
       "excluded_at": "2026-10-19T20:17:37.021Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26367283",
@@ -864,7 +846,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261016/statements/JuO32yJ6ad226176bf49.webp",
       "listing_date": "2026-10-16T17:27:18+04:00",
       "excluded_at": "2026-10-16T15:17:36.745Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26360127",
@@ -882,7 +864,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261016/statements/c2Mrmbm6ad1dc72e9cd6.webp",
       "listing_date": "2026-10-16T12:18:35+04:00",
       "excluded_at": "2026-10-16T09:58:01.660Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26355029",
@@ -900,7 +882,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261015/statements/gRnfEwG6ad0d1fd6f966.webp",
       "listing_date": "2026-10-15T17:16:52+04:00",
       "excluded_at": "2026-10-15T22:11:46.485Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26353127",
@@ -918,7 +900,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261015/statements/ExcLuIA6ad0c0b9e1b1a.webp",
       "listing_date": "2026-10-15T16:02:43+04:00",
       "excluded_at": "2026-10-15T22:11:46.485Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26411660",
@@ -936,7 +918,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/X2hplQ16ad88d3689107.webp",
       "listing_date": "2026-10-22T16:01:09+04:00",
       "excluded_at": "2026-10-21T12:37:36.929Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26415071",
@@ -954,7 +936,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/l7FjwN36ad8b0e718de1.webp",
       "listing_date": "2026-10-21T16:33:57+04:00",
       "excluded_at": "2026-10-21T12:37:36.929Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26415040",
@@ -972,7 +954,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/PyMewhB6ad8affd4369d.webp",
       "listing_date": "2026-10-21T16:32:45+04:00",
       "excluded_at": "2026-10-21T12:37:36.929Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26411393",
@@ -990,7 +972,7 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/RkzUSJd6ad88a3a52076.webp",
       "listing_date": "2026-10-21T13:50:50+04:00",
       "excluded_at": "2026-10-21T12:37:36.929Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
     },
     {
       "id": "26411333",
@@ -1008,6 +990,852 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/d9EXgfx6ad88a276cf86.webp",
       "listing_date": "2026-10-21T13:48:29+04:00",
       "excluded_at": "2026-10-21T12:37:36.929Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26255047",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26255047/",
+      "reason": "Outside requested districts",
+      "price": 900,
+      "size": 40,
+      "rooms": 1,
+      "floor": 4,
+      "total_floors": 5,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "დიღმის მასივი - VI კვარტალი ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/qoII8T66ac4a2f370d1b.webp",
+      "listing_date": "2026-10-06T11:29:25+04:00",
+      "excluded_at": "2026-10-21T12:37:36.929Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26118390",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26118390/",
+      "reason": "Outside requested districts",
+      "price": 900,
+      "size": 40,
+      "rooms": 1,
+      "floor": 4,
+      "total_floors": 5,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "დიღმის მასივი - VI კვარტალი ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260922/statements/KJFiO626ab22623180b8.webp",
+      "listing_date": "2026-10-09T00:00:46+04:00",
+      "excluded_at": "2026-10-21T12:37:36.929Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26153526",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26153526/",
+      "reason": "Outside requested districts",
+      "price": 900,
+      "size": 40,
+      "rooms": 1,
+      "floor": 4,
+      "total_floors": 5,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "დიღმის მასივი - VI კვარტალი 0",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260924/statements/PzUQ7Hl6ab53d242dd43.webp",
+      "listing_date": "2026-09-24T19:12:16+04:00",
+      "excluded_at": "2026-10-21T12:37:36.929Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26267193",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-dighmis-masivshi-26267193/",
+      "reason": "Outside requested districts",
+      "price": 909,
+      "size": 40,
+      "rooms": 2,
+      "floor": 8,
+      "total_floors": 9,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "გრ. რობაქიძის გამზ. 1",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261007/statements/IoQbNpQ6ac5f099c03d8.webp",
+      "listing_date": "2026-10-07T11:13:25+04:00",
+      "excluded_at": "2026-10-21T12:37:36.929Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26099255",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26099255/",
+      "reason": "Outside requested districts",
+      "price": 1000,
+      "size": 40,
+      "rooms": 1,
+      "floor": 4,
+      "total_floors": 8,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "დიღმის მასივი - IV კვარტალი ",
+      "condition": "ახალი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260919/statements/L48UruO6aae727dc1932.webp",
+      "listing_date": "2026-09-29T14:27:59+04:00",
+      "excluded_at": "2026-10-21T12:37:36.929Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26411161",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26411161/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 40,
+      "rooms": 2,
+      "floor": 1,
+      "total_floors": 4,
+      "district": "გლდანი-ნაძალადევი",
+      "neighborhood": "სან. ზონა",
+      "address": "არბოს ქუჩა ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/GU8Ryjo6ad88844cc05e.webp",
+      "listing_date": "2026-10-21T13:40:49+04:00",
+      "excluded_at": "2026-10-21T12:37:36.929Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26398146",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-didubeshi-26398146/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 900,
+      "size": 40,
+      "rooms": 2,
+      "floor": 3,
+      "total_floors": 5,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიდუბე",
+      "address": "წერეთლის გამზ. ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261020/statements/uNZn0t36ad72f8bee7b5.webp",
+      "listing_date": "2026-10-20T13:09:00+04:00",
+      "excluded_at": "2026-10-20T09:34:44.578Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26421821",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26421821/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 55,
+      "rooms": 2,
+      "floor": 7,
+      "total_floors": 9,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "დიდი დიღომი",
+      "address": "ავთანდილის ქ. ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/aTsn79L6ad9c8f772b2b.webp",
+      "listing_date": "2026-10-22T12:28:01+04:00",
+      "excluded_at": "2026-10-22T09:12:38.401Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26421650",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26421650/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 40,
+      "rooms": 2,
+      "floor": 1,
+      "total_floors": 4,
+      "district": "გლდანი-ნაძალადევი",
+      "neighborhood": "სან. ზონა",
+      "address": "არბოს ქუჩა ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/ggPOtlo6ad9c728b7a25.webp",
+      "listing_date": "2026-10-22T12:21:16+04:00",
+      "excluded_at": "2026-10-22T09:12:38.401Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26420745",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26420745/",
+      "reason": "Outside requested districts",
+      "price": 950,
+      "size": 40,
+      "rooms": 1,
+      "floor": 9,
+      "total_floors": 11,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "ნ. ბოხუას ქ. ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/jmmKGb56ad9bc2472e12.webp",
+      "listing_date": "2026-10-22T11:35:30+04:00",
+      "excluded_at": "2026-10-22T09:12:38.401Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26394763",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26394763/",
+      "reason": "Outside requested districts",
+      "price": 899,
+      "size": 40,
+      "rooms": 1,
+      "floor": 3,
+      "total_floors": 8,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "ბელიაშვილის შეს. ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261019/statements/HTLOm0W6ad64dfc013ff.webp",
+      "listing_date": "2026-10-19T21:07:38+04:00",
+      "excluded_at": "2026-10-19T20:17:37.021Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26398904",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26398904/",
+      "reason": "Outside requested districts",
+      "price": 900,
+      "size": 42,
+      "rooms": 1,
+      "floor": 3,
+      "total_floors": 8,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "ბელიაშვილი ქუჩა ",
+      "condition": "ახალი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261020/statements/MnjpdHL6ad736f888369.webp",
+      "listing_date": "2026-10-20T13:40:25+04:00",
+      "excluded_at": "2026-10-20T19:56:00.450Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26418862",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26418862/",
+      "reason": "Outside requested districts",
+      "price": 951,
+      "size": 40,
+      "rooms": 1,
+      "floor": 9,
+      "total_floors": 11,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "ნ. ბოხუას ქ. ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/rKNB2786ad8ee41f255b.webp",
+      "listing_date": "2026-10-21T21:05:43+04:00",
+      "excluded_at": "2026-10-21T17:49:17.144Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26416502",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26416502/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 40,
+      "rooms": 2,
+      "floor": 1,
+      "total_floors": 4,
+      "district": "გლდანი-ნაძალადევი",
+      "neighborhood": "სან. ზონა",
+      "address": "არბოს ქუჩა ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/eqwD5Pm6ad8c00aa3b88.webp",
+      "listing_date": "2026-10-21T17:38:05+04:00",
+      "excluded_at": "2026-10-21T17:49:17.144Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26187084",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26187084/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 909,
+      "size": 55,
+      "rooms": 2,
+      "floor": 4,
+      "total_floors": 9,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "დიდი დიღომი",
+      "address": "გიორგი ბრწყინვალეს ქ. ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260928/statements/B3zhEiy6aba844e1b2a9.webp",
+      "listing_date": "2026-09-28T19:21:32+04:00",
+      "excluded_at": "2026-10-21T14:44:20.267Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26184123",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26184123/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 909,
+      "size": 50,
+      "rooms": 2,
+      "floor": 4,
+      "total_floors": 9,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "დიდი დიღომი",
+      "address": "გიორგი ბრწყინვალეს ქ. ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260928/statements/voD0Yh86aba62bdea91e.webp",
+      "listing_date": "2026-09-28T16:51:34+04:00",
+      "excluded_at": "2026-10-21T14:44:20.267Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26159852",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26159852/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 909,
+      "size": 50,
+      "rooms": 2,
+      "floor": 4,
+      "total_floors": 9,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "დიდი დიღომი",
+      "address": "გიორგი ბრწყინვალეს ქ. ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260925/statements/fkIJK5R6ab6559609005.webp",
+      "listing_date": "2026-09-25T15:06:35+04:00",
+      "excluded_at": "2026-10-21T14:44:20.267Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26206816",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26206816/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 997,
+      "size": 50,
+      "rooms": 2,
+      "floor": 2,
+      "total_floors": 8,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "დიდი დიღომი",
+      "address": "მირიან მეფის ქ. ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260930/statements/TkGeZ2N6abd0acdc8da0.webp",
+      "listing_date": "2026-09-30T17:14:07+04:00",
+      "excluded_at": "2026-10-19T16:34:30.375Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26350407",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26350407/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 987,
+      "size": 59,
+      "rooms": 2,
+      "floor": 7,
+      "total_floors": 9,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "დიდი დიღომი",
+      "address": "დიდი დიღომი - III მ/რ 2",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261015/statements/takVMlv6ad09ca54789b.webp",
+      "listing_date": "2026-10-15T13:28:13+04:00",
+      "excluded_at": "2026-10-15T22:11:46.485Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26435144",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26435144/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 40,
+      "rooms": 2,
+      "floor": 1,
+      "total_floors": 4,
+      "district": "გლდანი-ნაძალადევი",
+      "neighborhood": "სან. ზონა",
+      "address": "არბოს ქუჩა 2",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261023/statements/kDnDJsy6adb1918aefac.webp",
+      "listing_date": "2026-10-23T12:22:24+04:00",
+      "excluded_at": "2026-10-23T09:09:02.660Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26434724",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-dighmis-masivshi-26434724/",
+      "reason": "Outside requested districts",
+      "price": 1000,
+      "size": 45,
+      "rooms": 2,
+      "floor": 2,
+      "total_floors": 8,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "ე. მიქელაძის ქ. ",
+      "condition": "ახალი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261023/statements/1UrsJyY6adb1526d5d58.webp",
+      "listing_date": "2026-10-23T12:05:55+04:00",
+      "excluded_at": "2026-10-23T09:09:02.660Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26430002",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26430002/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 40,
+      "rooms": 2,
+      "floor": 1,
+      "total_floors": 4,
+      "district": "გლდანი-ნაძალადევი",
+      "neighborhood": "სან. ზონა",
+      "address": "არბოს ქუჩა 0",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/xKT508z6ada19b0ad0a8.webp",
+      "listing_date": "2026-10-22T18:12:51+04:00",
+      "excluded_at": "2026-10-23T09:09:02.660Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26428824",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-didubeshi-26428824/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 899,
+      "size": 40,
+      "rooms": 2,
+      "floor": 3,
+      "total_floors": 5,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიდუბე",
+      "address": "წერეთლის გამზ. 89",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/nsTJJt76ada0e7421e52.webp",
+      "listing_date": "2026-10-22T17:24:53+04:00",
+      "excluded_at": "2026-10-23T09:09:02.660Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26430188",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26430188/",
+      "reason": "Outside requested districts",
+      "price": 951,
+      "size": 40,
+      "rooms": 1,
+      "floor": 9,
+      "total_floors": 11,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "ნ. ბოხუას ქ. 10",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/BcQWGRG6ada1ba49b5da.webp",
+      "listing_date": "2026-10-22T18:21:12+04:00",
+      "excluded_at": "2026-10-23T09:09:02.660Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26388561",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-san-zonashi-26388561/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 999,
+      "size": 40,
+      "rooms": 1,
+      "floor": 5,
+      "total_floors": 8,
+      "district": "გლდანი-ნაძალადევი",
+      "neighborhood": "სან. ზონა",
+      "address": "გურამიშვილის გამზ. ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261019/statements/CUDYRI46ad5fbe5ea426.webp",
+      "listing_date": "2026-10-19T15:17:13+04:00",
+      "excluded_at": "2026-10-19T20:17:37.021Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26423588",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26423588/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 43,
+      "rooms": 2,
+      "floor": 1,
+      "total_floors": 4,
+      "district": "გლდანი-ნაძალადევი",
+      "neighborhood": "სან. ზონა",
+      "address": "არბოს ქუჩა ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/lz3nVue6ad9d93866c66.webp",
+      "listing_date": "2026-10-22T13:38:57+04:00",
+      "excluded_at": "2026-10-22T12:42:36.993Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26423523",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26423523/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 43,
+      "rooms": 2,
+      "floor": 1,
+      "total_floors": 4,
+      "district": "გლდანი-ნაძალადევი",
+      "neighborhood": "სან. ზონა",
+      "address": "არბოს ქუჩა ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/HSrD7Iu6ad9d8c5a738b.webp",
+      "listing_date": "2026-10-22T13:36:26+04:00",
+      "excluded_at": "2026-10-22T12:42:36.993Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26415049",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26415049/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 43,
+      "rooms": 2,
+      "floor": 1,
+      "total_floors": 4,
+      "district": "გლდანი-ნაძალადევი",
+      "neighborhood": "სან. ზონა",
+      "address": "არბოს ქუჩა 2",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/0Oo134m6ad8b07d907bc.webp",
+      "listing_date": "2026-10-21T16:36:44+04:00",
+      "excluded_at": "2026-10-21T12:37:36.929Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26413991",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26413991/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 44,
+      "rooms": 2,
+      "floor": 1,
+      "total_floors": 4,
+      "district": "გლდანი-ნაძალადევი",
+      "neighborhood": "სან. ზონა",
+      "address": "არბოს ქუჩა ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/gJyshPs6ad8a58dda6b1.webp",
+      "listing_date": "2026-10-21T15:45:22+04:00",
+      "excluded_at": "2026-10-21T12:37:36.929Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26411220",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26411220/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 40,
+      "rooms": 2,
+      "floor": 1,
+      "total_floors": 4,
+      "district": "გლდანი-ნაძალადევი",
+      "neighborhood": "სან. ზონა",
+      "address": "არბოს ქუჩა ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/dBSYEeU6ad888cec5880.webp",
+      "listing_date": "2026-10-21T13:43:10+04:00",
+      "excluded_at": "2026-10-21T12:37:36.929Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26410838",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26410838/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 40,
+      "rooms": 2,
+      "floor": 1,
+      "total_floors": 4,
+      "district": "გლდანი-ნაძალადევი",
+      "neighborhood": "სან. ზონა",
+      "address": "არბოს ქუჩა ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/FNo4n0H6ad8854e43305.webp",
+      "listing_date": "2026-10-21T13:26:52+04:00",
+      "excluded_at": "2026-10-21T12:37:36.929Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26420701",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-3-otaxiani-bina-san-zonashi-26420701/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 44,
+      "rooms": 3,
+      "floor": 1,
+      "total_floors": 4,
+      "district": "გლდანი-ნაძალადევი",
+      "neighborhood": "სან. ზონა",
+      "address": "არბოს ქუჩა ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/Z7nRayP6ad9bbcb5d525.webp",
+      "listing_date": "2026-10-22T11:32:17+04:00",
+      "excluded_at": "2026-10-22T09:12:38.401Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26151520",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26151520/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 45,
+      "rooms": 2,
+      "floor": 2,
+      "total_floors": 16,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "დიდი დიღომი",
+      "address": "ვეფხისტყაოსნის ქ. ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260924/statements/CCaaibj6ab5272c3c669.webp",
+      "listing_date": "2026-09-24T17:37:08+04:00",
+      "excluded_at": "2026-10-20T14:24:41.025Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26186366",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26186366/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 47,
+      "rooms": 2,
+      "floor": 2,
+      "total_floors": 8,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "დიდი დიღომი",
+      "address": "მირიან მეფის ქ. ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260928/statements/Cle2TAj6aba7a0f6430a.webp",
+      "listing_date": "2026-09-28T18:31:11+04:00",
+      "excluded_at": "2026-10-20T14:24:41.025Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "25506798",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-saburtaloze-25506798/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 40,
+      "rooms": 1,
+      "floor": 7,
+      "total_floors": 8,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "საბურთალო",
+      "address": "ვაჟა ფშაველას გამზირი #1-31, 2-20 20",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202607/20260718/statements/kTqfaK66a5baa4a8416a.webp",
+      "listing_date": "2026-10-24T01:42:19+04:00",
+      "excluded_at": "2026-10-19T16:34:30.375Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26447567",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26447567/",
+      "reason": "Outside requested districts",
+      "price": 950,
+      "size": 42,
+      "rooms": 1,
+      "floor": 9,
+      "total_floors": 11,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "ნ. ბოხუას ქ. ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261024/statements/ISKBSRE6adc65e1e42c3.webp",
+      "listing_date": "2026-10-24T12:03:10+04:00",
+      "excluded_at": "2026-10-24T08:41:56.701Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26445716",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26445716/",
+      "reason": "Outside requested districts",
+      "price": 951,
+      "size": 45,
+      "rooms": 1,
+      "floor": 9,
+      "total_floors": 11,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "ნ. ბოხუას ქ. ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261023/statements/7j7mhic6adba54fc0906.webp",
+      "listing_date": "2026-10-23T22:20:20+04:00",
+      "excluded_at": "2026-10-24T08:41:56.701Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26445589",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26445589/",
+      "reason": "Outside requested districts",
+      "price": 950,
+      "size": 40,
+      "rooms": 1,
+      "floor": 9,
+      "total_floors": 11,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "ნ. ბოხუას ქ. 0",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261023/statements/6TPRzuW6adb9dc24948c.webp",
+      "listing_date": "2026-10-23T21:48:33+04:00",
+      "excluded_at": "2026-10-24T08:41:56.701Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26444744",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26444744/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 800,
+      "size": 40,
+      "rooms": 2,
+      "floor": 3,
+      "total_floors": 8,
+      "district": "გლდანი-ნაძალადევი",
+      "neighborhood": "სან. ზონა",
+      "address": "გურამიშვილის გამზ. ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261023/statements/QGGEE4E6adb7c633bd4b.webp",
+      "listing_date": "2026-10-23T19:27:36+04:00",
+      "excluded_at": "2026-10-24T08:41:56.701Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26443689",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-saburtaloze-26443689/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 40,
+      "rooms": 1,
+      "floor": 6,
+      "total_floors": 8,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "საბურთალო",
+      "address": "ვაჟა-ფშაველა - III კვარტალი ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261023/statements/kwZw3M16adb6d2a1ae7c.webp",
+      "listing_date": "2026-10-23T18:20:55+04:00",
+      "excluded_at": "2026-10-24T08:41:56.701Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26443668",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26443668/",
+      "reason": "Outside requested districts",
+      "price": 950,
+      "size": 40,
+      "rooms": 1,
+      "floor": 9,
+      "total_floors": 11,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "ნ. ბოხუას ქ. ",
+      "condition": "ახალი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261023/statements/RJ7L8Sd6adb6d02aea3e.webp",
+      "listing_date": "2026-10-23T18:20:08+04:00",
+      "excluded_at": "2026-10-24T08:41:56.701Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26429061",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26429061/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 40,
+      "rooms": 2,
+      "floor": 1,
+      "total_floors": 4,
+      "district": "გლდანი-ნაძალადევი",
+      "neighborhood": "სან. ზონა",
+      "address": "არბოს ქუჩა 0",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/SE3Jicp6ada0fe3aed6f.webp",
+      "listing_date": "2026-10-22T17:33:05+04:00",
+      "excluded_at": "2026-10-24T08:41:56.701Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26188120",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26188120/",
+      "reason": "Outside requested districts",
+      "price": 896,
+      "size": 40,
+      "rooms": 1,
+      "floor": 4,
+      "total_floors": 8,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "დიღმის მასივი - IV კვარტალი ",
+      "condition": "ახალი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260929/statements/ZyFFIJu6abafebaaecd0.webp",
+      "listing_date": "2026-09-29T04:02:33+04:00",
+      "excluded_at": "2026-10-24T08:41:56.701Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26163185",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26163185/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 918,
+      "size": 50,
+      "rooms": 2,
+      "floor": 4,
+      "total_floors": 9,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "დიდი დიღომი",
+      "address": "გიორგი ბრწყინვალეს ქ. 0",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260925/statements/ZMKStRF6ab674b252223.webp",
+      "listing_date": "2026-09-25T17:19:39+04:00",
+      "excluded_at": "2026-10-24T08:41:56.701Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26196349",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26196349/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 909,
+      "size": 50,
+      "rooms": 2,
+      "floor": 4,
+      "total_floors": 9,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "დიდი დიღომი",
+      "address": "გიორგი ბრწყინვალეს ქ. ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260929/statements/IlFNfEv6abbb83c84743.webp",
+      "listing_date": "2026-09-29T17:09:07+04:00",
+      "excluded_at": "2026-10-24T08:41:56.701Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26161554",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-saburtaloze-26161554/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 42,
+      "rooms": 1,
+      "floor": 5,
+      "total_floors": 8,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "საბურთალო",
+      "address": "ხვიჩია ი. ქ. ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260925/statements/8Kfux7n6ab6658c553be.webp",
+      "listing_date": "2026-09-25T16:20:39+04:00",
+      "excluded_at": "2026-10-24T08:41:56.701Z",
+      "last_seen_at": "2026-10-24T08:41:56.701Z"
+    },
+    {
+      "id": "26277491",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-dighmis-masivshi-26277491/",
+      "reason": "Outside requested districts",
+      "price": 1000,
+      "size": 40,
+      "rooms": 2,
+      "floor": 2,
+      "total_floors": 8,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "ე. მიქელაძის ქ. ",
+      "condition": "ახალი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261007/statements/piKRBFy6ac67eaf981f6.webp",
+      "listing_date": "2026-10-22T18:01:26+04:00",
+      "excluded_at": "2026-10-22T12:42:36.993Z",
       "last_seen_at": "2026-10-23T09:09:02.660Z"
     },
     {
@@ -1029,78 +1857,6 @@
       "last_seen_at": "2026-10-23T09:09:02.660Z"
     },
     {
-      "id": "26255047",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26255047/",
-      "reason": "Outside requested districts",
-      "price": 900,
-      "size": 40,
-      "rooms": 1,
-      "floor": 4,
-      "total_floors": 5,
-      "district": "დიდუბე-ჩუღურეთი",
-      "neighborhood": "დიღმის მასივი",
-      "address": "დიღმის მასივი - VI კვარტალი ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261006/statements/qoII8T66ac4a2f370d1b.webp",
-      "listing_date": "2026-10-06T11:29:25+04:00",
-      "excluded_at": "2026-10-21T12:37:36.929Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26118390",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26118390/",
-      "reason": "Outside requested districts",
-      "price": 900,
-      "size": 40,
-      "rooms": 1,
-      "floor": 4,
-      "total_floors": 5,
-      "district": "დიდუბე-ჩუღურეთი",
-      "neighborhood": "დიღმის მასივი",
-      "address": "დიღმის მასივი - VI კვარტალი ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260922/statements/KJFiO626ab22623180b8.webp",
-      "listing_date": "2026-10-09T00:00:46+04:00",
-      "excluded_at": "2026-10-21T12:37:36.929Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26153526",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26153526/",
-      "reason": "Outside requested districts",
-      "price": 900,
-      "size": 40,
-      "rooms": 1,
-      "floor": 4,
-      "total_floors": 5,
-      "district": "დიდუბე-ჩუღურეთი",
-      "neighborhood": "დიღმის მასივი",
-      "address": "დიღმის მასივი - VI კვარტალი 0",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260924/statements/PzUQ7Hl6ab53d242dd43.webp",
-      "listing_date": "2026-09-24T19:12:16+04:00",
-      "excluded_at": "2026-10-21T12:37:36.929Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26267193",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-dighmis-masivshi-26267193/",
-      "reason": "Outside requested districts",
-      "price": 909,
-      "size": 40,
-      "rooms": 2,
-      "floor": 8,
-      "total_floors": 9,
-      "district": "დიდუბე-ჩუღურეთი",
-      "neighborhood": "დიღმის მასივი",
-      "address": "გრ. რობაქიძის გამზ. 1",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261007/statements/IoQbNpQ6ac5f099c03d8.webp",
-      "listing_date": "2026-10-07T11:13:25+04:00",
-      "excluded_at": "2026-10-21T12:37:36.929Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
       "id": "26123369",
       "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-saburtaloze-26123369/",
       "reason": "Older, unfinished or unconfirmed renovation",
@@ -1116,60 +1872,6 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202609/20260922/statements/ww3FYdN6ab262a05f26c.webp",
       "listing_date": "2026-09-23T15:22:34+04:00",
       "excluded_at": "2026-10-21T12:37:36.929Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26099255",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26099255/",
-      "reason": "Outside requested districts",
-      "price": 1000,
-      "size": 40,
-      "rooms": 1,
-      "floor": 4,
-      "total_floors": 8,
-      "district": "დიდუბე-ჩუღურეთი",
-      "neighborhood": "დიღმის მასივი",
-      "address": "დიღმის მასივი - IV კვარტალი ",
-      "condition": "ახალი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260919/statements/L48UruO6aae727dc1932.webp",
-      "listing_date": "2026-09-29T14:27:59+04:00",
-      "excluded_at": "2026-10-21T12:37:36.929Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26411161",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26411161/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 1000,
-      "size": 40,
-      "rooms": 2,
-      "floor": 1,
-      "total_floors": 4,
-      "district": "გლდანი-ნაძალადევი",
-      "neighborhood": "სან. ზონა",
-      "address": "არბოს ქუჩა ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/GU8Ryjo6ad88844cc05e.webp",
-      "listing_date": "2026-10-21T13:40:49+04:00",
-      "excluded_at": "2026-10-21T12:37:36.929Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26398146",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-didubeshi-26398146/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 900,
-      "size": 40,
-      "rooms": 2,
-      "floor": 3,
-      "total_floors": 5,
-      "district": "დიდუბე-ჩუღურეთი",
-      "neighborhood": "დიდუბე",
-      "address": "წერეთლის გამზ. ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261020/statements/uNZn0t36ad72f8bee7b5.webp",
-      "listing_date": "2026-10-20T13:09:00+04:00",
-      "excluded_at": "2026-10-20T09:34:44.578Z",
       "last_seen_at": "2026-10-23T09:09:02.660Z"
     },
     {
@@ -1317,150 +2019,6 @@
       "last_seen_at": "2026-10-23T09:09:02.660Z"
     },
     {
-      "id": "26421821",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26421821/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 1000,
-      "size": 55,
-      "rooms": 2,
-      "floor": 7,
-      "total_floors": 9,
-      "district": "ვაკე-საბურთალო",
-      "neighborhood": "დიდი დიღომი",
-      "address": "ავთანდილის ქ. ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/aTsn79L6ad9c8f772b2b.webp",
-      "listing_date": "2026-10-22T12:28:01+04:00",
-      "excluded_at": "2026-10-22T09:12:38.401Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26421650",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26421650/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 1000,
-      "size": 40,
-      "rooms": 2,
-      "floor": 1,
-      "total_floors": 4,
-      "district": "გლდანი-ნაძალადევი",
-      "neighborhood": "სან. ზონა",
-      "address": "არბოს ქუჩა ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/ggPOtlo6ad9c728b7a25.webp",
-      "listing_date": "2026-10-22T12:21:16+04:00",
-      "excluded_at": "2026-10-22T09:12:38.401Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26420745",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26420745/",
-      "reason": "Outside requested districts",
-      "price": 950,
-      "size": 40,
-      "rooms": 1,
-      "floor": 9,
-      "total_floors": 11,
-      "district": "დიდუბე-ჩუღურეთი",
-      "neighborhood": "დიღმის მასივი",
-      "address": "ნ. ბოხუას ქ. ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/jmmKGb56ad9bc2472e12.webp",
-      "listing_date": "2026-10-22T11:35:30+04:00",
-      "excluded_at": "2026-10-22T09:12:38.401Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26394763",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26394763/",
-      "reason": "Outside requested districts",
-      "price": 899,
-      "size": 40,
-      "rooms": 1,
-      "floor": 3,
-      "total_floors": 8,
-      "district": "დიდუბე-ჩუღურეთი",
-      "neighborhood": "დიღმის მასივი",
-      "address": "ბელიაშვილის შეს. ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261019/statements/HTLOm0W6ad64dfc013ff.webp",
-      "listing_date": "2026-10-19T21:07:38+04:00",
-      "excluded_at": "2026-10-19T20:17:37.021Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26398904",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26398904/",
-      "reason": "Outside requested districts",
-      "price": 900,
-      "size": 42,
-      "rooms": 1,
-      "floor": 3,
-      "total_floors": 8,
-      "district": "დიდუბე-ჩუღურეთი",
-      "neighborhood": "დიღმის მასივი",
-      "address": "ბელიაშვილი ქუჩა ",
-      "condition": "ახალი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261020/statements/MnjpdHL6ad736f888369.webp",
-      "listing_date": "2026-10-20T13:40:25+04:00",
-      "excluded_at": "2026-10-20T19:56:00.450Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26418862",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26418862/",
-      "reason": "Outside requested districts",
-      "price": 951,
-      "size": 40,
-      "rooms": 1,
-      "floor": 9,
-      "total_floors": 11,
-      "district": "დიდუბე-ჩუღურეთი",
-      "neighborhood": "დიღმის მასივი",
-      "address": "ნ. ბოხუას ქ. ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/rKNB2786ad8ee41f255b.webp",
-      "listing_date": "2026-10-21T21:05:43+04:00",
-      "excluded_at": "2026-10-21T17:49:17.144Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26416502",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26416502/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 1000,
-      "size": 40,
-      "rooms": 2,
-      "floor": 1,
-      "total_floors": 4,
-      "district": "გლდანი-ნაძალადევი",
-      "neighborhood": "სან. ზონა",
-      "address": "არბოს ქუჩა ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/eqwD5Pm6ad8c00aa3b88.webp",
-      "listing_date": "2026-10-21T17:38:05+04:00",
-      "excluded_at": "2026-10-21T17:49:17.144Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26187084",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26187084/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 909,
-      "size": 55,
-      "rooms": 2,
-      "floor": 4,
-      "total_floors": 9,
-      "district": "ვაკე-საბურთალო",
-      "neighborhood": "დიდი დიღომი",
-      "address": "გიორგი ბრწყინვალეს ქ. ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260928/statements/B3zhEiy6aba844e1b2a9.webp",
-      "listing_date": "2026-09-28T19:21:32+04:00",
-      "excluded_at": "2026-10-21T14:44:20.267Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
       "id": "26142086",
       "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26142086/",
       "reason": "Older, unfinished or unconfirmed renovation",
@@ -1475,24 +2033,6 @@
       "condition": "ძველი გარემონტებული",
       "image": "https://static-api-statements.tnet.ge/uploads/202609/20260923/statements/N6r8vQu6ab4251ddf56d.webp",
       "listing_date": "2026-09-23T23:15:03+04:00",
-      "excluded_at": "2026-10-21T14:44:20.267Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26184123",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26184123/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 909,
-      "size": 50,
-      "rooms": 2,
-      "floor": 4,
-      "total_floors": 9,
-      "district": "ვაკე-საბურთალო",
-      "neighborhood": "დიდი დიღომი",
-      "address": "გიორგი ბრწყინვალეს ქ. ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260928/statements/voD0Yh86aba62bdea91e.webp",
-      "listing_date": "2026-09-28T16:51:34+04:00",
       "excluded_at": "2026-10-21T14:44:20.267Z",
       "last_seen_at": "2026-10-23T09:09:02.660Z"
     },
@@ -1530,60 +2070,6 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202609/20260923/statements/ijXyHbb6ab3a5a27ec8b.webp",
       "listing_date": "2026-09-23T14:11:18+04:00",
       "excluded_at": "2026-10-21T14:44:20.267Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26159852",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26159852/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 909,
-      "size": 50,
-      "rooms": 2,
-      "floor": 4,
-      "total_floors": 9,
-      "district": "ვაკე-საბურთალო",
-      "neighborhood": "დიდი დიღომი",
-      "address": "გიორგი ბრწყინვალეს ქ. ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260925/statements/fkIJK5R6ab6559609005.webp",
-      "listing_date": "2026-09-25T15:06:35+04:00",
-      "excluded_at": "2026-10-21T14:44:20.267Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26206816",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26206816/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 997,
-      "size": 50,
-      "rooms": 2,
-      "floor": 2,
-      "total_floors": 8,
-      "district": "ვაკე-საბურთალო",
-      "neighborhood": "დიდი დიღომი",
-      "address": "მირიან მეფის ქ. ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260930/statements/TkGeZ2N6abd0acdc8da0.webp",
-      "listing_date": "2026-09-30T17:14:07+04:00",
-      "excluded_at": "2026-10-19T16:34:30.375Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26350407",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26350407/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 987,
-      "size": 59,
-      "rooms": 2,
-      "floor": 7,
-      "total_floors": 9,
-      "district": "ვაკე-საბურთალო",
-      "neighborhood": "დიდი დიღომი",
-      "address": "დიდი დიღომი - III მ/რ 2",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261015/statements/takVMlv6ad09ca54789b.webp",
-      "listing_date": "2026-10-15T13:28:13+04:00",
-      "excluded_at": "2026-10-15T22:11:46.485Z",
       "last_seen_at": "2026-10-23T09:09:02.660Z"
     },
     {
@@ -1641,24 +2127,6 @@
       "last_seen_at": "2026-10-23T09:09:02.660Z"
     },
     {
-      "id": "26435144",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26435144/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 1000,
-      "size": 40,
-      "rooms": 2,
-      "floor": 1,
-      "total_floors": 4,
-      "district": "გლდანი-ნაძალადევი",
-      "neighborhood": "სან. ზონა",
-      "address": "არბოს ქუჩა 2",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261023/statements/kDnDJsy6adb1918aefac.webp",
-      "listing_date": "2026-10-23T12:22:24+04:00",
-      "excluded_at": "2026-10-23T09:09:02.660Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
       "id": "26434999",
       "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26434999/",
       "reason": "Older, unfinished or unconfirmed renovation",
@@ -1673,24 +2141,6 @@
       "condition": "ძველი გარემონტებული",
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261023/statements/r1DwUCG6adb17bd11f9b.webp",
       "listing_date": "2026-10-23T12:16:34+04:00",
-      "excluded_at": "2026-10-23T09:09:02.660Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26434724",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-dighmis-masivshi-26434724/",
-      "reason": "Outside requested districts",
-      "price": 1000,
-      "size": 45,
-      "rooms": 2,
-      "floor": 2,
-      "total_floors": 8,
-      "district": "დიდუბე-ჩუღურეთი",
-      "neighborhood": "დიღმის მასივი",
-      "address": "ე. მიქელაძის ქ. ",
-      "condition": "ახალი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261023/statements/1UrsJyY6adb1526d5d58.webp",
-      "listing_date": "2026-10-23T12:05:55+04:00",
       "excluded_at": "2026-10-23T09:09:02.660Z",
       "last_seen_at": "2026-10-23T09:09:02.660Z"
     },
@@ -1875,60 +2325,6 @@
       "last_seen_at": "2026-10-23T09:09:02.660Z"
     },
     {
-      "id": "26430002",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26430002/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 1000,
-      "size": 40,
-      "rooms": 2,
-      "floor": 1,
-      "total_floors": 4,
-      "district": "გლდანი-ნაძალადევი",
-      "neighborhood": "სან. ზონა",
-      "address": "არბოს ქუჩა 0",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/xKT508z6ada19b0ad0a8.webp",
-      "listing_date": "2026-10-22T18:12:51+04:00",
-      "excluded_at": "2026-10-23T09:09:02.660Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26428824",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-didubeshi-26428824/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 899,
-      "size": 40,
-      "rooms": 2,
-      "floor": 3,
-      "total_floors": 5,
-      "district": "დიდუბე-ჩუღურეთი",
-      "neighborhood": "დიდუბე",
-      "address": "წერეთლის გამზ. 89",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/nsTJJt76ada0e7421e52.webp",
-      "listing_date": "2026-10-22T17:24:53+04:00",
-      "excluded_at": "2026-10-23T09:09:02.660Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
-      "id": "26430188",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26430188/",
-      "reason": "Outside requested districts",
-      "price": 951,
-      "size": 40,
-      "rooms": 1,
-      "floor": 9,
-      "total_floors": 11,
-      "district": "დიდუბე-ჩუღურეთი",
-      "neighborhood": "დიღმის მასივი",
-      "address": "ნ. ბოხუას ქ. 10",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/BcQWGRG6ada1ba49b5da.webp",
-      "listing_date": "2026-10-22T18:21:12+04:00",
-      "excluded_at": "2026-10-23T09:09:02.660Z",
-      "last_seen_at": "2026-10-23T09:09:02.660Z"
-    },
-    {
       "id": "26348982",
       "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-saburtaloze-26348982/",
       "reason": "Older, unfinished or unconfirmed renovation",
@@ -1944,24 +2340,6 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261017/statements/qoJplaC6ad3bc4c639d3.webp",
       "listing_date": "2026-10-15T12:27:30+04:00",
       "excluded_at": "2026-10-15T22:11:46.485Z",
-      "last_seen_at": "2026-10-22T12:42:36.993Z"
-    },
-    {
-      "id": "26388561",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-san-zonashi-26388561/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 999,
-      "size": 40,
-      "rooms": 1,
-      "floor": 5,
-      "total_floors": 8,
-      "district": "გლდანი-ნაძალადევი",
-      "neighborhood": "სან. ზონა",
-      "address": "გურამიშვილის გამზ. ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261019/statements/CUDYRI46ad5fbe5ea426.webp",
-      "listing_date": "2026-10-19T15:17:13+04:00",
-      "excluded_at": "2026-10-19T20:17:37.021Z",
       "last_seen_at": "2026-10-22T12:42:36.993Z"
     },
     {
@@ -2181,42 +2559,6 @@
       "last_seen_at": "2026-10-22T12:42:36.993Z"
     },
     {
-      "id": "26423588",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26423588/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 1000,
-      "size": 43,
-      "rooms": 2,
-      "floor": 1,
-      "total_floors": 4,
-      "district": "გლდანი-ნაძალადევი",
-      "neighborhood": "სან. ზონა",
-      "address": "არბოს ქუჩა ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/lz3nVue6ad9d93866c66.webp",
-      "listing_date": "2026-10-22T13:38:57+04:00",
-      "excluded_at": "2026-10-22T12:42:36.993Z",
-      "last_seen_at": "2026-10-22T12:42:36.993Z"
-    },
-    {
-      "id": "26423523",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26423523/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 1000,
-      "size": 43,
-      "rooms": 2,
-      "floor": 1,
-      "total_floors": 4,
-      "district": "გლდანი-ნაძალადევი",
-      "neighborhood": "სან. ზონა",
-      "address": "არბოს ქუჩა ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/HSrD7Iu6ad9d8c5a738b.webp",
-      "listing_date": "2026-10-22T13:36:26+04:00",
-      "excluded_at": "2026-10-22T12:42:36.993Z",
-      "last_seen_at": "2026-10-22T12:42:36.993Z"
-    },
-    {
       "id": "26423072",
       "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26423072/",
       "reason": "Outside requested districts",
@@ -2343,42 +2685,6 @@
       "last_seen_at": "2026-10-22T09:12:38.401Z"
     },
     {
-      "id": "26415049",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26415049/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 1000,
-      "size": 43,
-      "rooms": 2,
-      "floor": 1,
-      "total_floors": 4,
-      "district": "გლდანი-ნაძალადევი",
-      "neighborhood": "სან. ზონა",
-      "address": "არბოს ქუჩა 2",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/0Oo134m6ad8b07d907bc.webp",
-      "listing_date": "2026-10-21T16:36:44+04:00",
-      "excluded_at": "2026-10-21T12:37:36.929Z",
-      "last_seen_at": "2026-10-22T09:12:38.401Z"
-    },
-    {
-      "id": "26413991",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26413991/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 1000,
-      "size": 44,
-      "rooms": 2,
-      "floor": 1,
-      "total_floors": 4,
-      "district": "გლდანი-ნაძალადევი",
-      "neighborhood": "სან. ზონა",
-      "address": "არბოს ქუჩა ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/gJyshPs6ad8a58dda6b1.webp",
-      "listing_date": "2026-10-21T15:45:22+04:00",
-      "excluded_at": "2026-10-21T12:37:36.929Z",
-      "last_seen_at": "2026-10-22T09:12:38.401Z"
-    },
-    {
       "id": "26132406",
       "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-saburtaloze-26132406/",
       "reason": "Older, unfinished or unconfirmed renovation",
@@ -2429,42 +2735,6 @@
       "condition": "ახალი გარემონტებული",
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261007/statements/msk4LJu6ac6184d23718.webp",
       "listing_date": "2026-10-11T14:05:42+04:00",
-      "excluded_at": "2026-10-21T12:37:36.929Z",
-      "last_seen_at": "2026-10-22T09:12:38.401Z"
-    },
-    {
-      "id": "26411220",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26411220/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 1000,
-      "size": 40,
-      "rooms": 2,
-      "floor": 1,
-      "total_floors": 4,
-      "district": "გლდანი-ნაძალადევი",
-      "neighborhood": "სან. ზონა",
-      "address": "არბოს ქუჩა ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/dBSYEeU6ad888cec5880.webp",
-      "listing_date": "2026-10-21T13:43:10+04:00",
-      "excluded_at": "2026-10-21T12:37:36.929Z",
-      "last_seen_at": "2026-10-22T09:12:38.401Z"
-    },
-    {
-      "id": "26410838",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26410838/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 1000,
-      "size": 40,
-      "rooms": 2,
-      "floor": 1,
-      "total_floors": 4,
-      "district": "გლდანი-ნაძალადევი",
-      "neighborhood": "სან. ზონა",
-      "address": "არბოს ქუჩა ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261021/statements/FNo4n0H6ad8854e43305.webp",
-      "listing_date": "2026-10-21T13:26:52+04:00",
       "excluded_at": "2026-10-21T12:37:36.929Z",
       "last_seen_at": "2026-10-22T09:12:38.401Z"
     },
@@ -2645,24 +2915,6 @@
       "condition": "ძველი გარემონტებული",
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/mA34NEk6ad9bfcd8abed.webp",
       "listing_date": "2026-10-22T11:48:46+04:00",
-      "excluded_at": "2026-10-22T09:12:38.401Z",
-      "last_seen_at": "2026-10-22T09:12:38.401Z"
-    },
-    {
-      "id": "26420701",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-3-otaxiani-bina-san-zonashi-26420701/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 1000,
-      "size": 44,
-      "rooms": 3,
-      "floor": 1,
-      "total_floors": 4,
-      "district": "გლდანი-ნაძალადევი",
-      "neighborhood": "სან. ზონა",
-      "address": "არბოს ქუჩა ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261022/statements/Z7nRayP6ad9bbcb5d525.webp",
-      "listing_date": "2026-10-22T11:32:17+04:00",
       "excluded_at": "2026-10-22T09:12:38.401Z",
       "last_seen_at": "2026-10-22T09:12:38.401Z"
     },
@@ -3329,42 +3581,6 @@
       "condition": "ახალი გარემონტებული",
       "image": "https://static-api-statements.tnet.ge/uploads/202609/20260921/statements/ZaJbHGL6ab13817edf27.webp",
       "listing_date": "2026-09-21T17:59:38+04:00",
-      "excluded_at": "2026-10-20T14:24:41.025Z",
-      "last_seen_at": "2026-10-21T12:37:36.929Z"
-    },
-    {
-      "id": "26151520",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26151520/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 1000,
-      "size": 45,
-      "rooms": 2,
-      "floor": 2,
-      "total_floors": 16,
-      "district": "ვაკე-საბურთალო",
-      "neighborhood": "დიდი დიღომი",
-      "address": "ვეფხისტყაოსნის ქ. ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260924/statements/CCaaibj6ab5272c3c669.webp",
-      "listing_date": "2026-09-24T17:37:08+04:00",
-      "excluded_at": "2026-10-20T14:24:41.025Z",
-      "last_seen_at": "2026-10-21T12:37:36.929Z"
-    },
-    {
-      "id": "26186366",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26186366/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 1000,
-      "size": 47,
-      "rooms": 2,
-      "floor": 2,
-      "total_floors": 8,
-      "district": "ვაკე-საბურთალო",
-      "neighborhood": "დიდი დიღომი",
-      "address": "მირიან მეფის ქ. ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202609/20260928/statements/Cle2TAj6aba7a0f6430a.webp",
-      "listing_date": "2026-09-28T18:31:11+04:00",
       "excluded_at": "2026-10-20T14:24:41.025Z",
       "last_seen_at": "2026-10-21T12:37:36.929Z"
     },
@@ -5490,24 +5706,6 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202610/20261016/statements/itF4thb6ad1d3fcd4848.webp",
       "listing_date": "2026-10-16T11:43:12+04:00",
       "excluded_at": "2026-10-16T09:58:01.660Z",
-      "last_seen_at": "2026-10-19T16:34:30.375Z"
-    },
-    {
-      "id": "25506798",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-saburtaloze-25506798/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 1000,
-      "size": 40,
-      "rooms": 1,
-      "floor": 7,
-      "total_floors": 8,
-      "district": "ვაკე-საბურთალო",
-      "neighborhood": "საბურთალო",
-      "address": "ვაჟა ფშაველას გამზირი #1-31, 2-20 20",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202607/20260718/statements/kTqfaK66a5baa4a8416a.webp",
-      "listing_date": "2026-09-27T11:31:58+04:00",
-      "excluded_at": "2026-10-19T16:34:30.375Z",
       "last_seen_at": "2026-10-19T16:34:30.375Z"
     },
     {
