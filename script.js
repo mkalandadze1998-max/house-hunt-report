@@ -152,9 +152,9 @@ let storedFilters=null;try{storedFilters=JSON.parse(localStorage.getItem(FILTER_
 // Seller classification: description claims are evidence, not verified ownership.
 // Keep this block independent of the DOM so saved listings and rules can be tested.
 function advertiserEvidence(p){
-  const text=String(p.description||'').replace(/<[^>]*>/g,' ').replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim();
+  const text=String(p.description||'').replace(/<[^>]*>/g,' ').replace(/[\u200B-\u200D\uFEFF]/g,'').replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim();
   const agent=/(?:აგენტი|მაკლერი|ბროკერი)\s+ვარ|ვარ\s+(?:უძრავი\s+ქონების\s+)?(?:აგენტი|მაკლერი|ბროკერი)|\(\s*(?:აგენტი|მაკლერი|ბროკერი)\s*\)|\bi(?:\s+am|'m)\s+(?:an?\s+)?(?:real\s+estate\s+)?(?:agent|broker)\b/i;
-  const owner=/(?:ვარ\s+(?:ბინის\s+)?(?:მესაკუთრე|მეპატრონე)|(?:მესაკუთრე|მეპატრონე)\s+ვარ|მესაკუთრის\s+განცხადება|ქირავდება\s+მესაკუთრის?გან|ქირავდება\s+მესაკუთრესგან|\bi(?:\s+am|'m)\s+(?:the\s+)?owner\b|(?:^|[.!])\s*owner[.,!:\s])/i;
+  const owner=/(?:ვარ\s+(?:ბინის\s+)?(?:მესაკუთრე|მეპატრონე)|(?:მესაკუთრე|მეპატრონე)\s+ვარ|მესაკუთრის\s+განცხადება|ქირავდება\s+მესაკუთრის?გან|ქირავდება\s+მესაკუთრესგან|\bi(?:\s+am|'m)\s+(?:the\s+)?owner\b|(?:მეპატრონ|მესაკუთრ)(?:ისგან|ესგან)|(?:^|[.!?])\s*(?:მეპატრონე|მესაკუთრე|собственник|собственница|хозяин|хозяйка)\s*[.!:]|(?:^|[.!])\s*owner[.,!:\s]|(?:^|[\s.!])я\s+(?:собственник|собственница|хозяин|хозяйка)(?=[\s,.!]|$))/i;
   const claims=text.replace(/(?:არ\s+ვარ\s+(?:უძრავი\s+ქონების\s+|ბინის\s+)?(?:აგენტი|მაკლერი|ბროკერი|მესაკუთრე|მეპატრონე)|(?:აგენტი|მაკლერი|ბროკერი|მესაკუთრე|მეპატრონე)\s+არ\s+ვარ)/g,' ');
   const explicitAgent=claims.match(agent),explicitOwner=claims.match(owner);
   if(explicitAgent&&explicitOwner)return {type:'unknown',basis:'Conflicting owner and agent claims in description'};

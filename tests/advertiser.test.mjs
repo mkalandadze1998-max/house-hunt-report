@@ -43,3 +43,8 @@ test('HTML and whitespace do not break classification; evidence explains inferen
 });
 
 test('negated role claims do not assign that role',()=>{assert.equal(classify('არ ვარ აგენტი',null).type,'unknown');assert.equal(classify('არ ვარ მეპატრონე',null).type,'unknown');});
+
+test('additional owner phrases found in the full saved listing audit',()=>{
+for(const text of ['მეპატრონე. ქირავდება ბინა','\u200cმეპატრონე. ქირავდება ბინა','ქირავდება ბინა მეპატრონისგან, დიდ დიღომში','University.......Собственник. Сдаётся квартира','Я собственник'])assert.equal(classify(text).type,'owner',text);
+for(const text of ['მეპატრონესთან ერთად თანაცხოვრებით','ბინაში იქნება მეპატრონე.','სააგენტოებთან ვთანამშრომლობ 50% ზე'])assert.equal(classify(text).type,'agent',text);
+});
