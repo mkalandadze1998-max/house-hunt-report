@@ -54341,7 +54341,7 @@
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",
   "refresh_status": {
-    "attempted_at": "2026-10-24T11:46:17.545Z",
+    "attempted_at": "2026-10-24T13:42:18.559Z",
     "last_success_at": "2026-10-24T08:41:56.701Z",
     "dataset_collected_at": "2026-10-24T08:41:56.701Z",
     "status": "failed",
@@ -54351,7 +54351,7 @@
     "similars": {
       "seeds": 43,
       "calls": 60,
-      "rows": 347
+      "rows": 349
     },
     "error": "Hosted daily budget exhausted before new listings could be read (822/900); previous dataset retained.",
     "hosted_usage": {
