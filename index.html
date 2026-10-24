@@ -20,7 +20,7 @@
 <script>if(location.protocol==='file:')document.write('<script src="data/properties.js"><\/script>')</script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js" onerror="var s=document.createElement('script');s.src='https://unpkg.com/@supabase/supabase-js@2/dist/umd/supabase.min.js';document.head.appendChild(s)"></script>
 <script defer src="cloud.js?v=28"></script>
-<script defer src="script.js?v=38"></script>
+<script defer src="script.js?v=39"></script>
 </head>
 <body class="locked">
 <div class="progress" aria-hidden="true"></div>
@@ -108,12 +108,6 @@
             <label><input type="radio" name="advertiser" value="agent"><span>აგენტი</span></label>
             <label><input type="radio" name="advertiser" value="unknown"><span>არ არის მითითებული</span></label>
           </div>
-          <div class="chips" role="group" aria-label="ოთახები">
-            <label><input type="radio" name="rooms" value="any" checked><span>ნებისმიერი ოთახი</span></label>
-            <label><input type="radio" name="rooms" value="1"><span>1 ოთახი</span></label>
-            <label><input type="radio" name="rooms" value="2"><span>2 ოთახი</span></label>
-            <label><input type="radio" name="rooms" value="3"><span>3+ ოთახი</span></label>
-          </div>
           <div class="chips" role="group" aria-label="მანძილი ასლანის სახლიდან">
             <label><input type="radio" name="dist" value="any" checked><span>სახლიდან: ნებისმიერი</span></label>
             <label><input type="radio" name="dist" value="2"><span>≤ 2 კმ</span></label>
@@ -121,11 +115,6 @@
             <label><input type="radio" name="dist" value="7"><span>≤ 7 კმ</span></label>
           </div>
           <div class="chips" role="group" aria-label="აუცილებელი">
-            <label><input type="checkbox" name="furnished"><span>ავეჯით</span></label>
-            <label><input type="checkbox" name="ac"><span>კონდიციონერი</span></label>
-            <label><input type="checkbox" name="balcony"><span>აივანი</span></label>
-            <label><input type="checkbox" name="noFirst"><span>არა 1-ელი სართული</span></label>
-            <label><input type="checkbox" name="noTop"><span>არა ბოლო სართული</span></label>
             <label><input type="checkbox" name="pref"><span>მხოლოდ 900–1,000 ₾</span></label>
           </div>
           <button id="resetFilters" type="button" class="quiet" hidden>ფილტრების გასუფთავება</button>
