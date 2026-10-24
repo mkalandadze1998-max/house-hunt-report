@@ -15,13 +15,13 @@ test('rejects hidden, partial, ambiguous and injected numbers',()=>{
 });
 test('opens first valid saved contact with no draft or automatic send',()=>{
  const t=ctx.whatsappTarget({contact_phones:['hidden','555123456','555123457']});
- assert.equal(t.url,'https://wa.me/995555123456');assert.equal(t.fallback,false);
- assert.equal(new URL(t.url).search,'');
+ assert.equal(t.url,'https://web.whatsapp.com/send?phone=995555123456');assert.equal(t.fallback,false);
+ assert.equal(new URL(t.url).searchParams.has('text'),false);
 });
-test('missing or invalid phone uses source link, never description numbers',()=>{
+test('missing or invalid phone opens WhatsApp Web, never source or description numbers',()=>{
  for(const contact_phones of [undefined,[],['hidden']]){
  const t=ctx.whatsappTarget({contact_phones,description:'555123456',url:'https://www.myhome.ge/example/'});
- assert.equal(t.url,'https://www.myhome.ge/example/');assert.equal(t.fallback,true);
+ assert.equal(t.url,'https://web.whatsapp.com/');assert.equal(t.fallback,true);
  }
- assert.equal(ctx.whatsappTarget({url:'javascript:alert(1)'}).url,'#');
+ assert.equal(ctx.whatsappTarget({url:'javascript:alert(1)'}).url,'https://web.whatsapp.com/');
 });
