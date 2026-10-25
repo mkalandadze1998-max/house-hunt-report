@@ -56220,11 +56220,11 @@
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",
   "refresh_status": {
-    "attempted_at": "2026-10-25T18:48:50.930Z",
+    "attempted_at": "2026-10-25T21:01:12.066Z",
     "last_success_at": "2026-10-25T13:59:34.066Z",
     "dataset_collected_at": "2026-10-25T13:59:34.066Z",
     "status": "failed",
-    "coverage": "Up to 15 search pages and 120 new eligible detail records; every retained listing rechecked. Not exhaustive.",
+    "coverage": "Up to 15 search pages and 120 new eligible detail records; retained listings checked after 120 hours, oldest first, at most 35 per run. Not exhaustive.",
     "api": "https://api-statements.tnet.ge/v1/statements",
     "method": "myhome_api",
     "similars": {
