@@ -1,5 +1,5 @@
 {
-  "retrieved_at": "2026-10-26T13:46:43.296Z",
+  "retrieved_at": "2026-10-26T16:21:10.618Z",
   "source": "https://www.myhome.ge/",
   "method": "myhome_api",
   "method_label": "myhome.ge structured API",
@@ -59607,9 +59607,9 @@
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",
   "refresh_status": {
-    "attempted_at": "2026-10-26T13:46:43.296Z",
-    "last_success_at": "2026-10-26T13:46:43.296Z",
-    "dataset_collected_at": "2026-10-26T13:46:43.296Z",
+    "attempted_at": "2026-10-26T16:21:10.618Z",
+    "last_success_at": "2026-10-26T16:21:10.618Z",
+    "dataset_collected_at": "2026-10-26T16:21:10.618Z",
     "status": "success",
     "coverage": "Up to 15 search pages and 120 new eligible detail records; hidden posts skipped; only favorites rechecked after 72 hours, at most 35 per run. Not exhaustive.",
     "api": "https://api-statements.tnet.ge/v1/statements",
@@ -59617,17 +59617,17 @@
     "similars": {
       "seeds": 41,
       "calls": 60,
-      "rows": 362
+      "rows": 360
     },
     "rechecks_deferred": 0,
     "hidden_skipped": 355,
     "search_method": "similar-listings crawl (search API and website closed)",
-    "detail_method": "api",
+    "detail_method": "website via hosted fetchers (TinyFish + Jina)",
     "rechecks_skipped": 738,
-    "searched": 362,
-    "checked": 0,
+    "searched": 360,
+    "checked": 2,
     "included": 0,
-    "excluded": 0,
+    "excluded": 2,
     "changes": {
       "new": [],
       "changed": [],
@@ -60375,9 +60375,9 @@
     },
     "hosted_usage": {
       "date": "2026-10-26",
-      "tinyfish": 61,
+      "tinyfish": 62,
       "budget": 900
     },
-    "web_build_id": "hP9j6ijFu8l4ymq6vD5Tq"
+    "web_build_id": "UFgCCFNPrCYLiT1dRONbj"
   }
 }
