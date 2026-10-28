@@ -103,11 +103,15 @@ jobs:
       - name: Collect ss.ge listings
         if: steps.gate.outputs.skip != 'true'
         continue-on-error: true
+        env:
+          HH_PASSWORD: ${{ secrets.HH_PASSWORD }}
         run: node tools/collect-ss.mjs --out out/ss.json
 
       - name: Collect korter.ge listings
         if: steps.gate.outputs.skip != 'true'
         continue-on-error: true
+        env:
+          HH_PASSWORD: ${{ secrets.HH_PASSWORD }}
         run: node tools/collect-korter.mjs --out out/korter.json
 
       - name: Fetch coordinates for new listings

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { loadShortlist, planListingChecks } from './shortlist.mjs';
 // Collects long-term apartment rentals from ss.ge for the House Hunt site.
 //
 //   node tools/collect-ss.mjs                    # writes data/ss.json
@@ -107,8 +108,14 @@ for(let page=1;page<=MAX_PAGES;page++){
   if(oldest<cutoff)break;
   await sleep(250);
 }
-// keep re-checking listings we already hold
-for(const id of Object.keys(previous))if(!candidates.has(id.replace(/^ss-/,'')))candidates.set(id.replace(/^ss-/,''),null);
+const choices = await loadShortlist();
+const freshIds = [...candidates.keys()].map(id => 'ss-'+id).filter(id => !previous[id]);
+const plan = planListingChecks(Object.values(previous), freshIds, choices, Date.parse(nowIso), 72, 35);
+const selectedIds = new Set(plan.candidates);
+for (const id of [...candidates.keys()]) if (!selectedIds.has('ss-'+id)) candidates.delete(id);
+for (const id of plan.candidates) { const raw = id.slice(3); if (!candidates.has(raw)) candidates.set(raw,null); }
+const keptUnchecked = Object.values(previous).filter(p => !selectedIds.has(p.id));
+console.log('New first; favorites due: '+plan.due.length+'; hidden retained without checking: '+Object.values(previous).filter(p=>choices.hidden.has(p.id)).length);
 
 // 3. details
 const yes=v=>v===true?true:v===false?false:null;
@@ -167,7 +174,7 @@ function mapListing(ad,li){
   };
 }
 
-const out=[];let ok=0,gone=0,fail=0;
+const out=[...keptUnchecked];let ok=0,gone=0,fail=0;
 for(const [id,li] of candidates){
   const url=li?.detailUrl?`${SITE}/ka/udzravi-qoneba/${li.detailUrl}`:previous['ss-'+id]?.url;
   if(!url){fail++;continue}
@@ -190,7 +197,7 @@ for(const [id,li] of candidates){
 if(!ok&&candidates.size){console.error('no listing could be read; keeping the previous file');process.exitCode=1;process.exit()}
 out.sort((a,b)=>Date.parse(b.listing_date)-Date.parse(a.listing_date));
 const result={retrieved_at:nowIso,source:SITE,method:'ss_api',method_label:'ss.ge search API + detail pages',
-  coverage_note:`Newest ${MAX_PAGES} search pages (${PAGE_SIZE} each) in the target sub-districts, up to ${MAX_AGE_DAYS} days back; retained listings rechecked. Not exhaustive.`,
+  coverage_note:`Newest ${MAX_PAGES} search pages (${PAGE_SIZE} each) in the target sub-districts, up to ${MAX_AGE_DAYS} days back; hidden posts skipped; only favorites rechecked after 72 hours (up to 35 per run). Not exhaustive.`,
   requirements:{max_price_gel:MAX_PRICE_GEL,min_size_m2:MIN_AREA,districts:wanted,excluded_locations:excluded},properties:out};
 fs.mkdirSync(path.dirname(outFile),{recursive:true});
 fs.writeFileSync(outFile,JSON.stringify(result,null,1));

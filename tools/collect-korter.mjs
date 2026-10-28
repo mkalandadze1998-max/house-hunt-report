@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { loadShortlist, planListingChecks } from './shortlist.mjs';
 // Collects long-term apartment rentals from korter.ge for the House Hunt site.
 //
 //   node tools/collect-korter.mjs                        # writes data/korter.json
@@ -163,10 +164,16 @@ for(const [slug,area] of areas){
     await sleep(400);
   }
 }
-// keep re-checking listings we already hold
-for(const id of Object.keys(previous))if(!candidates.has(id.replace(/^korter-/,'')))candidates.set(id.replace(/^korter-/,''),null);
+const choices = await loadShortlist();
+const freshIds = [...candidates.keys()].map(id => 'korter-'+id).filter(id => !previous[id]);
+const plan = planListingChecks(Object.values(previous), freshIds, choices, Date.parse(nowIso), 72, 35);
+const selectedIds = new Set(plan.candidates);
+for (const id of [...candidates.keys()]) if (!selectedIds.has('korter-'+id)) candidates.delete(id);
+for (const id of plan.candidates) { const raw = id.slice(7); if (!candidates.has(raw)) candidates.set(raw,null); }
+const keptUnchecked = Object.values(previous).filter(p => !selectedIds.has(p.id));
+console.log('New first; favorites due: '+plan.due.length+'; hidden retained without checking: '+Object.values(previous).filter(p=>choices.hidden.has(p.id)).length);
 
-const out=[];let ok=0,gone=0,fail=0;
+const out=[...keptUnchecked];let ok=0,gone=0,fail=0;
 for(const [objectId,c] of candidates){
   const url=DETAIL_URL(objectId);
   try{
@@ -190,7 +197,7 @@ for(const [objectId,c] of candidates){
 if(!ok&&candidates.size){console.error('no listing could be read; keeping the previous file');process.exitCode=1;return}
 out.sort((a,b)=>Date.parse(b.listing_date)-Date.parse(a.listing_date));
 const result={retrieved_at:nowIso,source:SITE,method:'korter_html',method_label:'korter.ge listing + detail pages (embedded state)',
-  coverage_note:`Newest ${MAX_PAGES} pages (20 each) per target area, up to ${MAX_AGE_DAYS} days back; retained listings rechecked. Not exhaustive.`,
+  coverage_note:`Newest ${MAX_PAGES} pages (20 each) per target area, up to ${MAX_AGE_DAYS} days back; hidden posts skipped; only favorites rechecked after 72 hours (up to 35 per run). Not exhaustive.`,
   requirements:{max_price_gel:MAX_PRICE_GEL,min_size_m2:MIN_AREA,districts:wanted,excluded_locations:excluded},properties:out};
 fs.mkdirSync(path.dirname(outFile),{recursive:true});
 fs.writeFileSync(outFile,JSON.stringify(result,null,1));
