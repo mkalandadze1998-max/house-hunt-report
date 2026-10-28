@@ -1,5 +1,5 @@
 {
-  "retrieved_at": "2026-10-28T16:19:50.255Z",
+  "retrieved_at": "2026-10-28T18:36:37.642Z",
   "source": "https://www.myhome.ge/",
   "method": "myhome_api",
   "method_label": "myhome.ge structured API",
@@ -65379,39 +65379,101 @@
         "bedrooms": null
       },
       "first_seen_at": "2026-10-28T16:19:50.255Z"
+    },
+    {
+      "id": "26498156",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-3-otaxiani-bina-saburtaloze-26498156/",
+      "source": "myhome.ge",
+      "advertiser": "Agency",
+      "retrieved_at": "2026-10-28T18:38:49.781Z",
+      "last_checked_at": "2026-10-28T18:38:49.781Z",
+      "retrieval_date_precision": "timestamp",
+      "transaction": "rent_monthly",
+      "property_type": "apartment",
+      "price": 1000,
+      "currency": "GEL",
+      "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
+      "original_currency": "GEL",
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "საბურთალო",
+      "address": "ა. პოლიტკოვსკაიას ქუჩა (ჯიქია) 0",
+      "district_groups": [
+        "ვაკე-საბურთალო"
+      ],
+      "size": 47,
+      "lat": 41.72024,
+      "lng": 44.714376,
+      "rooms": 3,
+      "bedrooms": 2,
+      "floor": 2,
+      "total_floors": 8,
+      "condition": "Newly renovated",
+      "condition_original": "ახალი გარემონტებული",
+      "furniture": null,
+      "furniture_items": [],
+      "heating": null,
+      "parking": null,
+      "air_conditioning": null,
+      "balcony": null,
+      "description": "ქირავდება ბინა ჯიქიაზე, ორი საძინებლით, ბინა ეხლა დაცალეს და განახლდება რემონტი რამდენიმე დღეში, შეივსება ავეჯით და ტექნიკით",
+      "main_image": "https://static-api-statements.tnet.ge/uploads/202610/20261028/statements/RhiAhLT6ae22e2904374.webp",
+      "images": [
+        "https://static-api-statements.tnet.ge/uploads/202610/20261028/statements/RhiAhLT6ae22e2904374.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261028/statements/W4KSOCL6ae22e29028fa.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261028/statements/VIDnluw6ae22e2904941.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261028/statements/R7fQ0FQ6ae22e2903b0b.webp"
+      ],
+      "source_images": [
+        "https://static-api-statements.tnet.ge/uploads/202610/20261028/statements/RhiAhLT6ae22e2904374.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261028/statements/W4KSOCL6ae22e29028fa.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261028/statements/VIDnluw6ae22e2904941.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261028/statements/R7fQ0FQ6ae22e2903b0b.webp"
+      ],
+      "listing_date": "2026-10-28T21:18:13+04:00",
+      "published_at": "2026-10-28T21:18:03+04:00",
+      "listing_date_note": "API last_updated (may be renewal); created_at saved separately. Source times interpreted as Tbilisi time.",
+      "advance_months": null,
+      "screening": "include",
+      "photos_reviewed": "Not visually reviewed by the automated collector.",
+      "condition_review": "Seller-reported renovation and description screened. Physical condition unverified.",
+      "considerations": [
+        "Photos have not been visually screened in this automated run."
+      ],
+      "source_attribute_ids": {
+        "heating": null,
+        "parking": null,
+        "rooms": 3,
+        "bedrooms": 2
+      },
+      "first_seen_at": "2026-10-28T18:36:37.642Z"
     }
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",
   "refresh_status": {
-    "attempted_at": "2026-10-28T16:19:50.255Z",
-    "last_success_at": "2026-10-28T16:19:50.255Z",
-    "dataset_collected_at": "2026-10-28T16:19:50.255Z",
+    "attempted_at": "2026-10-28T18:36:37.642Z",
+    "last_success_at": "2026-10-28T18:36:37.642Z",
+    "dataset_collected_at": "2026-10-28T18:36:37.642Z",
     "status": "success",
     "coverage": "Up to 15 search pages and 120 new eligible detail records; hidden posts skipped; only favorites rechecked after 72 hours, at most 35 per run. Not exhaustive.",
     "api": "https://api-statements.tnet.ge/v1/statements",
     "method": "myhome_api",
     "similars": {
-      "seeds": 40,
+      "seeds": 41,
       "calls": 60,
-      "rows": 368
+      "rows": 382
     },
     "rechecks_deferred": 0,
-    "hidden_skipped": 374,
+    "hidden_skipped": 382,
     "search_method": "similar-listings crawl (search API and website closed)",
     "detail_method": "website via hosted fetchers (TinyFish + Jina)",
-    "rechecks_skipped": 803,
-    "searched": 477,
-    "checked": 19,
-    "included": 6,
-    "excluded": 13,
+    "rechecks_skipped": 809,
+    "searched": 492,
+    "checked": 3,
+    "included": 1,
+    "excluded": 2,
     "changes": {
       "new": [
-        "26497671",
-        "26497597",
-        "26497512",
-        "26497441",
-        "26496568",
-        "26495829"
+        "26498156"
       ],
       "changed": [],
       "removed": [],
@@ -66218,12 +66280,18 @@
         "26492198",
         "26491661",
         "26491333",
-        "26491097"
+        "26491097",
+        "26497671",
+        "26497597",
+        "26497512",
+        "26497441",
+        "26496568",
+        "26495829"
       ]
     },
     "hosted_usage": {
       "date": "2026-10-28",
-      "tinyfish": 102,
+      "tinyfish": 104,
       "budget": 900
     },
     "web_build_id": "UFgCCFNPrCYLiT1dRONbj"
