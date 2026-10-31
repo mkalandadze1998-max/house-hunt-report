@@ -1,5 +1,5 @@
 {
-  "retrieved_at": "2026-10-31T17:28:58.322Z",
+  "retrieved_at": "2026-10-31T19:49:03.186Z",
   "source": "https://www.myhome.ge/",
   "method": "myhome_api",
   "method_label": "myhome.ge structured API",
@@ -73761,36 +73761,32 @@
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",
   "refresh_status": {
-    "attempted_at": "2026-10-31T17:28:58.322Z",
-    "last_success_at": "2026-10-31T17:28:58.322Z",
-    "dataset_collected_at": "2026-10-31T17:28:58.322Z",
+    "attempted_at": "2026-10-31T19:49:03.186Z",
+    "last_success_at": "2026-10-31T19:49:03.186Z",
+    "dataset_collected_at": "2026-10-31T19:49:03.186Z",
     "status": "success",
     "coverage": "Up to 15 search pages and 120 new eligible detail records; hidden posts skipped; only favorites rechecked after 72 hours, at most 35 per run. Not exhaustive.",
     "api": "https://api-statements.tnet.ge/v1/statements",
     "method": "myhome_api",
-    "search_rotation": 15,
+    "search_rotation": 16,
     "coverage_warning": "Similar listings only: full search unavailable; some new posts may be missed.",
     "similars": {
       "seeds": 30,
       "calls": 60,
-      "rows": 320
+      "rows": 273
     },
     "new_details_deferred": 0,
     "rechecks_deferred": 0,
     "hidden_skipped": 423,
     "search_method": "similar-listings crawl (search API and website closed)",
     "detail_method": "website via hosted fetchers (TinyFish + Jina)",
-    "rechecks_skipped": 905,
-    "searched": 436,
-    "checked": 6,
-    "included": 3,
-    "excluded": 3,
+    "rechecks_skipped": 908,
+    "searched": 389,
+    "checked": 2,
+    "included": 0,
+    "excluded": 2,
     "changes": {
-      "new": [
-        "26531830",
-        "26531631",
-        "26504494"
-      ],
+      "new": [],
       "changed": [],
       "removed": [],
       "retained_unverified": [
@@ -74698,12 +74694,15 @@
         "26530525",
         "26530410",
         "26530388",
-        "26530362"
+        "26530362",
+        "26531830",
+        "26531631",
+        "26504494"
       ]
     },
     "hosted_usage": {
       "date": "2026-10-31",
-      "tinyfish": 86,
+      "tinyfish": 87,
       "budget": 900
     },
     "web_build_id": "UFgCCFNPrCYLiT1dRONbj"
