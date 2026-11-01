@@ -27,7 +27,7 @@ const argValue=(name,def)=>{const i=args.indexOf(name);return i>=0?args[i+1]:def
 const outFile=path.resolve(argValue('--out',path.join(root,'data','korter.json')));
 const MAX_PAGES=Number(argValue('--pages',12));
 const MAX_AGE_DAYS=Number(argValue('--days',4));
-const MAX_PRICE_GEL=1000, MIN_AREA=38;
+const MAX_PRICE_GEL=1100, MIN_AREA=38;
 const SITE='https://korter.ge';
 const UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128 Safari/537.36 house-hunt-report/1.0';
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));

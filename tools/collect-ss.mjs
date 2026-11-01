@@ -28,7 +28,7 @@ const outFile=path.resolve(argValue('--out',path.join(root,'data','ss.json')));
 const MAX_PAGES=Number(argValue('--pages',30));
 const MAX_AGE_DAYS=Number(argValue('--days',4));
 const PAGE_SIZE=30;             // the API rejects larger pages
-const MAX_PRICE_GEL=1000, MIN_AREA=38;
+const MAX_PRICE_GEL=1100, MIN_AREA=38;
 const CITY_TBILISI=95, TYPE_FLAT=5, DEAL_RENT=1;
 
 const SITE='https://home.ss.ge';

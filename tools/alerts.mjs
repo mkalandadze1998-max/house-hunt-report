@@ -22,7 +22,7 @@ const readJson=(f,fallback)=>{try{return JSON.parse(fs.readFileSync(path.resolve
 
 const HOME={lat:41.770639,lng:44.793083};
 const SITE_URL='https://mkalandadze1998-max.github.io/house-hunt-report/';
-const cfg={excludeSubdistricts:[],maxPriceGel:1000,minSizeM2:38,goneMaxDays:21,photoLimit:6,...readJson(path.join(root,'data','alerts.json'),{})};
+const cfg={excludeSubdistricts:[],maxPriceGel:1100,minSizeM2:38,goneMaxDays:21,photoLimit:6,...readJson(path.join(root,'data','alerts.json'),{})};
 const norm=s=>String(s||'').replace(/[\s.\-–\/]/g,'').toLowerCase();
 const excluded=new Set([...cfg.excludeSubdistricts,...(readJson(path.join(root,'data','properties.json'),{}).requirements?.excluded_locations||[])].map(norm));
 
