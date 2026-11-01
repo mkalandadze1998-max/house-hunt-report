@@ -7,7 +7,7 @@
   "search_url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba/bina/tbilisi/?price_to=1000&currency_id=1&area_from=38&deal_types=2&real_estate_types=1&area_types=1&cities=1&page=1",
   "coverage_note": "Up to 15 search pages and 120 new eligible detail records; hidden posts skipped; only favorites rechecked after 72 hours, at most 35 per run. Not exhaustive. Photos not automatically visually reviewed.",
   "requirements": {
-    "max_price_gel": 1000,
+    "max_price_gel": 1100,
     "preferred_min_price_gel": 900,
     "min_size_m2": 38,
     "districts": [
