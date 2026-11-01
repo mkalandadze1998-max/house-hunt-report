@@ -1,5 +1,5 @@
 {
-  "retrieved_at": "2026-11-01T18:13:55.740Z",
+  "retrieved_at": "2026-11-01T20:22:34.492Z",
   "source": "https://www.myhome.ge/",
   "method": "myhome_api",
   "method_label": "myhome.ge structured API",
@@ -81643,45 +81643,32 @@
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",
   "refresh_status": {
-    "attempted_at": "2026-11-01T18:13:55.740Z",
-    "last_success_at": "2026-11-01T18:13:55.740Z",
-    "dataset_collected_at": "2026-11-01T18:13:55.740Z",
+    "attempted_at": "2026-11-01T20:22:34.492Z",
+    "last_success_at": "2026-11-01T20:22:34.492Z",
+    "dataset_collected_at": "2026-11-01T20:22:34.492Z",
     "status": "success",
     "coverage": "Up to 15 search pages and 120 new eligible detail records; hidden posts skipped; only favorites rechecked after 72 hours, at most 35 per run. Not exhaustive.",
     "api": "https://api-statements.tnet.ge/v1/statements",
     "method": "myhome_api",
-    "search_rotation": 21,
+    "search_rotation": 22,
     "coverage_warning": "Similar listings only: full search unavailable; some new posts may be missed.",
     "similars": {
       "seeds": 30,
       "calls": 60,
-      "rows": 320
+      "rows": 326
     },
     "new_details_deferred": 0,
     "rechecks_deferred": 0,
-    "hidden_skipped": 474,
+    "hidden_skipped": 485,
     "search_method": "similar-listings crawl (search API and website closed)",
     "detail_method": "website via hosted fetchers (TinyFish + Jina)",
-    "rechecks_skipped": 989,
-    "searched": 439,
-    "checked": 21,
-    "included": 12,
-    "excluded": 9,
+    "rechecks_skipped": 1001,
+    "searched": 445,
+    "checked": 12,
+    "included": 0,
+    "excluded": 12,
     "changes": {
-      "new": [
-        "26537632",
-        "26307777",
-        "26424659",
-        "26356236",
-        "26356865",
-        "26402344",
-        "26401173",
-        "26456081",
-        "26356464",
-        "26260596",
-        "26367029",
-        "26320665"
-      ],
+      "new": [],
       "changed": [],
       "removed": [],
       "retained_unverified": [
@@ -82673,12 +82660,24 @@
         "26537191",
         "26537135",
         "26537104",
-        "26381218"
+        "26381218",
+        "26537632",
+        "26307777",
+        "26424659",
+        "26356236",
+        "26356865",
+        "26402344",
+        "26401173",
+        "26456081",
+        "26356464",
+        "26260596",
+        "26367029",
+        "26320665"
       ]
     },
     "hosted_usage": {
       "date": "2026-11-01",
-      "tinyfish": 138,
+      "tinyfish": 149,
       "budget": 900
     },
     "web_build_id": "UFgCCFNPrCYLiT1dRONbj"
