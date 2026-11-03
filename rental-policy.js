@@ -1,6 +1,7 @@
 (function (root) {
   const publicationTime = p => {
-    let value = p.published_at ?? p.created_at;
+    // Source renewal dates count. Local retrieval/check dates never count.
+    let value = p.listing_date ?? p.last_updated ?? p.published_at ?? p.created_at;
     if (typeof value !== 'string' || !value.trim()) return NaN;
     value = value.trim().replace(' ', 'T');
     if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2}(\.\d+)?)?$/.test(value)) value += '+04:00';
@@ -16,18 +17,14 @@
   const rejection = (p, now = Date.now()) => {
     if (dailyRental(p)) return 'Daily rental offer';
     const posted = publicationTime(p);
-    if (!Number.isFinite(posted)) return 'Original publication date is not confirmed';
+    if (!Number.isFinite(posted)) return 'Source publication or renewal date is not confirmed';
     if (posted > now) return 'Publication date is in the future';
-    if (now - posted > 72 * 3600000) return 'Original post is older than three days';
+    if (now - posted > 72 * 3600000) return 'Source post or renewal is older than three days';
     return null;
   };
   const searchRejection = (p, now = Date.now()) => {
     if (dailyRental(p)) return 'Daily rental offer';
-    if (p.created_at || p.published_at) return rejection(p, now);
-    // Search cards omit created_at. An old update proves age; a recent update does not prove youth.
-    // Fetch recent candidates, then require the original date from their detail record.
-    const updated = publicationTime({ created_at: p.last_updated });
-    return Number.isFinite(updated) && now - updated > 72 * 3600000 ? 'Search update is older than three days' : null;
+    return rejection(p, now);
   };
   const policy = { publicationTime, dailyRental, rejection, searchRejection };
   if (typeof module !== 'undefined' && module.exports) module.exports = policy;
