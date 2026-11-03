@@ -1,11 +1,11 @@
 {
-  "retrieved_at": "2026-11-03T21:28:38.191Z",
+  "retrieved_at": "2026-11-03T21:37:45.720Z",
   "source": "https://www.myhome.ge/",
   "method": "myhome_api",
   "method_label": "myhome.ge structured API",
   "api_status": "Retrieved with public website identifier X-Website-Key: myhome",
   "search_url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba/bina/tbilisi/?price_to=1000&currency_id=1&area_from=38&deal_types=2&real_estate_types=1&area_types=1&cities=1&page=1",
-  "coverage_note": "At most 15 search pages per run; original posts no older than 72 hours; daily rentals excluded. Hidden posts skipped. Up to 120 new details per run; remaining recent IDs saved for later. Photos not automatically visually reviewed.",
+  "coverage_note": "At most 15 search pages per run; posts or source renewals within 72 hours; daily rentals excluded. Hidden posts skipped. Up to 120 new details per run; remaining recent IDs saved for later. Photos not automatically visually reviewed.",
   "requirements": {
     "max_price_gel": 1100,
     "preferred_min_price_gel": 900,
@@ -10885,11 +10885,11 @@
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",
   "refresh_status": {
-    "attempted_at": "2026-11-03T21:28:38.191Z",
-    "last_success_at": "2026-11-03T21:28:38.191Z",
-    "dataset_collected_at": "2026-11-03T21:28:38.191Z",
+    "attempted_at": "2026-11-03T21:37:45.720Z",
+    "last_success_at": "2026-11-03T21:37:45.720Z",
+    "dataset_collected_at": "2026-11-03T21:37:45.720Z",
     "status": "success",
-    "coverage": "At most 15 search pages per run; original posts no older than 72 hours; daily rentals excluded. Hidden posts skipped. Up to 120 new details per run; remaining recent IDs saved for later.",
+    "coverage": "At most 15 search pages per run; posts or source renewals within 72 hours; daily rentals excluded. Hidden posts skipped. Up to 120 new details per run; remaining recent IDs saved for later.",
     "api": "https://api-statements.tnet.ge/v1/statements",
     "method": "myhome_api",
     "search_complete": false,
@@ -10897,24 +10897,16 @@
     "search_limited_to_pages": 15,
     "new_details_deferred": 0,
     "rechecks_deferred": 0,
-    "hidden_skipped": 46,
+    "hidden_skipped": 90,
     "search_method": "website (Next.js page payload)",
-    "detail_method": "website via hosted fetchers (TinyFish + Jina)",
-    "rechecks_skipped": 124,
+    "detail_method": "api",
+    "rechecks_skipped": 131,
     "searched": 360,
-    "checked": 14,
-    "included": 7,
-    "excluded": 7,
+    "checked": 0,
+    "included": 0,
+    "excluded": 0,
     "changes": {
-      "new": [
-        "26563228",
-        "26563438",
-        "26563101",
-        "26562443",
-        "26562324",
-        "26562225",
-        "26562214"
-      ],
+      "new": [],
       "changed": [],
       "removed": [],
       "retained_unverified": [
@@ -11041,7 +11033,14 @@
         "26561238",
         "26562533",
         "26562476",
-        "26562304"
+        "26562304",
+        "26563228",
+        "26563438",
+        "26563101",
+        "26562443",
+        "26562324",
+        "26562225",
+        "26562214"
       ]
     },
     "hosted_usage": {
