@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import rentalPolicy from '../rental-policy.js';
 import { loadShortlist, planListingChecks } from './shortlist.mjs';
 // Collects long-term apartment rentals from korter.ge for the House Hunt site.
 //
@@ -25,8 +26,8 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const args=process.argv.slice(2);
 const argValue=(name,def)=>{const i=args.indexOf(name);return i>=0?args[i+1]:def};
 const outFile=path.resolve(argValue('--out',path.join(root,'data','korter.json')));
-const MAX_PAGES=Number(argValue('--pages',12));
-const MAX_AGE_DAYS=Number(argValue('--days',4));
+const MAX_PAGES=Math.min(15,Number(argValue('--pages',15)));
+const MAX_AGE_DAYS=3;
 const MAX_PRICE_GEL=1100, MIN_AREA=38;
 const SITE='https://korter.ge';
 const UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128 Safari/537.36 house-hunt-report/1.0';
@@ -55,7 +56,7 @@ const wantedNorm=new Set(wanted.map(norm)),excludedNorm=new Set(excluded.map(nor
 const isDighomiThird=(sub,address='',description='')=>sub==='დიღმის მე-3 მასივი'||(sub==='დიღმის მასივი'&&/(?:მე[-\s]*3|მესამე|(?<![\dA-Z])III(?![A-Z])|(?<!\d)3|3rd|third)[-\s]*(?:ე[-\s]*)?(?:კვარტალ|მასივ|quarter|massive|micro)/iu.test(String(address)+' '+String(description)));
 
 let previous={};let rate=2.6;
-try{const j=JSON.parse(fs.readFileSync(outFile,'utf8'));for(const p of j.properties||[])previous[p.id]=p}catch{}
+try{const j=JSON.parse(fs.readFileSync(outFile,'utf8'));j.properties=(j.properties||[]).filter(p=>!rentalPolicy.rejection(p));fs.writeFileSync(outFile,JSON.stringify(j));for(const p of j.properties)previous[p.id]=p}catch{}
 
 async function getHtml(url){
   const r=await fetch(url,{headers:{'User-Agent':UA,'Accept':'text/html','Accept-Language':'en'}});
@@ -143,8 +144,10 @@ const cutoff=Date.now()-MAX_AGE_DAYS*86400000;
 const areas=Object.entries(AREAS).filter(([,a])=>a.wanted.some(w=>wantedNorm.has(norm(w))));
 console.log(`areas: ${areas.map(([k])=>k).join(', ')} (districts wanted: ${wanted.join(', ')})`);
 const candidates=new Map();
+let searchPagesRead=0;
 for(const [slug,area] of areas){
-  for(let page=1;page<=MAX_PAGES;page++){
+  for(let page=1;page<=MAX_PAGES && searchPagesRead<MAX_PAGES;page++){
+    searchPagesRead++;
     const url=`${SITE}/en/apartments-for-rent-tbilisi-${slug}?max_price=${Math.ceil(MAX_PRICE_GEL/2.4)}&min_area=${MIN_AREA}${page>1?`&page=${page}`:''}`;
     let st;try{st=initialState(await getHtml(url))}catch(e){console.warn(`${slug} page ${page}: ${e.message}`);break}
     rate=Number(st.currencyStore?.rate)||rate;
@@ -186,6 +189,7 @@ for(const [objectId,c] of candidates){
     if(!(p.price>0&&p.price<=MAX_PRICE_GEL&&p.size>=MIN_AREA)){gone++;continue}
     if([p.district,p.neighborhood,...p.district_groups].some(g=>excludedNorm.has(norm(g)))){gone++;continue}
     if(!p.district_groups.some(g=>wantedNorm.has(norm(g)))){gone++;continue}
+    if(rentalPolicy.rejection(p,Date.parse(nowIso))){gone++;continue}
     out.push(p);ok++;
   }catch(e){
     // a fetch hiccup is not a vanished flat: keep last run's record so the site and the alerts do not

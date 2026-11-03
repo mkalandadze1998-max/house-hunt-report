@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import rentalPolicy from '../rental-policy.js';
 import { loadShortlist, planListingChecks } from './shortlist.mjs';
 // Collects long-term apartment rentals from ss.ge for the House Hunt site.
 //
@@ -25,8 +26,8 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const args=process.argv.slice(2);
 const argValue=(name,def)=>{const i=args.indexOf(name);return i>=0?args[i+1]:def};
 const outFile=path.resolve(argValue('--out',path.join(root,'data','ss.json')));
-const MAX_PAGES=Number(argValue('--pages',30));
-const MAX_AGE_DAYS=Number(argValue('--days',4));
+const MAX_PAGES=Math.min(15,Number(argValue('--pages',15)));
+const MAX_AGE_DAYS=3;
 const PAGE_SIZE=30;             // the API rejects larger pages
 const MAX_PRICE_GEL=1100, MIN_AREA=38;
 const CITY_TBILISI=95, TYPE_FLAT=5, DEAL_RENT=1;
@@ -55,7 +56,7 @@ const wantedNorm=new Set(wanted.map(norm));
 const excludedNorm=new Set(excluded.map(norm));
 
 let previous={};
-try{const j=JSON.parse(fs.readFileSync(outFile,'utf8'));for(const p of j.properties||[])previous[p.id]=p}catch{}
+try{const j=JSON.parse(fs.readFileSync(outFile,'utf8'));j.properties=(j.properties||[]).filter(p=>!rentalPolicy.rejection(p));fs.writeFileSync(outFile,JSON.stringify(j));for(const p of j.properties)previous[p.id]=p}catch{}
 
 async function getHtml(url){
   const r=await fetch(url,{headers:{'User-Agent':UA,'Accept':'text/html','Accept-Language':'ka'}});
@@ -186,6 +187,7 @@ for(const [id,li] of candidates){
     if(!(p.price>0&&p.price<=MAX_PRICE_GEL&&p.size>=MIN_AREA)){gone++;continue}
     if(!p.district_groups.some(g=>wantedNorm.has(norm(g)))){gone++;continue}
     if([p.district,p.neighborhood,...p.district_groups].some(g=>excludedNorm.has(norm(g)))){gone++;continue}
+    if(rentalPolicy.rejection(p,Date.parse(nowIso))){gone++;continue}
     out.push(p);ok++;
   }catch(e){
     // a fetch hiccup is not a vanished flat: keep last run's record (its last_checked_at stays old) so the
