@@ -56,7 +56,7 @@ const wantedNorm=new Set(wanted.map(norm)),excludedNorm=new Set(excluded.map(nor
 const isDighomiThird=(sub,address='',description='')=>sub==='დიღმის მე-3 მასივი'||(sub==='დიღმის მასივი'&&/(?:მე[-\s]*3|მესამე|(?<![\dA-Z])III(?![A-Z])|(?<!\d)3|3rd|third)[-\s]*(?:ე[-\s]*)?(?:კვარტალ|მასივ|quarter|massive|micro)/iu.test(String(address)+' '+String(description)));
 
 let previous={};let rate=2.6;
-try{const j=JSON.parse(fs.readFileSync(outFile,'utf8'));j.properties=(j.properties||[]).filter(p=>!rentalPolicy.rejection(p));fs.writeFileSync(outFile,JSON.stringify(j));for(const p of j.properties)previous[p.id]=p}catch{}
+try{const j=JSON.parse(fs.readFileSync(outFile,'utf8'));for(const p of j.properties||[])previous[p.id]=p}catch{}
 
 async function getHtml(url){
   const r=await fetch(url,{headers:{'User-Agent':UA,'Accept':'text/html','Accept-Language':'en'}});
@@ -189,7 +189,7 @@ for(const [objectId,c] of candidates){
     if(!(p.price>0&&p.price<=MAX_PRICE_GEL&&p.size>=MIN_AREA)){gone++;continue}
     if([p.district,p.neighborhood,...p.district_groups].some(g=>excludedNorm.has(norm(g)))){gone++;continue}
     if(!p.district_groups.some(g=>wantedNorm.has(norm(g)))){gone++;continue}
-    if(rentalPolicy.rejection(p,Date.parse(nowIso))){gone++;continue}
+    if(!previous[p.id]&&rentalPolicy.rejection(p,Date.parse(nowIso))){gone++;continue}
     out.push(p);ok++;
   }catch(e){
     // a fetch hiccup is not a vanished flat: keep last run's record so the site and the alerts do not

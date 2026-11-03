@@ -201,7 +201,7 @@ const excludedLocationKey=s=>String(s||'').replace(/[\s.\-–]/g,'').toLowerCase
 const DEFAULT_EXCLUDED=["მესამე მასივი","ვეძისი","სოფ. დიღომი","ნუცუბიძის ფერდობი","ვაშლიჯვარი","ვაკე","დიღომი 1-9"];
 /* The scraper's requirements.excluded_locations (and ss.json's) are the source of truth; the defaults above stay as a floor. */
 const excludedFrom=(...sets)=>new Set([...DEFAULT_EXCLUDED,...sets.flatMap(d=>Array.isArray(d?.requirements?.excluded_locations)?d.requirements.excluded_locations:[])].map(excludedLocationKey));
-const eligible=(list,excludedLocations=excludedFrom(data,ssData,korterData))=>list.filter(p=>!HouseHuntPolicy.rejection(p)&&![p.district,p.neighborhood,...(p.district_groups||[])].some(v=>excludedLocations.has(excludedLocationKey(v)))&&Number.isFinite(p.price)&&p.price>0&&p.price<=1100&&p.currency==='GEL'&&p.size>=38&&p.transaction==='rent_monthly'&&p.property_type==='apartment'&&p.screening==='include');
+const eligible=(list,excludedLocations=excludedFrom(data,ssData,korterData))=>list.filter(p=>![p.district,p.neighborhood,...(p.district_groups||[])].some(v=>excludedLocations.has(excludedLocationKey(v)))&&Number.isFinite(p.price)&&p.price>0&&p.price<=1100&&p.currency==='GEL'&&p.size>=38&&p.transaction==='rent_monthly'&&p.property_type==='apartment'&&p.screening==='include');
 const signature=list=>list.map(p=>`${p.id}:${p.price}:${p.size}`).sort().join('|');
 let ssData=null,korterData=null,pendingData=null;
 /* Extra sources published to geo-data by the Action (ss.ge, korter.ge): local fallback copy vs live, newest wins. */
