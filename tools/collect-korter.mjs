@@ -167,9 +167,11 @@ for(const [slug,area] of areas){
     await sleep(400);
   }
 }
-const choices = await loadShortlist();
+let choices;
+try { choices = await loadShortlist(); }
+catch (e) { console.warn('shared list unavailable — continuing without hidden/favorite flags: ' + e.message); choices = { hidden: new Set(), favorites: new Set() }; }
 const freshIds = [...candidates.keys()].map(id => 'korter-'+id).filter(id => !previous[id]);
-const plan = planListingChecks(Object.values(previous), freshIds, choices, Date.parse(nowIso), 72, 35);
+const plan = planListingChecks(Object.values(previous), freshIds, choices, Date.parse(nowIso), 72, 250); // favorites every 72 h, other visible listings every 20 h, up to 250 re-reads a run
 const selectedIds = new Set(plan.candidates);
 for (const id of [...candidates.keys()]) if (!selectedIds.has('korter-'+id)) candidates.delete(id);
 for (const id of plan.candidates) { const raw = id.slice(7); if (!candidates.has(raw)) candidates.set(raw,null); }
@@ -192,8 +194,9 @@ for(const [objectId,c] of candidates){
     if(!previous[p.id]&&rentalPolicy.rejection(p,Date.parse(nowIso))){gone++;continue}
     out.push(p);ok++;
   }catch(e){
-    // a fetch hiccup is not a vanished flat: keep last run's record so the site and the alerts do not
-    // report it as gone and then as new again
+    // 404/410 = the listing is gone (drop it). Any other error is a fetch hiccup, not a vanished flat: keep
+    // last run's record so the site and the alerts do not report it as gone and then as new again.
+    if(/HTTP (404|410) /.test(e.message)){gone++;continue}
     fail++;console.warn(`  ${objectId}: ${e.message}`);const kept=previous['korter-'+objectId];if(kept)out.push(kept);
   }
   await sleep(350);

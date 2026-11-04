@@ -30,10 +30,15 @@ export async function loadShortlist({ password = process.env.HH_PASSWORD, fetchI
   throw Error('Shared listing choices exceeded the read limit; collection skipped.');
 }
 
-export function planListingChecks(previous, freshIds, choices, now, ageHours, limit, capacity = Infinity) {
+/* Which listings to read this run. New ones first. Then the re-checks, oldest check first: a favorite
+   every favoriteAgeHours, every other visible listing every otherAgeHours (so a rented-out flat leaves
+   the list within a day). Hidden listings are never read again — their price still comes for free from
+   the search rows. `limit` caps re-checks per run, `capacity` caps everything (hosted budget). */
+export function planListingChecks(previous, freshIds, choices, now, favoriteAgeHours, limit, capacity = Infinity, otherAgeHours = 20) {
   const last = p => { const t = Date.parse(p.last_checked_at ?? p.retrieved_at ?? ''); return Number.isFinite(t) ? t : -Infinity; };
   const fresh = [...new Set(freshIds)].filter(id => !choices.hidden.has(id));
-  const due = previous.filter(p => !choices.hidden.has(p.id) && choices.favorites.has(p.id) && now - last(p) >= ageHours * 3600000)
+  const ageFor = p => (choices.favorites.has(p.id) ? favoriteAgeHours : otherAgeHours) * 3600000;
+  const due = previous.filter(p => !choices.hidden.has(p.id) && now - last(p) >= ageFor(p))
     .sort((a, b) => last(a) - last(b) || a.id.localeCompare(b.id)).map(p => p.id);
   const candidates = [...fresh, ...due.filter(id => !fresh.includes(id)).slice(0, Math.max(0, limit))].slice(0, Math.max(0, capacity));
   return { candidates, fresh, due, deferred: due.filter(id => !candidates.includes(id)).length };

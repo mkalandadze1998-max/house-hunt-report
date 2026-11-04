@@ -3,17 +3,19 @@ import assert from 'node:assert/strict';
 import { loadShortlist, planListingChecks } from '../tools/shortlist.mjs';
 const now=Date.parse('2026-10-26T00:00:00Z');
 const post=(id,h)=>({id,last_checked_at:new Date(now-h*3600000).toISOString()});
-test('hidden posts are never checked, including hidden favorites and rediscovered IDs',()=>{
+test('hidden posts are never checked, including hidden favorites and rediscovered IDs; other old posts are',()=>{
  const choices={hidden:new Set(['hidden','hidden-new']),favorites:new Set(['hidden','favorite'])};
- const p=planListingChecks([post('hidden',200),post('favorite',72),post('ordinary',200)],['hidden-new','new'],choices,now,72,35);
- assert.deepEqual(p.candidates,['new','favorite']);
+ const p=planListingChecks([post('hidden',200),post('favorite',72),post('ordinary',200),post('fresh-ordinary',5)],['hidden-new','new'],choices,now,72,35);
+ assert.deepEqual(p.candidates,['new','ordinary','favorite'],'oldest check first; a listing checked 5 h ago waits');
 });
-test('favorites wait 72 hours; new posts get capacity first; old favorites rotate',()=>{
+test('favorites wait 72 hours, other listings 20 hours; new posts get capacity first; old ones rotate',()=>{
  const choices={hidden:new Set(),favorites:new Set(['old','older','recent'])};
- const posts=[post('old',72),post('older',120),post('recent',71)];
+ const posts=[post('old',72),post('older',120),post('recent',71),post('plain',21),post('plain-new',19)];
  assert.deepEqual(planListingChecks(posts,['new'],choices,now,72,1).candidates,['new','older']);
+ assert.deepEqual(planListingChecks(posts,['new'],choices,now,72,35).candidates,['new','older','old','plain']);
  assert.deepEqual(planListingChecks(posts,['new'],choices,now,72,35,1).candidates,['new']);
- assert.equal(planListingChecks(posts,['new'],choices,now,72,35,1).deferred,2);
+ assert.equal(planListingChecks(posts,['new'],choices,now,72,35,1).deferred,3);
+ assert.deepEqual(planListingChecks(posts,[],choices,now,72,35,Infinity,48).candidates,['older','old'],'a longer age for ordinary listings');
 });
 test('shared choices are paged without notes; hidden wins over favorite',async()=>{
  let calls=0;
