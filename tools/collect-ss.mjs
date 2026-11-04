@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import { publicSession, readDistricts } from './ss-client.mjs';
+import { readDistricts } from './ss-client.mjs';
+import { openSsTransport, nextDataOf } from './ss-transport.mjs';
 import rentalPolicy from '../rental-policy.js';
 import { loadShortlist, planListingChecks } from './shortlist.mjs';
 // Collects long-term apartment rentals from ss.ge for the House Hunt site.
@@ -59,23 +60,17 @@ const excludedNorm=new Set(excluded.map(norm));
 let previous={};
 try{const j=JSON.parse(fs.readFileSync(outFile,'utf8'));for(const p of j.properties||[])previous[p.id]=p}catch{}
 
+// 1. the way to ss.ge (cloud browser with a Georgian exit when TINYFISH_API_KEY is set, else direct),
+//    the session token and the location catalogue — see tools/ss-transport.mjs
+const tf=await openSsTransport();
 async function getHtml(url){
-  const r=await fetch(url,{headers:{'User-Agent':UA,'Accept':'text/html','Accept-Language':'ka'}});
+  const r=await tf.fetch(url,{headers:{'Accept':'text/html','Accept-Language':'ka'}});
   if(!r.ok)throw new Error(`HTTP ${r.status} for ${url}`);
   return r.text();
 }
-function nextData(html){
-  const m=html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
-  if(!m)throw new Error('__NEXT_DATA__ not found');
-  return JSON.parse(m[1]);
-}
-
-// 1. token + location catalogue
-const searchResponse=await fetch(`${SITE}/ka/udzravi-qoneba/l/bina/qiravdeba?cityIdList=${CITY_TBILISI}&currencyId=1&order=1`, {signal:AbortSignal.timeout(30000)});
-if(!searchResponse.ok)throw Error('SS search page failed: HTTP '+searchResponse.status+'; previous data retained.');
-const pp=nextData(await searchResponse.text()).props.pageProps;
-const token=publicSession(searchResponse,pp);
-const districts=await readDistricts(token);
+const nextData=nextDataOf;
+const token=tf.token;
+const districts=await readDistricts(token,tf.fetch);
 const subIds=[];const subNames={};
 for(const d of districts){
   const dWanted=wantedNorm.has(norm(d.districtTitle));
@@ -94,7 +89,7 @@ const candidates=new Map();
 const cutoff=Date.now()-MAX_AGE_DAYS*86400000;
 for(let page=1;page<=MAX_PAGES;page++){
   const body={realEstateType:TYPE_FLAT,realEstateDealType:DEAL_RENT,cityIdList:[CITY_TBILISI],subdistrictIds:subIds,areaFrom:MIN_AREA,order:1,page,pageSize:PAGE_SIZE};
-  const r=await fetch(`${API}/LegendSearch`,{method:'POST',headers:apiHeaders,body:JSON.stringify(body)});
+  const r=await tf.fetch(`${API}/LegendSearch`,{method:'POST',headers:apiHeaders,body:JSON.stringify(body)});
   if(!r.ok)throw Error(`SS search page ${page}: HTTP ${r.status}; previous data retained.`);
   const items=(await r.json()).realStateItemModel;
   if(!Array.isArray(items))throw Error('SS search data changed; previous data retained.');
@@ -203,9 +198,10 @@ for(const [id,li] of candidates){
   }
   await sleep(300);
 }
+await tf.close();
 if(!ok&&candidates.size){console.error('no listing could be read; keeping the previous file');process.exitCode=1;process.exit()}
 out.sort((a,b)=>Date.parse(b.listing_date)-Date.parse(a.listing_date));
-const result={retrieved_at:nowIso,source:SITE,method:'ss_api',method_label:'ss.ge search API + detail pages',
+const result={retrieved_at:nowIso,source:SITE,method:'ss_api',method_label:`ss.ge search API + detail pages via ${tf.mode}`,
   coverage_note:`Newest ${MAX_PAGES} search pages (${PAGE_SIZE} each) in the target sub-districts, up to ${MAX_AGE_DAYS} days back; hidden posts skipped; only favorites rechecked after 72 hours (up to 35 per run). Not exhaustive.`,
   requirements:{max_price_gel:MAX_PRICE_GEL,min_size_m2:MIN_AREA,districts:wanted,excluded_locations:excluded},properties:out};
 fs.mkdirSync(path.dirname(outFile),{recursive:true});

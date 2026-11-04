@@ -106,7 +106,13 @@ jobs:
         continue-on-error: true
         env:
           HH_PASSWORD: ${{ secrets.HH_PASSWORD }}
-        run: node tools/collect-ss.mjs --out out/ss.json
+          # ss.ge challenges every data-centre address; with this key the collector drives a remote Chrome
+          # with a Georgian exit (tools/ss-transport.mjs, about 1 cent a run from the prepaid wallet).
+          TINYFISH_API_KEY: ${{ secrets.TINYFISH_API_KEY }}
+          PLAYWRIGHT_CORE_PATH: /tmp/pw/node_modules/playwright-core/index.js
+        run: |
+          mkdir -p /tmp/pw && (cd /tmp/pw && npm init -y >/dev/null && npm i --no-audit --no-fund playwright-core@1.49.1 >/dev/null)
+          node tools/collect-ss.mjs --out out/ss.json
 
       - name: Collect korter.ge listings
         id: korter
