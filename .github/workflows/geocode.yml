@@ -101,6 +101,7 @@ jobs:
           node -e 'for(const f of ["geo","history"]){try{const g=require("./out/"+f+".json");console.log(f,"seed entries:",Object.keys(g.listings||{}).length)}catch{console.log(f,"seed entries: 0")}}'
 
       - name: Collect ss.ge listings
+        id: ss
         if: steps.gate.outputs.skip != 'true'
         continue-on-error: true
         env:
@@ -108,6 +109,7 @@ jobs:
         run: node tools/collect-ss.mjs --out out/ss.json
 
       - name: Collect korter.ge listings
+        id: korter
         if: steps.gate.outputs.skip != 'true'
         continue-on-error: true
         env:
@@ -183,4 +185,17 @@ jobs:
             git commit -qm "Update ss/korter/geo/commute/history ($(date -u +%Y-%m-%dT%H:%MZ))"
             git push --force origin geo-data
             echo "published"
+          fi
+
+      - name: Report source check results
+        if: always() && steps.gate.outputs.skip != 'true'
+        env:
+          SS_RESULT: ${{ steps.ss.outcome }}
+          KORTER_RESULT: ${{ steps.korter.outcome }}
+        run: |
+          echo "SS.ge: $SS_RESULT" >> "$GITHUB_STEP_SUMMARY"
+          echo "Korter.ge: $KORTER_RESULT" >> "$GITHUB_STEP_SUMMARY"
+          if [ "$SS_RESULT" != success ] || [ "$KORTER_RESULT" != success ]; then
+            echo "::warning::One or more sources failed. Their saved data was kept. This was not a complete search."
+            echo "Search incomplete. Saved data was kept for failed sources." >> "$GITHUB_STEP_SUMMARY"
           fi

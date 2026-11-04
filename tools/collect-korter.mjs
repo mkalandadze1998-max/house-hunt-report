@@ -45,7 +45,7 @@ const AREAS={
 const SUB_KA={'Saburtalo':'საბურთალო','Didi Dighomi':'დიდი დიღომი','Vashlijvari':'ვაშლიჯვარი','Didube':'დიდუბე','Dighomi Massive':'დიღმის მასივი','Sanzona':'სანზონა','Temka':'თემქა','Vazha-Pshavela Blocks':'ვაჟა ფშაველას კვარტლები','Vake':'ვაკე','Bagebi':'ბაგები','Vera':'ვერა','Chugureti':'ჩუღურეთი','Nadzaladevi':'ნაძალადევი'};
 const DISTRICT_KA={'Saburtalo District':'ვაკე-საბურთალო','Vake District':'ვაკე-საბურთალო','Didube District':'დიდუბე-ჩუღურეთი','Chugureti District':'დიდუბე-ჩუღურეთი','Nadzaladevi District':'გლდანი-ნაძალადევი','Gldani District':'გლდანი-ნაძალადევი','საბურთალოს რაიონი':'ვაკე-საბურთალო','ვაკის რაიონი':'ვაკე-საბურთალო','დიდუბის რაიონი':'დიდუბე-ჩუღურეთი','ჩუღურეთის რაიონი':'დიდუბე-ჩუღურეთი','ნაძალადევის რაიონი':'გლდანი-ნაძალადევი','გლდანის რაიონი':'გლდანი-ნაძალადევი'};
 // Listing pages are read in English (stable field names); detail pages in Georgian so descriptions and addresses keep their original wording.
-const DETAIL_URL=id=>`${SITE}/qiravdeba-binebi-tbilisshi/${id}`;
+const DETAIL_URL=id=>`${SITE}/en/apartments-for-rent-tbilisi/${id}`;
 
 const reqFile=path.join(root,'data','properties.json');
 let wanted=['ვაკე-საბურთალო','დიდუბე','სანზონა','დიღმის მე-3 მასივი'];
@@ -198,7 +198,7 @@ for(const [objectId,c] of candidates){
   }
   await sleep(350);
 }
-if(!ok&&candidates.size){console.error('no listing could be read; keeping the previous file');process.exitCode=1;return}
+if(fail&&fail===candidates.size){console.error('no listing could be read; keeping the previous file');process.exitCode=1;return}
 out.sort((a,b)=>Date.parse(b.listing_date)-Date.parse(a.listing_date));
 const result={retrieved_at:nowIso,source:SITE,method:'korter_html',method_label:'korter.ge listing + detail pages (embedded state)',
   coverage_note:`Newest ${MAX_PAGES} pages (20 each) per target area, up to ${MAX_AGE_DAYS} days back; hidden posts skipped; only favorites rechecked after 72 hours (up to 35 per run). Not exhaustive.`,
@@ -206,6 +206,6 @@ const result={retrieved_at:nowIso,source:SITE,method:'korter_html',method_label:
 fs.mkdirSync(path.dirname(outFile),{recursive:true});
 fs.writeFileSync(outFile,JSON.stringify(result,null,1));
 console.log(`done: ${ok} listings kept, ${gone} dropped/inactive, ${fail} failed → ${path.relative(root,outFile)}`);
-if(!ok&&candidates.size)process.exitCode=1;
+if(fail&&fail===candidates.size)process.exitCode=1;
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href)await main();
