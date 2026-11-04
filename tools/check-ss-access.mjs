@@ -28,3 +28,9 @@ for(const [url,method] of [
  const text=await r.text();
  console.log(JSON.stringify({url,status:r.status,challenge:r.headers.get('cf-mitigated'),hasSession:cookies.some(x=>x.startsWith('ss-session-token=')),json:text.startsWith('{')}));
 }
+
+const { execFileSync } = await import('node:child_process');
+try {
+ const html=execFileSync('google-chrome',['--headless','--no-sandbox','--disable-dev-shm-usage','--dump-dom','--timeout=30000','--virtual-time-budget=15000','https://home.ss.ge/ka/udzravi-qoneba/l/bina/qiravdeba'],{encoding:'utf8',timeout:45000,maxBuffer:10e6,stdio:['ignore','pipe','ignore']});
+ console.log(JSON.stringify({name:'browser',hasData:html.includes('__NEXT_DATA__'),title:html.match(/<title>(.*?)<\/title>/)?.[1]}));
+} catch { console.log('browser check failed'); }
