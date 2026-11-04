@@ -17,3 +17,14 @@ for(const [name,target,headers] of [
  }
  }catch(e){console.log(name,e.name)}
 }
+
+for(const [url,method] of [
+ ['https://home.ss.ge/api/refresh_access_token','POST'],
+ ['https://home.ss.ge/','GET'],
+ ['https://home.ss.ge/_next/data/ydTJl7rB8PNLIrdvdeTND/ka/real-estate/l/bina/qiravdeba.json?cityIdList=95&currencyId=1&order=1','GET']
+]){
+ const r=await fetch(url,{method,signal:AbortSignal.timeout(30000)});
+ const cookies=r.headers.getSetCookie();
+ const text=await r.text();
+ console.log(JSON.stringify({url,status:r.status,challenge:r.headers.get('cf-mitigated'),hasSession:cookies.some(x=>x.startsWith('ss-session-token=')),json:text.startsWith('{')}));
+}
