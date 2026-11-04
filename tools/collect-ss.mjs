@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { publicSession, readDistricts } from './ss-client.mjs';
 import rentalPolicy from '../rental-policy.js';
 import { loadShortlist, planListingChecks } from './shortlist.mjs';
 // Collects long-term apartment rentals from ss.ge for the House Hunt site.
@@ -8,8 +9,8 @@ import { loadShortlist, planListingChecks } from './shortlist.mjs';
 //   node tools/collect-ss.mjs --pages 10         # fewer search pages
 //
 // How it works
-//   1. GET a search page on home.ss.ge → __NEXT_DATA__ carries an anonymous
-//      API token (valid ~1 h) and the district/sub-district catalogue.
+//   1. GET a search page on home.ss.ge → response cookie carries a public
+//      session token. Read the current district catalogue from the API.
 //   2. POST api-gateway.ss.ge/v1/RealEstate/LegendSearch, newest first,
 //      restricted to the sub-districts that match data/properties.json's
 //      requirements.districts. The API ignores price filters, so price and
@@ -70,19 +71,20 @@ function nextData(html){
 }
 
 // 1. token + location catalogue
-const searchHtml=await getHtml(`${SITE}/ka/udzravi-qoneba/l/bina/qiravdeba?cityIdList=${CITY_TBILISI}&currencyId=1&order=1`);
-const pp=nextData(searchHtml).props.pageProps;
-const token=pp.credentialsToken;
-if(!token)throw new Error('No credentialsToken on the search page');
-const city=(pp.locations?.visibleCities||[]).find(c=>c.cityId===CITY_TBILISI);
+const searchResponse=await fetch(`${SITE}/ka/udzravi-qoneba/l/bina/qiravdeba?cityIdList=${CITY_TBILISI}&currencyId=1&order=1`, {signal:AbortSignal.timeout(30000)});
+if(!searchResponse.ok)throw Error('SS search page failed: HTTP '+searchResponse.status+'; previous data retained.');
+const pp=nextData(await searchResponse.text()).props.pageProps;
+const token=publicSession(searchResponse,pp);
+const districts=await readDistricts(token);
 const subIds=[];const subNames={};
-for(const d of city?.districts||[]){
+for(const d of districts){
   const dWanted=wantedNorm.has(norm(d.districtTitle));
   for(const s of d.subDistricts||[]){
     subNames[s.subDistrictId]=s.subDistrictTitle;
     if(!excludedNorm.has(norm(s.subDistrictTitle))&&!excludedNorm.has(norm(d.districtTitle))&&(dWanted||wantedNorm.has(norm(s.subDistrictTitle))||(s.subDistrictTitle==='დიღმის მასივი'&&wanted.includes('დიღმის მე-3 მასივი'))))subIds.push(s.subDistrictId);
   }
 }
+if(!subIds.length)throw Error('No matching SS districts; search stopped.');
 console.log(`districts wanted: ${wanted.join(', ')} → ${subIds.length} sub-districts`);
 
 const apiHeaders={'Accept':'application/json','Content-Type':'application/json','accept-language':'ka','authorization':'Bearer '+token,'os':'web','User-Agent':UA,'Origin':SITE,'Referer':SITE+'/'};
@@ -93,8 +95,9 @@ const cutoff=Date.now()-MAX_AGE_DAYS*86400000;
 for(let page=1;page<=MAX_PAGES;page++){
   const body={realEstateType:TYPE_FLAT,realEstateDealType:DEAL_RENT,cityIdList:[CITY_TBILISI],subdistrictIds:subIds,areaFrom:MIN_AREA,order:1,page,pageSize:PAGE_SIZE};
   const r=await fetch(`${API}/LegendSearch`,{method:'POST',headers:apiHeaders,body:JSON.stringify(body)});
-  if(!r.ok){console.warn(`search page ${page}: HTTP ${r.status}`);break}
-  const items=(await r.json()).realStateItemModel||[];
+  if(!r.ok)throw Error(`SS search page ${page}: HTTP ${r.status}; previous data retained.`);
+  const items=(await r.json()).realStateItemModel;
+  if(!Array.isArray(items))throw Error('SS search data changed; previous data retained.');
   if(!items.length)break;
   let oldest=Infinity;
   for(const it of items){
