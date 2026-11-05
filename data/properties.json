@@ -1,5 +1,5 @@
 {
-  "retrieved_at": "2026-11-05T20:26:40.047Z",
+  "retrieved_at": "2026-11-05T21:50:56.242Z",
   "source": "https://www.myhome.ge/",
   "method": "myhome_api",
   "method_label": "myhome.ge structured API",
@@ -112058,13 +112058,114 @@
         "bedrooms": 1
       },
       "first_seen_at": "2026-11-05T20:26:40.047Z"
+    },
+    {
+      "id": "21966168",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-3-otaxiani-bina-bagebshi-21966168/",
+      "source": "myhome.ge",
+      "advertiser": "Agency",
+      "retrieved_at": "2026-11-05T21:56:18.664Z",
+      "last_checked_at": "2026-11-05T21:56:18.664Z",
+      "retrieval_date_precision": "timestamp",
+      "transaction": "rent_monthly",
+      "property_type": "apartment",
+      "price": 1025,
+      "currency": "GEL",
+      "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
+      "original_currency": "USD",
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "ბაგები",
+      "address": "წყნეთის გზატკეცილი 37",
+      "district_groups": [
+        "ვაკე-საბურთალო"
+      ],
+      "size": 80,
+      "lat": 41.710562,
+      "lng": 44.728684,
+      "rooms": 3,
+      "bedrooms": 1,
+      "floor": 2,
+      "total_floors": 8,
+      "condition": "Newly renovated",
+      "condition_original": "ახალი გარემონტებული",
+      "furniture": true,
+      "furniture_items": [
+        "კონდინციონერი",
+        "ღუმელი",
+        "ქურა (გაზის/ელექტრო)",
+        "სკამები",
+        "მაგიდა",
+        "ჭურჭლის სარეცხი მანქანა",
+        "დივანი",
+        "სარეცხი მანქანა",
+        "საწოლი",
+        "ავეჯი",
+        "მაცივარი"
+      ],
+      "heating": null,
+      "parking": null,
+      "air_conditioning": true,
+      "balcony": "1 / 10 m²",
+      "description": "ქირავდება უცხოვრებელი ბინა საუკეთესო ადგილას საუკეთესო პირობებით, ბინაში არის ყველაფერი საცხოვრებლად ყველა საჭირო ტექნიკა თუ ავეჯი, ბინა არის მზიანი და ნათელი, აქვეა ახლოს ყველა სასურსათო მაღაზია თუ აფთიაქი, აქვე ახლოს არის სასეირნო პარკი და სკვერი, ქირავდება ყველა პატიოსან და გადამხდელუნარიან პირზე",
+      "main_image": "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/Ik6Dy4l688c9acfcc6b7.webp",
+      "images": [
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/Ik6Dy4l688c9acfcc6b7.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/fjvDHAq688c9acfb225b.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/anKirYk688c9acfa4e4e.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/ULTuVOG688c9acfb3d57.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/7Royyqe688c9acf6ff49.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/1EFo1i0688c9acf1c31d.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/hF2u07K688c9acf34594.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/lm2yXod688c9acf54e3a.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/SQVQ5YM688c9acf8d033.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/L6H7wEV688c9acf3b3ab.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/JUknsED688c9acf9f72d.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/a9yHZq9688c9acf7db4b.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/4R78JR4688c9acfa8571.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/jdZxwka688c9acfb0614.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/Ze4v8el688c9acfb7c19.webp"
+      ],
+      "source_images": [
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/Ik6Dy4l688c9acfcc6b7.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/fjvDHAq688c9acfb225b.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/anKirYk688c9acfa4e4e.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/ULTuVOG688c9acfb3d57.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/7Royyqe688c9acf6ff49.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/1EFo1i0688c9acf1c31d.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/hF2u07K688c9acf34594.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/lm2yXod688c9acf54e3a.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/SQVQ5YM688c9acf8d033.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/L6H7wEV688c9acf3b3ab.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/JUknsED688c9acf9f72d.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/a9yHZq9688c9acf7db4b.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/4R78JR4688c9acfa8571.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/jdZxwka688c9acfb0614.webp",
+        "https://static-api-statements.tnet.ge/uploads/202508/20250801/statements/Ze4v8el688c9acfb7c19.webp"
+      ],
+      "listing_date": "2026-11-06T01:01:00+04:00",
+      "published_at": "2025-08-01T14:46:41+04:00",
+      "listing_date_note": "API last_updated (may be renewal); created_at saved separately. Source times interpreted as Tbilisi time.",
+      "advance_months": null,
+      "screening": "include",
+      "photos_reviewed": "Not visually reviewed by the automated collector.",
+      "condition_review": "Seller-reported renovation and description screened. Physical condition unverified.",
+      "considerations": [
+        "Photos have not been visually screened in this automated run."
+      ],
+      "source_attribute_ids": {
+        "heating": 1,
+        "parking": 2,
+        "rooms": 3,
+        "bedrooms": 1
+      },
+      "first_seen_at": "2026-11-05T21:50:56.242Z"
     }
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",
   "refresh_status": {
-    "attempted_at": "2026-11-05T20:26:40.047Z",
-    "last_success_at": "2026-11-05T20:26:40.047Z",
-    "dataset_collected_at": "2026-11-05T20:26:40.047Z",
+    "attempted_at": "2026-11-05T21:50:56.242Z",
+    "last_success_at": "2026-11-05T21:50:56.242Z",
+    "dataset_collected_at": "2026-11-05T21:50:56.242Z",
     "status": "success",
     "coverage": "At most 15 search pages per run; new additions must be posted or renewed within 72 hours; existing saved data is retained; daily rentals excluded. Hidden posts skipped. Up to 120 new details per run; remaining recent IDs saved for later.",
     "api": "https://api-statements.tnet.ge/v1/statements",
@@ -112074,24 +112175,24 @@
     "similars": {
       "seeds": 34,
       "calls": 60,
-      "rows": 290
+      "rows": 330
     },
-    "search_rotation": 39,
+    "search_rotation": 40,
     "search_limited_to_pages": 15,
-    "new_details_deferred": 26,
+    "new_details_deferred": 29,
     "rechecks_deferred": 249,
     "hidden_skipped": 796,
     "detail_422_deferred": 0,
     "search_method": "similar-listings crawl (search API and website closed)",
     "detail_method": "website via hosted fetchers (TinyFish + Jina)",
-    "rechecks_skipped": 1374,
-    "searched": 406,
+    "rechecks_skipped": 1375,
+    "searched": 447,
     "checked": 1,
     "included": 1,
     "excluded": 0,
     "changes": {
       "new": [
-        "26585424"
+        "21966168"
       ],
       "changed": [],
       "removed": [],
@@ -113469,7 +113570,8 @@
         "26575686",
         "26575641",
         "26580587",
-        "26583025"
+        "26583025",
+        "26585424"
       ]
     },
     "hosted_usage": {
