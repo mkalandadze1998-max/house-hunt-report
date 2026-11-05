@@ -1,5 +1,5 @@
 {
-  "retrieved_at": "2026-11-05T11:56:02.775Z",
+  "retrieved_at": "2026-11-05T14:00:00.837Z",
   "source": "https://www.myhome.ge/",
   "method": "myhome_api",
   "method_label": "myhome.ge structured API",
@@ -65528,7 +65528,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1038,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -65611,7 +65611,7 @@
       },
       "first_seen_at": "2026-11-01T14:19:05.275Z",
       "price_was": 1040,
-      "price_changed_at": "2026-11-04T10:54:38.424Z"
+      "price_changed_at": "2026-11-05T14:00:00.837Z"
     },
     {
       "id": "25406203",
@@ -65876,7 +65876,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1038,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -65956,7 +65956,7 @@
       },
       "first_seen_at": "2026-11-01T14:19:05.275Z",
       "price_was": 1040,
-      "price_changed_at": "2026-11-04T10:54:38.424Z"
+      "price_changed_at": "2026-11-05T14:00:00.837Z"
     },
     {
       "id": "26321553",
@@ -65968,7 +65968,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1038,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -66044,7 +66044,7 @@
       },
       "first_seen_at": "2026-11-01T14:19:05.275Z",
       "price_was": 1040,
-      "price_changed_at": "2026-11-04T10:54:38.424Z"
+      "price_changed_at": "2026-11-05T14:00:00.837Z"
     },
     {
       "id": "20335121",
@@ -66056,7 +66056,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1040,
+      "price": 1038,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -66133,7 +66133,9 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z",
+      "price_was": 1040,
+      "price_changed_at": "2026-11-05T14:00:00.837Z"
     },
     {
       "id": "26398511",
@@ -68143,7 +68145,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1038,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -68225,7 +68227,7 @@
       },
       "first_seen_at": "2026-11-01T14:19:05.275Z",
       "price_was": 1040,
-      "price_changed_at": "2026-11-04T10:54:38.424Z"
+      "price_changed_at": "2026-11-05T14:00:00.837Z"
     },
     {
       "id": "26327418",
@@ -68237,7 +68239,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1038,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -68300,7 +68302,7 @@
       },
       "first_seen_at": "2026-11-01T14:19:05.275Z",
       "price_was": 1040,
-      "price_changed_at": "2026-11-04T10:54:38.424Z"
+      "price_changed_at": "2026-11-05T14:00:00.837Z"
     },
     {
       "id": "26527134",
@@ -71716,7 +71718,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1038,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -71775,7 +71777,7 @@
       },
       "first_seen_at": "2026-11-02T12:02:40.795Z",
       "price_was": 1040,
-      "price_changed_at": "2026-11-04T10:54:38.424Z"
+      "price_changed_at": "2026-11-05T14:00:00.837Z"
     },
     {
       "id": "26540302",
@@ -73239,7 +73241,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1038,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -73313,7 +73315,9 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-03T11:40:06.380Z"
+      "first_seen_at": "2026-11-03T11:40:06.380Z",
+      "price_was": 1039,
+      "price_changed_at": "2026-11-05T14:00:00.837Z"
     },
     {
       "id": "26554682",
@@ -77379,7 +77383,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1038,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -77457,7 +77461,9 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-03T13:45:27.394Z"
+      "first_seen_at": "2026-11-03T13:45:27.394Z",
+      "price_was": 1039,
+      "price_changed_at": "2026-11-05T14:00:00.837Z"
     },
     {
       "id": "26549839",
@@ -96169,7 +96175,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1091,
+      "price": 1090,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -96234,7 +96240,9 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-03T17:25:07.782Z"
+      "first_seen_at": "2026-11-03T17:25:07.782Z",
+      "price_was": 1091,
+      "price_changed_at": "2026-11-05T14:00:00.837Z"
     },
     {
       "id": "26421050",
@@ -98566,7 +98574,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1038,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -98641,7 +98649,9 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-03T17:25:07.782Z"
+      "first_seen_at": "2026-11-03T17:25:07.782Z",
+      "price_was": 1039,
+      "price_changed_at": "2026-11-05T14:00:00.837Z"
     },
     {
       "id": "26410889",
@@ -105115,7 +105125,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1038,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -105192,7 +105202,9 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-11-03T19:55:46.413Z"
+      "first_seen_at": "2026-11-03T19:55:46.413Z",
+      "price_was": 1039,
+      "price_changed_at": "2026-11-05T14:00:00.837Z"
     },
     {
       "id": "26385158",
@@ -111928,13 +111940,100 @@
         "bedrooms": null
       },
       "first_seen_at": "2026-11-05T11:56:02.775Z"
+    },
+    {
+      "id": "26583025",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-3-otaxiani-bina-didubeshi-26583025/",
+      "source": "myhome.ge",
+      "advertiser": "Agency",
+      "retrieved_at": "2026-11-05T14:09:57.480Z",
+      "last_checked_at": "2026-11-05T14:09:57.480Z",
+      "retrieval_date_precision": "timestamp",
+      "transaction": "rent_monthly",
+      "property_type": "apartment",
+      "price": 900,
+      "currency": "GEL",
+      "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
+      "original_currency": "GEL",
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიდუბე",
+      "address": "გორის ქუჩა 0",
+      "district_groups": [
+        "დიდუბე"
+      ],
+      "size": 50,
+      "lat": 41.7276,
+      "lng": 44.793904,
+      "rooms": 3,
+      "bedrooms": 1,
+      "floor": 1,
+      "total_floors": 1,
+      "condition": "Newly renovated",
+      "condition_original": "ახალი გარემონტებული",
+      "furniture": true,
+      "furniture_items": [
+        "ავეჯი",
+        "საწოლი",
+        "დივანი",
+        "მაგიდა",
+        "სკამები",
+        "მაცივარი",
+        "კონდინციონერი",
+        "ღუმელი",
+        "ქურა (გაზის/ელექტრო)",
+        "სარეცხი მანქანა",
+        "ჭურჭლის სარეცხი მანქანა"
+      ],
+      "heating": null,
+      "parking": null,
+      "air_conditioning": true,
+      "balcony": null,
+      "description": "ქირავდება 50 მ² ბინა გორის ქუჩაზე. ბინა მდებარეობს ახალაშენებულ კორპუსში და გამოირჩევა კომფორტული და თანამედროვე გარემოთი. იდეალური ვარიანტია მათთვის, ვინც ეძებს მყუდრო საცხოვრებელს მოწესრიგებულ და განვითარებულ უბანში. დაინტერესების შემთხვევაში გთხოვთ დამიკავშირდეთ განცხადებაში მითითებულ ნომერზე.ნახევარსარდაფი",
+      "main_image": "https://static-api-statements.tnet.ge/uploads/202611/20261105/statements/00PVTJi6aec872cc5e9f.webp",
+      "images": [
+        "https://static-api-statements.tnet.ge/uploads/202611/20261105/statements/00PVTJi6aec872cc5e9f.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261105/statements/vfuvV0T6aec872cb572b.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261105/statements/i4rLXb96aec872cbfd8e.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261105/statements/SgCTcxV6aec872cbadfd.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261105/statements/KZYbCg66aec872cd038f.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261105/statements/4BbtsdG6aec872cd150b.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261105/statements/witcwfp6aec872cc9820.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261105/statements/EYNicXJ6aec872cd2230.webp"
+      ],
+      "source_images": [
+        "https://static-api-statements.tnet.ge/uploads/202611/20261105/statements/00PVTJi6aec872cc5e9f.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261105/statements/vfuvV0T6aec872cb572b.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261105/statements/i4rLXb96aec872cbfd8e.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261105/statements/SgCTcxV6aec872cbadfd.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261105/statements/KZYbCg66aec872cd038f.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261105/statements/4BbtsdG6aec872cd150b.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261105/statements/witcwfp6aec872cc9820.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261105/statements/EYNicXJ6aec872cd2230.webp"
+      ],
+      "listing_date": "2026-11-05T17:42:14+04:00",
+      "published_at": "2026-11-05T17:42:05+04:00",
+      "listing_date_note": "API last_updated (may be renewal); created_at saved separately. Source times interpreted as Tbilisi time.",
+      "advance_months": null,
+      "screening": "include",
+      "photos_reviewed": "Not visually reviewed by the automated collector.",
+      "condition_review": "Seller-reported renovation and description screened. Physical condition unverified.",
+      "considerations": [
+        "Photos have not been visually screened in this automated run."
+      ],
+      "source_attribute_ids": {
+        "heating": null,
+        "parking": null,
+        "rooms": 3,
+        "bedrooms": 1
+      },
+      "first_seen_at": "2026-11-05T14:00:00.837Z"
     }
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",
   "refresh_status": {
-    "attempted_at": "2026-11-05T11:56:02.775Z",
-    "last_success_at": "2026-11-05T11:56:02.775Z",
-    "dataset_collected_at": "2026-11-05T11:56:02.775Z",
+    "attempted_at": "2026-11-05T14:00:00.837Z",
+    "last_success_at": "2026-11-05T14:00:00.837Z",
+    "dataset_collected_at": "2026-11-05T14:00:00.837Z",
     "status": "success",
     "coverage": "At most 15 search pages per run; new additions must be posted or renewed within 72 hours; existing saved data is retained; daily rentals excluded. Hidden posts skipped. Up to 120 new details per run; remaining recent IDs saved for later.",
     "api": "https://api-statements.tnet.ge/v1/statements",
@@ -111944,26 +112043,39 @@
     "similars": {
       "seeds": 34,
       "calls": 60,
-      "rows": 258
+      "rows": 279
     },
-    "search_rotation": 34,
+    "search_rotation": 35,
     "search_limited_to_pages": 15,
-    "new_details_deferred": 7,
-    "rechecks_deferred": 248,
+    "new_details_deferred": 17,
+    "rechecks_deferred": 249,
     "hidden_skipped": 796,
     "detail_422_deferred": 0,
     "search_method": "similar-listings crawl (search API and website closed)",
     "detail_method": "website via hosted fetchers (TinyFish + Jina)",
-    "rechecks_skipped": 1372,
-    "searched": 375,
+    "rechecks_skipped": 1373,
+    "searched": 395,
     "checked": 1,
     "included": 1,
     "excluded": 0,
     "changes": {
       "new": [
-        "26580587"
+        "26583025"
       ],
-      "changed": [],
+      "changed": [
+        "25887616",
+        "25570309",
+        "26321553",
+        "20335121",
+        "25882286",
+        "26327418",
+        "26528888",
+        "26555107",
+        "26549887",
+        "26421069",
+        "26411152",
+        "26280551"
+      ],
       "removed": [],
       "retained_unverified": [
         "26022516",
@@ -113337,7 +113449,8 @@
         "26575934",
         "26575752",
         "26575686",
-        "26575641"
+        "26575641",
+        "26580587"
       ]
     },
     "hosted_usage": {
