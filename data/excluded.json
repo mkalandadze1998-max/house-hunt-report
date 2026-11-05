@@ -1,7 +1,25 @@
 {
-  "generated_at": "2026-11-05T15:05:10.068Z",
+  "generated_at": "2026-11-05T17:43:42.337Z",
   "keep_days": 14,
   "items": [
+    {
+      "id": "26346432",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-didubeshi-26346432/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 48,
+      "rooms": 1,
+      "floor": 5,
+      "total_floors": 5,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიდუბე",
+      "address": "დავით ყიფიანის ქუჩა 4",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261014/statements/BCMj9K66acfa9973ed7c.webp",
+      "listing_date": "2026-11-05T21:29:56+04:00",
+      "excluded_at": "2026-11-05T17:43:42.337Z",
+      "last_seen_at": "2026-11-05T17:43:42.337Z"
+    },
     {
       "id": "26584647",
       "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-3-otaxiani-bina-didubeshi-26584647/",
