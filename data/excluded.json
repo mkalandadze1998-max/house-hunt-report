@@ -1,7 +1,25 @@
 {
-  "generated_at": "2026-11-05T14:14:57.826Z",
+  "generated_at": "2026-11-05T15:05:10.068Z",
   "keep_days": 14,
   "items": [
+    {
+      "id": "26584647",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-3-otaxiani-bina-didubeshi-26584647/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 950,
+      "size": 50,
+      "rooms": 3,
+      "floor": 0,
+      "total_floors": 1,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიდუბე",
+      "address": "გორის ქუჩა ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202611/20261105/statements/NmGvnZQ6aec99d5b88eb.webp",
+      "listing_date": "2026-11-05T19:00:58+04:00",
+      "excluded_at": "2026-11-05T15:05:10.068Z",
+      "last_seen_at": "2026-11-05T15:05:10.068Z"
+    },
     {
       "id": "26583672",
       "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26583672/",
