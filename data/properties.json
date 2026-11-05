@@ -1,5 +1,5 @@
 {
-  "retrieved_at": "2026-11-05T14:00:00.837Z",
+  "retrieved_at": "2026-11-05T14:14:57.826Z",
   "source": "https://www.myhome.ge/",
   "method": "myhome_api",
   "method_label": "myhome.ge structured API",
@@ -65191,7 +65191,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1040,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -65259,9 +65259,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z",
-      "price_was": 1040,
-      "price_changed_at": "2026-11-04T10:54:38.424Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z"
     },
     {
       "id": "26305400",
@@ -65528,7 +65526,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1038,
+      "price": 1040,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -65609,9 +65607,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z",
-      "price_was": 1040,
-      "price_changed_at": "2026-11-05T14:00:00.837Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z"
     },
     {
       "id": "25406203",
@@ -65876,7 +65872,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1038,
+      "price": 1040,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -65954,9 +65950,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z",
-      "price_was": 1040,
-      "price_changed_at": "2026-11-05T14:00:00.837Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z"
     },
     {
       "id": "26321553",
@@ -65968,7 +65962,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1038,
+      "price": 1040,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -66042,9 +66036,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z",
-      "price_was": 1040,
-      "price_changed_at": "2026-11-05T14:00:00.837Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z"
     },
     {
       "id": "20335121",
@@ -66056,7 +66048,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1038,
+      "price": 1040,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -66133,9 +66125,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z",
-      "price_was": 1040,
-      "price_changed_at": "2026-11-05T14:00:00.837Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z"
     },
     {
       "id": "26398511",
@@ -66477,7 +66467,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1040,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -66558,9 +66548,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z",
-      "price_was": 1040,
-      "price_changed_at": "2026-11-04T10:54:38.424Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z"
     },
     {
       "id": "26455766",
@@ -66572,7 +66560,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1040,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -66652,9 +66640,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z",
-      "price_was": 1040,
-      "price_changed_at": "2026-11-04T10:54:38.424Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z"
     },
     {
       "id": "26456030",
@@ -66666,7 +66652,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1040,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -66747,9 +66733,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z",
-      "price_was": 1040,
-      "price_changed_at": "2026-11-04T10:54:38.424Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z"
     },
     {
       "id": "26455592",
@@ -67226,7 +67210,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1040,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -67303,9 +67287,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z",
-      "price_was": 1040,
-      "price_changed_at": "2026-11-04T10:54:38.424Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z"
     },
     {
       "id": "26512926",
@@ -67317,7 +67299,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1040,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -67393,9 +67375,7 @@
         "rooms": 3,
         "bedrooms": 2
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z",
-      "price_was": 1040,
-      "price_changed_at": "2026-11-04T10:54:38.424Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z"
     },
     {
       "id": "26455867",
@@ -67407,7 +67387,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1040,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -67489,9 +67469,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z",
-      "price_was": 1040,
-      "price_changed_at": "2026-11-04T10:54:38.424Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z"
     },
     {
       "id": "26458390",
@@ -67503,7 +67481,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1040,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -67584,9 +67562,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z",
-      "price_was": 1040,
-      "price_changed_at": "2026-11-04T10:54:38.424Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z"
     },
     {
       "id": "26346766",
@@ -67598,7 +67574,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1040,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -67659,9 +67635,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z",
-      "price_was": 1040,
-      "price_changed_at": "2026-11-04T10:54:38.424Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z"
     },
     {
       "id": "26456968",
@@ -67766,7 +67740,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1040,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -67827,9 +67801,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z",
-      "price_was": 1040,
-      "price_changed_at": "2026-11-04T10:54:38.424Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z"
     },
     {
       "id": "17273456",
@@ -67841,7 +67813,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1040,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -67889,9 +67861,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z",
-      "price_was": 1040,
-      "price_changed_at": "2026-11-04T10:54:38.424Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z"
     },
     {
       "id": "20277381",
@@ -67903,7 +67873,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1013,
+      "price": 1014,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -67974,9 +67944,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z",
-      "price_was": 1014,
-      "price_changed_at": "2026-11-04T10:54:38.424Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z"
     },
     {
       "id": "26337821",
@@ -68068,7 +68036,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1039,
+      "price": 1040,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -68131,9 +68099,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z",
-      "price_was": 1040,
-      "price_changed_at": "2026-11-04T10:54:38.424Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z"
     },
     {
       "id": "25882286",
@@ -68145,7 +68111,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1038,
+      "price": 1040,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -68225,9 +68191,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z",
-      "price_was": 1040,
-      "price_changed_at": "2026-11-05T14:00:00.837Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z"
     },
     {
       "id": "26327418",
@@ -68239,7 +68203,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1038,
+      "price": 1040,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -68300,9 +68264,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-01T14:19:05.275Z",
-      "price_was": 1040,
-      "price_changed_at": "2026-11-05T14:00:00.837Z"
+      "first_seen_at": "2026-11-01T14:19:05.275Z"
     },
     {
       "id": "26527134",
@@ -71718,7 +71680,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1038,
+      "price": 1040,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -71775,9 +71737,7 @@
         "rooms": 1,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-02T12:02:40.795Z",
-      "price_was": 1040,
-      "price_changed_at": "2026-11-05T14:00:00.837Z"
+      "first_seen_at": "2026-11-02T12:02:40.795Z"
     },
     {
       "id": "26540302",
@@ -73241,7 +73201,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1038,
+      "price": 1039,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -73315,9 +73275,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-03T11:40:06.380Z",
-      "price_was": 1039,
-      "price_changed_at": "2026-11-05T14:00:00.837Z"
+      "first_seen_at": "2026-11-03T11:40:06.380Z"
     },
     {
       "id": "26554682",
@@ -77383,7 +77341,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1038,
+      "price": 1039,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -77461,9 +77419,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-03T13:45:27.394Z",
-      "price_was": 1039,
-      "price_changed_at": "2026-11-05T14:00:00.837Z"
+      "first_seen_at": "2026-11-03T13:45:27.394Z"
     },
     {
       "id": "26549839",
@@ -96175,7 +96131,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1090,
+      "price": 1091,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -96240,9 +96196,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-03T17:25:07.782Z",
-      "price_was": 1091,
-      "price_changed_at": "2026-11-05T14:00:00.837Z"
+      "first_seen_at": "2026-11-03T17:25:07.782Z"
     },
     {
       "id": "26421050",
@@ -98574,7 +98528,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1038,
+      "price": 1039,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -98649,9 +98603,7 @@
         "rooms": 2,
         "bedrooms": 1
       },
-      "first_seen_at": "2026-11-03T17:25:07.782Z",
-      "price_was": 1039,
-      "price_changed_at": "2026-11-05T14:00:00.837Z"
+      "first_seen_at": "2026-11-03T17:25:07.782Z"
     },
     {
       "id": "26410889",
@@ -105125,7 +105077,7 @@
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
-      "price": 1038,
+      "price": 1039,
       "currency": "GEL",
       "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
       "original_currency": "USD",
@@ -105202,9 +105154,7 @@
         "rooms": 1,
         "bedrooms": null
       },
-      "first_seen_at": "2026-11-03T19:55:46.413Z",
-      "price_was": 1039,
-      "price_changed_at": "2026-11-05T14:00:00.837Z"
+      "first_seen_at": "2026-11-03T19:55:46.413Z"
     },
     {
       "id": "26385158",
@@ -112031,9 +111981,9 @@
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",
   "refresh_status": {
-    "attempted_at": "2026-11-05T14:00:00.837Z",
-    "last_success_at": "2026-11-05T14:00:00.837Z",
-    "dataset_collected_at": "2026-11-05T14:00:00.837Z",
+    "attempted_at": "2026-11-05T14:14:57.826Z",
+    "last_success_at": "2026-11-05T14:14:57.826Z",
+    "dataset_collected_at": "2026-11-05T14:14:57.826Z",
     "status": "success",
     "coverage": "At most 15 search pages per run; new additions must be posted or renewed within 72 hours; existing saved data is retained; daily rentals excluded. Hidden posts skipped. Up to 120 new details per run; remaining recent IDs saved for later.",
     "api": "https://api-statements.tnet.ge/v1/statements",
@@ -112041,41 +111991,26 @@
     "search_complete": false,
     "search_pages": 5,
     "similars": {
-      "seeds": 34,
+      "seeds": 33,
       "calls": 60,
-      "rows": 279
+      "rows": 294
     },
-    "search_rotation": 35,
+    "search_rotation": 36,
     "search_limited_to_pages": 15,
-    "new_details_deferred": 17,
+    "new_details_deferred": 20,
     "rechecks_deferred": 249,
     "hidden_skipped": 796,
     "detail_422_deferred": 0,
     "search_method": "similar-listings crawl (search API and website closed)",
     "detail_method": "website via hosted fetchers (TinyFish + Jina)",
-    "rechecks_skipped": 1373,
-    "searched": 395,
+    "rechecks_skipped": 1374,
+    "searched": 410,
     "checked": 1,
-    "included": 1,
-    "excluded": 0,
+    "included": 0,
+    "excluded": 1,
     "changes": {
-      "new": [
-        "26583025"
-      ],
-      "changed": [
-        "25887616",
-        "25570309",
-        "26321553",
-        "20335121",
-        "25882286",
-        "26327418",
-        "26528888",
-        "26555107",
-        "26549887",
-        "26421069",
-        "26411152",
-        "26280551"
-      ],
+      "new": [],
+      "changed": [],
       "removed": [],
       "retained_unverified": [
         "26022516",
@@ -113450,7 +113385,8 @@
         "26575752",
         "26575686",
         "26575641",
-        "26580587"
+        "26580587",
+        "26583025"
       ]
     },
     "hosted_usage": {

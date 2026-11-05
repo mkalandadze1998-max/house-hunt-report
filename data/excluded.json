@@ -1,7 +1,25 @@
 {
-  "generated_at": "2026-11-05T14:00:00.837Z",
+  "generated_at": "2026-11-05T14:14:57.826Z",
   "keep_days": 14,
   "items": [
+    {
+      "id": "26583672",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26583672/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 900,
+      "size": 60,
+      "rooms": 2,
+      "floor": 13,
+      "total_floors": 14,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "დიდი დიღომი",
+      "address": "ბაგრატ III ქუჩა 0",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202611/20261105/statements/lvCDCa66aec8eb983de2.webp",
+      "listing_date": "2026-11-05T18:14:25+04:00",
+      "excluded_at": "2026-11-05T14:14:57.826Z",
+      "last_seen_at": "2026-11-05T14:14:57.826Z"
+    },
     {
       "id": "26569823",
       "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26569823/",
