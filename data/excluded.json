@@ -1,7 +1,25 @@
 {
-  "generated_at": "2026-11-06T19:48:24.706Z",
+  "generated_at": "2026-11-06T21:24:11.429Z",
   "keep_days": 14,
   "items": [
+    {
+      "id": "26553950",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26553950/",
+      "reason": "Outside requested districts",
+      "price": 1000,
+      "size": 38,
+      "rooms": 1,
+      "floor": 4,
+      "total_floors": 5,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "დიღმის მასივი - IV კვარტალი ",
+      "condition": "ახალი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202611/20261103/statements/SFNYnfN6ae99f62e2815.webp",
+      "listing_date": "2026-11-05T11:23:23+04:00",
+      "excluded_at": "2026-11-03T11:40:06.380Z",
+      "last_seen_at": "2026-11-06T21:24:11.429Z"
+    },
     {
       "id": "26567189",
       "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26567189/",
@@ -1476,24 +1494,6 @@
       "image": "https://static-api-statements.tnet.ge/uploads/202611/20261102/statements/qCpncz76ae85a232fd36.webp",
       "listing_date": "2026-11-02T13:42:43+04:00",
       "excluded_at": "2026-11-02T12:02:40.795Z",
-      "last_seen_at": "2026-11-05T09:37:37.336Z"
-    },
-    {
-      "id": "26553950",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26553950/",
-      "reason": "Outside requested districts",
-      "price": 1000,
-      "size": 38,
-      "rooms": 1,
-      "floor": 4,
-      "total_floors": 5,
-      "district": "დიდუბე-ჩუღურეთი",
-      "neighborhood": "დიღმის მასივი",
-      "address": "დიღმის მასივი - IV კვარტალი ",
-      "condition": "ახალი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202611/20261103/statements/SFNYnfN6ae99f62e2815.webp",
-      "listing_date": "2026-11-05T11:23:23+04:00",
-      "excluded_at": "2026-11-03T11:40:06.380Z",
       "last_seen_at": "2026-11-05T09:37:37.336Z"
     },
     {
