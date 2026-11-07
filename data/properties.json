@@ -1,5 +1,5 @@
 {
-  "retrieved_at": "2026-11-07T17:55:29.493Z",
+  "retrieved_at": "2026-11-07T20:01:53.219Z",
   "source": "https://www.myhome.ge/",
   "method": "myhome_api",
   "method_label": "myhome.ge structured API",
@@ -116216,9 +116216,9 @@
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",
   "refresh_status": {
-    "attempted_at": "2026-11-07T17:55:29.493Z",
-    "last_success_at": "2026-11-07T17:55:29.493Z",
-    "dataset_collected_at": "2026-11-07T17:55:29.493Z",
+    "attempted_at": "2026-11-07T20:01:53.219Z",
+    "last_success_at": "2026-11-07T20:01:53.219Z",
+    "dataset_collected_at": "2026-11-07T20:01:53.219Z",
     "status": "success",
     "coverage": "At most 15 search pages per run; new additions must be posted or renewed within 72 hours; existing saved data is retained; daily rentals excluded. Hidden posts skipped. Up to 120 new details per run; remaining recent IDs saved for later.",
     "api": "https://api-statements.tnet.ge/v1/statements",
@@ -116226,32 +116226,25 @@
     "search_complete": false,
     "search_pages": 5,
     "similars": {
-      "seeds": 36,
+      "seeds": 35,
       "calls": 60,
-      "rows": 353
+      "rows": 316
     },
-    "search_rotation": 49,
+    "search_rotation": 50,
     "search_limited_to_pages": 15,
     "new_details_deferred": 0,
     "rechecks_deferred": 0,
-    "hidden_skipped": 835,
+    "hidden_skipped": 842,
     "detail_422_deferred": 0,
     "search_method": "similar-listings crawl (search API and website closed)",
-    "detail_method": "website via hosted fetchers (TinyFish + Jina)",
-    "rechecks_skipped": 1416,
-    "searched": 468,
-    "checked": 11,
-    "included": 8,
-    "excluded": 3,
+    "detail_method": "api",
+    "rechecks_skipped": 1424,
+    "searched": 432,
+    "checked": 0,
+    "included": 0,
+    "excluded": 0,
     "changes": {
-      "new": [
-        "26605981",
-        "26605942",
-        "26605841",
-        "26605757",
-        "26605617",
-        "26605347"
-      ],
+      "new": [],
       "changed": [],
       "removed": [],
       "retained_unverified": [
@@ -117649,6 +117642,8 @@
         "26594904",
         "26594761",
         "26594440",
+        "26595790",
+        "26595783",
         "26377005",
         "26596013",
         "26600332",
@@ -117670,7 +117665,13 @@
         "26604984",
         "26604947",
         "26604845",
-        "23397443"
+        "23397443",
+        "26605981",
+        "26605942",
+        "26605841",
+        "26605757",
+        "26605617",
+        "26605347"
       ]
     },
     "hosted_usage": {
