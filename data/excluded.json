@@ -1,7 +1,25 @@
 {
-  "generated_at": "2026-11-08T16:26:05.692Z",
+  "generated_at": "2026-11-08T18:11:44.078Z",
   "keep_days": 14,
   "items": [
+    {
+      "id": "26610486",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-san-zonashi-26610486/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1038,
+      "size": 45,
+      "rooms": 2,
+      "floor": 1,
+      "total_floors": 1,
+      "district": "გლდანი-ნაძალადევი",
+      "neighborhood": "სან. ზონა",
+      "address": "გურამიშვილის გამზ. 39ვ",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202611/20261108/statements/2tKPt9V6af0a150b8731.webp",
+      "listing_date": "2026-11-08T20:27:06+04:00",
+      "excluded_at": "2026-11-08T18:11:44.078Z",
+      "last_seen_at": "2026-11-08T18:11:44.078Z"
+    },
     {
       "id": "26593024",
       "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26593024/",
