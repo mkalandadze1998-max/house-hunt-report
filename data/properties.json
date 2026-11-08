@@ -1,5 +1,5 @@
 {
-  "retrieved_at": "2026-11-08T18:11:44.078Z",
+  "retrieved_at": "2026-11-08T20:18:45.710Z",
   "source": "https://www.myhome.ge/",
   "method": "myhome_api",
   "method_label": "myhome.ge structured API",
@@ -118448,9 +118448,9 @@
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",
   "refresh_status": {
-    "attempted_at": "2026-11-08T18:11:44.078Z",
-    "last_success_at": "2026-11-08T18:11:44.078Z",
-    "dataset_collected_at": "2026-11-08T18:11:44.078Z",
+    "attempted_at": "2026-11-08T20:18:45.710Z",
+    "last_success_at": "2026-11-08T20:18:45.710Z",
+    "dataset_collected_at": "2026-11-08T20:18:45.710Z",
     "status": "success",
     "coverage": "At most 15 search pages per run; new additions must be posted or renewed within 72 hours; existing saved data is retained; daily rentals excluded. Hidden posts skipped. Up to 120 new details per run; remaining recent IDs saved for later.",
     "api": "https://api-statements.tnet.ge/v1/statements",
@@ -118460,27 +118460,23 @@
     "similars": {
       "seeds": 36,
       "calls": 60,
-      "rows": 303
+      "rows": 296
     },
-    "search_rotation": 54,
+    "search_rotation": 55,
     "search_limited_to_pages": 15,
     "new_details_deferred": 0,
     "rechecks_deferred": 0,
     "hidden_skipped": 864,
     "detail_422_deferred": 0,
     "search_method": "similar-listings crawl (search API and website closed)",
-    "detail_method": "website via hosted fetchers (TinyFish + Jina)",
-    "rechecks_skipped": 1448,
-    "searched": 422,
-    "checked": 4,
-    "included": 3,
-    "excluded": 1,
+    "detail_method": "api",
+    "rechecks_skipped": 1451,
+    "searched": 415,
+    "checked": 0,
+    "included": 0,
+    "excluded": 0,
     "changes": {
-      "new": [
-        "26610599",
-        "26610542",
-        "26600923"
-      ],
+      "new": [],
       "changed": [],
       "removed": [],
       "retained_unverified": [
@@ -119931,7 +119927,10 @@
         "26609816",
         "26609812",
         "26609765",
-        "26609739"
+        "26609739",
+        "26610599",
+        "26610542",
+        "26600923"
       ]
     },
     "hosted_usage": {
