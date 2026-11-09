@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T20:15:24.692Z",
+  "generated_at": "2026-11-09T22:49:55.766Z",
   "keep_days": 14,
   "items": [
     {
@@ -10819,60 +10819,6 @@
       "listing_date": "2026-10-27T10:07:07+04:00",
       "excluded_at": "2026-10-27T09:38:56.159Z",
       "last_seen_at": "2026-10-27T09:38:56.159Z"
-    },
-    {
-      "id": "26285546",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-tbilisshi-26285546/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 950,
-      "size": 38,
-      "rooms": 2,
-      "floor": 7,
-      "total_floors": 8,
-      "district": "ვაკე-საბურთალო",
-      "neighborhood": "დიდი დიღომი",
-      "address": "მირიან მეფის ქ. ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261008/statements/N6UjBrt6ac78bdec06ea.webp",
-      "listing_date": "2026-10-08T16:26:50+04:00",
-      "excluded_at": "2026-10-26T20:56:44.451Z",
-      "last_seen_at": "2026-10-26T20:56:44.451Z"
-    },
-    {
-      "id": "26272197",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26272197/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 950,
-      "size": 38,
-      "rooms": 2,
-      "floor": 7,
-      "total_floors": 8,
-      "district": "ვაკე-საბურთალო",
-      "neighborhood": "დიდი დიღომი",
-      "address": "მირიან მეფის ქ. ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261007/statements/bRg2l1C6ac62cc7892a1.webp",
-      "listing_date": "2026-10-07T15:28:42+04:00",
-      "excluded_at": "2026-10-26T20:56:44.451Z",
-      "last_seen_at": "2026-10-26T20:56:44.451Z"
-    },
-    {
-      "id": "26289416",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-tbilisshi-26289416/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 948,
-      "size": 38,
-      "rooms": 2,
-      "floor": 7,
-      "total_floors": 8,
-      "district": "ვაკე-საბურთალო",
-      "neighborhood": "დიდი დიღომი",
-      "address": "მირიან მეფის ქ. ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261008/statements/8EvXqjl6ac7bd829ea0f.webp",
-      "listing_date": "2026-10-08T19:58:53+04:00",
-      "excluded_at": "2026-10-26T20:56:44.451Z",
-      "last_seen_at": "2026-10-26T20:56:44.451Z"
     }
   ]
 }
