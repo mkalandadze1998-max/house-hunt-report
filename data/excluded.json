@@ -1,7 +1,25 @@
 {
-  "generated_at": "2026-11-09T22:49:55.766Z",
+  "generated_at": "2026-11-10T00:02:26.976Z",
   "keep_days": 14,
   "items": [
+    {
+      "id": "26622859",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-dighmis-masivshi-26622859/",
+      "reason": "Outside requested districts",
+      "price": 1099,
+      "size": 38,
+      "rooms": 1,
+      "floor": 3,
+      "total_floors": 5,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიღმის მასივი",
+      "address": "ე. მიქელაძის ქ. 14",
+      "condition": "ახალი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/4I64qiX6af255111050a.webp",
+      "listing_date": "2026-11-10T03:20:17+04:00",
+      "excluded_at": "2026-11-10T00:02:26.976Z",
+      "last_seen_at": "2026-11-10T00:02:26.976Z"
+    },
     {
       "id": "26622422",
       "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-3-otaxiani-bina-did-dighomshi-26622422/",
