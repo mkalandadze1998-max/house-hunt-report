@@ -1,5 +1,5 @@
 {
-  "retrieved_at": "2026-11-10T17:21:44.487Z",
+  "retrieved_at": "2026-11-10T20:09:44.639Z",
   "source": "https://www.myhome.ge/",
   "method": "myhome_api",
   "method_label": "myhome.ge structured API",
@@ -120610,8 +120610,8 @@
       "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-3-otaxiani-bina-bagebshi-26619332/",
       "source": "myhome.ge",
       "advertiser": "Agency",
-      "retrieved_at": "2026-11-10T00:07:30.022Z",
-      "last_checked_at": "2026-11-10T00:07:30.022Z",
+      "retrieved_at": "2026-11-10T20:15:04.898Z",
+      "last_checked_at": "2026-11-10T20:15:04.898Z",
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
@@ -120693,8 +120693,8 @@
       "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-3-otaxiani-bina-bagebshi-26617917/",
       "source": "myhome.ge",
       "advertiser": "Agency",
-      "retrieved_at": "2026-11-10T00:07:30.022Z",
-      "last_checked_at": "2026-11-10T00:07:30.022Z",
+      "retrieved_at": "2026-11-10T20:15:04.898Z",
+      "last_checked_at": "2026-11-10T20:15:04.898Z",
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
@@ -120786,8 +120786,8 @@
       "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-3-otaxiani-bina-did-dighomshi-26609639/",
       "source": "myhome.ge",
       "advertiser": "Agency",
-      "retrieved_at": "2026-11-10T00:07:30.022Z",
-      "last_checked_at": "2026-11-10T00:07:30.022Z",
+      "retrieved_at": "2026-11-10T20:15:04.898Z",
+      "last_checked_at": "2026-11-10T20:15:04.898Z",
       "retrieval_date_precision": "timestamp",
       "transaction": "rent_monthly",
       "property_type": "apartment",
@@ -125238,13 +125238,100 @@
         "bedrooms": null
       },
       "first_seen_at": "2026-11-10T17:21:44.487Z"
+    },
+    {
+      "id": "26634618",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-3-otaxiani-bina-didubeshi-26634618/",
+      "source": "myhome.ge",
+      "advertiser": "Agency",
+      "retrieved_at": "2026-11-10T20:15:04.897Z",
+      "last_checked_at": "2026-11-10T20:15:04.897Z",
+      "retrieval_date_precision": "timestamp",
+      "transaction": "rent_monthly",
+      "property_type": "apartment",
+      "price": 900,
+      "currency": "GEL",
+      "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
+      "original_currency": "GEL",
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიდუბე",
+      "address": "გორის ქუჩა 0",
+      "district_groups": [
+        "დიდუბე"
+      ],
+      "size": 45,
+      "lat": 41.7276,
+      "lng": 44.793904,
+      "rooms": 3,
+      "bedrooms": null,
+      "floor": 1,
+      "total_floors": 1,
+      "condition": "Newly renovated",
+      "condition_original": "ახალი გარემონტებული",
+      "furniture": true,
+      "furniture_items": [
+        "ავეჯი",
+        "ქურა (გაზის/ელექტრო)",
+        "სარეცხი მანქანა",
+        "ჭურჭლის სარეცხი მანქანა",
+        "ღუმელი",
+        "საწოლი",
+        "დივანი",
+        "მაგიდა",
+        "კონდინციონერი",
+        "მაცივარი",
+        "სკამები"
+      ],
+      "heating": null,
+      "parking": null,
+      "air_conditioning": true,
+      "balcony": null,
+      "description": "",
+      "main_image": "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/vfLZLe36af355d970061.webp",
+      "images": [
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/vfLZLe36af355d970061.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/gLGHvLD6af355d966922.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/cXWR1pZ6af355d972ed4.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/mTKyscw6af355d968a8b.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/Pb1hE926af355d97092c.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/6ODJW3M6af355d973366.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/4LJZ9Z26af355d9700dd.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/sbk9Elg6af355d9667e1.webp"
+      ],
+      "source_images": [
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/vfLZLe36af355d970061.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/gLGHvLD6af355d966922.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/cXWR1pZ6af355d972ed4.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/mTKyscw6af355d968a8b.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/Pb1hE926af355d97092c.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/6ODJW3M6af355d973366.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/4LJZ9Z26af355d9700dd.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/sbk9Elg6af355d9667e1.webp"
+      ],
+      "listing_date": "2026-11-10T21:38:52+04:00",
+      "published_at": "2026-11-10T21:37:44+04:00",
+      "listing_date_note": "API last_updated (may be renewal); created_at saved separately. Source times interpreted as Tbilisi time.",
+      "advance_months": null,
+      "screening": "include",
+      "photos_reviewed": "Not visually reviewed by the automated collector.",
+      "condition_review": "Seller-reported renovation and description screened. Physical condition unverified.",
+      "considerations": [
+        "Photos have not been visually screened in this automated run."
+      ],
+      "source_attribute_ids": {
+        "heating": null,
+        "parking": null,
+        "rooms": 3,
+        "bedrooms": null
+      },
+      "first_seen_at": "2026-11-10T20:09:44.639Z"
     }
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",
   "refresh_status": {
-    "attempted_at": "2026-11-10T17:21:44.487Z",
-    "last_success_at": "2026-11-10T17:21:44.487Z",
-    "dataset_collected_at": "2026-11-10T17:21:44.487Z",
+    "attempted_at": "2026-11-10T20:09:44.639Z",
+    "last_success_at": "2026-11-10T20:09:44.639Z",
+    "dataset_collected_at": "2026-11-10T20:09:44.639Z",
     "status": "success",
     "coverage": "At most 15 search pages per run; new additions must be posted or renewed within 72 hours; existing saved data is retained; daily rentals excluded. Hidden posts skipped. Up to 120 new details per run; remaining recent IDs saved for later.",
     "api": "https://api-statements.tnet.ge/v1/statements",
@@ -125252,11 +125339,11 @@
     "search_complete": false,
     "search_pages": 5,
     "similars": {
-      "seeds": 36,
+      "seeds": 37,
       "calls": 60,
-      "rows": 340
+      "rows": 353
     },
-    "search_rotation": 63,
+    "search_rotation": 64,
     "search_limited_to_pages": 15,
     "new_details_deferred": 0,
     "rechecks_deferred": 0,
@@ -125264,21 +125351,14 @@
     "detail_422_deferred": 0,
     "search_method": "similar-listings crawl (search API and website closed)",
     "detail_method": "website via hosted fetchers (TinyFish + Jina)",
-    "rechecks_skipped": 1523,
-    "searched": 457,
-    "checked": 15,
-    "included": 8,
-    "excluded": 7,
+    "rechecks_skipped": 1528,
+    "searched": 470,
+    "checked": 5,
+    "included": 4,
+    "excluded": 1,
     "changes": {
       "new": [
-        "26634493",
-        "26634411",
-        "26634356",
-        "26634074",
-        "26633958",
-        "26633898",
-        "26633842",
-        "26633832"
+        "26634618"
       ],
       "changed": [],
       "removed": [],
@@ -126759,9 +126839,6 @@
         "26614271",
         "26615128",
         "26622130",
-        "26619332",
-        "26617917",
-        "26609639",
         "26629166",
         "26628986",
         "26628766",
@@ -126805,14 +126882,22 @@
         "26630676",
         "26630582",
         "26630230",
-        "26629715"
+        "26629715",
+        "26634493",
+        "26634411",
+        "26634356",
+        "26634074",
+        "26633958",
+        "26633898",
+        "26633842",
+        "26633832"
       ]
     },
     "hosted_usage": {
       "date": "2026-11-10",
-      "tinyfish": 672,
+      "tinyfish": 676,
       "budget": 900
     },
-    "web_build_id": "vDNIJo9-JV82xNFK0xjNj"
+    "web_build_id": "Ii7X9F_vVqxETopUVT_65"
   }
 }
