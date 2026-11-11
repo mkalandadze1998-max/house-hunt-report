@@ -125576,80 +125576,6 @@
       "first_seen_at": "2026-11-10T21:43:00.159Z"
     },
     {
-      "id": "26637280",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-5-otaxiani-bina-did-dighomshi-26637280/",
-      "source": "myhome.ge",
-      "advertiser": "Individual",
-      "retrieved_at": "2026-11-11T08:44:57.803Z",
-      "last_checked_at": "2026-11-11T08:44:57.803Z",
-      "retrieval_date_precision": "timestamp",
-      "transaction": "rent_monthly",
-      "property_type": "apartment",
-      "price": 600,
-      "currency": "GEL",
-      "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
-      "original_currency": "GEL",
-      "district": "ვაკე-საბურთალო",
-      "neighborhood": "დიდი დიღომი",
-      "address": "მირიან მეფის ქ. ",
-      "district_groups": [
-        "ვაკე-საბურთალო"
-      ],
-      "size": 120,
-      "lat": 41.786839,
-      "lng": 44.766632,
-      "rooms": 5,
-      "bedrooms": null,
-      "floor": 1,
-      "total_floors": 6,
-      "condition": "Newly renovated",
-      "condition_original": "ახალი გარემონტებული",
-      "furniture": null,
-      "furniture_items": [],
-      "heating": null,
-      "parking": null,
-      "air_conditioning": null,
-      "balcony": null,
-      "description": "სააგენტოებთან არ ვთანამშრომლობ!\n\n\n\nგთხოვთ, არ დამირეკოთ არანაირი შემოთავაზებით.\n\n\n\nქირავდება იზოლირებული ოთახები მინი-სასტუმროში — იდეალური არჩევანია მათთვის, ვინც აფასებს სისუფთავეს, სიმშვიდესა და კომფორტს.\n\n\n\n🏡 ობიექტის შესახებ:\n\n\n\n5 იზოლირებული საძინებელი;\n\n\n\nთითოეულ ოთახს აქვს საკუთარი სველი წერტილი;\n\n\n\nსაერთო, სრულად აღჭურვილი სამზარეულო;\n\n\n\nსაერთო მისაღები სივრცე;\n\n\n\nმყუდრო, სუფთა და მშვიდი გარემო.\n\n\n\nმახასიათებლები:\n\n\n\nსაცხოვრებელი ფართი – 120 მ²;\n\n\n\nცენტრალური გათბობა;\n\n\n\nსრული ავეჯი და ყველა საჭირო საყოფაცხოვრებო ტექნიკა;\n\n\n\nკომფორტული პირობები როგორც ხანმოკლე, ისე გრძელვადიან საცხოვრებლად.\n\n\n\n💰 ფასი: 600 ლარი თვეში.\n\n\n\n✔ კომუნალური გადასახადები სრულად შედის ფასში — დამატებითი გადახდა არ დაგჭირდებათ.\n\n\n\n✔ ქირაობის შემთხვევაში აუცილებელია პირველი და ბოლო თვის საფასურის წინასწარი გადახდა.\n\n\n\n📞 დამატებითი ინფორმაციისთვის დამიკავშირდით განცხადებაში მითითებულ ნომერზე.",
-      "main_image": "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/4ezwU7C6af4259017c07.webp",
-      "images": [
-        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/4ezwU7C6af4259017c07.webp",
-        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/KwzzKa26af425901890d.webp",
-        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/1fZ81Bz6af425900ccde.webp",
-        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/SNIrBW36af4259006e8c.webp",
-        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/9WRGmAZ6af42590067a0.webp",
-        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/cDpHjIa6af4259007280.webp",
-        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/u01sHkT6af425902e5f7.webp",
-        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/i2ZT3Xr6af4259012d58.webp"
-      ],
-      "source_images": [
-        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/4ezwU7C6af4259017c07.webp",
-        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/KwzzKa26af425901890d.webp",
-        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/1fZ81Bz6af425900ccde.webp",
-        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/SNIrBW36af4259006e8c.webp",
-        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/9WRGmAZ6af42590067a0.webp",
-        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/cDpHjIa6af4259007280.webp",
-        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/u01sHkT6af425902e5f7.webp",
-        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/i2ZT3Xr6af4259012d58.webp"
-      ],
-      "listing_date": "2026-11-11T12:22:10+04:00",
-      "published_at": "2026-11-11T12:21:53+04:00",
-      "listing_date_note": "API last_updated (may be renewal); created_at saved separately. Source times interpreted as Tbilisi time.",
-      "advance_months": 2,
-      "screening": "include",
-      "photos_reviewed": "Not visually reviewed by the automated collector.",
-      "condition_review": "Seller-reported renovation and description screened. Physical condition unverified.",
-      "considerations": [
-        "Photos have not been visually screened in this automated run."
-      ],
-      "source_attribute_ids": {
-        "heating": null,
-        "parking": null,
-        "rooms": 5,
-        "bedrooms": 5
-      }
-    },
-    {
       "id": "26635859",
       "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26635859/",
       "source": "myhome.ge",
@@ -127712,7 +127638,6 @@
       "candidate_links": 86,
       "checked": 37,
       "added": [
-        "26637280",
         "26635859",
         "26637478",
         "26636180",
@@ -127840,6 +127765,10 @@
         {
           "id": "26624868",
           "reason": "Outside requested districts"
+        },
+        {
+          "id": "26637280",
+          "reason": "Separate room in a mini-hotel, shared kitchen; not a whole apartment"
         }
       ],
       "failed": []
