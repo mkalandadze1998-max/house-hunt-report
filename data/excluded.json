@@ -1,7 +1,61 @@
 {
-  "generated_at": "2026-11-11T17:31:39.849Z",
+  "generated_at": "2026-11-11T19:57:54.845Z",
   "keep_days": 14,
   "items": [
+    {
+      "id": "26633514",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-bagebshi-26633514/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 998,
+      "size": 63,
+      "rooms": 2,
+      "floor": 7,
+      "total_floors": 9,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "ბაგები",
+      "address": "წყნეთის გზატკეცილი I გას. 6",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/14huZ0d6af331ef798ba.webp",
+      "listing_date": "2026-11-10T19:03:05+04:00",
+      "excluded_at": "2026-11-10T15:21:23.802Z",
+      "last_seen_at": "2026-11-11T19:57:54.845Z"
+    },
+    {
+      "id": "26646621",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-saburtaloze-26646621/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1000,
+      "size": 80,
+      "rooms": 2,
+      "floor": 11,
+      "total_floors": 16,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "საბურთალო",
+      "address": "მინდელის ქუჩა 2",
+      "condition": "სარემონტო",
+      "image": "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/1GPN6Gq6af4a805a78df.webp",
+      "listing_date": "2026-11-11T21:39:08+04:00",
+      "excluded_at": "2026-11-11T19:57:54.845Z",
+      "last_seen_at": "2026-11-11T19:57:54.845Z"
+    },
+    {
+      "id": "26646640",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-3-otaxiani-bina-didubeshi-26646640/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 950,
+      "size": 45,
+      "rooms": 3,
+      "floor": 1,
+      "total_floors": 1,
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიდუბე",
+      "address": "გორის ქუჩა 32",
+      "condition": "ძველი გარემონტებული",
+      "image": "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/KaCjRRg6af4a95bef2c7.webp",
+      "listing_date": "2026-11-11T21:44:21+04:00",
+      "excluded_at": "2026-11-11T19:57:54.845Z",
+      "last_seen_at": "2026-11-11T19:57:54.845Z"
+    },
     {
       "id": "26637280",
       "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-5-otaxiani-bina-did-dighomshi-26637280/",
@@ -1099,24 +1153,6 @@
       "listing_date": "2026-11-10T20:16:57+04:00",
       "excluded_at": "2026-11-10T17:21:44.487Z",
       "last_seen_at": "2026-11-10T17:21:44.487Z"
-    },
-    {
-      "id": "26633514",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-bagebshi-26633514/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 999,
-      "size": 63,
-      "rooms": 2,
-      "floor": 7,
-      "total_floors": 9,
-      "district": "ვაკე-საბურთალო",
-      "neighborhood": "ბაგები",
-      "address": "წყნეთის გზატკეცილი I გას. 6",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/14huZ0d6af331ef798ba.webp",
-      "listing_date": "2026-11-10T19:03:05+04:00",
-      "excluded_at": "2026-11-10T15:21:23.802Z",
-      "last_seen_at": "2026-11-10T15:21:23.802Z"
     },
     {
       "id": "26632388",
@@ -10189,24 +10225,6 @@
       "listing_date": "2026-10-06T16:23:25+04:00",
       "excluded_at": "2026-10-28T20:52:17.163Z",
       "last_seen_at": "2026-10-28T20:52:17.163Z"
-    },
-    {
-      "id": "26268337",
-      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-1-otaxiani-bina-san-zonashi-26268337/",
-      "reason": "Older, unfinished or unconfirmed renovation",
-      "price": 898,
-      "size": 42,
-      "rooms": 1,
-      "floor": 2,
-      "total_floors": 8,
-      "district": "გლდანი-ნაძალადევი",
-      "neighborhood": "სან. ზონა",
-      "address": "გურამიშვილის გამზ. ",
-      "condition": "ძველი გარემონტებული",
-      "image": "https://static-api-statements.tnet.ge/uploads/202610/20261007/statements/QXaRggA6ac60115a100c.webp",
-      "listing_date": "2026-10-07T12:23:27+04:00",
-      "excluded_at": "2026-10-28T18:36:37.642Z",
-      "last_seen_at": "2026-10-28T18:36:37.642Z"
     }
   ]
 }
