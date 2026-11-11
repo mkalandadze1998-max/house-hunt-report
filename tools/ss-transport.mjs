@@ -70,7 +70,7 @@ async function openCloudBrowser({ apiKey, country = 'GE', fetchImpl = fetch, log
     const pageFetch = async (url, init = {}) => {
       const safe = {}; for (const [k, v] of Object.entries(init.headers || {})) if (!/^(user-agent|origin|referer)$/i.test(k)) safe[k] = v;
       const r = await page.evaluate(async ({ url, init }) => {
-        try { const res = await fetch(url, init); return { ok: res.ok, status: res.status, text: await res.text() }; }
+        try { const res = await fetch(url, { ...init, signal: AbortSignal.timeout(30000) }); return { ok: res.ok, status: res.status, text: await res.text() }; }
         catch (e) { return { ok: false, status: 0, text: '', error: String(e && e.message || e) }; }
       }, { url, init: { method: init.method || 'GET', headers: safe, body: init.body ?? undefined } });
       if (r.error) throw Error(`in-browser fetch failed for ${url}: ${r.error}`);

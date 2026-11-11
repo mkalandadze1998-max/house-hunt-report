@@ -111,7 +111,7 @@ let choices;
 try { choices = await loadShortlist(); }
 catch (e) { console.warn('shared list unavailable — continuing without hidden/favorite flags: ' + e.message); choices = { hidden: new Set(), favorites: new Set() }; }
 const freshIds = [...candidates.keys()].map(id => 'ss-'+id).filter(id => !previous[id]);
-const plan = planListingChecks(Object.values(previous), freshIds, choices, Date.parse(nowIso), 72, 250); // favorites every 72 h, other visible listings every 20 h, up to 250 re-reads a run
+const plan = planListingChecks(Object.values(previous), freshIds, choices, Date.parse(nowIso), 72, process.env.NEW_LISTINGS_ONLY === 'true' ? 0 : 250);
 const selectedIds = new Set(plan.candidates);
 for (const id of [...candidates.keys()]) if (!selectedIds.has('ss-'+id)) candidates.delete(id);
 for (const id of plan.candidates) { const raw = id.slice(3); if (!candidates.has(raw)) candidates.set(raw,null); }
@@ -199,7 +199,7 @@ for(const [id,li] of candidates){
   await sleep(300);
 }
 await tf.close();
-if(!ok&&candidates.size){console.error('no listing could be read; keeping the previous file');process.exitCode=1;process.exit()}
+if(fail>0&&fail===candidates.size){console.error('all listing reads failed; keeping the previous file');process.exitCode=1;process.exit()}
 out.sort((a,b)=>Date.parse(b.listing_date)-Date.parse(a.listing_date));
 const result={retrieved_at:nowIso,source:SITE,method:'ss_api',method_label:`ss.ge search API + detail pages via ${tf.mode}`,
   coverage_note:`Newest ${MAX_PAGES} search pages (${PAGE_SIZE} each) in the target sub-districts, up to ${MAX_AGE_DAYS} days back; hidden posts skipped; only favorites rechecked after 72 hours (up to 35 per run). Not exhaustive.`,
@@ -207,4 +207,4 @@ const result={retrieved_at:nowIso,source:SITE,method:'ss_api',method_label:`ss.g
 fs.mkdirSync(path.dirname(outFile),{recursive:true});
 fs.writeFileSync(outFile,JSON.stringify(result,null,1));
 console.log(`done: ${ok} listings kept, ${gone} dropped/inactive, ${fail} failed → ${path.relative(root,outFile)}`);
-if(!ok&&candidates.size)process.exitCode=1;
+if(fail)process.exitCode=1;

@@ -171,7 +171,7 @@ let choices;
 try { choices = await loadShortlist(); }
 catch (e) { console.warn('shared list unavailable — continuing without hidden/favorite flags: ' + e.message); choices = { hidden: new Set(), favorites: new Set() }; }
 const freshIds = [...candidates.keys()].map(id => 'korter-'+id).filter(id => !previous[id]);
-const plan = planListingChecks(Object.values(previous), freshIds, choices, Date.parse(nowIso), 72, 250); // favorites every 72 h, other visible listings every 20 h, up to 250 re-reads a run
+const plan = planListingChecks(Object.values(previous), freshIds, choices, Date.parse(nowIso), 72, process.env.NEW_LISTINGS_ONLY === 'true' ? 0 : 250);
 const selectedIds = new Set(plan.candidates);
 for (const id of [...candidates.keys()]) if (!selectedIds.has('korter-'+id)) candidates.delete(id);
 for (const id of plan.candidates) { const raw = id.slice(7); if (!candidates.has(raw)) candidates.set(raw,null); }

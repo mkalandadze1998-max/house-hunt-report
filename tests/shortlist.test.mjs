@@ -3,6 +3,12 @@ import assert from 'node:assert/strict';
 import { loadShortlist, planListingChecks } from '../tools/shortlist.mjs';
 const now=Date.parse('2026-10-26T00:00:00Z');
 const post=(id,h)=>({id,last_checked_at:new Date(now-h*3600000).toISOString()});
+
+test('new-only scan skips all saved homes and hidden new IDs',()=>{
+ const choices={hidden:new Set(['hidden-new']),favorites:new Set(['saved'])};
+ const posts=[post('saved',200),post('ordinary',200)];
+ assert.deepEqual(planListingChecks(posts,['new','hidden-new'],choices,now,72,0).candidates,['new']);
+});
 test('hidden posts are never checked, including hidden favorites and rediscovered IDs; other old posts are',()=>{
  const choices={hidden:new Set(['hidden','hidden-new']),favorites:new Set(['hidden','favorite'])};
  const p=planListingChecks([post('hidden',200),post('favorite',72),post('ordinary',200),post('fresh-ordinary',5)],['hidden-new','new'],choices,now,72,35);

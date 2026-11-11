@@ -40,6 +40,10 @@ on:
     - cron: '30 16 * * *'
   workflow_dispatch:
     inputs:
+      new_only:
+        description: 'Scan new listings without rechecking saved homes'
+        type: boolean
+        default: false
       hello:
         description: 'Send a test message to every configured Telegram chat'
         type: boolean
@@ -57,6 +61,8 @@ concurrency:
 jobs:
   geocode:
     runs-on: ubuntu-latest
+    env:
+      NEW_LISTINGS_ONLY: ${{ inputs.new_only }}
     steps:
       - uses: actions/checkout@v4
         with:
