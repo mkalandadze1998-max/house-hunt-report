@@ -1,5 +1,5 @@
 {
-  "retrieved_at": "2026-11-10T21:43:00.159Z",
+  "retrieved_at": "2026-11-11T08:44:57.803Z",
   "source": "https://www.myhome.ge/",
   "method": "myhome_api",
   "method_label": "myhome.ge structured API",
@@ -125574,6 +125574,556 @@
         "bedrooms": 1
       },
       "first_seen_at": "2026-11-10T21:43:00.159Z"
+    },
+    {
+      "id": "26637280",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-5-otaxiani-bina-did-dighomshi-26637280/",
+      "source": "myhome.ge",
+      "advertiser": "Individual",
+      "retrieved_at": "2026-11-11T08:44:57.803Z",
+      "last_checked_at": "2026-11-11T08:44:57.803Z",
+      "retrieval_date_precision": "timestamp",
+      "transaction": "rent_monthly",
+      "property_type": "apartment",
+      "price": 600,
+      "currency": "GEL",
+      "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
+      "original_currency": "GEL",
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "დიდი დიღომი",
+      "address": "მირიან მეფის ქ. ",
+      "district_groups": [
+        "ვაკე-საბურთალო"
+      ],
+      "size": 120,
+      "lat": 41.786839,
+      "lng": 44.766632,
+      "rooms": 5,
+      "bedrooms": null,
+      "floor": 1,
+      "total_floors": 6,
+      "condition": "Newly renovated",
+      "condition_original": "ახალი გარემონტებული",
+      "furniture": null,
+      "furniture_items": [],
+      "heating": null,
+      "parking": null,
+      "air_conditioning": null,
+      "balcony": null,
+      "description": "სააგენტოებთან არ ვთანამშრომლობ!\n\n\n\nგთხოვთ, არ დამირეკოთ არანაირი შემოთავაზებით.\n\n\n\nქირავდება იზოლირებული ოთახები მინი-სასტუმროში — იდეალური არჩევანია მათთვის, ვინც აფასებს სისუფთავეს, სიმშვიდესა და კომფორტს.\n\n\n\n🏡 ობიექტის შესახებ:\n\n\n\n5 იზოლირებული საძინებელი;\n\n\n\nთითოეულ ოთახს აქვს საკუთარი სველი წერტილი;\n\n\n\nსაერთო, სრულად აღჭურვილი სამზარეულო;\n\n\n\nსაერთო მისაღები სივრცე;\n\n\n\nმყუდრო, სუფთა და მშვიდი გარემო.\n\n\n\nმახასიათებლები:\n\n\n\nსაცხოვრებელი ფართი – 120 მ²;\n\n\n\nცენტრალური გათბობა;\n\n\n\nსრული ავეჯი და ყველა საჭირო საყოფაცხოვრებო ტექნიკა;\n\n\n\nკომფორტული პირობები როგორც ხანმოკლე, ისე გრძელვადიან საცხოვრებლად.\n\n\n\n💰 ფასი: 600 ლარი თვეში.\n\n\n\n✔ კომუნალური გადასახადები სრულად შედის ფასში — დამატებითი გადახდა არ დაგჭირდებათ.\n\n\n\n✔ ქირაობის შემთხვევაში აუცილებელია პირველი და ბოლო თვის საფასურის წინასწარი გადახდა.\n\n\n\n📞 დამატებითი ინფორმაციისთვის დამიკავშირდით განცხადებაში მითითებულ ნომერზე.",
+      "main_image": "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/4ezwU7C6af4259017c07.webp",
+      "images": [
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/4ezwU7C6af4259017c07.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/KwzzKa26af425901890d.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/1fZ81Bz6af425900ccde.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/SNIrBW36af4259006e8c.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/9WRGmAZ6af42590067a0.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/cDpHjIa6af4259007280.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/u01sHkT6af425902e5f7.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/i2ZT3Xr6af4259012d58.webp"
+      ],
+      "source_images": [
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/4ezwU7C6af4259017c07.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/KwzzKa26af425901890d.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/1fZ81Bz6af425900ccde.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/SNIrBW36af4259006e8c.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/9WRGmAZ6af42590067a0.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/cDpHjIa6af4259007280.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/u01sHkT6af425902e5f7.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/i2ZT3Xr6af4259012d58.webp"
+      ],
+      "listing_date": "2026-11-11T12:22:10+04:00",
+      "published_at": "2026-11-11T12:21:53+04:00",
+      "listing_date_note": "API last_updated (may be renewal); created_at saved separately. Source times interpreted as Tbilisi time.",
+      "advance_months": 2,
+      "screening": "include",
+      "photos_reviewed": "Not visually reviewed by the automated collector.",
+      "condition_review": "Seller-reported renovation and description screened. Physical condition unverified.",
+      "considerations": [
+        "Photos have not been visually screened in this automated run."
+      ],
+      "source_attribute_ids": {
+        "heating": null,
+        "parking": null,
+        "rooms": 5,
+        "bedrooms": 5
+      }
+    },
+    {
+      "id": "26635859",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26635859/",
+      "source": "myhome.ge",
+      "advertiser": "Individual",
+      "retrieved_at": "2026-11-11T08:44:57.803Z",
+      "last_checked_at": "2026-11-11T08:44:57.803Z",
+      "retrieval_date_precision": "timestamp",
+      "transaction": "rent_monthly",
+      "property_type": "apartment",
+      "price": 1037,
+      "currency": "GEL",
+      "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
+      "original_currency": "USD",
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "დიდი დიღომი",
+      "address": "გიორგი ბრწყინვალეს ქ. 28",
+      "district_groups": [
+        "ვაკე-საბურთალო"
+      ],
+      "size": 55,
+      "lat": 41.788453,
+      "lng": 44.759068,
+      "rooms": 2,
+      "bedrooms": null,
+      "floor": 1,
+      "total_floors": 10,
+      "condition": "Newly renovated",
+      "condition_original": "ახალი გარემონტებული",
+      "furniture": null,
+      "furniture_items": [],
+      "heating": null,
+      "parking": null,
+      "air_conditioning": null,
+      "balcony": null,
+      "description": "სააგენტოდან არ დამიკავშირდეთ!\n\n\n\nქირავდება სასწრაფოდ!! \n\n\n\nბრწყინვალეზე, გუდვილთან ძალიან ახლოს, ახალ აშენებულ კარგ, დაცულ კორპუსში. \n\n\n\nბინა არის ყველანაირად მოწესრიგებული და აღჭურვილია საჭირო ავეჯით და ტექნიკით.\n\n\n\n-ცენტრალური გათბობა\n\n\n\n-კონდიციონერი\n\n\n\n-სამსუნგის მაცივარი\n\n\n\n-სარეცხის მანქანა\n\n\n\n-ორთოპედიული მაღალი ხარისხის მატრასი\n\n\n\n-დიდი კარადები და სათავსოები\n\n\n\nქირავდება ხანგრძლივად.",
+      "main_image": "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/v5UBZmr6af4047bc1366.webp",
+      "images": [
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/v5UBZmr6af4047bc1366.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/1uqojBD6af4047bb928d.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/LWDj3y06af4048175bb5.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/vrRRFoe6af4047d97d3b.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/TXvkQcd6af4047cf0aeb.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/tGA9wLU6af40481b4275.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/BP5kRmk6af40481a7b60.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/e3Z7NBe6af40480dcc8a.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/8GCzFFn6af40482cfeac.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/OIkVze96af40482200b4.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/5y9kfgN6af4048342f9d.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/qCbA4LO6af40483777c0.webp"
+      ],
+      "source_images": [
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/v5UBZmr6af4047bc1366.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/1uqojBD6af4047bb928d.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/LWDj3y06af4048175bb5.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/vrRRFoe6af4047d97d3b.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/TXvkQcd6af4047cf0aeb.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/tGA9wLU6af40481b4275.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/BP5kRmk6af40481a7b60.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/e3Z7NBe6af40480dcc8a.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/8GCzFFn6af40482cfeac.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/OIkVze96af40482200b4.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/5y9kfgN6af4048342f9d.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/qCbA4LO6af40483777c0.webp"
+      ],
+      "listing_date": "2026-11-11T10:09:53+04:00",
+      "published_at": "2026-11-11T10:09:39+04:00",
+      "listing_date_note": "API last_updated (may be renewal); created_at saved separately. Source times interpreted as Tbilisi time.",
+      "advance_months": null,
+      "screening": "include",
+      "photos_reviewed": "Not visually reviewed by the automated collector.",
+      "condition_review": "Seller-reported renovation and description screened. Physical condition unverified.",
+      "considerations": [
+        "Photos have not been visually screened in this automated run."
+      ],
+      "source_attribute_ids": {
+        "heating": null,
+        "parking": null,
+        "rooms": 2,
+        "bedrooms": 1
+      }
+    },
+    {
+      "id": "26637478",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-3-otaxiani-bina-didubeshi-26637478/",
+      "source": "myhome.ge",
+      "advertiser": "Agency",
+      "retrieved_at": "2026-11-11T08:44:57.803Z",
+      "last_checked_at": "2026-11-11T08:44:57.803Z",
+      "retrieval_date_precision": "timestamp",
+      "transaction": "rent_monthly",
+      "property_type": "apartment",
+      "price": 900,
+      "currency": "GEL",
+      "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
+      "original_currency": "GEL",
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიდუბე",
+      "address": "გორის ქუჩა 0",
+      "district_groups": [
+        "დიდუბე"
+      ],
+      "size": 45,
+      "lat": 41.7276,
+      "lng": 44.793904,
+      "rooms": 3,
+      "bedrooms": null,
+      "floor": 1,
+      "total_floors": 1,
+      "condition": "Newly renovated",
+      "condition_original": "ახალი გარემონტებული",
+      "furniture": true,
+      "furniture_items": [
+        "ავეჯი",
+        "საწოლი",
+        "დივანი",
+        "მაგიდა",
+        "სკამები",
+        "კონდინციონერი",
+        "მაცივარი",
+        "ღუმელი",
+        "ქურა (გაზის/ელექტრო)",
+        "სარეცხი მანქანა",
+        "ჭურჭლის სარეცხი მანქანა"
+      ],
+      "heating": null,
+      "parking": null,
+      "air_conditioning": true,
+      "balcony": null,
+      "description": "ქირავდება 45 კვ.მ. ბინა გორის ქუჩაზე. ბინა მდებარეობს ახალაშენებულ კორპუსში. დაინტერესების შემთხვევაში გთხოვთ დამიკავშირდეთ განცხადებაში მითითებულ ნომერზე.",
+      "main_image": "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/2CrEUXj6af427c87ca8f.webp",
+      "images": [
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/2CrEUXj6af427c87ca8f.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/3LqSeya6af427c88c2be.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/xEFJAua6af427c8ab141.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/EZpjKAJ6af427c8ccfe7.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/BT8FBTN6af427c89eb36.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/BkUeh0Q6af427c8bcadc.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/i0wUDPo6af427c8eba7b.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/gw1g7uV6af427c87cc3c.webp"
+      ],
+      "source_images": [
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/2CrEUXj6af427c87ca8f.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/3LqSeya6af427c88c2be.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/xEFJAua6af427c8ab141.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/EZpjKAJ6af427c8ccfe7.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/BT8FBTN6af427c89eb36.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/BkUeh0Q6af427c8bcadc.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/i0wUDPo6af427c8eba7b.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/gw1g7uV6af427c87cc3c.webp"
+      ],
+      "listing_date": "2026-11-11T12:33:07+04:00",
+      "published_at": "2026-11-11T12:32:45+04:00",
+      "listing_date_note": "API last_updated (may be renewal); created_at saved separately. Source times interpreted as Tbilisi time.",
+      "advance_months": null,
+      "screening": "include",
+      "photos_reviewed": "Not visually reviewed by the automated collector.",
+      "condition_review": "Seller-reported renovation and description screened. Physical condition unverified.",
+      "considerations": [
+        "Photos have not been visually screened in this automated run."
+      ],
+      "source_attribute_ids": {
+        "heating": null,
+        "parking": null,
+        "rooms": 3,
+        "bedrooms": 2
+      }
+    },
+    {
+      "id": "26636180",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26636180/",
+      "source": "myhome.ge",
+      "advertiser": "Agency",
+      "retrieved_at": "2026-11-11T08:44:57.803Z",
+      "last_checked_at": "2026-11-11T08:44:57.803Z",
+      "retrieval_date_precision": "timestamp",
+      "transaction": "rent_monthly",
+      "property_type": "apartment",
+      "price": 800,
+      "currency": "GEL",
+      "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
+      "original_currency": "GEL",
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "დიდი დიღომი",
+      "address": "დიდი დიღომი - IV მ/რ ",
+      "district_groups": [
+        "ვაკე-საბურთალო"
+      ],
+      "size": 45,
+      "lat": 41.793051,
+      "lng": 44.740615,
+      "rooms": 2,
+      "bedrooms": null,
+      "floor": 3,
+      "total_floors": 3,
+      "condition": "Newly renovated",
+      "condition_original": "ახალი გარემონტებული",
+      "furniture": null,
+      "furniture_items": [],
+      "heating": null,
+      "parking": null,
+      "air_conditioning": null,
+      "balcony": null,
+      "description": "ქირავდება ბინა დიდ დიღიმში ბენდუქიძის საუნივერსიტეტო დასახლება. 2 თვის წინასწარ გადახდით",
+      "main_image": "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/I12vzxm6af41759cc6d9.webp",
+      "images": [
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/I12vzxm6af41759cc6d9.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/WCZxTHR6af41759cea78.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/iYDxVur6af41759d33dd.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/u0qLwWQ6af41759d3069.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/h83ln316af41759d4425.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/xJJu2v16af41759d5ed0.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/Prd10ZW6af41759d5e83.webp"
+      ],
+      "source_images": [
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/I12vzxm6af41759cc6d9.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/WCZxTHR6af41759cea78.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/iYDxVur6af41759d33dd.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/u0qLwWQ6af41759d3069.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/h83ln316af41759d4425.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/xJJu2v16af41759d5ed0.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/Prd10ZW6af41759d5e83.webp"
+      ],
+      "listing_date": "2026-11-11T11:21:27+04:00",
+      "published_at": "2026-11-11T11:21:18+04:00",
+      "listing_date_note": "API last_updated (may be renewal); created_at saved separately. Source times interpreted as Tbilisi time.",
+      "advance_months": 2,
+      "screening": "include",
+      "photos_reviewed": "Not visually reviewed by the automated collector.",
+      "condition_review": "Seller-reported renovation and description screened. Physical condition unverified.",
+      "considerations": [
+        "Photos have not been visually screened in this automated run."
+      ],
+      "source_attribute_ids": {
+        "heating": null,
+        "parking": null,
+        "rooms": 2,
+        "bedrooms": 1
+      }
+    },
+    {
+      "id": "26636138",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-didubeshi-26636138/",
+      "source": "myhome.ge",
+      "advertiser": "Individual",
+      "retrieved_at": "2026-11-11T08:44:57.803Z",
+      "last_checked_at": "2026-11-11T08:44:57.803Z",
+      "retrieval_date_precision": "timestamp",
+      "transaction": "rent_monthly",
+      "property_type": "apartment",
+      "price": 1100,
+      "currency": "GEL",
+      "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
+      "original_currency": "GEL",
+      "district": "დიდუბე-ჩუღურეთი",
+      "neighborhood": "დიდუბე",
+      "address": "ნ. ხოშარაულის ქ. 29",
+      "district_groups": [
+        "დიდუბე"
+      ],
+      "size": 50,
+      "lat": 41.734043,
+      "lng": 44.774984,
+      "rooms": 2,
+      "bedrooms": null,
+      "floor": 9,
+      "total_floors": 9,
+      "condition": "Newly renovated",
+      "condition_original": "ახალი გარემონტებული",
+      "furniture": null,
+      "furniture_items": [],
+      "heating": null,
+      "parking": null,
+      "air_conditioning": null,
+      "balcony": "2 / 10 m²",
+      "description": "აგენტები ნუ დამიკავშირდებით!\n\n\n\nმომწერეთ მხოლოდ Whatsapp ან Viber: +995 598398939\n\n\n\nქირავდება 50მ2 ბინა ხოშარაულის 29 ნომერში ვენდისთან ყველა საჭირო ნივთით და ტექნიკით, მზად საცხოვრებლად. აქვს აივანი.\n\n\n\nვარ მეპატრონე,",
+      "main_image": "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/RL2mUuy6af4168577d26.webp",
+      "images": [
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/RL2mUuy6af4168577d26.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/F4D4Cyb6af4168d1e369.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/OrgyTK86af41692a4d7c.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/DfsnI8L6af4169b66c63.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/vZIwvqR6af416a1c25d6.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/7jGJLTn6af416a78de8b.webp"
+      ],
+      "source_images": [
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/RL2mUuy6af4168577d26.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/F4D4Cyb6af4168d1e369.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/OrgyTK86af41692a4d7c.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/DfsnI8L6af4169b66c63.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/vZIwvqR6af416a1c25d6.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261111/statements/7jGJLTn6af416a78de8b.webp"
+      ],
+      "listing_date": "2026-11-11T11:18:09+04:00",
+      "published_at": "2026-11-11T11:18:09+04:00",
+      "listing_date_note": "API last_updated (may be renewal); created_at saved separately. Source times interpreted as Tbilisi time.",
+      "advance_months": null,
+      "screening": "include",
+      "photos_reviewed": "Not visually reviewed by the automated collector.",
+      "condition_review": "Seller-reported renovation and description screened. Physical condition unverified.",
+      "considerations": [
+        "Photos have not been visually screened in this automated run."
+      ],
+      "source_attribute_ids": {
+        "heating": null,
+        "parking": null,
+        "rooms": 2,
+        "bedrooms": 1
+      }
+    },
+    {
+      "id": "26238342",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26238342/",
+      "source": "myhome.ge",
+      "advertiser": "Agency",
+      "retrieved_at": "2026-11-11T08:44:57.803Z",
+      "last_checked_at": "2026-11-11T08:44:57.803Z",
+      "retrieval_date_precision": "timestamp",
+      "transaction": "rent_monthly",
+      "property_type": "apartment",
+      "price": 1089,
+      "currency": "GEL",
+      "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
+      "original_currency": "USD",
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "დიდი დიღომი",
+      "address": "დავარის ქ. ",
+      "district_groups": [
+        "ვაკე-საბურთალო"
+      ],
+      "size": 50,
+      "lat": 41.785814,
+      "lng": 44.756651,
+      "rooms": 2,
+      "bedrooms": null,
+      "floor": 2,
+      "total_floors": 8,
+      "condition": "Newly renovated",
+      "condition_original": "ახალი გარემონტებული",
+      "furniture": null,
+      "furniture_items": [],
+      "heating": null,
+      "parking": null,
+      "air_conditioning": null,
+      "balcony": null,
+      "description": "",
+      "main_image": "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/emt0Jtw6ac149c19cbec.webp",
+      "images": [
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/emt0Jtw6ac149c19cbec.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/exySt5T6ac149c226384.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/Tove8DI6ac149c27093f.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/zLHoQGM6ac149c25c0a3.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/YYJcxbh6ac149c268533.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/ZGjiDU96ac149c26a53a.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/85BO4LR6ac149c234d48.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/4uj2J2U6ac149c21828d.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/TEXMOHm6ac149c0b33b3.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/MfNymph6ac149c1adfa8.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/FlnX9xu6ac149c0e3a07.webp"
+      ],
+      "source_images": [
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/emt0Jtw6ac149c19cbec.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/exySt5T6ac149c226384.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/Tove8DI6ac149c27093f.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/zLHoQGM6ac149c25c0a3.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/YYJcxbh6ac149c268533.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/ZGjiDU96ac149c26a53a.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/85BO4LR6ac149c234d48.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/4uj2J2U6ac149c21828d.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/TEXMOHm6ac149c0b33b3.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/MfNymph6ac149c1adfa8.webp",
+        "https://static-api-statements.tnet.ge/uploads/202610/20261003/statements/FlnX9xu6ac149c0e3a07.webp"
+      ],
+      "listing_date": "2026-11-11T11:07:05+04:00",
+      "published_at": "2026-10-03T22:30:40+04:00",
+      "listing_date_note": "API last_updated (may be renewal); created_at saved separately. Source times interpreted as Tbilisi time.",
+      "advance_months": null,
+      "screening": "include",
+      "photos_reviewed": "Not visually reviewed by the automated collector.",
+      "condition_review": "Seller-reported renovation and description screened. Physical condition unverified.",
+      "considerations": [
+        "Photos have not been visually screened in this automated run."
+      ],
+      "source_attribute_ids": {
+        "heating": null,
+        "parking": null,
+        "rooms": 2,
+        "bedrooms": 1
+      }
+    },
+    {
+      "id": "26624557",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26624557/",
+      "source": "myhome.ge",
+      "advertiser": "Agency",
+      "retrieved_at": "2026-11-11T08:44:57.803Z",
+      "last_checked_at": "2026-11-11T08:44:57.803Z",
+      "retrieval_date_precision": "timestamp",
+      "transaction": "rent_monthly",
+      "property_type": "apartment",
+      "price": 1099,
+      "currency": "GEL",
+      "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
+      "original_currency": "GEL",
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "დიდი დიღომი",
+      "address": "ნესტან-დარეჯანის ქ. 12",
+      "district_groups": [
+        "ვაკე-საბურთალო"
+      ],
+      "size": 48,
+      "lat": 41.783906,
+      "lng": 44.7495,
+      "rooms": 2,
+      "bedrooms": null,
+      "floor": 3,
+      "total_floors": 8,
+      "condition": "Newly renovated",
+      "condition_original": "ახალი გარემონტებული",
+      "furniture": null,
+      "furniture_items": [],
+      "heating": null,
+      "parking": null,
+      "air_conditioning": null,
+      "balcony": null,
+      "description": "ქირავდება კეთილმოწყობილი ბინა საუკეთესო ხედებითა და იდეალური ლოკაციით, ბინაში რჩება ყველანაირი საყოფაცხოვრებო ნივთი, შესაძლებელია გაქირავება ყველა გადამხდელუნარიან პირზე ორი თვის წინასწარი გადახდით (აუცილებელი პირობა).",
+      "main_image": "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/Y8YAzzB6af2d0686b5ea.webp",
+      "images": [
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/Y8YAzzB6af2d0686b5ea.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/XO99FUD6af2d068d08dc.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/3O0lero6af2d0681f54b.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/s3seS6e6af2d068cf37f.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/xRh3qx56af2d068bc110.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/lAU3w7A6af2d0686ae0c.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/1KNGCWA6af2d0685b597.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/BjFJu1V6af2d0683e44b.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/nRlc5386af2d0687e2fd.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/XfzJEHo6af2d0687ce0e.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/k5sK87U6af2d0683df53.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/1KTX2wO6af2d068dddb4.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/rQ3xlDb6af2d068dcc39.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/iJf8nuY6af2d0683d753.webp"
+      ],
+      "source_images": [
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/Y8YAzzB6af2d0686b5ea.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/XO99FUD6af2d068d08dc.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/3O0lero6af2d0681f54b.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/s3seS6e6af2d068cf37f.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/xRh3qx56af2d068bc110.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/lAU3w7A6af2d0686ae0c.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/1KNGCWA6af2d0685b597.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/BjFJu1V6af2d0683e44b.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/nRlc5386af2d0687e2fd.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/XfzJEHo6af2d0687ce0e.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/k5sK87U6af2d0683df53.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/1KTX2wO6af2d068dddb4.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/rQ3xlDb6af2d068dcc39.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261110/statements/iJf8nuY6af2d0683d753.webp"
+      ],
+      "listing_date": "2026-11-10T12:07:24+04:00",
+      "published_at": "2026-11-10T12:06:59+04:00",
+      "listing_date_note": "API last_updated (may be renewal); created_at saved separately. Source times interpreted as Tbilisi time.",
+      "advance_months": 2,
+      "screening": "include",
+      "photos_reviewed": "Not visually reviewed by the automated collector.",
+      "condition_review": "Seller-reported renovation and description screened. Physical condition unverified.",
+      "considerations": [
+        "Photos have not been visually screened in this automated run."
+      ],
+      "source_attribute_ids": {
+        "heating": null,
+        "parking": null,
+        "rooms": 2,
+        "bedrooms": 1
+      }
     }
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",
@@ -127149,10 +127699,150 @@
       ]
     },
     "hosted_usage": {
-      "date": "2026-11-10",
-      "tinyfish": 678,
+      "date": "2026-11-11",
+      "tinyfish": 36,
       "budget": 900
     },
-    "web_build_id": "Ii7X9F_vVqxETopUVT_65"
+    "web_build_id": "Ii7X9F_vVqxETopUVT_65",
+    "browser_import": {
+      "captured_at": "2026-11-11T08:36:00Z",
+      "processed_at": "2026-11-11T08:44:57.803Z",
+      "pages_read": 15,
+      "cards_read": 360,
+      "candidate_links": 86,
+      "checked": 37,
+      "added": [
+        "26637280",
+        "26635859",
+        "26637478",
+        "26636180",
+        "26636138",
+        "26238342",
+        "26624557"
+      ],
+      "rejected": [
+        {
+          "id": "26635516",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26630150",
+          "reason": "Outside requested districts"
+        },
+        {
+          "id": "26560565",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26637508",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26637187",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26637019",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26636886",
+          "reason": "Outside requested districts"
+        },
+        {
+          "id": "26636567",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26636494",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26636175",
+          "reason": "Outside requested districts"
+        },
+        {
+          "id": "26634481",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26634433",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26634316",
+          "reason": "Outside requested districts"
+        },
+        {
+          "id": "26634280",
+          "reason": "Outside requested districts"
+        },
+        {
+          "id": "26632388",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26631161",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26631087",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26631067",
+          "reason": "Outside requested districts"
+        },
+        {
+          "id": "26631030",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26629596",
+          "reason": "Outside requested districts"
+        },
+        {
+          "id": "26607473",
+          "reason": "Outside requested districts"
+        },
+        {
+          "id": "26628477",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26628071",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26627992",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26627542",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26350364",
+          "reason": "Outside requested districts"
+        },
+        {
+          "id": "26625727",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26625570",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26625476",
+          "reason": "Older, unfinished or unconfirmed renovation"
+        },
+        {
+          "id": "26624868",
+          "reason": "Outside requested districts"
+        }
+      ],
+      "failed": []
+    }
   }
 }
