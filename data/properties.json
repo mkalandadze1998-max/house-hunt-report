@@ -1,5 +1,5 @@
 {
-  "retrieved_at": "2026-11-11T19:57:54.845Z",
+  "retrieved_at": "2026-11-11T22:33:50.730Z",
   "source": "https://www.myhome.ge/",
   "method": "myhome_api",
   "method_label": "myhome.ge structured API",
@@ -127940,13 +127940,88 @@
         "bedrooms": 1
       },
       "first_seen_at": "2026-11-11T19:57:54.845Z"
+    },
+    {
+      "id": "26647135",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-did-dighomshi-26647135/",
+      "source": "myhome.ge",
+      "advertiser": "Individual",
+      "retrieved_at": "2026-11-11T22:38:54.170Z",
+      "last_checked_at": "2026-11-11T22:38:54.170Z",
+      "retrieval_date_precision": "timestamp",
+      "transaction": "rent_monthly",
+      "property_type": "apartment",
+      "price": 1037,
+      "currency": "GEL",
+      "price_basis": "GEL total returned by myhome.ge API; foreign-currency equivalents can change",
+      "original_currency": "USD",
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "დიდი დიღომი",
+      "address": "არჩილ მეფის ქ. 7ა",
+      "district_groups": [
+        "ვაკე-საბურთალო"
+      ],
+      "size": 59,
+      "lat": 41.790889,
+      "lng": 44.739497,
+      "rooms": 2,
+      "bedrooms": 1,
+      "floor": 7,
+      "total_floors": 12,
+      "condition": "Newly renovated",
+      "condition_original": "ახალი გარემონტებული",
+      "furniture": null,
+      "furniture_items": [],
+      "heating": null,
+      "parking": null,
+      "air_conditioning": null,
+      "balcony": "1 / 5 m²",
+      "description": "400$ ორითვის გადახდით\n\n\n\nქირავდება 2 ოთახიანი ბინა დიდ დიღომში, \n\n\n\nა. მეფის ქუჩა 7ა \n\n\n\n 1 საინებელი . \n\n\n\n59 კვ\n\n\n\n7 სართული\n\n\n\n555368468\n\n\n\nაგენტებმა არ დარეკოთ",
+      "main_image": "https://static-api-statements.tnet.ge/uploads/202611/20261112/statements/PTqq8mq6af4cea116345.webp",
+      "images": [
+        "https://static-api-statements.tnet.ge/uploads/202611/20261112/statements/PTqq8mq6af4cea116345.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261112/statements/mfTz3Od6af4cea1210b4.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261112/statements/bR2eA1H6af4cea107a70.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261112/statements/CUHde4A6af4cea11b066.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261112/statements/xQ6MLxt6af4cea110e83.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261112/statements/ymHbYl56af4cea109040.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261112/statements/ScqjkCz6af4cea123134.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261112/statements/SsEu2Dh6af4cea11f699.webp"
+      ],
+      "source_images": [
+        "https://static-api-statements.tnet.ge/uploads/202611/20261112/statements/PTqq8mq6af4cea116345.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261112/statements/mfTz3Od6af4cea1210b4.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261112/statements/bR2eA1H6af4cea107a70.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261112/statements/CUHde4A6af4cea11b066.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261112/statements/xQ6MLxt6af4cea110e83.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261112/statements/ymHbYl56af4cea109040.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261112/statements/ScqjkCz6af4cea123134.webp",
+        "https://static-api-statements.tnet.ge/uploads/202611/20261112/statements/SsEu2Dh6af4cea11f699.webp"
+      ],
+      "listing_date": "2026-11-12T00:23:19+04:00",
+      "published_at": "2026-11-12T00:23:07+04:00",
+      "listing_date_note": "API last_updated (may be renewal); created_at saved separately. Source times interpreted as Tbilisi time.",
+      "advance_months": null,
+      "screening": "include",
+      "photos_reviewed": "Not visually reviewed by the automated collector.",
+      "condition_review": "Seller-reported renovation and description screened. Physical condition unverified.",
+      "considerations": [
+        "Photos have not been visually screened in this automated run."
+      ],
+      "source_attribute_ids": {
+        "heating": null,
+        "parking": null,
+        "rooms": 2,
+        "bedrooms": 1
+      },
+      "first_seen_at": "2026-11-11T22:33:50.730Z"
     }
   ],
   "requirements_updated_at": "2026-09-19T19:47:58.271Z",
   "refresh_status": {
-    "attempted_at": "2026-11-11T19:57:54.845Z",
-    "last_success_at": "2026-11-11T19:57:54.845Z",
-    "dataset_collected_at": "2026-11-11T19:57:54.845Z",
+    "attempted_at": "2026-11-11T22:33:50.730Z",
+    "last_success_at": "2026-11-11T22:33:50.730Z",
+    "dataset_collected_at": "2026-11-11T22:33:50.730Z",
     "status": "success",
     "coverage": "At most 15 search pages per run; new additions must be posted or renewed within 72 hours; existing saved data is retained; daily rentals excluded. Hidden posts skipped. Up to 120 new details per run; remaining recent IDs saved for later.",
     "api": "https://api-statements.tnet.ge/v1/statements",
@@ -127956,9 +128031,9 @@
     "similars": {
       "seeds": 36,
       "calls": 60,
-      "rows": 290
+      "rows": 297
     },
-    "search_rotation": 69,
+    "search_rotation": 70,
     "search_limited_to_pages": 15,
     "new_details_deferred": 0,
     "rechecks_deferred": 0,
@@ -127966,15 +128041,14 @@
     "detail_422_deferred": 0,
     "search_method": "similar-listings crawl (search API and website closed)",
     "detail_method": "website via hosted fetchers (TinyFish + Jina)",
-    "rechecks_skipped": 1561,
-    "searched": 404,
-    "checked": 5,
-    "included": 2,
-    "excluded": 3,
+    "rechecks_skipped": 1563,
+    "searched": 409,
+    "checked": 1,
+    "included": 1,
+    "excluded": 0,
     "changes": {
       "new": [
-        "26647057",
-        "26647051"
+        "26647135"
       ],
       "changed": [],
       "removed": [],
@@ -129539,7 +129613,9 @@
         "26646417",
         "26646365",
         "26645912",
-        "26645868"
+        "26645868",
+        "26647057",
+        "26647051"
       ]
     },
     "hosted_usage": {
