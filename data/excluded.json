@@ -1,7 +1,25 @@
 {
-  "generated_at": "2026-11-12T20:37:20.750Z",
+  "generated_at": "2026-11-12T22:09:12.083Z",
   "keep_days": 14,
   "items": [
+    {
+      "id": "26657713",
+      "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-3-otaxiani-dzveli-ashenebuli-bina-did-dighomshi-26657713/",
+      "reason": "Older, unfinished or unconfirmed renovation",
+      "price": 1100,
+      "size": 85,
+      "rooms": 3,
+      "floor": 9,
+      "total_floors": 9,
+      "district": "ვაკე-საბურთალო",
+      "neighborhood": "დიდი დიღომი",
+      "address": "მირიან მეფის ქ. 69",
+      "condition": "სარემონტო",
+      "image": "https://static-api-statements.tnet.ge/uploads/202611/20261113/statements/5PowX8Q6af627d97f015.webp",
+      "listing_date": "2026-11-13T00:56:35+04:00",
+      "excluded_at": "2026-11-12T22:09:12.083Z",
+      "last_seen_at": "2026-11-12T22:09:12.083Z"
+    },
     {
       "id": "26646621",
       "url": "https://www.myhome.ge/udzravi-qoneba/qiravdeba-2-otaxiani-bina-saburtaloze-26646621/",
